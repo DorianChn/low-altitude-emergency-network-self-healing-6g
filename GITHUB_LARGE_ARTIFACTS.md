@@ -25,3 +25,13 @@ To keep the Git history quick to clone, files at or above 10 MiB are included in
 - `results/phase9_development_raw.json` — 23,760,282 bytes; SHA-256 `f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba`
 
 The complete review archive is available from the repository Releases page. No experiment record is removed from the Release package.
+
+## Restoring the complete review archive
+
+Release `v2026.10.22-review` provides the complete `6G-RESCUE-review-package-2026-10-22.zip` as eleven 20 MB-or-smaller parts to support reliable downloads. Download all assets named `6G-RESCUE-review-package-2026-10-22.zip.001` through `.011`, together with `PARTS-MANIFEST.json`, `PARTS-SHA256SUMS.txt`, and `REASSEMBLE.ps1`, into one folder. From that folder run:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\REASSEMBLE.ps1
+```
+
+The script checks each part and the reconstructed archive before creating the ZIP. Expected archive size: `219738845` bytes. Expected SHA-256: `05f22ea02d4af148febde7c7eafcae9f5658cbbe04678b91f73762396ec2bdb3`.
