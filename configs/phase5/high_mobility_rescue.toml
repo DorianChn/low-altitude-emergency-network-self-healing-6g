@@ -1,0 +1,45 @@
+base_scenario = "../disaster_scenario.toml"
+
+[experiment]
+seeds = [7040, 7041, 7042, 7043, 7044, 7045, 7046, 7047, 7048, 7049, 7050, 7051, 7052, 7053, 7054, 7055, 7056, 7057, 7058, 7059]
+mobility_axis_max_km_per_tick = 0.005
+rescue_mobility_axis_max_km_per_tick = 0.025
+
+[phase5]
+hazard_class = "high_mobility_rescue"
+development_seeds = [6520, 6521, 6522, 6523, 6524]
+validation_seeds = [7040, 7041, 7042, 7043, 7044, 7045, 7046, 7047, 7048, 7049, 7050, 7051, 7052, 7053, 7054, 7055, 7056, 7057, 7058, 7059]
+mobility_model = "seeded_bounded_random_walk_km_per_axis_per_tick"
+
+[energy]
+battery_capacity_wh = 600.0
+initial_battery_wh = 600.0
+reserve_wh = 50.0
+movement_wh_per_km = 18.0
+hover_power_w = 80.0
+relay_power_w = 120.0
+
+[optimizer]
+decision_interval_s = 20
+prediction_horizon_steps = 3
+beam_width = 6
+position_signature_quantum_km = 0.05
+congestion_threshold = 0.85
+rescue_service_weight = 10.0
+connection_weight = 3.0
+recovery_bonus = 2.0
+latency_penalty_weight = 1.5
+energy_penalty_weight = 2.0
+rescue_progress_weight = 4.0
+
+[[events]]
+time_s = 120
+type = "user_mobility_change"
+target_id = "rescue"
+value = 0.06
+
+[[events]]
+time_s = 420
+type = "user_mobility_change"
+target_id = "rescue"
+value = 0.025

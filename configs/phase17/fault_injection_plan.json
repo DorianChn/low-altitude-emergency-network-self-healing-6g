@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "phase17_software_fault_suite_v1",
+  "seed": 1717,
+  "source_classification": "SYNTHETIC_TEST_ONLY",
+  "hardware_output_enabled": false,
+  "case_count": 21,
+  "time_semantics": "synchronous contract/gate tests use case order only; only observed_simulation_events carry simulation timestamps",
+  "cases": [
+    {
+      "test_case_index": 0,
+      "fault_type": "telemetry_gap",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_MISSING_TELEMETRY"
+    },
+    {
+      "test_case_index": 1,
+      "fault_type": "message_duplicate",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_DUPLICATE"
+    },
+    {
+      "test_case_index": 2,
+      "fault_type": "message_reorder",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_OUT_OF_ORDER"
+    },
+    {
+      "test_case_index": 3,
+      "fault_type": "message_delay",
+      "injection_parameters": {
+        "delay_seconds": 3.0,
+        "max_age_seconds": 1.0
+      },
+      "expected_result": "REJECTED_STALE"
+    },
+    {
+      "test_case_index": 4,
+      "fault_type": "clock_offset",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "AGE_UNDETERMINED"
+    },
+    {
+      "test_case_index": 5,
+      "fault_type": "unknown_device",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_UNKNOWN_DEVICE"
+    },
+    {
+      "test_case_index": 6,
+      "fault_type": "unsupported_schema",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_SCHEMA"
+    },
+    {
+      "test_case_index": 7,
+      "fault_type": "unit_mismatch",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_UNIT_MISMATCH"
+    },
+    {
+      "test_case_index": 8,
+      "fault_type": "out_of_range_measurement",
+      "injection_parameters": {
+        "battery_wh": -4.0,
+        "allowed_range_wh": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "expected_result": "REJECTED_OUT_OF_RANGE"
+    },
+    {
+      "test_case_index": 9,
+      "fault_type": "out_of_range_measurement",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_UNTRUSTED_MISSING_UNCERTAINTY"
+    },
+    {
+      "test_case_index": 10,
+      "fault_type": "device_disconnect",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "BLOCKED_DISCONNECTED"
+    },
+    {
+      "test_case_index": 11,
+      "fault_type": "battery_state_jump",
+      "injection_parameters": {
+        "battery_wh": 35.0,
+        "reserve_wh": 30.0,
+        "requested_energy_wh": 8.0
+      },
+      "expected_result": "BLOCKED_RETURN_RESERVE"
+    },
+    {
+      "test_case_index": 12,
+      "fault_type": "command_timeout",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "TIMEOUT_NOT_SUCCESS"
+    },
+    {
+      "test_case_index": 13,
+      "fault_type": "device_rejects_command",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REJECTED_NOT_SUCCESS"
+    },
+    {
+      "test_case_index": 14,
+      "fault_type": "command_feedback_mismatch",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "LOCK_AFTER_FEEDBACK_MISMATCH"
+    },
+    {
+      "test_case_index": 15,
+      "fault_type": "telemetry_gap",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "EMERGENCY_STOP_ALLOWED"
+    },
+    {
+      "test_case_index": 16,
+      "fault_type": "manual_stop_latch",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "AUTOMATIC_RESUME_BLOCKED"
+    },
+    {
+      "test_case_index": 17,
+      "fault_type": "reconnect_reconciliation",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "BLOCK_THEN_ALLOW_AFTER_MATCH"
+    },
+    {
+      "test_case_index": 18,
+      "fault_type": "safety_gate_bypass",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "REAL_HARDWARE_MODE_BLOCKED"
+    },
+    {
+      "test_case_index": 19,
+      "fault_type": "backhaul_loss",
+      "injection_parameters": {
+        "deterministic": true
+      },
+      "expected_result": "NO_END_TO_END_PATH_REPORTED"
+    },
+    {
+      "test_case_index": 20,
+      "fault_type": "backhaul_recovery",
+      "injection_parameters": {
+        "backhaul_schedule": {
+          "1": false,
+          "2": true
+        }
+      },
+      "expected_result": "SERVICE_RESTORED_AFTER_BACKHAUL_RECOVERY"
+    }
+  ]
+}

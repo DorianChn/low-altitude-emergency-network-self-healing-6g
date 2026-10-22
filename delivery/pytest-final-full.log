@@ -1,0 +1,18 @@
+........................................................................ [ 37%]
+........................................................................ [ 74%]
+.................................................                        [100%]
+============================== warnings summary ===============================
+tests/test_phase15_calibration.py::test_log_distance_fit_recovers_known_parameters
+tests/test_phase15_calibration.py::test_cluster_bootstrap_is_reproducible
+tests/test_phase15_calibration.py::test_independent_holdout_keeps_group_counts_and_uncertainty_limits
+  D:\Codex Work\Ai+6G game\AAA工程文件\6G-RESCUE-改进工程\.runtime\venv\Lib\site-packages\numpy\lib\_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+    c /= stddev[:, None]
+
+tests/test_phase15_calibration.py::test_log_distance_fit_recovers_known_parameters
+tests/test_phase15_calibration.py::test_cluster_bootstrap_is_reproducible
+tests/test_phase15_calibration.py::test_independent_holdout_keeps_group_counts_and_uncertainty_limits
+  D:\Codex Work\Ai+6G game\AAA工程文件\6G-RESCUE-改进工程\.runtime\venv\Lib\site-packages\numpy\lib\_function_base_impl.py:3038: RuntimeWarning: invalid value encountered in divide
+    c /= stddev[None, :]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+193 passed, 6 warnings in 44.95s

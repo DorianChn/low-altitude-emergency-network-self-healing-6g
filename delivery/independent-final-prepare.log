@@ -1,0 +1,53 @@
+Using CPython 3.12.10 interpreter at: <LOCAL_PATH_REDACTED>\AppData\Local\Programs\Python\Python312\python.exe
+Creating virtual environment at: AAA工程文件\6G-RESCUE-最终复验-20261022\6G-RESCUE\.runtime\venv
+Resolved 37 packages in 1ms
+   Building low-altitude-emergency-network-self-healing-6g @ file:///D:/Codex%20Work/Ai+6G%20game/AAA%E5%B7%A5%E7%A8%8B%E6%96%87%E4%BB%B6/6G-RESCUE-%E6%9C%80%E7%BB%88%E5%A4%8D%E9%AA%8C-20261022/6G-RESCUE
+      Built low-altitude-emergency-network-self-healing-6g @ file:///D:/Codex%20Work/Ai+6G%20game/AAA%E5%B7%A5%E7%A8%8B%E6%96%87%E4%BB%B6/6G-RESCUE-%E6%9C%80%E7%BB%88%E5%A4%8D%E9%AA%8C-20261022/6G-RESCUE
+Prepared 1 package in 2.05s
+Installed 34 packages in 1.60s
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + anyio==4.15.1
+ + click==8.5.0
+ + colorama==0.4.6
+ + contourpy==1.4.0
+ + cycler==0.12.1
+ + et-xmlfile==2.0.0
+ + fastapi==0.143.3
+ + fonttools==4.67.0
+ + h11==0.16.0
+ + idna==3.20
+ + iniconfig==2.3.1
+ + kiwisolver==1.5.1
+ + low-altitude-emergency-network-self-healing-6g==0.1.0 (from file:///D:/Codex%20Work/Ai+6G%20game/AAA%E5%B7%A5%E7%A8%8B%E6%96%87%E4%BB%B6/6G-RESCUE-%E6%9C%80%E7%BB%88%E5%A4%8D%E9%AA%8C-20261022/6G-RESCUE)
+ + matplotlib==3.11.2
+ + numpy==2.5.4
+ + openpyxl==3.1.5
+ + opentelemetry-api==1.45.1
+ + packaging==26.3
+ + pillow==13.0.0
+ + pluggy==1.7.0
+ + pydantic==2.14.1
+ + pydantic-core==2.50.1
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + pytest==9.1.1
+ + python-dateutil==2.9.0.post0
+ + scipy==1.18.1
+ + six==1.17.0
+ + starlette==1.8.0
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.4
+ + uvicorn==0.54.0
+
+added 133 packages, and audited 134 packages in 7s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New major version of npm available! 11.17.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase11_baseline_benchmark",
+  "verified_at_utc": "2026-10-20T14:24:21.117912+00:00",
+  "confirmation_status": "complete",
+  "confirmation_seed_count": 80,
+  "confirmation_policy_run_count": 880,
+  "unique_scenario_seed_policy_rows": 880,
+  "matched_trace_group_count": 80,
+  "matched_trace_mismatches": {},
+  "phase10_baseline": {
+    "protocol_status": "frozen_before_confirmation",
+    "phase10_artifact_count": 15,
+    "phase10_artifact_hash_mismatches": 0,
+    "phase10_confirmation_seed_rows": 80,
+    "phase10_confirmation_policy_runs": 400,
+    "phase10_matched_trace_mismatches": 0,
+    "phase10_protocol_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+    "phase10_confirmation_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+    "phase10_manifest_sha256": "4942c97e97d4de538c12029854386bb50142c8c800c66f53b8772e033769940a"
+  },
+  "phase1_to_phase9_hash_mismatches": {},
+  "phase11_confirmation_protocol_status": "frozen_before_confirmation",
+  "phase11_source_sha256": "99683bfaa1111580c5ac75d16d7eab96888ae1324e83df02583e185ff58b66f7",
+  "phase11_documentation_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+  "phase11_configuration_sha256": {
+    "configs/phase11/benchmark_plan.json": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+    "configs/phase5/dynamic_failures.toml": "4b21a21525d9ef5557a40ef36a07451c0a56cdeb029230859dace620a4b548a4",
+    "configs/phase5/high_load_backhaul_limit.toml": "1bad9cfcb1d0b63904e256fa1f92c7a5e85eee3f191e0d387b2059beec0bf9ab",
+    "configs/phase5/high_mobility_rescue.toml": "a7b0aad9fd503b6f6e7171ece4ab787c9f28b12ba69b04f03e3511d163a48fa8",
+    "configs/phase5/severe_persistent_faults.toml": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c"
+  },
+  "runtime_violation_totals": {
+    "speed_violation_count": 0,
+    "boundary_violation_count": 0,
+    "separation_violation_count": 0,
+    "resource_capacity_violation_count": 0,
+    "duplicate_user_service_count": 0,
+    "decision_timeout_count": 0
+  },
+  "decision_timeout_count": 0,
+  "infeasible_decision_total": 2095,
+  "safety_action_total": 3197,
+  "result_elapsed_wall_s": 225.340518,
+  "primary_tests": {
+    "python_pytest_passed": 61,
+    "frontend_unit_passed": 4,
+    "frontend_build": "passed_with_chunk_warning",
+    "playwright_e2e_passed": 9
+  }
+}

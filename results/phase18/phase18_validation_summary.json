@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase18_final_audit_snapshot",
+  "created_at_utc": "2026-10-21T11:32:24.363330+00:00",
+  "status": "PARTIAL",
+  "executive_summary": "冻结证据与实验结构审计通过；研究结论保留了规则策略胜出、智能策略失效和模型敏感性的反向结果。项目仍有历史阶段证据、目标设备校准、物理HIL和干净提交等开放门槛。",
+  "competition_readiness": {
+    "status": "CONDITIONAL",
+    "label": "本地候选 · 需要人工审阅及现场条件核验"
+  },
+  "phase_statuses": [
+    {
+      "id": "phase1",
+      "label": "PHASE 01",
+      "title": "仿真基线",
+      "status": "PARTIAL",
+      "note": "单场景基线存档；不作为统计性结论。"
+    },
+    {
+      "id": "phase2",
+      "label": "PHASE 02",
+      "title": "规则与滚动优化",
+      "status": "PARTIAL",
+      "note": "20种子结果可复核；C未超过B。"
+    },
+    {
+      "id": "phase3",
+      "label": "PHASE 03",
+      "title": "离线演示数据",
+      "status": "PASS",
+      "note": "保存回放由历史离散仿真帧构成。"
+    },
+    {
+      "id": "phase4",
+      "label": "PHASE 04",
+      "title": "优化策略验证",
+      "status": "PARTIAL",
+      "note": "确认结果保留了B优于C/D的反向证据。"
+    },
+    {
+      "id": "phase5",
+      "label": "PHASE 05",
+      "title": "多灾害验证",
+      "status": "PASS",
+      "note": "80个留出种子、400条策略运行已列入冻结审计。"
+    },
+    {
+      "id": "phase6",
+      "label": "PHASE 06",
+      "title": "系统集成演示",
+      "status": "PASS",
+      "note": "历史演示与接口证据保留；本阶段不改演示数据。"
+    },
+    {
+      "id": "phase7",
+      "label": "PHASE 07",
+      "title": "阶段证据",
+      "status": "NOT_ASSESSABLE",
+      "note": "未找到可核验的阶段报告、命名产物或Git记录。"
+    },
+    {
+      "id": "phase8",
+      "label": "PHASE 08",
+      "title": "消融与敏感性",
+      "status": "PASS",
+      "note": "原始记录、配对统计和配置清单通过核对。"
+    },
+    {
+      "id": "phase9",
+      "label": "PHASE 09",
+      "title": "事件驱动自愈",
+      "status": "PASS",
+      "note": "确认集完整；负面结论保留。"
+    },
+    {
+      "id": "phase10",
+      "label": "PHASE 10",
+      "title": "多无人机协调",
+      "status": "PASS",
+      "note": "80种子、400条策略运行和策略清单可核。"
+    },
+    {
+      "id": "phase11",
+      "label": "PHASE 11",
+      "title": "算法基线扩展",
+      "status": "PASS",
+      "note": "80种子、880条策略运行；存在场景依赖的差异。"
+    },
+    {
+      "id": "phase12",
+      "label": "PHASE 12",
+      "title": "6G架构映射",
+      "status": "PARTIAL",
+      "note": "技术映射不是标准符合性认证。"
+    },
+    {
+      "id": "phase13",
+      "label": "PHASE 13",
+      "title": "科研可视化",
+      "status": "PASS",
+      "note": "当前研究界面显示已保存证据。"
+    },
+    {
+      "id": "phase14",
+      "label": "PHASE 14",
+      "title": "无线链路模型",
+      "status": "PARTIAL",
+      "note": "使用抽象链路预算，未完成设备校准。"
+    },
+    {
+      "id": "phase15",
+      "label": "PHASE 15",
+      "title": "公开数据评估",
+      "status": "PARTIAL",
+      "note": "完成公开数据候选拟合和留出；验收缺测量不确定度。"
+    },
+    {
+      "id": "phase16",
+      "label": "PHASE 16",
+      "title": "实测准备",
+      "status": "NOT_READY",
+      "note": "无项目设备实测记录，未达到外场测量准备条件。"
+    },
+    {
+      "id": "phase17",
+      "label": "PHASE 17",
+      "title": "软件闭环与HIL",
+      "status": "PARTIAL",
+      "note": "软件闭环和离线回放通过；物理HIL未执行。"
+    },
+    {
+      "id": "phase18",
+      "label": "PHASE 18",
+      "title": "最终审计交付",
+      "status": "PARTIAL",
+      "note": "本地候选资料在审阅前；未创建提交、标签或远程发布。"
+    }
+  ],
+  "research_findings": [
+    {
+      "id": "phase2_phase4_rolling_horizon",
+      "title": "滚动优化没有稳定超过静态网格基线",
+      "result": "Phase 2 的 20 个种子中，C=25.19%、B=28.50%；Phase 4 的 20 个验证种子中，B=28.71%、C=25.57%、D=24.91%。两个批次的场景/协议不可合并为同一个总体估计。",
+      "sample_definition": "Phase 2 与 Phase 4 分批报告；救援用户服务成功率",
+      "evidence_path": "results/phase2_20_seed_results.json · results/phase4_validation_4000_4019.json",
+      "status": "PARTIAL",
+      "status_label": "反向证据已保留"
+    },
+    {
+      "id": "phase5_ground_and_uav",
+      "title": "严重持续故障中，恢复增益与无人机策略分开记录",
+      "result": "Phase 5 严重故障场景：A 的首次恢复成功率为 0.00%；共享安全约束的 B′ 为 100.00%，持续 30 秒成功率为 100.00%。这是模型条件下的仿真结果。",
+      "sample_definition": "20 个留出种子，A/B′ 同场景配对仿真",
+      "evidence_path": "results/phase5_validation_summary.json",
+      "status": "PASS",
+      "status_label": "仿真证据可核"
+    },
+    {
+      "id": "phase9_event_driven",
+      "title": "事件驱动策略 E 在动态故障确认集中低于 B′",
+      "result": "E−B′ 救援服务率配对差 -7.05 个百分点，95% CI [-8.74, -5.35] pp，Holm 校正 p=0.00018288；E 的增量计算成本不能被描述为已经换来服务提升。",
+      "sample_definition": "20 个动态故障确认种子；同种子配对",
+      "evidence_path": "results/phase9_corrected_confirmation_summary.json",
+      "status": "PARTIAL",
+      "status_label": "限制性结论"
+    },
+    {
+      "id": "phase11_scene_dependence",
+      "title": "集中协同 G 的收益取决于灾害场景",
+      "result": "三机动态场景 G−F=+2.38 个百分点（Holm p=0.00091553）；三机高负载场景 G−F=-3.99 个百分点（Holm p=0.00479889）。没有全场景统一赢家。",
+      "sample_definition": "每场景 20 个配对确认种子；11 种配置",
+      "evidence_path": "results/phase11_confirmation_summary.json · PHASE11_REPORT.md",
+      "status": "PASS",
+      "status_label": "分场景结论"
+    },
+    {
+      "id": "phase14_link_model",
+      "title": "链路预算假设显著改变可行性与服务结果",
+      "result": "Phase 14 的 12 项模型配对比较中，救援服务率差值有 12 项为负，其中 8 项经 Holm 校正显著。链路模型未完成目标设备校准，不代表真实网络预测。",
+      "sample_definition": "四场景、每场景20个确认种子、两种抽象链路模型",
+      "evidence_path": "results/phase14_confirmation_summary.json · PHASE14_REPORT.md",
+      "status": "PARTIAL",
+      "status_label": "抽象模型结果"
+    },
+    {
+      "id": "phase15_public_measurement",
+      "title": "公开空地测量集留出评估不等于项目设备校准",
+      "result": "公开数据候选管线为 HOLDOUT_VALIDATED，项目设备状态为 NOT_CALIBRATED；留出验收为 NOT_ASSESSABLE_MEASUREMENT_UNCERTAINTY_MISSING。Phase 16 记录的项目设备测量为 0 条。",
+      "sample_definition": "公开数据清洗记录 1370 条；设备测量另计",
+      "evidence_path": "results/phase15_calibration_summary.json · results/phase16_measurement_readiness.json",
+      "status": "PARTIAL",
+      "status_label": "缺少不确定度/设备实测"
+    },
+    {
+      "id": "phase17_software_not_hil",
+      "title": "软件闭环与回放已验证，物理 HIL 尚未执行",
+      "result": "Phase 17 的软件闭环=PASS、离线回放=PASS、故障软件案例=21；真实 HIL=NOT_RUN_NO_VERIFIED_HARDWARE_OR_DRIVER，硬件输出=False。",
+      "sample_definition": "61 个已保存离散帧；软件测试植物非真实网络设备",
+      "evidence_path": "results/phase17_validation_summary.json",
+      "status": "PARTIAL",
+      "status_label": "仅软件验证"
+    }
+  ],
+  "delivery_gates": [
+    {
+      "id": "phase7_evidence",
+      "title": "Phase 7 历史证据缺失",
+      "status": "NOT_ASSESSABLE",
+      "detail": "在报告、命名产物、分支及提交检索中未找到可核验记录；未重建该阶段。",
+      "evidence_path": "results/phase18/phase18_integrity_audit.json#phase7_evidence"
+    },
+    {
+      "id": "phase5_source_drift",
+      "title": "Phase 5 源码快照与当前源码有差异",
+      "status": "PARTIAL",
+      "detail": "发现 2 个源码版本差异；受保护历史数据的独立哈希校验为 182/182。由于缺少逐阶段提交，无法精确归因版本演进。",
+      "evidence_path": "results/phase5_frozen_manifest.json · results/phase18/phase18_integrity_audit.json"
+    },
+    {
+      "id": "device_calibration",
+      "title": "目标设备校准与测量不确定度未完成",
+      "status": "NOT_READY",
+      "detail": "公开数据不替代项目设备实测；Phase 16 记录设备测量为0条，未达到现场测量准备条件。",
+      "evidence_path": "results/phase15_calibration_summary.json · results/phase16_measurement_readiness.json"
+    },
+    {
+      "id": "physical_hil",
+      "title": "真实硬件在环验证未执行",
+      "status": "NOT_TESTED",
+      "detail": "当前只有软件测试植物和离线回放，真实设备/驱动不可用，物理输出保持关闭。",
+      "evidence_path": "results/phase17_validation_summary.json"
+    },
+    {
+      "id": "external_repository",
+      "title": "未建立可审阅的干净提交",
+      "status": "PARTIAL",
+      "detail": "当前分支为 phase18-final-audit-delivery，HEAD=7d3eb100ac567aedd7edb462aab7ad1125a3fbb5；工作区有跨阶段未提交变更，未创建提交、Git 标签或远程推送。",
+      "evidence_path": "results/phase18/phase18_integrity_audit.json#workspace"
+    },
+    {
+      "id": "secondary_machine",
+      "title": "第二台设备及现场离线环境未实测",
+      "status": "NOT_TESTED",
+      "detail": "本阶段只核验当前工作环境中的本地离线启动和预生成回放；不声称第二台设备/比赛现场已验证。",
+      "evidence_path": "PHASE18_FINAL_ACCEPTANCE_MATRIX.md"
+    }
+  ],
+  "test_matrix": [
+    {
+      "id": "historical_integrity",
+      "name": "Phase 18 historical integrity audit",
+      "status": "PASS",
+      "result": "182/182 protected hashes; Phase 9 32/32, Phase 10 15/15, Phase 11 26/26 artifact manifests; 14/14 public Phase 15 source files; 26/26 raw experiment structure checks.",
+      "evidence_path": "results/phase18/phase18_integrity_audit.json"
+    },
+    {
+      "id": "release_manifest_verification",
+      "name": "Local release manifest self-check",
+      "status": "PASS",
+      "result": "All listed files match their recorded size and SHA-256; manifest paths remain relative, the manifest excludes its own hash, and public raw source files remain outside the candidate.",
+      "evidence_path": "results/phase18/phase18_release_manifest.json"
+    },
+    {
+      "id": "python_full_suite",
+      "name": "Complete Python pytest suite",
+      "status": "PASS",
+      "result": "193 passed in 48.86 seconds; 0 failed.",
+      "evidence_path": "tests/"
+    },
+    {
+      "id": "phase18_api_contract",
+      "name": "Phase 18 API contract and fail-closed behavior",
+      "status": "PASS",
+      "result": "3 passed: saved JSON hashes, missing required artifact returns 503, historical read-only routes remain available.",
+      "evidence_path": "tests/test_phase18_api.py"
+    },
+    {
+      "id": "frontend_unit_suite",
+      "name": "Complete frontend unit/component suite",
+      "status": "PASS",
+      "result": "5 test files and 17 tests passed.",
+      "evidence_path": "frontend/src/test/"
+    },
+    {
+      "id": "frontend_lint",
+      "name": "Frontend lint",
+      "status": "PASS",
+      "result": "oxlint completed with exit code 0.",
+      "evidence_path": "frontend/package.json"
+    },
+    {
+      "id": "frontend_production_build",
+      "name": "Frontend TypeScript and production build",
+      "status": "PASS_WITH_WARNING",
+      "result": "TypeScript and Vite build succeeded. EChartsView chunk is 533.66 kB minified, above the 500 kB advisory threshold; charts were retained.",
+      "evidence_path": "frontend/dist/"
+    },
+    {
+      "id": "phase18_playwright",
+      "name": "Phase 18 browser API/data/layout checks",
+      "status": "PASS",
+      "result": "4/4 targeted browser checks passed: API/UI values, evidence navigation, and widths 1920x1080, 1366x768, 390x844. No page exceptions or console errors in final run.",
+      "evidence_path": "results/phase18/browser/"
+    },
+    {
+      "id": "playwright_full_suite",
+      "name": "Complete browser end-to-end suite",
+      "status": "PASS",
+      "result": "27/27 passed, including Phase 6 four-scene replays, historical research screens, Phase 17 evidence, Phase 18 final audit, strategy/data consistency, and responsive layouts.",
+      "evidence_path": "frontend/e2e/"
+    },
+    {
+      "id": "windows_demo_start_and_stop",
+      "name": "Windows local demo startup, health and managed shutdown",
+      "status": "PASS",
+      "result": "Start checks found Python, uv, Node/npm, frontend dependencies and saved replay. API health and Phase 18 route returned 200; /research HTML returned 200. A bounded acceptance run exited 0 through the script finally block and both owned ports were closed. The normal interactive launch also opened the browser and served the pages.",
+      "evidence_path": "scripts/start_demo.cmd · scripts/start_demo.ps1"
+    }
+  ],
+  "integrity_snapshot": {
+    "protected_history_matched": 182,
+    "protected_history_total": 182,
+    "raw_experiment_checks_matched": 26,
+    "raw_experiment_checks_total": 26,
+    "phase5_source_snapshot_drift_count": 2,
+    "phase9_manifest_matched": 32,
+    "phase10_manifest_matched": 15,
+    "phase11_manifest_matched": 26,
+    "evidence_manifest_items": 218,
+    "release_file_count": 446
+  },
+  "workspace_snapshot": {
+    "branch": "phase18-final-audit-delivery",
+    "head": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+    "status_entry_count_expanded": 672,
+    "staged_path_count": 0,
+    "untracked_status_count": 658,
+    "conflict_count": 0,
+    "phase18_commit_created": false,
+    "remote_push_performed": false
+  },
+  "model_scope": "abstract_6g_research_simulation_and_software_validation_not_real_6g_network_test",
+  "source_artifacts": [
+    {
+      "path": "results/phase18/phase18_integrity_audit.json",
+      "sha256": "b27f12932ec9fe97d55ffc00e322fe538ce29be170aba6de5cc5833a54283a54"
+    },
+    {
+      "path": "results/phase18/phase18_evidence_manifest.json",
+      "sha256": "e10ae9c404959a3a2a889448e7eadcdc739f6c391cd2ac24327045af2b8bcd4f"
+    }
+  ],
+  "phase7_conclusion": "NO_PHASE7_EVIDENCE_FOUND"
+}

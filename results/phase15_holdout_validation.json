@@ -1,0 +1,323 @@
+{
+  "status": "EVALUATED",
+  "holdout_groups": [
+    "Over-water_10m",
+    "Over-water_15m"
+  ],
+  "holdout_group_count": 2,
+  "sample_count": 570,
+  "candidate_model_id": "phase15_public_a2g_offset_fit_v2",
+  "candidate_metrics": {
+    "sample_count": 570,
+    "mae_db": 1.819524458942349,
+    "rmse_db": 2.279735135049501,
+    "mean_bias_db": -0.43240132405301096,
+    "residual_sd_db": 2.2403184351605994,
+    "residual_quantiles_db": {
+      "p05": -4.246121620857272,
+      "p50": -0.4282430896244307,
+      "p95": 3.1432583181846483
+    }
+  },
+  "comparisons": {
+    "phase14_exact": {
+      "baseline_model_id": "phase14_link_budget_v1_uav_access_mean_path_loss",
+      "baseline_metrics": {
+        "sample_count": 570,
+        "mae_db": 7.18642373728533,
+        "rmse_db": 7.526945430435537,
+        "mean_bias_db": 7.18642373728533,
+        "residual_sd_db": 2.2403184351605994,
+        "residual_quantiles_db": {
+          "p05": 3.372703440481056,
+          "p50": 7.190581971713911,
+          "p95": 10.762083379522984
+        }
+      },
+      "candidate_minus_baseline_mae_db": -5.054077869054905,
+      "paired_group_mae_differences_db": [
+        -3.682476305253337,
+        -6.425679432856472
+      ],
+      "paired_cohen_dz_by_holdout_group": -2.6055472873247645,
+      "paired_mae_difference_ci95_cluster_bootstrap_db": [
+        -6.425679432856472,
+        -3.682476305253337
+      ],
+      "baseline_error_ci95_cluster_bootstrap": {
+        "method": "resample whole environment-height measurement files",
+        "group_count": 2,
+        "replicates": 4000,
+        "seed": 150044,
+        "confidence_level": 0.95,
+        "ci95": {
+          "mae_db": [
+            5.715889383781534,
+            8.110759616630572
+          ],
+          "rmse_db": [
+            5.974149494549968,
+            8.356587752350846
+          ],
+          "mean_bias_db": [
+            5.715889383781534,
+            8.110759616630572
+          ]
+        },
+        "warning": "only two independent holdout groups; percentile intervals are descriptive and have low resolution"
+      }
+    },
+    "frequency_matched_unfitted": {
+      "baseline_model_id": "phase15_free_space_3p6ghz_n2p3_no_offset",
+      "baseline_metrics": {
+        "sample_count": 570,
+        "mae_db": 7.431112865625565,
+        "rmse_db": 7.760905862243283,
+        "mean_bias_db": 7.431112865625565,
+        "residual_sd_db": 2.2403184351605994,
+        "residual_quantiles_db": {
+          "p05": 3.617392568821297,
+          "p50": 7.435271100054145,
+          "p95": 11.006772507863225
+        }
+      },
+      "candidate_minus_baseline_mae_db": -5.298766997395139,
+      "paired_group_mae_differences_db": [
+        -3.9271654335935717,
+        -6.670368561196706
+      ],
+      "paired_cohen_dz_by_holdout_group": -2.731692770457968,
+      "paired_mae_difference_ci95_cluster_bootstrap_db": [
+        -6.670368561196706,
+        -3.9271654335935717
+      ],
+      "baseline_error_ci95_cluster_bootstrap": {
+        "method": "resample whole environment-height measurement files",
+        "group_count": 2,
+        "replicates": 4000,
+        "seed": 150045,
+        "confidence_level": 0.95,
+        "ci95": {
+          "mae_db": [
+            5.960578512121769,
+            8.355448744970808
+          ],
+          "rmse_db": [
+            6.2086686926242844,
+            8.594280716488674
+          ],
+          "mean_bias_db": [
+            5.960578512121769,
+            8.355448744970808
+          ]
+        },
+        "warning": "only two independent holdout groups; percentile intervals are descriptive and have low resolution"
+      }
+    }
+  },
+  "per_holdout_group": {
+    "Over-water_10m": {
+      "sample_count": 220,
+      "candidate": {
+        "sample_count": 220,
+        "mae_db": 2.033413078528197,
+        "rmse_db": 2.576865329916132,
+        "mean_bias_db": -1.9029356775568074,
+        "residual_sd_db": 1.7415098181539705,
+        "residual_quantiles_db": {
+          "p05": -5.199382919212635,
+          "p50": -1.7234263261676972,
+          "p95": 0.5208072927694614
+        }
+      },
+      "comparisons": {
+        "phase14_exact": {
+          "baseline": {
+            "sample_count": 220,
+            "mae_db": 5.715889383781534,
+            "rmse_db": 5.974149494549969,
+            "mean_bias_db": 5.715889383781534,
+            "residual_sd_db": 1.7415098181539705,
+            "residual_quantiles_db": {
+              "p05": 2.4194421421257064,
+              "p50": 5.8953987351706445,
+              "p95": 8.13963235410779
+            }
+          },
+          "candidate_minus_baseline_mae_db": -3.682476305253337
+        },
+        "frequency_matched_unfitted": {
+          "baseline": {
+            "sample_count": 220,
+            "mae_db": 5.960578512121769,
+            "rmse_db": 6.2086686926242844,
+            "mean_bias_db": 5.960578512121769,
+            "residual_sd_db": 1.741509818153971,
+            "residual_quantiles_db": {
+              "p05": 2.664131270465947,
+              "p50": 6.140087863510878,
+              "p95": 8.38432148244803
+            }
+          },
+          "candidate_minus_baseline_mae_db": -3.9271654335935717
+        }
+      }
+    },
+    "Over-water_15m": {
+      "sample_count": 350,
+      "candidate": {
+        "sample_count": 350,
+        "mae_db": 1.6850801837741018,
+        "rmse_db": 2.0712645680031825,
+        "mean_bias_db": 0.49193455529223246,
+        "residual_sd_db": 2.0148787931943124,
+        "residual_quantiles_db": {
+          "p05": -3.043548084098404,
+          "p50": 0.49490302232555905,
+          "p95": 3.474641660355146
+        }
+      },
+      "comparisons": {
+        "phase14_exact": {
+          "baseline": {
+            "sample_count": 350,
+            "mae_db": 8.110759616630574,
+            "rmse_db": 8.356587752350846,
+            "mean_bias_db": 8.110759616630574,
+            "residual_sd_db": 2.0148787931943124,
+            "residual_quantiles_db": {
+              "p05": 4.575276977239944,
+              "p50": 8.1137280836639,
+              "p95": 11.093466721693488
+            }
+          },
+          "candidate_minus_baseline_mae_db": -6.425679432856472
+        },
+        "frequency_matched_unfitted": {
+          "baseline": {
+            "sample_count": 350,
+            "mae_db": 8.355448744970808,
+            "rmse_db": 8.594280716488674,
+            "mean_bias_db": 8.355448744970808,
+            "residual_sd_db": 2.014878793194313,
+            "residual_quantiles_db": {
+              "p05": 4.81996610558017,
+              "p50": 8.358417212004134,
+              "p95": 11.33815585003373
+            }
+          },
+          "candidate_minus_baseline_mae_db": -6.670368561196706
+        }
+      }
+    }
+  },
+  "distance_bins_m": [
+    0,
+    50,
+    100,
+    200,
+    500,
+    null
+  ],
+  "distance_bin_metrics": [
+    {
+      "distance_bin_m": "[0,50)",
+      "sample_count": 0,
+      "metrics": null
+    },
+    {
+      "distance_bin_m": "[50,100)",
+      "sample_count": 419,
+      "metrics": {
+        "sample_count": 419,
+        "mae_db": 1.923596284347721,
+        "rmse_db": 2.394055050160215,
+        "mean_bias_db": -0.6086705613054306,
+        "residual_sd_db": 2.318155546345581,
+        "residual_quantiles_db": {
+          "p05": -4.52173430873071,
+          "p50": -0.64108823112565,
+          "p95": 3.234243879934959
+        }
+      }
+    },
+    {
+      "distance_bin_m": "[100,200)",
+      "sample_count": 151,
+      "metrics": {
+        "sample_count": 151,
+        "mae_db": 1.5307423738771115,
+        "rmse_db": 1.9273240510279992,
+        "mean_bias_db": 0.05671662567390152,
+        "residual_sd_db": 1.9329003156371254,
+        "residual_quantiles_db": {
+          "p05": -2.9282791351772346,
+          "p50": 0.06977833517558452,
+          "p95": 3.0047071466144075
+        }
+      }
+    },
+    {
+      "distance_bin_m": "[200,500)",
+      "sample_count": 0,
+      "metrics": null
+    },
+    {
+      "distance_bin_m": "[500,+inf)",
+      "sample_count": 0,
+      "metrics": null
+    }
+  ],
+  "candidate_error_ci95_cluster_bootstrap": {
+    "method": "resample whole environment-height measurement files",
+    "group_count": 2,
+    "replicates": 4000,
+    "seed": 150043,
+    "confidence_level": 0.95,
+    "ci95": {
+      "mae_db": [
+        1.6850801837741014,
+        2.033413078528197
+      ],
+      "rmse_db": [
+        2.0712645680031825,
+        2.576865329916132
+      ],
+      "mean_bias_db": [
+        -1.9029356775568074,
+        0.49193455529223246
+      ]
+    },
+    "warning": "only two independent holdout groups; percentile intervals are descriptive and have low resolution"
+  },
+  "acceptance": {
+    "measurement_uncertainty_documented": false,
+    "criterion": "Improvement requires a candidate MAE reduction against the exact Phase 14 model with a group-bootstrap 95% interval below zero and an improvement larger than documented measurement uncertainty.",
+    "decision": "NOT_ASSESSABLE_MEASUREMENT_UNCERTAINTY_MISSING",
+    "warning": "only two independent holdout groups; bootstrap intervals are descriptive and cannot establish broad environmental generalization"
+  },
+  "interpretation_scope": "public 3.6 GHz A2G dataset only; not a project-device calibration or city-network validation",
+  "schema_version": "1.0",
+  "phase": "phase15_public_a2g_holdout_validation",
+  "created_at_utc": "2026-10-21T04:18:02.789878+00:00",
+  "partition": "final_environment_holdout_descriptive_evaluation",
+  "dataset_id": "mendeley_8p6r8ft4fz_v2",
+  "dataset_doi": "10.17632/8p6r8ft4fz.2",
+  "dataset_license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "spdx_id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "dataset_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+  "protocol_sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62",
+  "source_bundle_sha256": "4345935a3643d75e15f884ff9bd36965c7112d80198b1ffc07707d3b747a6dad",
+  "fit_groups": [
+    "Sports field_10m",
+    "Sports field_15m",
+    "Farmland_10m",
+    "Farmland_15m"
+  ],
+  "seed": 150043,
+  "measurement_uncertainty_db_missing_count": 1370,
+  "results": "actual public measurement observations; not synthetic test samples"
+}

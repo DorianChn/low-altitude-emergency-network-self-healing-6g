@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase17_hil_environment_inventory",
+  "project_root": "<LOCAL_PATH_REDACTED>\\Desktop\\工作\\low-altitude-emergency-network-self-healing-6g",
+  "equipment_scan": {
+    "status": "COMPLETED",
+    "method": "read-only present Windows PnP names filtered for known measurement devices; serial count only",
+    "matched_devices": [],
+    "serial_port_count": 0,
+    "serial_numbers_recorded": false,
+    "limitation": "This bounded name scan does not detect unrecognized, unenumerated, borrowed, or off-machine hardware."
+  },
+  "phase16_equipment_scan": {
+    "status": "COMPLETED",
+    "method": "present Windows PnP device names filtered for known RF/GNSS instrumentation; serial-port count only",
+    "matched_devices": [],
+    "serial_port_count": 0,
+    "serial_numbers_recorded": false,
+    "limitation": "A name-filtered device scan cannot prove that no unrecognized, unenumerated, borrowed, or off-machine equipment exists."
+  },
+  "device_adapter_status": {
+    "schema_version": "1.0",
+    "hardware_output_enabled": false,
+    "adapters": [
+      {
+        "adapter_id": "phase16_offline_measurement_file_import",
+        "device_type": "measurement_file_import",
+        "status": "IMPLEMENTED_AND_TESTED",
+        "implementation": "CSV/JSON read-only import and audit",
+        "live_device": false
+      },
+      {
+        "adapter_id": "phase17_saved_simulation_replay",
+        "device_type": "offline_file_and_record_replay",
+        "status": "REPLAY_ONLY",
+        "implementation": "offline discrete frame cursor with pause/resume/step",
+        "live_device": false
+      },
+      {
+        "adapter_id": "phase17_software_test_executor",
+        "device_type": "isolated_software_test_executor",
+        "status": "SIMULATED",
+        "implementation": "isolated in-memory executor; test data only",
+        "live_device": false
+      },
+      {
+        "adapter_id": "radio_measurement_driver",
+        "device_type": "radio_measurement_device",
+        "status": "UNAVAILABLE",
+        "implementation": "no verified hardware driver",
+        "live_device": false
+      },
+      {
+        "adapter_id": "wireless_link_state_driver_contract",
+        "device_type": "wireless_link_state_device",
+        "status": "INTERFACE_ONLY",
+        "implementation": "versioned software contract only",
+        "live_device": false
+      },
+      {
+        "adapter_id": "uav_telemetry_driver_contract",
+        "device_type": "uav_telemetry_device",
+        "status": "INTERFACE_ONLY",
+        "implementation": "versioned software contract only",
+        "live_device": false
+      },
+      {
+        "adapter_id": "uav_flight_control_driver",
+        "device_type": "uav_flight_control",
+        "status": "UNAVAILABLE",
+        "implementation": "not implemented; physical commands disabled",
+        "live_device": false
+      },
+      {
+        "adapter_id": "base_station_status_driver_contract",
+        "device_type": "base_station_status_interface",
+        "status": "INTERFACE_ONLY",
+        "implementation": "versioned software contract only",
+        "live_device": false
+      }
+    ],
+    "mode_availability": {
+      "OFFLINE_REPLAY": "AVAILABLE_READ_ONLY",
+      "SOFTWARE_CLOSED_LOOP": "AVAILABLE_SYNTHETIC_TEST_ONLY",
+      "HARDWARE_IN_LOOP": "UNAVAILABLE_NO_VERIFIED_HARDWARE_OR_DRIVER",
+      "LIVE_DEVICE": "UNAVAILABLE_AND_BLOCKED_BY_SAFETY_GATE"
+    }
+  },
+  "project_device_measurements": {
+    "status": "NO_PROJECT_DEVICE_MEASUREMENTS",
+    "file_count": 0,
+    "evidence_scope": "scoped project data/results/configs/docs inventory plus Phase 15 calibration artifacts"
+  },
+  "manuals_and_calibration_certificates": {
+    "status": "NOT_FOUND_IN_SCOPED_PROJECT_INVENTORY",
+    "scope": "project workspace only; does not inspect unrelated user directories"
+  },
+  "authorization_evidence": {
+    "project_authorization_evidence_found": false,
+    "3p5_ghz_emission_status": "NOT_AUTHORIZED_OR_VERIFIED_FOR_THIS_PROJECT",
+    "uav_flight_status": "NOT_AUTHORIZED_OR_VERIFIED_FOR_THIS_PROJECT",
+    "must_be_rechecked_for_actual_site_equipment_frequency_power_and_date": true,
+    "software_does_not_transmit_or_control_aircraft": true
+  },
+  "verified_real_device_count": 0,
+  "verified_serial_port_count": 0,
+  "software_executor_is_hardware": false,
+  "limitations": [
+    "Name-filtered Windows PnP enumeration cannot prove no unrecognized or off-machine equipment exists.",
+    "No project wireless measurement device, UAV telemetry unit, flight controller, or base-station status driver has been verified.",
+    "No software test executor or saved replay is counted as a physical device adapter."
+  ]
+}

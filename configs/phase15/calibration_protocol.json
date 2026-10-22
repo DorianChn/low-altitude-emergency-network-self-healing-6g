@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase15_link_calibration_pipeline",
+  "protocol_status": "frozen_before_measurement_metrics_review",
+  "dataset_id": "mendeley_8p6r8ft4fz_v2",
+  "response": "derived measured path_loss_db from dataset PL appendix",
+  "predictor": "log10 of 3D Tx-Rx distance in meters",
+  "model": "PL(d) = PL0_db_at_1m + 10 * n * log10(d / 1m)",
+  "fit_groups": ["Sports field_10m", "Sports field_15m", "Farmland_10m", "Farmland_15m"],
+  "holdout_groups": ["Over-water_10m", "Over-water_15m"],
+  "split_unit": "entire environment; do not split points within a route",
+  "primary_baseline": {
+    "model_id": "phase14_uav_access_mean_path_loss",
+    "carrier_frequency_hz": 3500000000,
+    "reference_distance_m": 1.0,
+    "path_loss_exponent": 2.3,
+    "shadowing_for_point_prediction_db": 0.0,
+    "obstruction_loss_db": 0.0
+  },
+  "candidate_model_id": "phase15_public_a2g_fit_v1",
+  "bootstrap": {
+    "method": "cluster bootstrap by training measurement group",
+    "replicates": 4000,
+    "seed": 150042
+  },
+  "holdout_bootstrap": {
+    "method": "resample whole holdout environment-height measurement groups; do not resample individual points",
+    "replicates": 4000,
+    "seed": 150043
+  },
+  "metrics": ["mae_db", "rmse_db", "mean_bias_db", "residual_sd_db", "distance_bin_mae_db"],
+  "distance_bins_m": [0, 50, 100, 200, 500, null],
+  "acceptance_rule": "Only claim model improvement if candidate MAE improves over the exact Phase 14 baseline with a cluster-level 95% interval wholly below zero and the improvement exceeds documented measurement uncertainty. If source uncertainty is absent or too few independent holdout groups exist, report descriptive holdout results only.",
+  "holdout_group_count_warning_threshold": 5,
+  "failure_policy": "do not fit if fewer than 3 distinct training groups, less than 1 decade of distance, or no finite path-loss labels",
+  "formal_project_simulation_use": false,
+  "reason_not_applied": "public 3.6 GHz non-urban channel-sounder data do not identify project target-device power, gain, sensitivity, urban obstruction, or receive threshold"
+}

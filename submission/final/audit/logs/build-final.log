@@ -1,0 +1,37 @@
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 634 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                       0.72 kB │ gzip:   0.51 kB
+dist/assets/barlow-condensed-vietnamese-700-normal-DhIzd8Tb.woff      6.09 kB
+dist/assets/barlow-condensed-vietnamese-800-normal-BZxKbt5V.woff      6.18 kB
+dist/assets/barlow-condensed-vietnamese-700-normal-DYeBwlKR.woff2     7.63 kB
+dist/assets/barlow-condensed-vietnamese-800-normal-CpjukuLw.woff2     7.80 kB
+dist/assets/barlow-condensed-latin-ext-800-normal-gY_0Gifi.woff      11.91 kB
+dist/assets/barlow-condensed-latin-ext-700-normal-BIHFfxf0.woff      11.98 kB
+dist/assets/barlow-condensed-latin-ext-800-normal-DGNyg4u8.woff2     14.54 kB
+dist/assets/barlow-condensed-latin-ext-700-normal-CwuXbfVR.woff2     14.64 kB
+dist/assets/barlow-condensed-latin-800-normal-e9GbPXiK.woff          18.72 kB
+dist/assets/barlow-condensed-latin-700-normal-Dmwat-ge.woff          18.82 kB
+dist/assets/schibsted-grotesk-latin-ext-wght-normal-hsMS0n0O.woff2   20.92 kB
+dist/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2         22.44 kB
+dist/assets/barlow-condensed-latin-800-normal-BKzMuPgK.woff2         22.46 kB
+dist/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2       46.75 kB
+dist/assets/mumbai-night-city-18219784390-DP3Z3-tJ.jpg              516.30 kB
+dist/assets/index-CIaHpvO8.css                                      123.71 kB │ gzip:  22.23 kB
+dist/assets/ResearchPage-DxkEKC1a.js                                111.46 kB │ gzip:  30.45 kB
+dist/assets/index-CZqSk4xZ.js                                       416.00 kB │ gzip: 134.14 kB
+dist/assets/EChartsView-u3Hr-HQV.js                                 533.66 kB │ gzip: 180.43 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 361ms
+EXIT_CODE=0

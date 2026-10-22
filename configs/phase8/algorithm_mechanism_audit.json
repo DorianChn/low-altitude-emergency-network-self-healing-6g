@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "audit_basis": "current runtime source and frozen Phase 5 scenario configuration; not inferred from prior reports alone",
+  "source_files": [
+    "src/lowalt6g/dynamic_simulation.py",
+    "src/lowalt6g/optimizer.py",
+    "src/lowalt6g/phase8_experiments.py",
+    "src/lowalt6g/phase8_d_optimizer.py",
+    "configs/phase5/*.toml"
+  ],
+  "common_runtime_constraints": [
+    "per-step UAV speed and city boundary",
+    "healthy-base-station backhaul and relay range",
+    "radio access and link capacity evaluated by the shared network engine",
+    "actual movement, hover, and relay energy charged in Wh",
+    "battery reserve and return-energy protection remain enabled",
+    "infeasible decisions report explicit reasons"
+  ],
+  "strategies": {
+    "B_phase1_static_grid": {
+      "logic": "one full-grid GreedyRelayPolicy search at initial observation; retain the selected target without replanning",
+      "candidate_action": "single destination on configured policy grid; runtime moves toward it subject to shared actuator limits",
+      "prediction_horizon_steps": 0,
+      "replanning": "initial search only",
+      "planning_energy_check": "historical movement-to-target plus estimated return movement and reserve; hover/service sortie is not included in the historical planner estimate",
+      "runtime_safety": "shared simulator still enforces actual speed, battery, backhaul, access, capacity, and city limits",
+      "source": "src/lowalt6g/dynamic_simulation.py::_StaticGridController"
+    },
+    "Bprime_static_grid_shared_safety": {
+      "logic": "same initial GreedyRelayPolicy target as B, with a conservative complete sortie feasibility envelope",
+      "candidate_action": "same configured grid target as B",
+      "prediction_horizon_steps": 0,
+      "replanning": "initial search only",
+      "planning_energy_check": "movement, hover, relay-service horizon, return, and reserve using the shared energy helper",
+      "runtime_safety": "same as B and all strategies",
+      "source": "src/lowalt6g/dynamic_simulation.py::_SafeStaticGridController"
+    },
+    "C_rolling_horizon_mpc": {
+      "logic": "scalar weighted sum of rescue service, total connected users, all-rescue recovery bonus, latency, energy, and geometric progress",
+      "candidate_action": "hold, eight compass directions, and direct headings to feasible rescue-user/healthy-station relay locations; beam width 6",
+      "prediction_horizon_steps": 3,
+      "prediction_horizon_seconds": 30,
+      "replanning": "state-signature changes or 20-second periodic interval; execute first action then observe again",
+      "forecast_assumption": "users, stations, radio state, and demand are frozen across each prediction window",
+      "hard_constraints": "all common runtime constraints plus candidate return-energy check",
+      "source": "src/lowalt6g/optimizer.py::RollingHorizonOptimizer"
+    },
+    "D_lexicographic_rescue_priority": {
+      "logic": "lexicographic rank: rescue user-time service, feasible full recovery and predicted time, target/final rescue service, progress, ordinary service, latency, sortie energy, distance, and switching cost",
+      "candidate_action": "64 coarse-grid points retained after geometric pre-ranking, plus exact relay points, rescue-cluster points, initial B reference point, current point, and last target; route, backhaul, energy, and return feasibility are checked afterward",
+      "prediction_horizon_steps": 3,
+      "prediction_horizon_seconds": 30,
+      "replanning": "state-signature changes or periodic interval clamped to at least 60 seconds; switch suppressed unless rescue tier improves",
+      "initialization": "B grid target is retained as a reference/warm-start target",
+      "forecast_assumption": "users, stations, radio state, and demand are frozen across each prediction window",
+      "hard_constraints": "all common runtime constraints plus full sortie and return-reserve feasibility",
+      "source": "src/lowalt6g/optimizer.py::RescuePriorityOptimizer and src/lowalt6g/phase8_d_optimizer.py::Phase8RescuePriorityOptimizer"
+    }
+  },
+  "phase8_variant_policy": {
+    "formal_B_C_D_unchanged": true,
+    "one_primary_factor_per_variant": true,
+    "variant_names_are_independent": true,
+    "runtime_safety_layer_can_be_disabled": false,
+    "machine_learning_claim": false
+  }
+}

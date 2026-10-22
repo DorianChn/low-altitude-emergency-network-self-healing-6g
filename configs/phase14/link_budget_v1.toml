@@ -1,0 +1,44 @@
+[model]
+version = "link_budget_v1"
+shadowing_model = "static_per_link_per_run"
+
+# Project assumptions for an abstract low-altitude urban simulation.
+# These values are not standard-mandated and are not calibrated to a device.
+[base_access]
+carrier_frequency_mhz = 3500.0
+tx_power_dbm = 46.0
+tx_antenna_gain_dbi = 0.0
+rx_antenna_gain_dbi = 0.0
+other_losses_db = 2.0
+reference_distance_m = 1.0
+path_loss_exponent = 2.8
+rx_sensitivity_dbm = -100.0
+fade_margin_db = 8.0
+shadowing_sigma_db = 4.0
+obstruction_loss_db = 0.0
+
+[uav_access]
+carrier_frequency_mhz = 3500.0
+tx_power_dbm = 27.0
+tx_antenna_gain_dbi = 1.0
+rx_antenna_gain_dbi = 1.0
+other_losses_db = 2.0
+reference_distance_m = 1.0
+path_loss_exponent = 2.3
+rx_sensitivity_dbm = -102.0
+fade_margin_db = 6.0
+shadowing_sigma_db = 4.0
+obstruction_loss_db = 0.0
+
+[backhaul]
+carrier_frequency_mhz = 3500.0
+tx_power_dbm = 30.0
+tx_antenna_gain_dbi = 3.0
+rx_antenna_gain_dbi = 3.0
+other_losses_db = 3.0
+reference_distance_m = 1.0
+path_loss_exponent = 2.3
+rx_sensitivity_dbm = -103.0
+fade_margin_db = 8.0
+shadowing_sigma_db = 4.0
+obstruction_loss_db = 0.0

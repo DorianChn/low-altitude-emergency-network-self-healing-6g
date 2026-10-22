@@ -1,0 +1,76 @@
+base_scenario = "../disaster_scenario.toml"
+
+[experiment]
+seeds = [92400, 92401, 92402, 92403, 92404, 92405, 92406, 92407, 92408, 92409, 92410, 92411, 92412, 92413, 92414, 92415, 92416, 92417, 92418, 92419]
+mobility_axis_max_km_per_tick = 0.005
+
+[phase5]
+hazard_class = "high_load_backhaul_limit"
+development_seeds = []
+validation_seeds = [92400, 92401, 92402, 92403, 92404, 92405, 92406, 92407, 92408, 92409, 92410, 92411, 92412, 92413, 92414, 92415, 92416, 92417, 92418, 92419]
+ground_repair_policy = "no_station_recovery_events"
+
+[network]
+initial_backhaul_capacity_mbps = 40.0
+
+[energy]
+battery_capacity_wh = 600.0
+initial_battery_wh = 600.0
+reserve_wh = 50.0
+movement_wh_per_km = 18.0
+hover_power_w = 80.0
+relay_power_w = 120.0
+
+[optimizer]
+decision_interval_s = 20
+prediction_horizon_steps = 3
+beam_width = 6
+position_signature_quantum_km = 0.05
+congestion_threshold = 0.85
+rescue_service_weight = 10.0
+connection_weight = 3.0
+recovery_bonus = 2.0
+latency_penalty_weight = 1.5
+energy_penalty_weight = 2.0
+rescue_progress_weight = 4.0
+
+[[events]]
+time_s = 100
+type = "traffic_change"
+target_id = "city"
+value = 1.15
+
+[[events]]
+time_s = 180
+type = "traffic_change"
+target_id = "rescue"
+value = 1.8
+
+[[events]]
+time_s = 180
+type = "backhaul_capacity_change"
+target_id = "uav-relay-1"
+value = 24.0
+
+[[events]]
+time_s = 320
+type = "backhaul_capacity_change"
+target_id = "uav-relay-1"
+value = 36.0
+
+[[events]]
+time_s = 480
+type = "traffic_change"
+target_id = "rescue"
+value = 1.0
+
+[[events]]
+time_s = 500
+type = "traffic_change"
+target_id = "city"
+value = 1.0
+
+[phase9]
+stage = "confirmation"
+scenario_id = "high_load_backhaul_limit"
+

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_calibration_acceptance_state",
+  "status": "NOT_CALIBRATED",
+  "reasons": [
+    "Only explicitly identified target-device measurements can support device calibration."
+  ],
+  "input_hashes": {
+    "phase15_holdout": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+    "phase15_summary": "1b221d37a0be0cfddf98e7ec56f95e8012501f2d7888d5ae30c6f19a383698ff",
+    "phase16_uncertainty_budget": "9aaf01004e392f7a2dd1ee45396112b9ee79573e8e864e097ba09b60d2f62414"
+  },
+  "model_version": "phase16_acceptance_state_v1",
+  "state_transitions": [
+    {
+      "from": null,
+      "to": "NOT_CALIBRATED",
+      "reason": "Only explicitly identified target-device measurements can support device calibration.",
+      "input_hashes": {
+        "phase15_holdout": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+        "phase15_summary": "1b221d37a0be0cfddf98e7ec56f95e8012501f2d7888d5ae30c6f19a383698ff",
+        "phase16_uncertainty_budget": "9aaf01004e392f7a2dd1ee45396112b9ee79573e8e864e097ba09b60d2f62414"
+      },
+      "model_version": "phase16_acceptance_state_v1",
+      "timestamp_utc": "2026-10-21T06:36:23.231006+00:00"
+    }
+  ],
+  "state_source": "computed_from_evidence",
+  "public_dataset_candidate": {
+    "pipeline_status": "HOLDOUT_VALIDATED",
+    "holdout_evaluation_status": "EVALUATED",
+    "measurement_acceptance": "NOT_ASSESSABLE_MEASUREMENT_UNCERTAINTY_MISSING",
+    "device_calibration": "NOT_CALIBRATED"
+  }
+}

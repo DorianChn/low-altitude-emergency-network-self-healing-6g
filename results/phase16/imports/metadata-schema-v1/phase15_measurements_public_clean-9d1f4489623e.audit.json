@@ -1,0 +1,54 @@
+{
+  "record_count_before_cleaning": 1370,
+  "record_count_after_cleaning": 1370,
+  "rejected_record_count": 0,
+  "duplicate_record_count": 0,
+  "rejected_records": [],
+  "missing_device_metadata": [
+    "device_model",
+    "calibration_status"
+  ],
+  "required_device_metadata_fields": [
+    "device_model",
+    "calibration_status"
+  ],
+  "device_metadata_complete": false,
+  "session_count": 6,
+  "group_count": 6,
+  "sessions": [
+    "Farmland_10m",
+    "Farmland_15m",
+    "Over-water_10m",
+    "Over-water_15m",
+    "Sports field_10m",
+    "Sports field_15m"
+  ],
+  "schema_version": "1.0",
+  "source_file": "phase15_measurements_public_clean.csv",
+  "source_type": "public_measurement",
+  "source_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+  "source_hash_unchanged_after_read": true,
+  "source_read_only": true,
+  "device_metadata": {
+    "source_type": "public_measurement",
+    "dataset_id": "mendeley_8p6r8ft4fz_v2",
+    "source_dataset_doi": "10.17632/8p6r8ft4fz.2",
+    "source_url": "https://data.mendeley.com/datasets/8p6r8ft4fz/2",
+    "license": "CC-BY-4.0",
+    "carrier_frequency_hz": 3600000000,
+    "bandwidth_hz": 61440000,
+    "measurement_metric": "measured CIR with publisher-derived path_loss_db labels",
+    "device_model": null,
+    "calibration_status": null,
+    "measurement_uncertainty_db": null,
+    "target_project_device": false,
+    "private_coordinates_included": false
+  },
+  "import_status": "PASS",
+  "imported_at_utc": "2026-10-21T06:24:57.787895+00:00",
+  "software_version": "phase16-import-v1",
+  "git_commit": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+  "cleaned_output_path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+  "cleaned_output_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+  "cleaned_rows_are_derived_not_raw": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "issues": [],
+  "seed_count": 80,
+  "policy_run_count": 2000,
+  "expected_policy_run_count": 2000,
+  "battery_reserve_violations": 0,
+  "latency_sample_count_mismatches": 0,
+  "missing_world_trace_hashes": 0,
+  "untimed_environment_events": 0,
+  "phase5_frozen_manifest_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+  "protocol_sha256": "7ba6453a05365c99b6faa64bf2752f0aca4dffcaa757694ba620011b6502534e",
+  "raw_canonical_sha256": "756edbe55bbaccd3e8feaac4d06e6f3667d31483fa37d391bd253ee1a955e5c4"
+}

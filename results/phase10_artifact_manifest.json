@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase10_multi_uav_coordination",
+  "confirmation_seed_count": 80,
+  "confirmation_policy_run_count": 400,
+  "frozen_protocol_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+  "phase10_experiment_source_sha256": "18d7927069d4f41af967445fe2ee603ac0a8ba13157dd11a626605528d25da0f",
+  "protected_phase1_to_phase9_match": true,
+  "artifacts_sha256": {
+    "DEVELOPMENT_LOG_PHASE10.md": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+    "PHASE10_MODEL_DESIGN.md": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+    "PHASE10_REPORT.md": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+    "configs/phase10/multi_uav_plan.json": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+    "configs/phase10/validation_protocol.json": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+    "plots/phase10/confirmation_policy_comparison.png": "3edb449a191729b01fc8e4fc485659bf97910022ef890872674a55dc35d89ebd",
+    "plots/phase10/confirmation_policy_comparison.svg": "c315ddc8065157e1c892da408c2c8aa2c749fbe25fca25082ac86a7829e3629d",
+    "plots/phase10/confirmation_recovery_heatmap.png": "84b404f771bf82633fc77fc4174b85544ec95a8c46522550c104a40b10b9ca8d",
+    "results/phase10_confirmation_event_timeline.json": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+    "results/phase10_confirmation_raw.json": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+    "results/phase10_confirmation_summary.json": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+    "results/phase10_development_raw.json": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+    "results/phase10_development_summary.json": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+    "results/phase10_uav_energy_summary.json": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+    "scripts/plot_phase10_results.py": "4ec37c9e201a4cac2d82481860309bde3219f2c6da1d8be723d0203c55afc21f"
+  }
+}

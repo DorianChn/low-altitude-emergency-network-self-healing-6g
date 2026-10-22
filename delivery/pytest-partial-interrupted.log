@@ -1,0 +1,30 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0 -- D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-�Ľ�����\.runtime\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-�Ľ�����
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 193 items
+
+tests/test_dynamic.py::test_dynamic_trace_and_event_timestamps_are_seed_reproducible PASSED [  0%]
+tests/test_dynamic.py::test_dynamic_events_mutate_station_backhaul_and_load_state PASSED [  1%]
+tests/test_dynamic.py::test_optimizer_diagnoses_failure_and_returns_explained_feasible_action PASSED [  1%]
+tests/test_dynamic.py::test_matched_three_policy_run_respects_speed_and_battery_constraints PASSED [  2%]
+tests/test_dynamic.py::test_seed_replay_contains_actual_timestamped_network_state_for_each_policy PASSED [  2%]
+tests/test_dynamic.py::test_benchmark_rejects_fewer_than_twenty_seeds PASSED [  3%]
+tests/test_dynamic.py::test_unrecovered_run_is_null_and_excluded_from_recovery_time_mean PASSED [  3%]
+tests/test_dynamic.py::test_phase4_strategy_uses_same_seed_and_preserves_runtime_safety PASSED [  4%]
+tests/test_dynamic.py::test_phase4_benchmark_serializes_seed_level_latency_and_confidence_intervals PASSED [  4%]
+tests/test_dynamic.py::test_phase4_chart_accepts_scalar_recovery_rates PASSED [  5%]
+tests/test_dynamic.py::test_wilson_interval_for_binary_recovery_rate PASSED [  5%]
+tests/test_phase10.py::test_fleet_service_is_unique_and_base_capacity_is_shared PASSED [  6%]
+tests/test_phase10.py::test_backhaul_outage_prevents_relay_service PASSED [  6%]
+tests/test_phase10.py::test_joint_search_timeout_retains_safe_targets_with_reason PASSED [  7%]
+tests/test_phase10.py::test_short_fleet_run_keeps_speed_battery_separation_and_capacity_limits PASSED [  7%]
+tests/test_phase11.py::test_phase11_i_assigns_each_user_once_and_obeys_shared_capacity PASSED [  8%]
+tests/test_phase11.py::test_phase11_i_does_not_claim_relay_service_without_backhaul PASSED [  8%]
+tests/test_phase11.py::test_phase11_joint_planners_respect_city_energy_and_separation PASSED [  9%]
+tests/test_phase11.py::test_phase11_reports_no_healthy_endpoint_and_j_timeout_safely PASSED [  9%]
+tests/test_phase11.py::test_phase11_simulation_uses_real_trace_and_emits_recovery_metrics PASSED [ 10%]
+tests/test_phase11.py::test_phase11_seed_partitions_are_disjoint_and_phase10_artifacts_are_intact PASSED [ 10%]

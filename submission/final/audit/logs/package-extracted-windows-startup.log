@@ -1,0 +1,12 @@
+6G / RESCUE Phase 6 local demo
+Python: Python 3.12.14
+Node.js: 22.23.1
+Frontend dependencies: present
+Phase 5 replay fixtures: present
+FastAPI ready on port 55887.
+React frontend ready.
+Demo URL: http://127.0.0.1:59666/demo
+API URL: http://127.0.0.1:55887/api/health
+Press Q or Ctrl+C to stop services started by this script. Reused services will remain running.
+Stopped API service started by this script.
+Stopped frontend service started by this script.

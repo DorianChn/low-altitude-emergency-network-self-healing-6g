@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase12_6g_architecture_mapping",
+  "audit_scope": "read-only audit of historical artifacts and current source mappings; no historical experiment rerun",
+  "created_at_utc": "2026-10-20T15:29:26.154838+00:00",
+  "python_version": "3.12.14",
+  "git": {
+    "branch": "phase12-6g-architecture-mapping",
+    "head": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+    "staged_paths": "",
+    "worktree_changes_preserved": true
+  },
+  "historical_reports": {
+    "expected": [
+      "PHASE1_REPORT.md",
+      "PHASE2_REPORT.md",
+      "PHASE3_REPORT.md",
+      "PHASE4_REPORT.md",
+      "PHASE5_REPORT.md",
+      "PHASE6_REPORT.md",
+      "PHASE7_REPORT.md",
+      "PHASE8_REPORT.md",
+      "PHASE9_REPORT.md",
+      "PHASE10_REPORT.md",
+      "PHASE11_REPORT.md"
+    ],
+    "present": [
+      "PHASE1_REPORT.md",
+      "PHASE2_REPORT.md",
+      "PHASE3_REPORT.md",
+      "PHASE4_REPORT.md",
+      "PHASE5_REPORT.md",
+      "PHASE6_REPORT.md",
+      "PHASE8_REPORT.md",
+      "PHASE9_REPORT.md",
+      "PHASE10_REPORT.md",
+      "PHASE11_REPORT.md"
+    ],
+    "missing": [
+      "PHASE7_REPORT.md"
+    ]
+  },
+  "phase5": {
+    "status": "PASS",
+    "issues": [],
+    "scenario_count": 4,
+    "seed_count": 80,
+    "policy_run_count": 400,
+    "failed_or_not_sustained_count": 147,
+    "frozen_manifest_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5"
+  },
+  "phase8": {
+    "sensitivity_validation": {
+      "status": "PASS",
+      "seed_count": 80,
+      "policy_run_count": 2000,
+      "battery_reserve_violations": 0,
+      "latency_sample_count_mismatches": 0,
+      "issues": []
+    },
+    "replication_postprocess": {
+      "status": "PASS",
+      "seed_rows": 80,
+      "policy_runs": 1360,
+      "per_seed_records_modified": false
+    }
+  },
+  "phase9": {
+    "artifact_manifest": {
+      "label": "Phase 9 artifact manifest",
+      "expected_count": 17,
+      "verified_count": 17,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "protected_historical": {
+      "label": "Phase 5/8 protected references in Phase 9",
+      "expected_count": 15,
+      "verified_count": 15,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    }
+  },
+  "phase10": {
+    "protocol_status": "frozen_before_confirmation",
+    "phase10_artifact_count": 15,
+    "phase10_artifact_hash_mismatches": 0,
+    "phase10_confirmation_seed_rows": 80,
+    "phase10_confirmation_policy_runs": 400,
+    "phase10_matched_trace_mismatches": 0,
+    "phase10_protocol_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+    "phase10_confirmation_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+    "phase10_manifest_sha256": "4942c97e97d4de538c12029854386bb50142c8c800c66f53b8772e033769940a"
+  },
+  "phase11": {
+    "protocol_status": "frozen_before_confirmation",
+    "artifact_manifest": {
+      "label": "Phase 11 artifact manifest",
+      "expected_count": 26,
+      "verified_count": 26,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "confirmation_seed_count": 80,
+    "confirmation_policy_run_count": 880,
+    "matched_trace_mismatches": {},
+    "runtime_violation_totals": {
+      "speed_violation_count": 0,
+      "boundary_violation_count": 0,
+      "separation_violation_count": 0,
+      "resource_capacity_violation_count": 0,
+      "duplicate_user_service_count": 0,
+      "decision_timeout_count": 0
+    },
+    "decision_timeout_count": 0,
+    "historical_validation_record": {
+      "python_pytest_passed": 61,
+      "frontend_unit_passed": 4,
+      "frontend_build": "passed_with_chunk_warning",
+      "playwright_e2e_passed": 9
+    }
+  },
+  "current_architecture_checks": {
+    "module_inventory": {
+      "module_count": 16,
+      "module_path_references_checked": 129,
+      "missing_module_or_evidence_paths": [],
+      "diagram_path_references_checked": 15,
+      "missing_diagram_paths": [],
+      "status": "PASS"
+    },
+    "diagram_exports": {
+      "diagram_count": 2,
+      "complete_export_count": 2,
+      "issues": [],
+      "status": "PASS"
+    },
+    "api_route_presence": {
+      "/api/health": true,
+      "/api/experiments/phase2": true,
+      "/api/experiments/phase5": true,
+      "/api/experiments/phase5/{scenario_id}": true,
+      "/api/replay/{seed}": true,
+      "/api/demo/phase6": true,
+      "/api/demo/phase6/{scenario_id}": true
+    },
+    "frontend_route_presence": {
+      "/": true,
+      "/command": true,
+      "/decision": true,
+      "/lab": true,
+      "/demo": true
+    }
+  },
+  "phase12_artifacts": {
+    "expected_count": 14,
+    "verified_count": 14,
+    "missing": [],
+    "artifacts": {
+      "PHASE12_REPORT.md": {
+        "sha256": "115a59eef12519d5d48f583afea3a511127577658d7164be33973404151ab2e8",
+        "bytes": 8971
+      },
+      "PHASE12_ARCHITECTURE.md": {
+        "sha256": "31ebdc24f6466e65cedb87043a656e2dd5341923248b9deec0a7f3c32df7a1b0",
+        "bytes": 9060
+      },
+      "PHASE12_STANDARDS_MAPPING.md": {
+        "sha256": "83eb7e29392ab4207904ba3400ad5934d6f922fe9ac809a16830cd7354952741",
+        "bytes": 14503
+      },
+      "PHASE12_REQUIREMENT_TRACEABILITY.md": {
+        "sha256": "f0017d5f51c4b613e61a67198491ba3bee75133b6a9a8ba2da9cb840b94e9425",
+        "bytes": 7045
+      },
+      "PHASE12_OFFICIAL_REFERENCES.md": {
+        "sha256": "eb69de239b40be58c982ad074c7b8b793d435b35f10e93ac6cab9358fb11c7ea",
+        "bytes": 6005
+      },
+      "docs/phase12/module_inventory.json": {
+        "sha256": "c7f6745a48630576fbd1471d44a8572a7dd8fb00b3205bc3aef8e61996f0353d",
+        "bytes": 19040
+      },
+      "docs/phase12/system_architecture.mmd": {
+        "sha256": "b221cec10d2de7519e3c34a7677a076fe42eec56c0be3e8137426fd597e7688d",
+        "bytes": 2059
+      },
+      "docs/phase12/system_architecture.svg": {
+        "sha256": "e091c6be726c24aeb40b469c5e3a195864ef30381f3076e5b6fa55aa07f63e28",
+        "bytes": 7147
+      },
+      "docs/phase12/system_architecture.png": {
+        "sha256": "95b9ad1d2c9a9f0207c21f7afb53189667f89f822f1263408ad6a6d2277810bc",
+        "bytes": 269881
+      },
+      "docs/phase12/research_dataflow.mmd": {
+        "sha256": "a7f1a1022db4c0e167506b2b646741e9c8521da8647d5f036718e4b23e1f51f2",
+        "bytes": 1471
+      },
+      "docs/phase12/research_dataflow.svg": {
+        "sha256": "06ced38d66984072a6a0d8562be9f84c21ed765bbf356655b4abbc93721e62a9",
+        "bytes": 10279
+      },
+      "docs/phase12/research_dataflow.png": {
+        "sha256": "3cef9926ecf0a69b9988fdd3e33a44025c3899cf69a8f5427d4f29e388f202d1",
+        "bytes": 162834
+      },
+      "scripts/phase12_audit.py": {
+        "sha256": "1898f0dd0ee4581ee3dcf3a6b198ba82c9d2793e2c28f911231fa039dbebd7c9",
+        "bytes": 13916
+      },
+      "scripts/render_phase12_architecture.py": {
+        "sha256": "3600bf40eae7359a20e31d067f03d07a765067c7de2f094bb71afc1a31fe4aac",
+        "bytes": 17094
+      }
+    },
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

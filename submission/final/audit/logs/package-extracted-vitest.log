@@ -1,0 +1,13 @@
+
+> frontend@0.0.0 test
+> vitest run --config vitest.config.ts
+
+
+ RUN  v5.0.5 <LOCAL_PATH_REDACTED>/AppData/Local/Temp/6g-rescue-phase18-review-extract-t88kx6k0/frontend
+
+
+ Test Files  5 passed (5)
+      Tests  17 passed (17)
+   Start at  21:23:05
+   Duration  2.54s (environment 61%, tests 15%, setup 10%, transform 8%, import 6%)
+

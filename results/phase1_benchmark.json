@@ -1,0 +1,146 @@
+{
+  "configuration": {
+    "city_height_km": 10.0,
+    "city_width_km": 10.0,
+    "drone": {
+      "access_radius_km": 2.6,
+      "backhaul_radius_km": 4.5,
+      "capacity_mbps": 40.0,
+      "id": "uav-relay-1",
+      "speed_km_per_s": 0.015,
+      "x_km": 0.8,
+      "y_km": 0.8
+    },
+    "duration_s": 600,
+    "latency": {
+      "base_latency_ms": 8.0,
+      "congestion_delay_factor_ms": 10.0,
+      "max_queue_delay_ms": 50.0,
+      "propagation_ms_per_km": 3.3,
+      "relay_processing_ms": 4.0
+    },
+    "normal_demand_mbps": 1.5,
+    "normal_priority": 1,
+    "normal_region_km": [
+      0.0,
+      10.0,
+      0.0,
+      10.0
+    ],
+    "normal_user_count": 32,
+    "policy_search_grid_km": 0.25,
+    "rescue_demand_mbps": 4.0,
+    "rescue_priority": 10,
+    "rescue_region_km": [
+      4.8,
+      5.8,
+      4.4,
+      5.6
+    ],
+    "rescue_user_count": 8,
+    "scenario_name": "灾后城区低空应急通信恢复",
+    "seed": 2026,
+    "stations": [
+      {
+        "capacity_mbps": 50.0,
+        "coverage_radius_km": 3.2,
+        "healthy": true,
+        "id": "bs-west",
+        "x_km": 1.0,
+        "y_km": 5.0
+      },
+      {
+        "capacity_mbps": 50.0,
+        "coverage_radius_km": 3.2,
+        "healthy": false,
+        "id": "bs-central",
+        "x_km": 5.0,
+        "y_km": 5.0
+      },
+      {
+        "capacity_mbps": 50.0,
+        "coverage_radius_km": 3.2,
+        "healthy": false,
+        "id": "bs-east",
+        "x_km": 9.0,
+        "y_km": 5.0
+      }
+    ],
+    "time_step_s": 10
+  },
+  "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+  "project_version": "0.1.0",
+  "reproducibility": {
+    "duration_s": 600,
+    "effective_config_sha256": "8f986d8f12e236c4fe2d5af6fc54ef889083c5a22f98e597e7b7490948062516",
+    "seed": 2026,
+    "time_step_s": 10
+  },
+  "rule_based_minus_no_recovery": {
+    "average_communication_latency_ms": 59.161904,
+    "network_coverage_rate": 0.22582,
+    "network_recovery_time_s": null,
+    "rescue_user_service_success_rate": 0.577869,
+    "user_connection_success_rate": 0.158607
+  },
+  "runs": {
+    "no_recovery": {
+      "metrics": {
+        "average_communication_latency_ms": 18.607285,
+        "evaluation_ticks": 61,
+        "final_active_link_count": 10,
+        "final_connection_success_rate": 0.25,
+        "final_coverage_rate": 0.25,
+        "final_rescue_users_connected": 0,
+        "final_rescue_users_total": 8,
+        "latency_sample_count": 610,
+        "network_coverage_rate": 0.25,
+        "network_recovery_time_s": null,
+        "rescue_user_count": 8,
+        "rescue_user_service_success_rate": 0.0,
+        "user_connection_success_rate": 0.25,
+        "user_count": 40
+      },
+      "policy": "no_recovery",
+      "policy_details": {
+        "dispatch_time_s": null,
+        "drone_deployed": 0,
+        "final_drone_x_km": 0.8,
+        "final_drone_y_km": 0.8,
+        "search_grid_km": null,
+        "target_x_km": null,
+        "target_y_km": null
+      }
+    },
+    "rule_based_uav_relay": {
+      "metrics": {
+        "average_communication_latency_ms": 77.769189,
+        "evaluation_ticks": 61,
+        "final_active_link_count": 30,
+        "final_connection_success_rate": 0.5,
+        "final_coverage_rate": 0.7,
+        "final_rescue_users_connected": 8,
+        "final_rescue_users_total": 8,
+        "latency_sample_count": 997,
+        "network_coverage_rate": 0.47582,
+        "network_recovery_time_s": 280,
+        "rescue_user_count": 8,
+        "rescue_user_service_success_rate": 0.577869,
+        "user_connection_success_rate": 0.408607,
+        "user_count": 40
+      },
+      "policy": "rule_based_uav_relay",
+      "policy_details": {
+        "dispatch_time_s": 0,
+        "drone_deployed": 1,
+        "final_drone_x_km": 5.25,
+        "final_drone_y_km": 6.25,
+        "search_grid_km": 0.25,
+        "target_x_km": 5.25,
+        "target_y_km": 6.25
+      }
+    }
+  },
+  "scenario_name": "灾后城区低空应急通信恢复",
+  "schema_version": "1.0"
+}

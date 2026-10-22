@@ -1,0 +1,3053 @@
+{
+  "captured_utc": "2026-10-21T15:57:50.252Z",
+  "origin": "http://127.0.0.1:15197",
+  "cold_samples": 3,
+  "hot_samples": 120,
+  "rows": [
+    {
+      "kind": "cold_navigation",
+      "sample": 1,
+      "status": 200,
+      "ready_ms": 577.32,
+      "api": [
+        {
+          "url": "/api/health",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 244
+        },
+        {
+          "url": "/api/demo/phase6",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 990
+        },
+        {
+          "url": "/api/experiments/phase5",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 21000
+        },
+        {
+          "url": "/api/replay/2026",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 119706
+        },
+        {
+          "url": "/api/experiments/phase2",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 163558
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        }
+      ],
+      "browser": {
+        "jsHeapUsedBytes": 23336483,
+        "jsHeapLimitBytes": 4395630592,
+        "viewport": "1366x900"
+      },
+      "resources": [
+        {
+          "name": "/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "duration_ms": 5,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/index-CZqSk4xZ.js",
+          "duration_ms": 17.5,
+          "transfer_bytes": 133257,
+          "decoded_bytes": 416006
+        },
+        {
+          "name": "/assets/index-CIaHpvO8.css",
+          "duration_ms": 11,
+          "transfer_bytes": 22444,
+          "decoded_bytes": 123712
+        },
+        {
+          "name": "/7D8B79A2-8974-4D7B-A76A-F4F29624C06BeLeOeW0a3_TJueQLxvrl4Qv1mA6yNNqmtXR02mvz1yai7WA6YCkVqQnJB6Grlb6kOutZKpmEqToOiAD4LtXLuQ/init",
+          "duration_ms": 1.9,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/26B254DC-9FA7-4D88-98D7-64F7EA383C6E/DA0CFBB7-47F4-483C-8F59-DCA1619DF18F/to/wsm.sessionActivated",
+          "duration_ms": 0.9,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2",
+          "duration_ms": 30.3,
+          "transfer_bytes": 22744,
+          "decoded_bytes": 22444
+        },
+        {
+          "name": "/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2",
+          "duration_ms": 30.4,
+          "transfer_bytes": 47052,
+          "decoded_bytes": 46752
+        },
+        {
+          "name": "/api/demo/phase6",
+          "duration_ms": 16.7,
+          "transfer_bytes": 1290,
+          "decoded_bytes": 2409
+        },
+        {
+          "name": "/api/experiments/phase5",
+          "duration_ms": 71.6,
+          "transfer_bytes": 21300,
+          "decoded_bytes": 182963
+        },
+        {
+          "name": "/api/health",
+          "duration_ms": 15.9,
+          "transfer_bytes": 544,
+          "decoded_bytes": 244
+        },
+        {
+          "name": "/api/experiments/phase2",
+          "duration_ms": 165.4,
+          "transfer_bytes": 163858,
+          "decoded_bytes": 2434239
+        },
+        {
+          "name": "/api/replay/2026",
+          "duration_ms": 148.3,
+          "transfer_bytes": 120006,
+          "decoded_bytes": 2059118
+        },
+        {
+          "name": "/relay-mark.svg",
+          "duration_ms": 7.8,
+          "transfer_bytes": 974,
+          "decoded_bytes": 674
+        },
+        {
+          "name": "/api/demo/phase6/severe_persistent_faults",
+          "duration_ms": 175.4,
+          "transfer_bytes": 193851,
+          "decoded_bytes": 3610254
+        }
+      ]
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 1,
+      "elapsed_ms": 232.01,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 2,
+      "elapsed_ms": 241.14,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 3,
+      "elapsed_ms": 236.58,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 4,
+      "elapsed_ms": 233.2,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 5,
+      "elapsed_ms": 234.77,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 6,
+      "elapsed_ms": 236.05,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 7,
+      "elapsed_ms": 238.3,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 8,
+      "elapsed_ms": 233.37,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 9,
+      "elapsed_ms": 230.66,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 10,
+      "elapsed_ms": 237.46,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 11,
+      "elapsed_ms": 227.3,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 12,
+      "elapsed_ms": 226.97,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 13,
+      "elapsed_ms": 231.58,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 14,
+      "elapsed_ms": 236.24,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 15,
+      "elapsed_ms": 231.88,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 16,
+      "elapsed_ms": 228.36,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 17,
+      "elapsed_ms": 234.49,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 18,
+      "elapsed_ms": 231.61,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 19,
+      "elapsed_ms": 227.49,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 20,
+      "elapsed_ms": 227.83,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 21,
+      "elapsed_ms": 234.57,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 22,
+      "elapsed_ms": 235.38,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 23,
+      "elapsed_ms": 239.92,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 24,
+      "elapsed_ms": 231.6,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 25,
+      "elapsed_ms": 231,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 26,
+      "elapsed_ms": 242.33,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 27,
+      "elapsed_ms": 231.66,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 28,
+      "elapsed_ms": 232.37,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 29,
+      "elapsed_ms": 240.78,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 30,
+      "elapsed_ms": 235.18,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 31,
+      "elapsed_ms": 228.97,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 32,
+      "elapsed_ms": 237.45,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 33,
+      "elapsed_ms": 227.18,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 34,
+      "elapsed_ms": 227.43,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 35,
+      "elapsed_ms": 229.06,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 36,
+      "elapsed_ms": 234.31,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 37,
+      "elapsed_ms": 226.5,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 38,
+      "elapsed_ms": 230.94,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 39,
+      "elapsed_ms": 236.53,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 40,
+      "elapsed_ms": 224.51,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "cold_navigation",
+      "sample": 2,
+      "status": 200,
+      "ready_ms": 452.56,
+      "api": [
+        {
+          "url": "/api/health",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 244
+        },
+        {
+          "url": "/api/demo/phase6",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 990
+        },
+        {
+          "url": "/api/experiments/phase5",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 21000
+        },
+        {
+          "url": "/api/replay/2026",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 119706
+        },
+        {
+          "url": "/api/experiments/phase2",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 163558
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        }
+      ],
+      "browser": {
+        "jsHeapUsedBytes": 23353187,
+        "jsHeapLimitBytes": 4395630592,
+        "viewport": "1366x900"
+      },
+      "resources": [
+        {
+          "name": "/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "duration_ms": 5,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/index-CIaHpvO8.css",
+          "duration_ms": 10.5,
+          "transfer_bytes": 22444,
+          "decoded_bytes": 123712
+        },
+        {
+          "name": "/assets/index-CZqSk4xZ.js",
+          "duration_ms": 17.3,
+          "transfer_bytes": 133257,
+          "decoded_bytes": 416006
+        },
+        {
+          "name": "/7D8B79A2-8974-4D7B-A76A-F4F29624C06BLLDloQRZ2xNURuEoqJJ4Hk7ouEtalaH_bcLP-CQKE2KO45CwdveNQUw7L6tYBDxgFNsPj1Sb_H9E39s_qlEW5Q/init",
+          "duration_ms": 2.5,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/26B254DC-9FA7-4D88-98D7-64F7EA383C6E/12046979-61C1-4117-8F79-621ED5AE722D/to/wsm.sessionActivated",
+          "duration_ms": 0.8,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2",
+          "duration_ms": 7.7,
+          "transfer_bytes": 47052,
+          "decoded_bytes": 46752
+        },
+        {
+          "name": "/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2",
+          "duration_ms": 22.2,
+          "transfer_bytes": 22744,
+          "decoded_bytes": 22444
+        },
+        {
+          "name": "/api/demo/phase6",
+          "duration_ms": 14.1,
+          "transfer_bytes": 1290,
+          "decoded_bytes": 2409
+        },
+        {
+          "name": "/api/experiments/phase5",
+          "duration_ms": 67.6,
+          "transfer_bytes": 21300,
+          "decoded_bytes": 182963
+        },
+        {
+          "name": "/api/health",
+          "duration_ms": 13.7,
+          "transfer_bytes": 544,
+          "decoded_bytes": 244
+        },
+        {
+          "name": "/api/experiments/phase2",
+          "duration_ms": 164.9,
+          "transfer_bytes": 163858,
+          "decoded_bytes": 2434239
+        },
+        {
+          "name": "/api/replay/2026",
+          "duration_ms": 147.2,
+          "transfer_bytes": 120006,
+          "decoded_bytes": 2059118
+        },
+        {
+          "name": "/relay-mark.svg",
+          "duration_ms": 7.4,
+          "transfer_bytes": 974,
+          "decoded_bytes": 674
+        },
+        {
+          "name": "/api/demo/phase6/severe_persistent_faults",
+          "duration_ms": 180.2,
+          "transfer_bytes": 193851,
+          "decoded_bytes": 3610254
+        }
+      ]
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 1,
+      "elapsed_ms": 228.6,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 2,
+      "elapsed_ms": 235.32,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 3,
+      "elapsed_ms": 234.93,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 4,
+      "elapsed_ms": 233.15,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 5,
+      "elapsed_ms": 238.64,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 6,
+      "elapsed_ms": 234.5,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 7,
+      "elapsed_ms": 231.42,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 8,
+      "elapsed_ms": 238.34,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 9,
+      "elapsed_ms": 231.47,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 10,
+      "elapsed_ms": 230.69,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 11,
+      "elapsed_ms": 235.03,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 12,
+      "elapsed_ms": 230.15,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 13,
+      "elapsed_ms": 225.5,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 14,
+      "elapsed_ms": 236.06,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 15,
+      "elapsed_ms": 223.91,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 16,
+      "elapsed_ms": 224.08,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 17,
+      "elapsed_ms": 233.4,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 18,
+      "elapsed_ms": 229.45,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 19,
+      "elapsed_ms": 229.12,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 20,
+      "elapsed_ms": 234.53,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 21,
+      "elapsed_ms": 229.75,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 22,
+      "elapsed_ms": 233.18,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 23,
+      "elapsed_ms": 238.26,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 24,
+      "elapsed_ms": 230.21,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 25,
+      "elapsed_ms": 231.05,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 26,
+      "elapsed_ms": 242.63,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 27,
+      "elapsed_ms": 228.54,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 28,
+      "elapsed_ms": 231.75,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 29,
+      "elapsed_ms": 231.96,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 30,
+      "elapsed_ms": 234.91,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 31,
+      "elapsed_ms": 241.75,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 32,
+      "elapsed_ms": 229.51,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 33,
+      "elapsed_ms": 227.75,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 34,
+      "elapsed_ms": 244.45,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 35,
+      "elapsed_ms": 227.06,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 36,
+      "elapsed_ms": 228.26,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 37,
+      "elapsed_ms": 233.39,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 38,
+      "elapsed_ms": 227.42,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 39,
+      "elapsed_ms": 227.64,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 40,
+      "elapsed_ms": 234.62,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "cold_navigation",
+      "sample": 3,
+      "status": 200,
+      "ready_ms": 412.01,
+      "api": [
+        {
+          "url": "/api/health",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 244
+        },
+        {
+          "url": "/api/demo/phase6",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 990
+        },
+        {
+          "url": "/api/experiments/phase5",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 21000
+        },
+        {
+          "url": "/api/replay/2026",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 119706
+        },
+        {
+          "url": "/api/experiments/phase2",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 163558
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/dynamic_failures",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 191667
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/high_mobility_rescue",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 195313
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        },
+        {
+          "url": "/api/demo/phase6/high_load_backhaul_limit",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 190927
+        }
+      ],
+      "browser": {
+        "jsHeapUsedBytes": 23376620,
+        "jsHeapLimitBytes": 4395630592,
+        "viewport": "1366x900"
+      },
+      "resources": [
+        {
+          "name": "/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "duration_ms": 4.6,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/index-CIaHpvO8.css",
+          "duration_ms": 10.8,
+          "transfer_bytes": 22444,
+          "decoded_bytes": 123712
+        },
+        {
+          "name": "/assets/index-CZqSk4xZ.js",
+          "duration_ms": 17.6,
+          "transfer_bytes": 133257,
+          "decoded_bytes": 416006
+        },
+        {
+          "name": "/7D8B79A2-8974-4D7B-A76A-F4F29624C06BrCtzdjRCjz1L-RI0ClwmRxiy7Y0PhCP_pxMQi3ed4f0MTsPNqN5LsBVFyTmBl85rwueVRjjVd7ltuGH8NZkvAw/init",
+          "duration_ms": 1.5,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/26B254DC-9FA7-4D88-98D7-64F7EA383C6E/451178C6-336A-4E39-8EF2-62D98B764BAE/to/wsm.sessionActivated",
+          "duration_ms": 1.5,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2",
+          "duration_ms": 7.9,
+          "transfer_bytes": 47052,
+          "decoded_bytes": 46752
+        },
+        {
+          "name": "/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2",
+          "duration_ms": 23.5,
+          "transfer_bytes": 22744,
+          "decoded_bytes": 22444
+        },
+        {
+          "name": "/api/demo/phase6",
+          "duration_ms": 39.7,
+          "transfer_bytes": 1290,
+          "decoded_bytes": 2409
+        },
+        {
+          "name": "/api/experiments/phase5",
+          "duration_ms": 77.3,
+          "transfer_bytes": 21300,
+          "decoded_bytes": 182963
+        },
+        {
+          "name": "/api/health",
+          "duration_ms": 38.7,
+          "transfer_bytes": 544,
+          "decoded_bytes": 244
+        },
+        {
+          "name": "/api/experiments/phase2",
+          "duration_ms": 155.3,
+          "transfer_bytes": 163858,
+          "decoded_bytes": 2434239
+        },
+        {
+          "name": "/api/replay/2026",
+          "duration_ms": 135.1,
+          "transfer_bytes": 120006,
+          "decoded_bytes": 2059118
+        },
+        {
+          "name": "/relay-mark.svg",
+          "duration_ms": 6.3,
+          "transfer_bytes": 974,
+          "decoded_bytes": 674
+        },
+        {
+          "name": "/api/demo/phase6/severe_persistent_faults",
+          "duration_ms": 152.8,
+          "transfer_bytes": 193851,
+          "decoded_bytes": 3610254
+        }
+      ]
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 1,
+      "elapsed_ms": 227.6,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 2,
+      "elapsed_ms": 232.61,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 3,
+      "elapsed_ms": 241.39,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 4,
+      "elapsed_ms": 230.39,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 5,
+      "elapsed_ms": 234.06,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 6,
+      "elapsed_ms": 240.28,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 7,
+      "elapsed_ms": 231.67,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 8,
+      "elapsed_ms": 234.64,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 9,
+      "elapsed_ms": 239.23,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 10,
+      "elapsed_ms": 232.39,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 11,
+      "elapsed_ms": 226.97,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 12,
+      "elapsed_ms": 235.95,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 13,
+      "elapsed_ms": 225.01,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 14,
+      "elapsed_ms": 226.72,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 15,
+      "elapsed_ms": 241.99,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 16,
+      "elapsed_ms": 229.53,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 17,
+      "elapsed_ms": 228.96,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 18,
+      "elapsed_ms": 237.98,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 19,
+      "elapsed_ms": 223.96,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 20,
+      "elapsed_ms": 225.43,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 21,
+      "elapsed_ms": 238.54,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 22,
+      "elapsed_ms": 235.11,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 23,
+      "elapsed_ms": 239.54,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 24,
+      "elapsed_ms": 230.21,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 25,
+      "elapsed_ms": 232,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 26,
+      "elapsed_ms": 240.33,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 27,
+      "elapsed_ms": 230.76,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 28,
+      "elapsed_ms": 230.94,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 29,
+      "elapsed_ms": 237.35,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 30,
+      "elapsed_ms": 230.74,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 31,
+      "elapsed_ms": 226.67,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 32,
+      "elapsed_ms": 234.49,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 33,
+      "elapsed_ms": 225.78,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 34,
+      "elapsed_ms": 227.97,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 35,
+      "elapsed_ms": 236.96,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 36,
+      "elapsed_ms": 225.45,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 37,
+      "elapsed_ms": 225.78,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 38,
+      "elapsed_ms": 237.11,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 39,
+      "elapsed_ms": 227.68,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 40,
+      "elapsed_ms": 226.7,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    }
+  ]
+}

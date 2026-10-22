@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase15_link_calibration_pipeline",
+  "created_at_utc": "2026-10-21T04:18:02.789878+00:00",
+  "pipeline_status": "HOLDOUT_VALIDATED",
+  "public_dataset_candidate_status": "HOLDOUT_VALIDATED",
+  "project_device_calibration_status": "NOT_CALIBRATED",
+  "holdout_acceptance_decision": "NOT_ASSESSABLE_MEASUREMENT_UNCERTAINTY_MISSING",
+  "calibration_status_definition": "HOLDOUT_VALIDATED means a candidate fit and a separately grouped dataset holdout evaluation were actually completed; it does not mean the model passed an accuracy threshold or is calibrated to project hardware.",
+  "dataset": {
+    "dataset_id": "mendeley_8p6r8ft4fz_v2",
+    "title": "Measured A2G Channel Dataset (CIR) in Multiple Scenarios",
+    "doi": "10.17632/8p6r8ft4fz.2",
+    "source_url": "https://data.mendeley.com/datasets/8p6r8ft4fz/2",
+    "license": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "spdx_id": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "source_type": "public_measurement",
+    "cleaned_measurement_count": 1370,
+    "cleaned_measurement_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+    "source_file_count": 14,
+    "frequency_hz": 3600000000,
+    "measurement_environment": [
+      "Sports field",
+      "Farmland",
+      "Over-water"
+    ],
+    "scope_boundary": "public_dataset_domain_only; not calibrated to project hardware or urban disaster scenarios"
+  },
+  "candidate_fit": {
+    "model_id": "phase15_public_a2g_offset_fit_v2",
+    "equation": "PL(d) = FSPL(f,d0) + 10*n_fixed*log10(max(d,d0)/d0) + delta_PL_dataset",
+    "reference_distance_m": 1.0,
+    "carrier_frequency_mhz": 3600.0,
+    "free_space_pl0_db": 43.573833237229124,
+    "dataset_offset_db": -7.863514189678577,
+    "pl0_db_at_reference_distance": 35.71031904755055,
+    "path_loss_exponent": 2.3,
+    "path_loss_exponent_status": "fixed_phase14_project_assumption_not_estimated_from_measurements",
+    "estimated_parameter_count": 1,
+    "estimated_parameters": [
+      "dataset_offset_db"
+    ],
+    "training_sample_count": 800,
+    "training_group_count": 4,
+    "training_groups": [
+      "Sports field_10m",
+      "Sports field_15m",
+      "Farmland_10m",
+      "Farmland_15m"
+    ],
+    "distance_range_m": [
+      32.60068122787051,
+      109.34892835343621
+    ],
+    "distance_span_decades": 0.5255878559670812,
+    "training_mean_bias_db": 0.07226939992532476,
+    "training_mae_db": 1.8521297343049519,
+    "training_rmse_db": 2.393602343532294,
+    "training_residual_sd_db": 2.3940078121329127,
+    "training_residual_quantiles_db": {
+      "p05": -4.111667897877168,
+      "p50": 0.2959689603804776,
+      "p95": 3.449416842658168
+    },
+    "per_training_group": {
+      "Sports field_10m": {
+        "sample_count": 110,
+        "fitted_offset_db_before_equal_group_average": -7.596244254463953,
+        "mean_bias_db": -0.26726993521462017,
+        "mae_db": 2.8550134735150583,
+        "rmse_db": 3.5774871202244762
+      },
+      "Sports field_15m": {
+        "sample_count": 90,
+        "fitted_offset_db_before_equal_group_average": -7.919253540518008,
+        "mean_bias_db": 0.0557393508394319,
+        "mae_db": 2.4663650614995056,
+        "rmse_db": 2.9241824374583345
+      },
+      "Farmland_10m": {
+        "sample_count": 230,
+        "fitted_offset_db_before_equal_group_average": -7.835425939539319,
+        "mean_bias_db": -0.028088250139256903,
+        "mae_db": 1.4807727334737735,
+        "rmse_db": 1.9618899246956336
+      },
+      "Farmland_15m": {
+        "sample_count": 370,
+        "fitted_offset_db_before_equal_group_average": -8.10313302419303,
+        "mean_bias_db": 0.2396188345144547,
+        "mae_db": 1.6354100570902206,
+        "rmse_db": 2.0273745181138434
+      }
+    },
+    "parameter_uncertainty": {
+      "method": "percentile cluster bootstrap over whole training measurement groups",
+      "replicates_requested": 4000,
+      "replicates_valid": 4000,
+      "seed": 150042,
+      "confidence_level": 0.95,
+      "ci95": {
+        "dataset_offset_db": [
+          -8.036206253029603,
+          -7.676996575977466
+        ],
+        "pl0_db_at_reference_distance": [
+          35.53762698419952,
+          35.896836661251655
+        ]
+      },
+      "limitation": "four training groups provide few independent clusters; the interval does not include unreported measurement uncertainty"
+    },
+    "identifiability": {
+      "dataset_specific_offset": "estimated from published derived path-loss labels with equal weight per training group",
+      "path_loss_exponent": "not estimated because the training distance range is only about half a decade and is confounded with environment/altitude groups; kept fixed at the Phase 14 assumption",
+      "transmit_power_dbm": "not identifiable from these labels and metadata",
+      "antenna_gains_dbi": "not identifiable from these labels and metadata",
+      "receiver_sensitivity_dbm": "not identifiable; no receiver failure threshold labels",
+      "shadowing_sigma_db": "not separately identifiable; residual spread combines environment, measurement and model error",
+      "obstruction_loss_db": "not separately identifiable from these grouped environments"
+    }
+  },
+  "baselines": {
+    "phase14_exact": {
+      "model_id": "phase14_link_budget_v1_uav_access_mean_path_loss",
+      "carrier_frequency_hz": 3500000000.0,
+      "reference_distance_m": 1.0,
+      "pl0_db_at_reference_distance": 43.32914410888889,
+      "path_loss_exponent": 2.3,
+      "prediction_scope": "deterministic mean PL; zero-mean shadow term and no obstruction term for point prediction",
+      "source_config": "configs/phase14/link_budget_v1.toml",
+      "source_config_sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9"
+    },
+    "frequency_matched_unfitted": {
+      "model_id": "phase15_free_space_3p6ghz_n2p3_no_offset",
+      "carrier_frequency_hz": 3600000000.0,
+      "reference_distance_m": 1.0,
+      "pl0_db_at_reference_distance": 43.573833237229124,
+      "path_loss_exponent": 2.3,
+      "prediction_scope": "unfitted frequency-matched deterministic mean PL; zero dataset offset",
+      "source": "frozen Phase 15 protocol v2"
+    }
+  },
+  "holdout_validation_path": "results/phase15_holdout_validation.json",
+  "protocol_path": "configs/phase15/calibration_protocol_v2.json",
+  "protocol_sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62",
+  "source_bundle_sha256": "4345935a3643d75e15f884ff9bd36965c7112d80198b1ffc07707d3b747a6dad",
+  "target_device_calibration_limit": "No local radio instrument or project-device measurement was found. Public measurements do not supply project-equivalent Tx power, antenna gains, receiver sensitivity, per-sample uncertainty, urban obstruction, or SINR/BLER labels.",
+  "formal_network_simulation": {
+    "executed": false,
+    "reason": "measurement domain is non-urban 3.6 GHz and does not identify a project-equivalent absolute link budget; candidate parameters are not inserted into Phase 14 or formal project simulations"
+  }
+}

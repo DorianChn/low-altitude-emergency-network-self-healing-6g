@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lowalt6g.invalid/schemas/command-v1.json",
+  "title": "Phase 17 control command audit contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "command_id", "target_device_id", "action", "parameters", "source", "request_time", "test_mode", "experiment_id", "simulation_step", "authorization_reference"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "command_id": { "type": "string", "minLength": 1 },
+    "target_device_id": { "type": "string", "minLength": 1 },
+    "action": { "type": "string", "minLength": 1 },
+    "parameters": { "type": "object" },
+    "source": { "enum": ["automatic", "manual", "emergency_stop"] },
+    "request_time": { "$ref": "#/$defs/clock_stamp" },
+    "test_mode": { "enum": ["OFFLINE_REPLAY", "SOFTWARE_CLOSED_LOOP", "HARDWARE_IN_LOOP", "LIVE_DEVICE"] },
+    "experiment_id": { "type": "string", "minLength": 1 },
+    "simulation_step": { "type": "integer", "minimum": 0 },
+    "authorization_reference": { "type": ["string", "null"] }
+  },
+  "$defs": {
+    "clock_stamp": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "domain", "precision_ms"],
+      "properties": {
+        "value": { "type": "number" },
+        "domain": { "enum": ["device_raw", "receiver_wall_clock", "simulation_time", "replay_time", "wall_clock_utc"] },
+        "precision_ms": { "type": ["number", "null"], "minimum": 0 },
+        "offset_to_receiver_ms": { "type": ["number", "null"] },
+        "utc_iso": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

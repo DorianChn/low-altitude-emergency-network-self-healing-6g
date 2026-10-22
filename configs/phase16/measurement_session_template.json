@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "template_only": true,
+  "experiment_id": null,
+  "measurement_batch_id": null,
+  "operator_id": null,
+  "acquisition_mode": null,
+  "frequency": { "value": null, "unit": "MHz" },
+  "bandwidth": { "value": null, "unit": "MHz" },
+  "transmitter": { "equipment_id": null, "model": null, "serial_number_private": null, "tx_power_dbm": null },
+  "receiver": { "equipment_id": null, "model": null, "serial_number_private": null, "measurement_metric": null },
+  "antennas": {
+    "transmit_model": null,
+    "receive_model": null,
+    "tx_gain_dbi": null,
+    "rx_gain_dbi": null,
+    "pattern_certificate_reference": null,
+    "feedline_loss_db": null
+  },
+  "measurement_points": [],
+  "route_or_site_id": null,
+  "environment": { "scenario": null, "weather": null, "obstruction": null, "temperature_c": null },
+  "calibration": { "status": null, "certificate_reference": null, "valid_from": null, "valid_until": null },
+  "time_sync": { "source": null, "estimated_uncertainty_ms": null },
+  "authorization": { "status": null, "evidence_reference": null },
+  "uses_uav": false,
+  "flight_authorization": { "status": null, "evidence_reference": null },
+  "data_storage_path": null,
+  "privacy": { "raw_coordinates_storage": "restricted_local_only", "export_reviewed": false }
+}

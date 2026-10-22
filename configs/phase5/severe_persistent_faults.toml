@@ -1,0 +1,32 @@
+base_scenario = "../disaster_scenario.toml"
+
+[experiment]
+seeds = [7000, 7001, 7002, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012, 7013, 7014, 7015, 7016, 7017, 7018, 7019]
+mobility_axis_max_km_per_tick = 0.005
+
+[phase5]
+hazard_class = "severe_persistent_faults"
+development_seeds = [6500, 6501, 6502, 6503, 6504]
+validation_seeds = [7000, 7001, 7002, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012, 7013, 7014, 7015, 7016, 7017, 7018, 7019]
+ground_repair_policy = "no_station_recovery_events"
+
+[energy]
+battery_capacity_wh = 600.0
+initial_battery_wh = 600.0
+reserve_wh = 50.0
+movement_wh_per_km = 18.0
+hover_power_w = 80.0
+relay_power_w = 120.0
+
+[optimizer]
+decision_interval_s = 20
+prediction_horizon_steps = 3
+beam_width = 6
+position_signature_quantum_km = 0.05
+congestion_threshold = 0.85
+rescue_service_weight = 10.0
+connection_weight = 3.0
+recovery_bonus = 2.0
+latency_penalty_weight = 1.5
+energy_penalty_weight = 2.0
+rescue_progress_weight = 4.0

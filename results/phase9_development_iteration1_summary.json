@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.0",
+  "phase": "development",
+  "experiment_role": "exploratory_development_not_confirmatory",
+  "status": "complete",
+  "seed_count": 20,
+  "seed_ids": [
+    92000,
+    92001,
+    92002,
+    92003,
+    92004,
+    92005,
+    92006,
+    92007,
+    92008,
+    92009,
+    92010,
+    92011,
+    92012,
+    92013,
+    92014,
+    92015,
+    92016,
+    92017,
+    92018,
+    92019
+  ],
+  "variant_summaries": {
+    "E_cooldown_0s": {
+      "metrics": {
+        "rescue_user_service_success_rate": {
+          "n": 20,
+          "mean": 0.101844,
+          "sample_sd": 0.098756,
+          "median": 0.088115,
+          "min": 0.0,
+          "max": 0.352459,
+          "mean_ci95_t": [
+            0.055626,
+            0.148063
+          ],
+          "ci95_wilson": null
+        },
+        "network_recovery_success": {
+          "n": 20,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "ci95_wilson": [
+            0.0,
+            0.161125
+          ]
+        },
+        "sustained_rescue_recovery_success": {
+          "n": 20,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "ci95_wilson": [
+            0.0,
+            0.161125
+          ]
+        },
+        "network_recovery_or_censoring_time_s": {
+          "n": 20,
+          "mean": 600.0,
+          "sample_sd": 0.0,
+          "median": 600.0,
+          "min": 600.0,
+          "max": 600.0,
+          "mean_ci95_t": [
+            600.0,
+            600.0
+          ],
+          "ci95_wilson": null
+        },
+        "algorithm_decision_total_ms": {
+          "n": 20,
+          "mean": 512.424745,
+          "sample_sd": 131.814645,
+          "median": 458.3993,
+          "min": 411.1226,
+          "max": 890.8772,
+          "mean_ci95_t": [
+            450.734301,
+            574.115189
+          ],
+          "ci95_wilson": null
+        },
+        "algorithm_decision_count": {
+          "n": 20,
+          "mean": 9.05,
+          "sample_sd": 1.669384,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 13.0,
+          "mean_ci95_t": [
+            8.268713,
+            9.831287
+          ],
+          "ci95_wilson": null
+        },
+        "event_triggered_decision_count": {
+          "n": 20,
+          "mean": 9.05,
+          "sample_sd": 1.669384,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 13.0,
+          "mean_ci95_t": [
+            8.268713,
+            9.831287
+          ],
+          "ci95_wilson": null
+        },
+        "event_suppressed_count": {
+          "n": 20,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "ci95_wilson": [
+            0.0,
+            0.161125
+          ]
+        },
+        "drone_energy_consumed_wh": {
+          "n": 20,
+          "mean": 43.403333,
+          "sample_sd": 7.708295,
+          "median": 43.488889,
+          "min": 26.011111,
+          "max": 57.955556,
+          "mean_ci95_t": [
+            39.795781,
+            47.010885
+          ],
+          "ci95_wilson": null
+        }
+      }
+    },
+    "E_cooldown_20s": {
+      "metrics": {
+        "rescue_user_service_success_rate": {
+          "n": 20,
+          "mean": 0.101844,
+          "sample_sd": 0.098756,
+          "median": 0.088115,
+          "min": 0.0,
+          "max": 0.352459,
+          "mean_ci95_t": [
+            0.055626,
+            0.148063
+          ],
+          "ci95_wilson": null
+        },
+        "network_recovery_success": {
+          "n": 20,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "ci95_wilson": [
+            0.0,
+            0.161125
+          ]
+        },
+        "sustained_rescue_recovery_success": {
+          "n": 20,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "ci95_wilson": [
+            0.0,
+            0.161125
+          ]
+        },
+        "network_recovery_or_censoring_time_s": {
+          "n": 20,
+          "mean": 600.0,
+          "sample_sd": 0.0,
+          "median": 600.0,
+          "min": 600.0,
+          "max": 600.0,
+          "mean_ci95_t": [
+            600.0,
+            600.0
+          ],
+          "ci95_wilson": null
+        },
+        "algorithm_decision_total_ms": {
+          "n": 20,
+          "mean": 495.17859,
+          "sample_sd": 96.605995,
+          "median": 464.165,
+          "min": 380.7743,
+          "max": 729.0086,
+          "mean_ci95_t": [
+            449.966112,
+            540.391068
+          ],
+          "ci95_wilson": null
+        },
+        "algorithm_decision_count": {
+          "n": 20,
+          "mean": 8.8,
+          "sample_sd": 1.281447,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 12.0,
+          "mean_ci95_t": [
+            8.200271,
+            9.399729
+          ],
+          "ci95_wilson": null
+        },
+        "event_triggered_decision_count": {
+          "n": 20,
+          "mean": 8.8,
+          "sample_sd": 1.281447,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 12.0,
+          "mean_ci95_t": [
+            8.200271,
+            9.399729
+          ],
+          "ci95_wilson": null
+        },
+        "event_suppressed_count": {
+          "n": 20,
+          "mean": 0.25,
+          "sample_sd": 0.55012,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 2.0,
+          "mean_ci95_t": [
+            -0.007461,
+            0.507461
+          ],
+          "ci95_wilson": null
+        },
+        "drone_energy_consumed_wh": {
+          "n": 20,
+          "mean": 42.696667,
+          "sample_sd": 6.854807,
+          "median": 43.488889,
+          "min": 26.011111,
+          "max": 54.622222,
+          "mean_ci95_t": [
+            39.488555,
+            45.904778
+          ],
+          "ci95_wilson": null
+        }
+      }
+    },
+    "E_cooldown_40s": {
+      "metrics": {
+        "rescue_user_service_success_rate": {
+          "n": 20,
+          "mean": 0.101844,
+          "sample_sd": 0.098756,
+          "median": 0.088115,
+          "min": 0.0,
+          "max": 0.352459,
+          "mean_ci95_t": [
+            0.055626,
+            0.148063
+          ],
+          "ci95_wilson": null
+        },
+        "network_recovery_success": {
+          "n": 20,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "ci95_wilson": [
+            0.0,
+            0.161125
+          ]
+        },
+        "sustained_rescue_recovery_success": {
+          "n": 20,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "mean_ci95_t": [
+            0.0,
+            0.0
+          ],
+          "ci95_wilson": [
+            0.0,
+            0.161125
+          ]
+        },
+        "network_recovery_or_censoring_time_s": {
+          "n": 20,
+          "mean": 600.0,
+          "sample_sd": 0.0,
+          "median": 600.0,
+          "min": 600.0,
+          "max": 600.0,
+          "mean_ci95_t": [
+            600.0,
+            600.0
+          ],
+          "ci95_wilson": null
+        },
+        "algorithm_decision_total_ms": {
+          "n": 20,
+          "mean": 483.00976,
+          "sample_sd": 87.820347,
+          "median": 460.4963,
+          "min": 381.9246,
+          "max": 666.0003,
+          "mean_ci95_t": [
+            441.909045,
+            524.110475
+          ],
+          "ci95_wilson": null
+        },
+        "algorithm_decision_count": {
+          "n": 20,
+          "mean": 8.65,
+          "sample_sd": 1.182103,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 12.0,
+          "mean_ci95_t": [
+            8.096765,
+            9.203235
+          ],
+          "ci95_wilson": null
+        },
+        "event_triggered_decision_count": {
+          "n": 20,
+          "mean": 8.65,
+          "sample_sd": 1.182103,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 12.0,
+          "mean_ci95_t": [
+            8.096765,
+            9.203235
+          ],
+          "ci95_wilson": null
+        },
+        "event_suppressed_count": {
+          "n": 20,
+          "mean": 0.4,
+          "sample_sd": 0.598243,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 2.0,
+          "mean_ci95_t": [
+            0.120017,
+            0.679983
+          ],
+          "ci95_wilson": null
+        },
+        "drone_energy_consumed_wh": {
+          "n": 20,
+          "mean": 43.101667,
+          "sample_sd": 6.541217,
+          "median": 45.172222,
+          "min": 26.011111,
+          "max": 54.622222,
+          "mean_ci95_t": [
+            40.040318,
+            46.163015
+          ],
+          "ci95_wilson": null
+        }
+      }
+    }
+  },
+  "selection_rule": "Lexicographic maximum of mean rescue-service rate, sustained-30-second success, full-recovery success, negative recovery-or-censoring time, negative decision compute and negative decision count; ties prefer 20 s.",
+  "development_selected_cooldown_s": 40,
+  "selection_scores": {
+    "E_cooldown_0s": [
+      0.101844,
+      0.0,
+      0.0,
+      -600.0,
+      -512.424745,
+      -9.05,
+      -20
+    ],
+    "E_cooldown_20s": [
+      0.101844,
+      0.0,
+      0.0,
+      -600.0,
+      -495.17859,
+      -8.8,
+      0
+    ],
+    "E_cooldown_40s": [
+      0.101844,
+      0.0,
+      0.0,
+      -600.0,
+      -483.00976,
+      -8.65,
+      -20
+    ]
+  },
+  "confirmatory_inference": false
+}

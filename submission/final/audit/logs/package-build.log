@@ -1,0 +1,10 @@
+cwd=<LOCAL_PATH_REDACTED>\AppData\Local\Temp\lowalt6g-phase18-stage-06fea4b90320433dbbfb16922a446589\frontend
+command=npm run build
+started_utc=2026-10-21T12:54:06.0840584Z
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+error TS5083: Cannot read file '<LOCAL_PATH_REDACTED>/AppData/Local/Temp/lowalt6g-phase18-stage-06fea4b90320433dbbfb16922a446589/frontend/tsconfig.json'.
+exit_code=1
+ended_utc=2026-10-21T12:54:06.8412338Z

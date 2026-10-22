@@ -1,0 +1,59 @@
+scenario_name = "灾后城区动态故障恢复"
+
+[simulation]
+city_width_km = 10.0
+city_height_km = 10.0
+duration_s = 600
+time_step_s = 10
+seed = 2026
+normal_user_count = 32
+rescue_user_count = 8
+normal_priority = 1
+rescue_priority = 10
+normal_region_km = [0.0, 10.0, 0.0, 10.0]
+rescue_region_km = [8.0, 9.0, 4.2, 5.8]
+normal_demand_mbps = 1.5
+rescue_demand_mbps = 4.0
+
+[latency]
+base_latency_ms = 8.0
+propagation_ms_per_km = 3.3
+relay_processing_ms = 4.0
+congestion_delay_factor_ms = 10.0
+max_queue_delay_ms = 50.0
+
+[policy]
+search_grid_km = 0.25
+
+[drone]
+id = "uav-relay-1"
+x_km = 0.8
+y_km = 0.8
+access_radius_km = 2.6
+backhaul_radius_km = 4.5
+capacity_mbps = 40.0
+speed_km_per_s = 0.015
+
+[[stations]]
+id = "bs-west"
+x_km = 1.0
+y_km = 5.0
+coverage_radius_km = 3.2
+capacity_mbps = 50.0
+healthy = true
+
+[[stations]]
+id = "bs-central"
+x_km = 5.0
+y_km = 5.0
+coverage_radius_km = 3.2
+capacity_mbps = 50.0
+healthy = true
+
+[[stations]]
+id = "bs-east"
+x_km = 9.0
+y_km = 5.0
+coverage_radius_km = 3.2
+capacity_mbps = 50.0
+healthy = false

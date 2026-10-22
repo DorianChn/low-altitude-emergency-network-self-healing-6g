@@ -1,0 +1,1712 @@
+{
+  "captured_utc": "2026-10-21T16:21:18.913Z",
+  "origin": "http://127.0.0.1:15197",
+  "cold_samples": 3,
+  "hot_samples": 120,
+  "rows": [
+    {
+      "kind": "cold_navigation",
+      "sample": 1,
+      "status": 200,
+      "ready_ms": 559.26,
+      "api": [
+        {
+          "url": "/api/demo/phase6",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 990
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        }
+      ],
+      "browser": {
+        "jsHeapUsedBytes": 13318298,
+        "jsHeapLimitBytes": 4395630592,
+        "viewport": "1366x900",
+        "playwrightNodeRssBytes": 125546496
+      },
+      "resources": [
+        {
+          "name": "/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "duration_ms": 5.3,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/index-DlZLaNB1.js",
+          "duration_ms": 49.6,
+          "transfer_bytes": 135199,
+          "decoded_bytes": 422840
+        },
+        {
+          "name": "/assets/index-CbkGKpjT.css",
+          "duration_ms": 19.3,
+          "transfer_bytes": 22796,
+          "decoded_bytes": 125104
+        },
+        {
+          "name": "/7D8B79A2-8974-4D7B-A76A-F4F29624C06BWMthy3HX8TOtY_s5RS1mm42HZ0FE3nZ8HKz8ZfIPY2dMslcjFvF0YsYXkksRET9-zjZEypkq62Ugv5JOVY-GGA/init",
+          "duration_ms": 1.7,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/26B254DC-9FA7-4D88-98D7-64F7EA383C6E/B224D5DD-567D-43B0-8EBE-F942688A5BA1/to/wsm.sessionActivated",
+          "duration_ms": 0.7,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2",
+          "duration_ms": 31.9,
+          "transfer_bytes": 22744,
+          "decoded_bytes": 22444
+        },
+        {
+          "name": "/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2",
+          "duration_ms": 31.6,
+          "transfer_bytes": 47052,
+          "decoded_bytes": 46752
+        },
+        {
+          "name": "/api/demo/phase6",
+          "duration_ms": 12.9,
+          "transfer_bytes": 1290,
+          "decoded_bytes": 2409
+        },
+        {
+          "name": "/relay-mark.svg",
+          "duration_ms": 9.3,
+          "transfer_bytes": 974,
+          "decoded_bytes": 674
+        },
+        {
+          "name": "/api/demo/phase6/severe_persistent_faults",
+          "duration_ms": 118.1,
+          "transfer_bytes": 193851,
+          "decoded_bytes": 3610254
+        }
+      ]
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 1,
+      "elapsed_ms": 239.39,
+      "api_resource_duration_ms": 110.5,
+      "post_response_parse_and_render_ms": 128.89,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 2,
+      "elapsed_ms": 238.35,
+      "api_resource_duration_ms": 110,
+      "post_response_parse_and_render_ms": 128.35,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 3,
+      "elapsed_ms": 235.63,
+      "api_resource_duration_ms": 109.8,
+      "post_response_parse_and_render_ms": 125.83,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 4,
+      "elapsed_ms": 232.51,
+      "api_resource_duration_ms": 107.5,
+      "post_response_parse_and_render_ms": 125.01,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 5,
+      "elapsed_ms": 241.77,
+      "api_resource_duration_ms": 109.5,
+      "post_response_parse_and_render_ms": 132.27,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 6,
+      "elapsed_ms": 239.56,
+      "api_resource_duration_ms": 113.5,
+      "post_response_parse_and_render_ms": 126.06,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 7,
+      "elapsed_ms": 244.48,
+      "api_resource_duration_ms": 116.7,
+      "post_response_parse_and_render_ms": 127.78,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 8,
+      "elapsed_ms": 241.52,
+      "api_resource_duration_ms": 112.1,
+      "post_response_parse_and_render_ms": 129.42,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 9,
+      "elapsed_ms": 238.53,
+      "api_resource_duration_ms": 109.6,
+      "post_response_parse_and_render_ms": 128.93,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 10,
+      "elapsed_ms": 236.97,
+      "api_resource_duration_ms": 109.4,
+      "post_response_parse_and_render_ms": 127.57,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 11,
+      "elapsed_ms": 228.24,
+      "api_resource_duration_ms": 105.1,
+      "post_response_parse_and_render_ms": 123.14,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 12,
+      "elapsed_ms": 233.97,
+      "api_resource_duration_ms": 106.9,
+      "post_response_parse_and_render_ms": 127.07,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 13,
+      "elapsed_ms": 229.57,
+      "api_resource_duration_ms": 106,
+      "post_response_parse_and_render_ms": 123.57,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 14,
+      "elapsed_ms": 229.51,
+      "api_resource_duration_ms": 106.8,
+      "post_response_parse_and_render_ms": 122.71,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 15,
+      "elapsed_ms": 220.87,
+      "api_resource_duration_ms": 104.2,
+      "post_response_parse_and_render_ms": 116.67,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 16,
+      "elapsed_ms": 234.55,
+      "api_resource_duration_ms": 104.9,
+      "post_response_parse_and_render_ms": 129.65,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 17,
+      "elapsed_ms": 230.9,
+      "api_resource_duration_ms": 106.6,
+      "post_response_parse_and_render_ms": 124.3,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 18,
+      "elapsed_ms": 231.2,
+      "api_resource_duration_ms": 106.2,
+      "post_response_parse_and_render_ms": 125,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 19,
+      "elapsed_ms": 237.36,
+      "api_resource_duration_ms": 112.5,
+      "post_response_parse_and_render_ms": 124.86,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 20,
+      "elapsed_ms": 241.8,
+      "api_resource_duration_ms": 105.3,
+      "post_response_parse_and_render_ms": 136.5,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 21,
+      "elapsed_ms": 233.29,
+      "api_resource_duration_ms": 108,
+      "post_response_parse_and_render_ms": 125.29,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 22,
+      "elapsed_ms": 233.03,
+      "api_resource_duration_ms": 107.7,
+      "post_response_parse_and_render_ms": 125.33,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 23,
+      "elapsed_ms": 237.4,
+      "api_resource_duration_ms": 110.7,
+      "post_response_parse_and_render_ms": 126.7,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 24,
+      "elapsed_ms": 243.47,
+      "api_resource_duration_ms": 107.7,
+      "post_response_parse_and_render_ms": 135.77,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 25,
+      "elapsed_ms": 233,
+      "api_resource_duration_ms": 108.4,
+      "post_response_parse_and_render_ms": 124.6,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 26,
+      "elapsed_ms": 230.06,
+      "api_resource_duration_ms": 109.3,
+      "post_response_parse_and_render_ms": 120.76,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 27,
+      "elapsed_ms": 244.74,
+      "api_resource_duration_ms": 109.2,
+      "post_response_parse_and_render_ms": 135.54,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 28,
+      "elapsed_ms": 236.06,
+      "api_resource_duration_ms": 107.4,
+      "post_response_parse_and_render_ms": 128.66,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 29,
+      "elapsed_ms": 235.13,
+      "api_resource_duration_ms": 112.2,
+      "post_response_parse_and_render_ms": 122.93,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 30,
+      "elapsed_ms": 242.06,
+      "api_resource_duration_ms": 107.8,
+      "post_response_parse_and_render_ms": 134.26,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 31,
+      "elapsed_ms": 233.68,
+      "api_resource_duration_ms": 106.2,
+      "post_response_parse_and_render_ms": 127.48,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 32,
+      "elapsed_ms": 229.4,
+      "api_resource_duration_ms": 104.7,
+      "post_response_parse_and_render_ms": 124.7,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 33,
+      "elapsed_ms": 237.12,
+      "api_resource_duration_ms": 104.7,
+      "post_response_parse_and_render_ms": 132.42,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 34,
+      "elapsed_ms": 230.64,
+      "api_resource_duration_ms": 105.8,
+      "post_response_parse_and_render_ms": 124.84,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 35,
+      "elapsed_ms": 233.32,
+      "api_resource_duration_ms": 104.2,
+      "post_response_parse_and_render_ms": 129.12,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 36,
+      "elapsed_ms": 231.12,
+      "api_resource_duration_ms": 108,
+      "post_response_parse_and_render_ms": 123.12,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 37,
+      "elapsed_ms": 241.81,
+      "api_resource_duration_ms": 107.3,
+      "post_response_parse_and_render_ms": 134.51,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 38,
+      "elapsed_ms": 230.67,
+      "api_resource_duration_ms": 105.8,
+      "post_response_parse_and_render_ms": 124.87,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 39,
+      "elapsed_ms": 235.06,
+      "api_resource_duration_ms": 106.7,
+      "post_response_parse_and_render_ms": 128.36,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 40,
+      "elapsed_ms": 237.64,
+      "api_resource_duration_ms": 105.6,
+      "post_response_parse_and_render_ms": 132.04,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "cold_navigation",
+      "sample": 2,
+      "status": 200,
+      "ready_ms": 356.79,
+      "api": [
+        {
+          "url": "/api/demo/phase6",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 990
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        }
+      ],
+      "browser": {
+        "jsHeapUsedBytes": 13330560,
+        "jsHeapLimitBytes": 4395630592,
+        "viewport": "1366x900",
+        "playwrightNodeRssBytes": 268754944
+      },
+      "resources": [
+        {
+          "name": "/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "duration_ms": 5.3,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/index-CbkGKpjT.css",
+          "duration_ms": 12,
+          "transfer_bytes": 22796,
+          "decoded_bytes": 125104
+        },
+        {
+          "name": "/assets/index-DlZLaNB1.js",
+          "duration_ms": 19.6,
+          "transfer_bytes": 135199,
+          "decoded_bytes": 422840
+        },
+        {
+          "name": "/7D8B79A2-8974-4D7B-A76A-F4F29624C06BGkqhFILYf7GYiAKNkriKyGaJojWf6Qvf7lxRXVlYDKmui5eFU6Pz2cI6qvJOtgE1AKAJAIjAFskymhzSfxtl3A/init",
+          "duration_ms": 2,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/26B254DC-9FA7-4D88-98D7-64F7EA383C6E/0B9ED683-F77E-4F83-B4FC-359A57540091/to/wsm.sessionActivated",
+          "duration_ms": 1.1,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2",
+          "duration_ms": 7.5,
+          "transfer_bytes": 47052,
+          "decoded_bytes": 46752
+        },
+        {
+          "name": "/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2",
+          "duration_ms": 22.1,
+          "transfer_bytes": 22744,
+          "decoded_bytes": 22444
+        },
+        {
+          "name": "/api/demo/phase6",
+          "duration_ms": 8.8,
+          "transfer_bytes": 1290,
+          "decoded_bytes": 2409
+        },
+        {
+          "name": "/relay-mark.svg",
+          "duration_ms": 5.7,
+          "transfer_bytes": 974,
+          "decoded_bytes": 674
+        },
+        {
+          "name": "/api/demo/phase6/severe_persistent_faults",
+          "duration_ms": 113.8,
+          "transfer_bytes": 193851,
+          "decoded_bytes": 3610254
+        }
+      ]
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 1,
+      "elapsed_ms": 232.97,
+      "api_resource_duration_ms": 106.6,
+      "post_response_parse_and_render_ms": 126.37,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 2,
+      "elapsed_ms": 233.88,
+      "api_resource_duration_ms": 109,
+      "post_response_parse_and_render_ms": 124.88,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 3,
+      "elapsed_ms": 240.57,
+      "api_resource_duration_ms": 107.8,
+      "post_response_parse_and_render_ms": 132.77,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 4,
+      "elapsed_ms": 232.49,
+      "api_resource_duration_ms": 107.4,
+      "post_response_parse_and_render_ms": 125.09,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 5,
+      "elapsed_ms": 231.94,
+      "api_resource_duration_ms": 107,
+      "post_response_parse_and_render_ms": 124.94,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 6,
+      "elapsed_ms": 239.45,
+      "api_resource_duration_ms": 106.3,
+      "post_response_parse_and_render_ms": 133.15,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 7,
+      "elapsed_ms": 231.28,
+      "api_resource_duration_ms": 106.5,
+      "post_response_parse_and_render_ms": 124.78,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 8,
+      "elapsed_ms": 235.69,
+      "api_resource_duration_ms": 108.6,
+      "post_response_parse_and_render_ms": 127.09,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 9,
+      "elapsed_ms": 242.15,
+      "api_resource_duration_ms": 107,
+      "post_response_parse_and_render_ms": 135.15,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 10,
+      "elapsed_ms": 241.48,
+      "api_resource_duration_ms": 114.1,
+      "post_response_parse_and_render_ms": 127.38,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 11,
+      "elapsed_ms": 235.75,
+      "api_resource_duration_ms": 106.4,
+      "post_response_parse_and_render_ms": 129.35,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 12,
+      "elapsed_ms": 226.48,
+      "api_resource_duration_ms": 103.7,
+      "post_response_parse_and_render_ms": 122.78,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 13,
+      "elapsed_ms": 226.84,
+      "api_resource_duration_ms": 104.2,
+      "post_response_parse_and_render_ms": 122.64,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 14,
+      "elapsed_ms": 235.66,
+      "api_resource_duration_ms": 103.5,
+      "post_response_parse_and_render_ms": 132.16,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 15,
+      "elapsed_ms": 228.14,
+      "api_resource_duration_ms": 106.6,
+      "post_response_parse_and_render_ms": 121.54,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 16,
+      "elapsed_ms": 230.81,
+      "api_resource_duration_ms": 104.5,
+      "post_response_parse_and_render_ms": 126.31,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 17,
+      "elapsed_ms": 235.66,
+      "api_resource_duration_ms": 103.8,
+      "post_response_parse_and_render_ms": 131.86,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 18,
+      "elapsed_ms": 229.55,
+      "api_resource_duration_ms": 107.7,
+      "post_response_parse_and_render_ms": 121.85,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 19,
+      "elapsed_ms": 231.51,
+      "api_resource_duration_ms": 107.6,
+      "post_response_parse_and_render_ms": 123.91,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 20,
+      "elapsed_ms": 238.24,
+      "api_resource_duration_ms": 103.6,
+      "post_response_parse_and_render_ms": 134.64,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 21,
+      "elapsed_ms": 234.35,
+      "api_resource_duration_ms": 111.1,
+      "post_response_parse_and_render_ms": 123.25,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 22,
+      "elapsed_ms": 231.83,
+      "api_resource_duration_ms": 106.9,
+      "post_response_parse_and_render_ms": 124.93,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 23,
+      "elapsed_ms": 238.72,
+      "api_resource_duration_ms": 106.5,
+      "post_response_parse_and_render_ms": 132.22,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 24,
+      "elapsed_ms": 232.06,
+      "api_resource_duration_ms": 108.6,
+      "post_response_parse_and_render_ms": 123.46,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 25,
+      "elapsed_ms": 233.99,
+      "api_resource_duration_ms": 108,
+      "post_response_parse_and_render_ms": 125.99,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 26,
+      "elapsed_ms": 240.53,
+      "api_resource_duration_ms": 108.3,
+      "post_response_parse_and_render_ms": 132.23,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 27,
+      "elapsed_ms": 240.09,
+      "api_resource_duration_ms": 107.4,
+      "post_response_parse_and_render_ms": 132.69,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 28,
+      "elapsed_ms": 231.34,
+      "api_resource_duration_ms": 107.3,
+      "post_response_parse_and_render_ms": 124.04,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 29,
+      "elapsed_ms": 234.63,
+      "api_resource_duration_ms": 107.1,
+      "post_response_parse_and_render_ms": 127.53,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 30,
+      "elapsed_ms": 243.25,
+      "api_resource_duration_ms": 108.3,
+      "post_response_parse_and_render_ms": 134.95,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 31,
+      "elapsed_ms": 226.49,
+      "api_resource_duration_ms": 104.4,
+      "post_response_parse_and_render_ms": 122.09,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 32,
+      "elapsed_ms": 482.16,
+      "api_resource_duration_ms": 363.8,
+      "post_response_parse_and_render_ms": 118.36,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 33,
+      "elapsed_ms": 238.95,
+      "api_resource_duration_ms": 105.7,
+      "post_response_parse_and_render_ms": 133.25,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 34,
+      "elapsed_ms": 231.49,
+      "api_resource_duration_ms": 107.4,
+      "post_response_parse_and_render_ms": 124.09,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 35,
+      "elapsed_ms": 226.76,
+      "api_resource_duration_ms": 103.4,
+      "post_response_parse_and_render_ms": 123.36,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 36,
+      "elapsed_ms": 237.56,
+      "api_resource_duration_ms": 106.4,
+      "post_response_parse_and_render_ms": 131.16,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 37,
+      "elapsed_ms": 230.07,
+      "api_resource_duration_ms": 107.5,
+      "post_response_parse_and_render_ms": 122.57,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 38,
+      "elapsed_ms": 231.24,
+      "api_resource_duration_ms": 107.1,
+      "post_response_parse_and_render_ms": 124.14,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 39,
+      "elapsed_ms": 235.25,
+      "api_resource_duration_ms": 104.3,
+      "post_response_parse_and_render_ms": 130.95,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 40,
+      "elapsed_ms": 227.35,
+      "api_resource_duration_ms": 104.7,
+      "post_response_parse_and_render_ms": 122.65,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "cold_navigation",
+      "sample": 3,
+      "status": 200,
+      "ready_ms": 363.19,
+      "api": [
+        {
+          "url": "/api/demo/phase6",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 990
+        },
+        {
+          "url": "/api/demo/phase6/severe_persistent_faults",
+          "status": 200,
+          "duration_ms": null,
+          "bytes": 193551
+        }
+      ],
+      "browser": {
+        "jsHeapUsedBytes": 13329398,
+        "jsHeapLimitBytes": 4395630592,
+        "viewport": "1366x900",
+        "playwrightNodeRssBytes": 331837440
+      },
+      "resources": [
+        {
+          "name": "/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "duration_ms": 5.1,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/index-CbkGKpjT.css",
+          "duration_ms": 12.2,
+          "transfer_bytes": 22796,
+          "decoded_bytes": 125104
+        },
+        {
+          "name": "/assets/index-DlZLaNB1.js",
+          "duration_ms": 21,
+          "transfer_bytes": 135199,
+          "decoded_bytes": 422840
+        },
+        {
+          "name": "/7D8B79A2-8974-4D7B-A76A-F4F29624C06BMcvBfa8hiqXK4yWbDVmMk4FuTHH9NLZQRNVZCLsQZwHdMrmTM4O4frSgRddwo_n_m6O0uPbtD9lh9rLfD1G_qQ/init",
+          "duration_ms": 1.9,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/26B254DC-9FA7-4D88-98D7-64F7EA383C6E/FE4A5E71-E7A5-4F68-8990-BE7B99D908FA/to/wsm.sessionActivated",
+          "duration_ms": 0.8,
+          "transfer_bytes": 0,
+          "decoded_bytes": 0
+        },
+        {
+          "name": "/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2",
+          "duration_ms": 7.4,
+          "transfer_bytes": 47052,
+          "decoded_bytes": 46752
+        },
+        {
+          "name": "/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2",
+          "duration_ms": 22.9,
+          "transfer_bytes": 22744,
+          "decoded_bytes": 22444
+        },
+        {
+          "name": "/api/demo/phase6",
+          "duration_ms": 8.4,
+          "transfer_bytes": 1290,
+          "decoded_bytes": 2409
+        },
+        {
+          "name": "/relay-mark.svg",
+          "duration_ms": 5.3,
+          "transfer_bytes": 974,
+          "decoded_bytes": 674
+        },
+        {
+          "name": "/api/demo/phase6/severe_persistent_faults",
+          "duration_ms": 116.1,
+          "transfer_bytes": 193851,
+          "decoded_bytes": 3610254
+        }
+      ]
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 1,
+      "elapsed_ms": 234.62,
+      "api_resource_duration_ms": 108.6,
+      "post_response_parse_and_render_ms": 126.02,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 2,
+      "elapsed_ms": 247.55,
+      "api_resource_duration_ms": 109.7,
+      "post_response_parse_and_render_ms": 137.85,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 3,
+      "elapsed_ms": 236.14,
+      "api_resource_duration_ms": 108.5,
+      "post_response_parse_and_render_ms": 127.64,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 4,
+      "elapsed_ms": 245.28,
+      "api_resource_duration_ms": 108.6,
+      "post_response_parse_and_render_ms": 136.68,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 5,
+      "elapsed_ms": 239.65,
+      "api_resource_duration_ms": 106.8,
+      "post_response_parse_and_render_ms": 132.85,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 6,
+      "elapsed_ms": 241.49,
+      "api_resource_duration_ms": 107.2,
+      "post_response_parse_and_render_ms": 134.29,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 7,
+      "elapsed_ms": 238.61,
+      "api_resource_duration_ms": 114.1,
+      "post_response_parse_and_render_ms": 124.51,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 8,
+      "elapsed_ms": 241.2,
+      "api_resource_duration_ms": 107,
+      "post_response_parse_and_render_ms": 134.2,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 9,
+      "elapsed_ms": 235.98,
+      "api_resource_duration_ms": 109.1,
+      "post_response_parse_and_render_ms": 126.88,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "severe_persistent_faults",
+      "label": "严重持续故障",
+      "repetition": 10,
+      "elapsed_ms": 242.85,
+      "api_resource_duration_ms": 109.7,
+      "post_response_parse_and_render_ms": 133.15,
+      "api_status": 200,
+      "response_bytes": 193551,
+      "seed": 7000
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 11,
+      "elapsed_ms": 225.26,
+      "api_resource_duration_ms": 103.9,
+      "post_response_parse_and_render_ms": 121.36,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 12,
+      "elapsed_ms": 227.05,
+      "api_resource_duration_ms": 103.4,
+      "post_response_parse_and_render_ms": 123.65,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 13,
+      "elapsed_ms": 231.68,
+      "api_resource_duration_ms": 105.2,
+      "post_response_parse_and_render_ms": 126.48,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 14,
+      "elapsed_ms": 239.9,
+      "api_resource_duration_ms": 107.1,
+      "post_response_parse_and_render_ms": 132.8,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 15,
+      "elapsed_ms": 226.93,
+      "api_resource_duration_ms": 104.1,
+      "post_response_parse_and_render_ms": 122.83,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 16,
+      "elapsed_ms": 230.51,
+      "api_resource_duration_ms": 104.3,
+      "post_response_parse_and_render_ms": 126.21,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 17,
+      "elapsed_ms": 233.44,
+      "api_resource_duration_ms": 103.4,
+      "post_response_parse_and_render_ms": 130.04,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 18,
+      "elapsed_ms": 227.14,
+      "api_resource_duration_ms": 103.7,
+      "post_response_parse_and_render_ms": 123.44,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 19,
+      "elapsed_ms": 230.04,
+      "api_resource_duration_ms": 104.6,
+      "post_response_parse_and_render_ms": 125.44,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "dynamic_failures",
+      "label": "动态故障",
+      "repetition": 20,
+      "elapsed_ms": 231.9,
+      "api_resource_duration_ms": 102.9,
+      "post_response_parse_and_render_ms": 129,
+      "api_status": 200,
+      "response_bytes": 191667,
+      "seed": 7020
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 21,
+      "elapsed_ms": 232.01,
+      "api_resource_duration_ms": 107.9,
+      "post_response_parse_and_render_ms": 124.11,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 22,
+      "elapsed_ms": 236.65,
+      "api_resource_duration_ms": 108.5,
+      "post_response_parse_and_render_ms": 128.15,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 23,
+      "elapsed_ms": 232.76,
+      "api_resource_duration_ms": 108.9,
+      "post_response_parse_and_render_ms": 123.86,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 24,
+      "elapsed_ms": 234.53,
+      "api_resource_duration_ms": 107.4,
+      "post_response_parse_and_render_ms": 127.13,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 25,
+      "elapsed_ms": 229.98,
+      "api_resource_duration_ms": 107.1,
+      "post_response_parse_and_render_ms": 122.88,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 26,
+      "elapsed_ms": 232.95,
+      "api_resource_duration_ms": 107.2,
+      "post_response_parse_and_render_ms": 125.75,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 27,
+      "elapsed_ms": 242.15,
+      "api_resource_duration_ms": 109.1,
+      "post_response_parse_and_render_ms": 133.05,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 28,
+      "elapsed_ms": 236.33,
+      "api_resource_duration_ms": 106.4,
+      "post_response_parse_and_render_ms": 129.93,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 29,
+      "elapsed_ms": 231.8,
+      "api_resource_duration_ms": 107.3,
+      "post_response_parse_and_render_ms": 124.5,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_mobility_rescue",
+      "label": "高移动救援",
+      "repetition": 30,
+      "elapsed_ms": 239.54,
+      "api_resource_duration_ms": 106.8,
+      "post_response_parse_and_render_ms": 132.74,
+      "api_status": 200,
+      "response_bytes": 195313,
+      "seed": 7040
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 31,
+      "elapsed_ms": 227.18,
+      "api_resource_duration_ms": 101.7,
+      "post_response_parse_and_render_ms": 125.48,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 32,
+      "elapsed_ms": 227.77,
+      "api_resource_duration_ms": 104.1,
+      "post_response_parse_and_render_ms": 123.67,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 33,
+      "elapsed_ms": 238.58,
+      "api_resource_duration_ms": 107.8,
+      "post_response_parse_and_render_ms": 130.78,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 34,
+      "elapsed_ms": 221.82,
+      "api_resource_duration_ms": 102.7,
+      "post_response_parse_and_render_ms": 119.12,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 35,
+      "elapsed_ms": 229.38,
+      "api_resource_duration_ms": 103.6,
+      "post_response_parse_and_render_ms": 125.78,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 36,
+      "elapsed_ms": 242.55,
+      "api_resource_duration_ms": 107.7,
+      "post_response_parse_and_render_ms": 134.85,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 37,
+      "elapsed_ms": 231.57,
+      "api_resource_duration_ms": 107,
+      "post_response_parse_and_render_ms": 124.57,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 38,
+      "elapsed_ms": 235.19,
+      "api_resource_duration_ms": 103.1,
+      "post_response_parse_and_render_ms": 132.09,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 39,
+      "elapsed_ms": 235.5,
+      "api_resource_duration_ms": 108.5,
+      "post_response_parse_and_render_ms": 127,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    },
+    {
+      "kind": "hot_scene_switch",
+      "scenario": "high_load_backhaul_limit",
+      "label": "高负载 / 回传受限",
+      "repetition": 40,
+      "elapsed_ms": 225.76,
+      "api_resource_duration_ms": 105.1,
+      "post_response_parse_and_render_ms": 120.66,
+      "api_status": 200,
+      "response_bytes": 190927,
+      "seed": 7060
+    }
+  ]
+}

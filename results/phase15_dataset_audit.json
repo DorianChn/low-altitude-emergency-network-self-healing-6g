@@ -1,0 +1,488 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase15_dataset_quality_audit",
+  "created_at_utc": "2026-10-21T04:17:44.673768+00:00",
+  "dataset_id": "mendeley_8p6r8ft4fz_v2",
+  "dataset_title": "Measured A2G Channel Dataset (CIR) in Multiple Scenarios",
+  "dataset_doi": "10.17632/8p6r8ft4fz.2",
+  "source_url": "https://data.mendeley.com/datasets/8p6r8ft4fz/2",
+  "source_type": "public_measurement",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "spdx_id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "status": "PASS",
+  "measurement_scope": {
+    "source_type": "public_measurement",
+    "carrier_frequency_hz": 3600000000,
+    "bandwidth_hz": 61440000,
+    "scenarios": [
+      "Sports field",
+      "Farmland",
+      "Over-water"
+    ],
+    "uav_altitude_agl_m": [
+      10,
+      15
+    ],
+    "link_direction": "air_to_ground",
+    "measurement_artifacts": [
+      "measured CIR in XLSX",
+      "derived path loss in MAT v5"
+    ],
+    "target_applicability": "public_dataset_domain_only; not calibrated to project hardware or urban disaster scenarios"
+  },
+  "source_file_integrity": {
+    "manifest_file_count": 14,
+    "verified_file_count": 14,
+    "files": [
+      {
+        "filename": "README!.txt",
+        "file_id": "16aa9b28-f820-4df9-b7a1-e7e6b76bb9f2",
+        "role": "dataset_readme",
+        "size_bytes": 1898,
+        "sha256": "062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2",
+        "verified": true
+      },
+      {
+        "filename": "guidemanual.pdf",
+        "file_id": "b4e85fb2-8705-477f-af2c-6f86dbb18c46",
+        "role": "measurement_protocol",
+        "size_bytes": 680251,
+        "sha256": "36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3",
+        "verified": true
+      },
+      {
+        "filename": "Farmland_10.xlsx",
+        "file_id": "6ca6a962-f497-476c-a879-d58d49592b38",
+        "role": "raw_measured_cir",
+        "size_bytes": 302061,
+        "sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+        "verified": true
+      },
+      {
+        "filename": "Farmland_15.xlsx",
+        "file_id": "6bfea7e2-adeb-40f1-9b30-078099d5c0cf",
+        "role": "raw_measured_cir",
+        "size_bytes": 443749,
+        "sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+        "verified": true
+      },
+      {
+        "filename": "OverWater_10.xlsx",
+        "file_id": "d465e46e-0ef0-4e74-94b9-c72ea6a3a413",
+        "role": "raw_measured_cir",
+        "size_bytes": 233836,
+        "sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+        "verified": true
+      },
+      {
+        "filename": "OverWater_15.xlsx",
+        "file_id": "30567b5f-6482-4230-912e-a6c17071b009",
+        "role": "raw_measured_cir",
+        "size_bytes": 394136,
+        "sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+        "verified": true
+      },
+      {
+        "filename": "SportsField_10.xlsx",
+        "file_id": "7a181f11-ef12-4c8f-a9aa-e9b9e5ab9c7d",
+        "role": "raw_measured_cir",
+        "size_bytes": 135129,
+        "sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+        "verified": true
+      },
+      {
+        "filename": "SportsField_15.xlsx",
+        "file_id": "01b9d7cb-c980-46d6-85bb-826971b90d2b",
+        "role": "raw_measured_cir",
+        "size_bytes": 110564,
+        "sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+        "verified": true
+      },
+      {
+        "filename": "Farmland_PL10.mat",
+        "file_id": "8d9bd9ec-9b37-4303-9353-b12d6aa4d9af",
+        "role": "derived_path_loss",
+        "size_bytes": 3614,
+        "sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd",
+        "verified": true
+      },
+      {
+        "filename": "Farmland_PL15.mat",
+        "file_id": "696b14ba-79a7-4f24-9e80-649448fab740",
+        "role": "derived_path_loss",
+        "size_bytes": 5698,
+        "sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4",
+        "verified": true
+      },
+      {
+        "filename": "OverWater_PL10.mat",
+        "file_id": "5ec56e62-0b32-4195-a236-aa0fb41a7359",
+        "role": "derived_path_loss",
+        "size_bytes": 3516,
+        "sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a",
+        "verified": true
+      },
+      {
+        "filename": "OverWater_PL15.mat",
+        "file_id": "b23cd950-a0b0-4203-b709-d88608360f15",
+        "role": "derived_path_loss",
+        "size_bytes": 5441,
+        "sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20",
+        "verified": true
+      },
+      {
+        "filename": "SportsField_PL10.mat",
+        "file_id": "4fb22b00-2c88-4d08-85fe-27e4356bd37e",
+        "role": "derived_path_loss",
+        "size_bytes": 1890,
+        "sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9",
+        "verified": true
+      },
+      {
+        "filename": "SportsField_PL15.mat",
+        "file_id": "c5dd9906-b94f-41bd-b02a-9dffe591c191",
+        "role": "derived_path_loss",
+        "size_bytes": 1594,
+        "sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89",
+        "verified": true
+      }
+    ]
+  },
+  "raw_measurement_layout": {
+    "raw_measurement_session_count": 6,
+    "raw_cir_row_count": 1370,
+    "derived_path_loss_row_count": 1370,
+    "sessions": [
+      {
+        "session_id": "Farmland_10m",
+        "scenario": "Farmland",
+        "nominal_uav_altitude_m": 10,
+        "source_receiver_height_m": 2.5,
+        "sample_count": 230,
+        "raw_cir_tap_counts": [
+          200
+        ],
+        "raw_cir_nonfinite_tap_count": 0,
+        "frequency_hz_values": [
+          3600000000.0
+        ],
+        "sample_rate_hz_values": [
+          61440000.0
+        ],
+        "path_loss_distance_m_range": [
+          32.60068122787051,
+          46.00762592041155
+        ],
+        "path_loss_db_range": [
+          66.83781373674015,
+          79.56184135694687
+        ],
+        "geometry_distance_delta_m": {
+          "max": 0.07278998879770171,
+          "median": 0.05624233244905952,
+          "over_5m_count": 0
+        },
+        "raw_cir_file_sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+        "derived_path_loss_file": "Farmland_PL10.mat",
+        "derived_path_loss_file_sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd"
+      },
+      {
+        "session_id": "Farmland_15m",
+        "scenario": "Farmland",
+        "nominal_uav_altitude_m": 15,
+        "source_receiver_height_m": 2.5,
+        "sample_count": 370,
+        "raw_cir_tap_counts": [
+          200
+        ],
+        "raw_cir_nonfinite_tap_count": 0,
+        "frequency_hz_values": [
+          3600000000.0
+        ],
+        "sample_rate_hz_values": [
+          61440000.0
+        ],
+        "path_loss_distance_m_range": [
+          39.98921541263566,
+          53.111273294022
+        ],
+        "path_loss_db_range": [
+          68.51430393681892,
+          80.95598057904428
+        ],
+        "geometry_distance_delta_m": {
+          "max": 2.907549604450189,
+          "median": 1.8469201710080085,
+          "over_5m_count": 0
+        },
+        "raw_cir_file_sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+        "derived_path_loss_file": "Farmland_PL15.mat",
+        "derived_path_loss_file_sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4"
+      },
+      {
+        "session_id": "Over-water_10m",
+        "scenario": "Over-water",
+        "nominal_uav_altitude_m": 10,
+        "source_receiver_height_m": 2.5,
+        "sample_count": 220,
+        "raw_cir_tap_counts": [
+          200
+        ],
+        "raw_cir_nonfinite_tap_count": 0,
+        "frequency_hz_values": [
+          3600000000.0
+        ],
+        "sample_rate_hz_values": [
+          61440000.0
+        ],
+        "path_loss_distance_m_range": [
+          51.709476124732,
+          126.29822541224074
+        ],
+        "path_loss_db_range": [
+          74.1439029851169,
+          87.89367208313371
+        ],
+        "geometry_distance_delta_m": {
+          "max": 0.2045297409830198,
+          "median": 0.1273469985958826,
+          "over_5m_count": 0
+        },
+        "raw_cir_file_sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+        "derived_path_loss_file": "OverWater_PL10.mat",
+        "derived_path_loss_file_sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a"
+      },
+      {
+        "session_id": "Over-water_15m",
+        "scenario": "Over-water",
+        "nominal_uav_altitude_m": 15,
+        "source_receiver_height_m": 2.5,
+        "sample_count": 350,
+        "raw_cir_tap_counts": [
+          200
+        ],
+        "raw_cir_nonfinite_tap_count": 0,
+        "frequency_hz_values": [
+          3600000000.0
+        ],
+        "sample_rate_hz_values": [
+          61440000.0
+        ],
+        "path_loss_distance_m_range": [
+          52.988342618267644,
+          127.20945828498702
+        ],
+        "path_loss_db_range": [
+          70.85890662854104,
+          88.70099819848484
+        ],
+        "geometry_distance_delta_m": {
+          "max": 0.20476261415119268,
+          "median": 0.12381319649738032,
+          "over_5m_count": 0
+        },
+        "raw_cir_file_sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+        "derived_path_loss_file": "OverWater_PL15.mat",
+        "derived_path_loss_file_sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20"
+      },
+      {
+        "session_id": "Sports field_10m",
+        "scenario": "Sports field",
+        "nominal_uav_altitude_m": 10,
+        "source_receiver_height_m": 2.5,
+        "sample_count": 110,
+        "raw_cir_tap_counts": [
+          200
+        ],
+        "raw_cir_nonfinite_tap_count": 0,
+        "frequency_hz_values": [
+          3600000000.0
+        ],
+        "sample_rate_hz_values": [
+          61440000.0
+        ],
+        "path_loss_distance_m_range": [
+          49.149314241843086,
+          108.91084631457696
+        ],
+        "path_loss_db_range": [
+          68.98395203311271,
+          93.21727637911343
+        ],
+        "geometry_distance_delta_m": {
+          "max": 0.1761987788443804,
+          "median": 0.12247956497718349,
+          "over_5m_count": 0
+        },
+        "raw_cir_file_sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+        "derived_path_loss_file": "SportsField_PL10.mat",
+        "derived_path_loss_file_sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9"
+      },
+      {
+        "session_id": "Sports field_15m",
+        "scenario": "Sports field",
+        "nominal_uav_altitude_m": 15,
+        "source_receiver_height_m": 2.5,
+        "sample_count": 90,
+        "raw_cir_tap_counts": [
+          200
+        ],
+        "raw_cir_nonfinite_tap_count": 0,
+        "frequency_hz_values": [
+          3600000000.0
+        ],
+        "sample_rate_hz_values": [
+          61440000.0
+        ],
+        "path_loss_distance_m_range": [
+          57.353529856369285,
+          109.34892835343621
+        ],
+        "path_loss_db_range": [
+          72.60191224431216,
+          89.15291625842822
+        ],
+        "geometry_distance_delta_m": {
+          "max": 0.175406560126234,
+          "median": 0.13455855476516376,
+          "over_5m_count": 0
+        },
+        "raw_cir_file_sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+        "derived_path_loss_file": "SportsField_PL15.mat",
+        "derived_path_loss_file_sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89"
+      }
+    ]
+  },
+  "quality_rules": [
+    "field units are normalized to SI before fitting",
+    "frequency 1 MHz to 100 GHz; distance 0.1 m to 1000 km; path loss 0 to 300 dB",
+    "unique measurement_id and source provenance are required",
+    "original workbook and MAT files remain read-only",
+    "invalid rows remain listed with row number and explicit rejection reasons",
+    "no missing RF metadata is imputed",
+    "exact latitude/longitude are omitted from the normalized CSV; only geometry cross-check deltas are retained"
+  ],
+  "row_audit": {
+    "status": "PASS",
+    "source_metadata_errors": [],
+    "row_count": 1370,
+    "valid_row_count": 1370,
+    "rejected_row_count": 0,
+    "rejection_counts": {},
+    "rejected_rows": [],
+    "field_presence_counts": {
+      "measurement_id": 1370,
+      "session_id": 1370,
+      "source_type": 1370,
+      "source_dataset_doi": 1370,
+      "source_url": 1370,
+      "source_file": 1370,
+      "source_file_sha256": 1370,
+      "source_row_index": 1370,
+      "source_license": 1370,
+      "scenario": 1370,
+      "frequency_hz": 1370,
+      "bandwidth_hz": 1370,
+      "sample_rate_hz": 1370,
+      "tx_height_m": 1370,
+      "rx_height_m": 1370,
+      "time_s": 1370,
+      "distance_m": 1370,
+      "geometry_distance_m_from_published_coordinates": 1370,
+      "geometry_distance_delta_m": 1370,
+      "path_loss_db": 1370,
+      "received_power_dbm": 1370,
+      "transmit_power_dbm": 1370,
+      "tx_antenna_gain_dbi": 1370,
+      "rx_antenna_gain_dbi": 1370,
+      "device_model": 1370,
+      "measurement_uncertainty_db": 1370,
+      "line_of_sight": 1370,
+      "obstruction_type": 1370,
+      "weather_conditions": 1370,
+      "raw_cir_tap_count": 1370,
+      "calibration_status": 1370
+    },
+    "missing_optional_value_counts": {
+      "transmit_power_dbm": 1370,
+      "tx_antenna_gain_dbi": 1370,
+      "rx_antenna_gain_dbi": 1370,
+      "device_model": 1370,
+      "measurement_uncertainty_db": 1370,
+      "measured_rsrp_dbm": 1370,
+      "measured_sinr_db": 1370,
+      "line_of_sight": 1370,
+      "obstruction_type": 1370,
+      "weather_conditions": 1370
+    },
+    "source_file_sha256": null
+  },
+  "missing_measurement_metadata_counts": {
+    "transmit_power_dbm": 1370,
+    "tx_antenna_gain_dbi": 1370,
+    "rx_antenna_gain_dbi": 1370,
+    "device_model": 1370,
+    "measurement_uncertainty_db": 1370,
+    "measured_rsrp_dbm": 1370,
+    "measured_sinr_db": 1370,
+    "line_of_sight": 1370,
+    "obstruction_type": 1370,
+    "weather_conditions": 1370
+  },
+  "group_partition_audit": {
+    "status": "PASS",
+    "group_field": "session_id",
+    "fit_groups": [
+      "Sports field_10m",
+      "Sports field_15m",
+      "Farmland_10m",
+      "Farmland_15m"
+    ],
+    "holdout_groups": [
+      "Over-water_10m",
+      "Over-water_15m"
+    ],
+    "observed_groups": [
+      "Farmland_10m",
+      "Farmland_15m",
+      "Over-water_10m",
+      "Over-water_15m",
+      "Sports field_10m",
+      "Sports field_15m"
+    ],
+    "overlap": [],
+    "duplicate_assignments": [],
+    "unassigned_observed_groups": [],
+    "assigned_groups_without_rows": []
+  },
+  "cleaned_dataset": {
+    "path": "results/phase15_measurements_public_clean.csv",
+    "sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+    "row_count": 1370,
+    "coordinates_included": false,
+    "csv_round_trip_count": 1370,
+    "csv_round_trip_verified": true
+  },
+  "calibration_identifiability": {
+    "estimable": [
+      "path-loss distance slope on the observed dataset domain",
+      "dataset-defined PL intercept at the selected reference distance"
+    ],
+    "not_estimable": [
+      "project transmitter power",
+      "project antenna gains",
+      "project receiver sensitivity",
+      "SINR threshold",
+      "separate shadowing sigma",
+      "urban obstruction loss"
+    ],
+    "reason": "the public labels are author-derived path loss from measured CIR; the source files do not provide a complete project-equivalent link budget or per-sample measurement uncertainty"
+  },
+  "project_application": {
+    "status": "NOT_APPLIED",
+    "reason": "3.6 GHz open-environment measurements and unknown sounder link-budget details do not establish applicability to the 3.5 GHz abstract urban project model or target hardware"
+  }
+}

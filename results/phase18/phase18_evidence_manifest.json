@@ -1,0 +1,2188 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase18_evidence_manifest",
+  "created_at_utc": "2026-10-21T11:32:20.373960+00:00",
+  "manifest_self_hash_included": false,
+  "items": [
+    {
+      "path": "DEVELOPMENT_LOG_PHASE10.md",
+      "size_bytes": 2761,
+      "sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "DEVELOPMENT_LOG_PHASE15.md",
+      "size_bytes": 2381,
+      "sha256": "59c13725fba18c60666c35be8c0ef8bb9be5aad05170f425a8784780c6a1eb10",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "DEVELOPMENT_LOG_PHASE16.md",
+      "size_bytes": 4020,
+      "sha256": "4ef90d70c8de71eccb0fee455c9f0635c16d5db984cc8d3f6b94c99a92817a43",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "DEVELOPMENT_LOG_PHASE8.md",
+      "size_bytes": 6607,
+      "sha256": "0e951f69053441957972a7c2058261e9ac5b15d7695bfb550223a1f0e41699e2",
+      "file_type": ".md",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE10_MODEL_DESIGN.md",
+      "size_bytes": 5463,
+      "sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE10_REPORT.md",
+      "size_bytes": 19849,
+      "sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE11_ALGORITHM_DESIGN.md",
+      "size_bytes": 7937,
+      "sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE11_REPORT.md",
+      "size_bytes": 30227,
+      "sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE12_REPORT.md",
+      "size_bytes": 8971,
+      "sha256": "115a59eef12519d5d48f583afea3a511127577658d7164be33973404151ab2e8",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE13_REPORT.md",
+      "size_bytes": 7417,
+      "sha256": "97e5e1dfb9e14bf7c814fd3385a148856bf00f4c58b6c10f162151e6c05a4d45",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE14_BASELINE_AUDIT.md",
+      "size_bytes": 5842,
+      "sha256": "588083e767f31b766178ccbcad16ef556170fb81aa0855690c188e33185cc602",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE14_DATA_LINEAGE.md",
+      "size_bytes": 5013,
+      "sha256": "685831989650ce441ed05a20cf09139b769315ce92c8771e80b42befeb615fb3",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE14_EXPERIMENT_PROTOCOL.md",
+      "size_bytes": 5713,
+      "sha256": "1292e3e1b739e91e92c62dc8e2493125bd3fd7c8373b2c0d192aed9c50e789b8",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE14_LINK_MODEL_DESIGN.md",
+      "size_bytes": 4266,
+      "sha256": "d023847834dc5d651ef31ad0ea2f23ec9e6a22b4bd629369b61246f024588ee7",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE14_PARAMETER_PROVENANCE.md",
+      "size_bytes": 4115,
+      "sha256": "6ae3653ba87598b9efd528ff5670127e34508c794dee77525422c66c7910e3b3",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE14_REPORT.md",
+      "size_bytes": 15816,
+      "sha256": "17d25adba19c4b8a0bde7620350c67c9e225e3c971eeb78727b8afdce55fe339",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE15_BASELINE_AUDIT.md",
+      "size_bytes": 6473,
+      "sha256": "b8aaeb40550cfe9bfb9a362d708be24b4a8d4117c7d9870a5a6f9b60e3dacc05",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE15_CALIBRATION_METHOD.md",
+      "size_bytes": 5587,
+      "sha256": "d4caf17359b6816b7507ba6a7c1549a2682a4fdb064ec5bca59942a080ec4ffd",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE15_DATA_DICTIONARY.md",
+      "size_bytes": 4151,
+      "sha256": "bfc3ad79df6a8daf938599dbec215238971b4dff2212220233d740caa1744c81",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE15_DATA_LINEAGE.md",
+      "size_bytes": 4233,
+      "sha256": "ca2e47f1bd60eae27ed03525c84615ca1aed2fb0cd9f23a1ff18ffe2be54a8ad",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE15_MEASUREMENT_PROTOCOL.md",
+      "size_bytes": 4868,
+      "sha256": "55a04fbe47f14aeb58764e8338ca2445f20aec526ce1050c36a559e3161eb977",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE15_REPORT.md",
+      "size_bytes": 15784,
+      "sha256": "4ff3ee13fbc2e435572e11b9d00f5dd993b28a5457358ecfd10b496b6cd6bbec",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE16_BASELINE_AUDIT.md",
+      "size_bytes": 3629,
+      "sha256": "990e0dd17f667d7ac1394e52748f3db1bcdcf399759d02fbe7510d9d80d74ec5",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE16_DATA_LINEAGE.md",
+      "size_bytes": 3085,
+      "sha256": "cf83b48c4bf93d27a9409df3fb0c80b72f9901eab317d4909b2fa5bb9c9ffb8d",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE16_EQUIPMENT_REQUIREMENTS.md",
+      "size_bytes": 2500,
+      "sha256": "d829b1d4949723590a37319967eeefbdde7da232078e0a4a5854ad2b62adc84e",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE16_REPORT.md",
+      "size_bytes": 14102,
+      "sha256": "92f5263232bab1ab4fa220a29c5c66cd17104b7d24f0b95d4b2b4717dc4e14fe",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE16_UNCERTAINTY_BUDGET.md",
+      "size_bytes": 3769,
+      "sha256": "2bbd64ef0744fd4c3ad38dd732f77d9cc74a2b4523d05d12594b656e0a155680",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE16_URBAN_MEASUREMENT_PLAN.md",
+      "size_bytes": 4063,
+      "sha256": "3c5acc145829d65cbafdbe806f40c3baf2ff5f7c696a9cc42ebe5b8cb73827cb",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE17_REPORT.md",
+      "size_bytes": 8131,
+      "sha256": "440bd55511aa537c42842db3d77c918b34ce71886f03bbaf537b7d9c44260a2a",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_DATA_INTEGRITY_REPORT.md",
+      "size_bytes": 2392,
+      "sha256": "8c38f6c8a376b58c427f79785417b2f88a79e9243b4dbf7ef5f3e1a717b45e5d",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_DEFENSE_QA.md",
+      "size_bytes": 2295,
+      "sha256": "a31274e1003e1df1fe7a48fadeb7625b04941e7eb95b3c213c5db506de3f1f42",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_EVIDENCE_INDEX.md",
+      "size_bytes": 2702,
+      "sha256": "4e673a8fc6dd67f48c79c58af2f61060b37b079af786ff63705deb91a16c24c2",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_FINAL_ACCEPTANCE_MATRIX.md",
+      "size_bytes": 2139,
+      "sha256": "0acb2a21f582ee29730906ca6b1a89115acf3b63c32d52e720f1a384ac976c12",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_KNOWN_ISSUES.md",
+      "size_bytes": 1678,
+      "sha256": "7902c4d52ff13dc5b41cd1a3a30af7a195b3699f2518ab54ac2deb9cbfceaad4",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_OFFICIAL_REFERENCES.md",
+      "size_bytes": 3259,
+      "sha256": "3e3e65fb09e2ab30b77ea4b9386687f4ad4df088d9457d0b2cd52a9684ddc048",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_RELEASE_READINESS.md",
+      "size_bytes": 1616,
+      "sha256": "6092d8a99fbbaf28fe9c6cfb126dcda3119ece30a208e2c7fbe4183cd627c759",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_REPORT.md",
+      "size_bytes": 8504,
+      "sha256": "dd6181b3d8780b2232c8dbd59bfbc32878d126195c9c6712879547c4a31d067d",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE18_REPRODUCIBILITY_REPORT.md",
+      "size_bytes": 1932,
+      "sha256": "1de4fe6275158247937f1731b1fefd0e2ed653c07a7e170f7382a1d2506fcea6",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE1_REPORT.md",
+      "size_bytes": 5892,
+      "sha256": "ba9c18a19e8d5aa26da9eb889208ebad9b59c0903afc00f4662f70ede5081af5",
+      "file_type": ".md",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE2_REPORT.md",
+      "size_bytes": 12269,
+      "sha256": "eaab54132b1af0e2566267b2d60724ff2e387f37008938c1fa26f5d9e588f45a",
+      "file_type": ".md",
+      "source_phase": "phase2",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE3_REPORT.md",
+      "size_bytes": 5626,
+      "sha256": "aa48b58a1661247e8e71c31f95afbdb0ef57a6ae60ccb1b40a9f1b69b0e62ded",
+      "file_type": ".md",
+      "source_phase": "phase3",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE4_REPORT.md",
+      "size_bytes": 16033,
+      "sha256": "a61335791e8553a3ef1ca7756530298c58c9f8bf12532144b1a220bf1bcf2fc8",
+      "file_type": ".md",
+      "source_phase": "phase4",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE5_REPORT.md",
+      "size_bytes": 19947,
+      "sha256": "b1c3ea3b4356722bc1cbaffe416a21fc210404f0893ce90650c0173c948d6666",
+      "file_type": ".md",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE6_REPORT.md",
+      "size_bytes": 13348,
+      "sha256": "9eb9a10d39c7072de8e99dde55795d9653e51b63446828cb45de53c1e872eab9",
+      "file_type": ".md",
+      "source_phase": "phase6",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "PHASE8_REPORT.md",
+      "size_bytes": 42108,
+      "sha256": "af7c22ff949a2340a632b6c96da3ecd39f252a15032b34008bf3e97f656e6418",
+      "file_type": ".md",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE9_ENERGY_SENSITIVITY_REPORT.md",
+      "size_bytes": 5288,
+      "sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+      "file_type": ".md",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "PHASE9_REPORT.md",
+      "size_bytes": 16851,
+      "sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+      "file_type": ".md",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase10/multi_uav_plan.json",
+      "size_bytes": 4565,
+      "sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase10/validation_protocol.json",
+      "size_bytes": 20611,
+      "sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase11/benchmark_plan.json",
+      "size_bytes": 6882,
+      "sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase11/confirmation_protocol.json",
+      "size_bytes": 14708,
+      "sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase14/confirmation_protocol.json",
+      "size_bytes": 3326,
+      "sha256": "1f4a7330ec24b333a1e0cced82520eca4d39dca8b6651ac336176e124861ae53",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase14/experiment_plan.json",
+      "size_bytes": 2715,
+      "sha256": "9b3afc796405e5b4378110c4e4e8f9e358ecc946fd4ce5090f5a7cbd1a17feae",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase14/link_budget_v1.toml",
+      "size_bytes": 1097,
+      "sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+      "file_type": ".toml",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase15/calibration_protocol.json",
+      "size_bytes": 2119,
+      "sha256": "6cc291ee4ffce92498205d166f840b165ba90821ce737c56a56b05bab0ef9a26",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "public_data_provenance_and_calibration_protocol",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase15/calibration_protocol_v2.json",
+      "size_bytes": 3158,
+      "sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "public_data_provenance_and_calibration_protocol",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase15/confirmation_freeze.json",
+      "size_bytes": 3423,
+      "sha256": "1b21715f741eb13c0edb49efac0d5d010dada63614759e25a547a83adc40bad1",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "public_data_provenance_and_calibration_protocol",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase15/confirmation_freeze_v2.json",
+      "size_bytes": 3784,
+      "sha256": "aa16c5071207067bc93d78ac7a30b4074e709fba18f83656a3b6fee7d239a257",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "public_data_provenance_and_calibration_protocol",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase15/protected_artifacts_baseline.json",
+      "size_bytes": 16820,
+      "sha256": "0f8001b9e8d6311cd7a2a7b50501b52b187e3078c6bdc01dba4ccc2a6ed0d00b",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "public_data_provenance_and_calibration_protocol",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase15/public_dataset_manifest.json",
+      "size_bytes": 4720,
+      "sha256": "0826941fa206a6678b809799458442576549357d53d6b66c57cbc181e6521e68",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "public_data_provenance_and_calibration_protocol",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase16/acceptance_criteria_template.json",
+      "size_bytes": 506,
+      "sha256": "ea507c0ec5279e2abe54372485fbe2d9db9db96e0e5ad65c73a57a9bf122802a",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase16/measurement_session_template.json",
+      "size_bytes": 1304,
+      "sha256": "93612b9e481f7e0be3a632e35dab04d1660387eccb344ab954c343cb3c5c15e6",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase16/public_dataset_metadata.json",
+      "size_bytes": 542,
+      "sha256": "67e926d76c061d016cb0d871834db39a00e5b5c22bbaf189fe628738587dbdd3",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase16/urban_measurement_plan.json",
+      "size_bytes": 4349,
+      "sha256": "872d6482269817f525a728cf2fa1cbf8a2ea1193df0dbe9a9bddf3e5ddcb7fde",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase5/dynamic_failure_base.toml",
+      "size_bytes": 1031,
+      "sha256": "889bc71a89fbe90e9ab84164050df1d4ef93588b257f6afcf9f35d31af3d7244",
+      "file_type": ".toml",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase5/dynamic_failures.toml",
+      "size_bytes": 1433,
+      "sha256": "4b21a21525d9ef5557a40ef36a07451c0a56cdeb029230859dace620a4b548a4",
+      "file_type": ".toml",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase5/high_load_backhaul_limit.toml",
+      "size_bytes": 1549,
+      "sha256": "1bad9cfcb1d0b63904e256fa1f92c7a5e85eee3f191e0d387b2059beec0bf9ab",
+      "file_type": ".toml",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase5/high_mobility_rescue.toml",
+      "size_bytes": 1214,
+      "sha256": "a7b0aad9fd503b6f6e7171ece4ab787c9f28b12ba69b04f03e3511d163a48fa8",
+      "file_type": ".toml",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase5/severe_persistent_faults.toml",
+      "size_bytes": 979,
+      "sha256": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c",
+      "file_type": ".toml",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase8/ablation_plan.json",
+      "size_bytes": 3816,
+      "sha256": "f2c469eaded74a73880fbad7fec1e15bba4397bd622e9d8034023195ed80d0fe",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase8/algorithm_mechanism_audit.json",
+      "size_bytes": 4366,
+      "sha256": "2c0dcc8f16cebcfb04a8d812e8c4653959e6c34d3e1bcbd7bdb2ca134aa39976",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase8/experiment_plan.json",
+      "size_bytes": 9554,
+      "sha256": "5c8e95a0c8d66ac230afcdee7d5208ce9ec9d748f2f2610cdea90d1b63202ae4",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase8/replication_protocol.json",
+      "size_bytes": 5973,
+      "sha256": "c8d2fd5067d6cf0959b5d43fa512f4e3ca74c4f0b6b5439d2b2b494bc983b07f",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase8/sensitivity_plan.json",
+      "size_bytes": 3688,
+      "sha256": "ef0b589ab09a5e29ebc42e12ec2fdaf6c7f2495381b42f15275a16b7bda61e16",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase8/sensitivity_validation_protocol.json",
+      "size_bytes": 6866,
+      "sha256": "7ba6453a05365c99b6faa64bf2752f0aca4dffcaa757694ba620011b6502534e",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase8/validation_protocol.json",
+      "size_bytes": 4563,
+      "sha256": "f56aa866aaea42b544d0d80ac78acc925c2c3a3e6473abfe331f9085e71fb02e",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/dynamic_failures_development.toml",
+      "size_bytes": 1659,
+      "sha256": "b0f49834eedbe3b2eda7140be0d24ccf99debccc39d5606f308c2e878ec3d30b",
+      "file_type": ".toml",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/dynamic_failures_validation.toml",
+      "size_bytes": 1660,
+      "sha256": "1b4bd7a4c421086830fd879f705202659a731cf04a81f20bcb03467540e3889c",
+      "file_type": ".toml",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/energy_sensitivity_plan.json",
+      "size_bytes": 2381,
+      "sha256": "f28b1ebcaf5a38625c5310b3392f27665ed689cebef327947d8c84dc9b28c243",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/energy_sensitivity_plan_corrected.json",
+      "size_bytes": 2785,
+      "sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/experiment_plan.json",
+      "size_bytes": 3901,
+      "sha256": "34cf16f8d5bb8b99c12c2ba18e6ed1b81b73dac95ecb0e79944c1e73a938e51d",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/experiment_plan_corrected.json",
+      "size_bytes": 5328,
+      "sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/high_load_backhaul_limit_validation.toml",
+      "size_bytes": 1636,
+      "sha256": "8efe6f214b2a321e02b534c238cd455650baa85cd705bc22c7d895611de73b0f",
+      "file_type": ".toml",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/high_mobility_rescue_validation.toml",
+      "size_bytes": 1297,
+      "sha256": "b6b0a61cdcb44a600bb075ca18a2c6ea262ccea994321b080f1b68b7b180fa3a",
+      "file_type": ".toml",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/severe_persistent_faults_validation.toml",
+      "size_bytes": 1066,
+      "sha256": "5d7c461e830d16aab9b2d03d1d770e57c863918f14555938869c61fb6ca7af76",
+      "file_type": ".toml",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/validation_protocol.json",
+      "size_bytes": 8322,
+      "sha256": "643c632a1db6aa3347710d6db06e834d8348b85d1d7073b13178ba3033d3dd3e",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "configs/phase9/validation_protocol_corrected.json",
+      "size_bytes": 8740,
+      "sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_10.xlsx",
+      "size_bytes": 302061,
+      "sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+      "file_type": ".xlsx",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_15.xlsx",
+      "size_bytes": 443749,
+      "sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+      "file_type": ".xlsx",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_PL10.mat",
+      "size_bytes": 3614,
+      "sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd",
+      "file_type": ".mat",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_PL15.mat",
+      "size_bytes": 5698,
+      "sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4",
+      "file_type": ".mat",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_10.xlsx",
+      "size_bytes": 233836,
+      "sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+      "file_type": ".xlsx",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_15.xlsx",
+      "size_bytes": 394136,
+      "sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+      "file_type": ".xlsx",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_PL10.mat",
+      "size_bytes": 3516,
+      "sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a",
+      "file_type": ".mat",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_PL15.mat",
+      "size_bytes": 5441,
+      "sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20",
+      "file_type": ".mat",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/README!.txt",
+      "size_bytes": 1898,
+      "sha256": "062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2",
+      "file_type": ".txt",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_10.xlsx",
+      "size_bytes": 135129,
+      "sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+      "file_type": ".xlsx",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_15.xlsx",
+      "size_bytes": 110564,
+      "sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+      "file_type": ".xlsx",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_PL10.mat",
+      "size_bytes": 1890,
+      "sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9",
+      "file_type": ".mat",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_PL15.mat",
+      "size_bytes": 1594,
+      "sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89",
+      "file_type": ".mat",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/guidemanual.pdf",
+      "size_bytes": 680251,
+      "sha256": "36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3",
+      "file_type": ".pdf",
+      "source_phase": "phase1",
+      "evidence_class": "public_source_data_not_copied_to_rc",
+      "release_included": false,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_artifact_manifest.json",
+      "size_bytes": 2144,
+      "sha256": "4942c97e97d4de538c12029854386bb50142c8c800c66f53b8772e033769940a",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_confirmation_event_timeline.json",
+      "size_bytes": 43176040,
+      "sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_confirmation_progress.jsonl",
+      "size_bytes": 70913639,
+      "sha256": "1c13a0c0ac9f96f46bf41b9f78ea00480f17b6e70a447a53e9bb8971e9755f94",
+      "file_type": ".jsonl",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_confirmation_raw.json",
+      "size_bytes": 152084576,
+      "sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_confirmation_summary.json",
+      "size_bytes": 699696,
+      "sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_development_progress.jsonl",
+      "size_bytes": 10650683,
+      "sha256": "215c1cfa0d9109b959b0341efd12ba205d7474bece13d739ac4ed074ecb3fb27",
+      "file_type": ".jsonl",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_development_raw.json",
+      "size_bytes": 22811864,
+      "sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_development_summary.json",
+      "size_bytes": 692260,
+      "sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase10_uav_energy_summary.json",
+      "size_bytes": 14584,
+      "sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_artifact_manifest.json",
+      "size_bytes": 5925,
+      "sha256": "987495e83d3c965165a8b284f74e7410a344738212e6ff61638b00c7fd7cca51",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_confirmation_progress.jsonl",
+      "size_bytes": 174355200,
+      "sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+      "file_type": ".jsonl",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_confirmation_raw.json",
+      "size_bytes": 350308579,
+      "sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_confirmation_summary.json",
+      "size_bytes": 951044,
+      "sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_delivery_audit.json",
+      "size_bytes": 2434,
+      "sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_development_progress.jsonl",
+      "size_bytes": 26305647,
+      "sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+      "file_type": ".jsonl",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_development_raw.json",
+      "size_bytes": 52794746,
+      "sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_development_summary.json",
+      "size_bytes": 905594,
+      "sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_fleet_size_exploratory.json",
+      "size_bytes": 45557,
+      "sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase11_validation_evidence.txt",
+      "size_bytes": 1476,
+      "sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+      "file_type": ".txt",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase12_integrity_audit.json",
+      "size_bytes": 7244,
+      "sha256": "a13fd324781dbc1125a6137f6be98bf79a19f246c0e14b1db4758f42e32ddaf5",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase13_visualization_audit.json",
+      "size_bytes": 8191,
+      "sha256": "b4b97ded117a778c46f91e8f726a9ebae9741ed6458ad28e65e76521b29a4dfb",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase14_confirmation_raw.json",
+      "size_bytes": 84454812,
+      "sha256": "954c903d595e1acab4a351fefd63393be37f81ba2df7ab7cbc6ad2767904d211",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_confirmation_summary.json",
+      "size_bytes": 200064,
+      "sha256": "20a8ac1791c9f2c1f701bcba5ef4f73bc4dec501bfec0af581034786075da9a0",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_development_raw.json",
+      "size_bytes": 12636025,
+      "sha256": "4275cf00d723de0d0fffcae67d6171bae6b5c9b94e12143137df7265f65ad8a4",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_development_summary.json",
+      "size_bytes": 189719,
+      "sha256": "91a624a2fb94f6ca9590e5ed5e8d4347c9b370fd39dc971ec87e42da33660800",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_integrity_audit.json",
+      "size_bytes": 24765,
+      "sha256": "5b745bcb06a6e7895a657c291be3e73de1f3ea7e2656c008b1b03c9aa237c3ad",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_legacy_reproduction.json",
+      "size_bytes": 2335,
+      "sha256": "958c6a06fb5df3013b9dbc31e42cd30372bc675f1e5fbd217ade35836514cda7",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_model_sensitivity_raw.json",
+      "size_bytes": 6878505,
+      "sha256": "0b6306bc6091fccc71431beecd06a7836df7e3b8b548d0bae25cc83b66949c83",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_model_sensitivity_summary.json",
+      "size_bytes": 165579,
+      "sha256": "0cc900f859062962baf9bd135e0057654b033d7401669fe41df637fa2a879f27",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase14_validation_summary.json",
+      "size_bytes": 3543,
+      "sha256": "e28feebfff02b84d2af1f4626decfee72aab126e81d573363d0725dacd0ff080",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase15_calibration_summary.json",
+      "size_bytes": 7287,
+      "sha256": "1b221d37a0be0cfddf98e7ec56f95e8012501f2d7888d5ae30c6f19a383698ff",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase15_dataset_audit.json",
+      "size_bytes": 16659,
+      "sha256": "d15818d27bd8801073c936b5d23ceeb16d2b5dc89916a0bc35aa3e8be82be1b5",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase15_dataset_download_audit.json",
+      "size_bytes": 6663,
+      "sha256": "472b4f4b5e047b83585fbe4f9a27fe7a1a7afacde2155c5d403b62bb064328c7",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase15_holdout_validation.json",
+      "size_bytes": 10577,
+      "sha256": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase15_integrity_audit.json",
+      "size_bytes": 38982,
+      "sha256": "573bebf9304c966acbd6f3d2b3e5d939d7074ae5eebfb9f90b6e26fc5a54db3e",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase15_measurements_public_clean.csv",
+      "size_bytes": 685486,
+      "sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+      "file_type": ".csv",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase15_preholdout_run_attempts.json",
+      "size_bytes": 816,
+      "sha256": "75dbdf9b9589f917c3f22b462f5cf6e4731297777a5b828dc3c6084b8046fa2f",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+      "size_bytes": 1953,
+      "sha256": "8c2382c8dcb347f66d7353233a11c63e5efdd02ef45437c53d076680495bb45d",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+      "size_bytes": 685486,
+      "sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+      "file_type": ".csv",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+      "size_bytes": 1841,
+      "sha256": "6ec328ae9a0032acfe7c566840a0080a5d2805d6f4baf5f954d56b55f49ea5a3",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+      "size_bytes": 685486,
+      "sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+      "file_type": ".csv",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/pytest_junit.xml",
+      "size_bytes": 22495,
+      "sha256": "b87691ace8a61cff1df58c6527182b22a35ee6b9128913b9b4105cecc4fcac38",
+      "file_type": ".xml",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/pytest_junit_final.xml",
+      "size_bytes": 19684,
+      "sha256": "6436290643ed93ccc7a292edd5085451522aa4b2dfe90b67ba37d6ab160c7992",
+      "file_type": ".xml",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/pytest_junit_final_v2.xml",
+      "size_bytes": 19966,
+      "sha256": "af287e62f8a827464241e477ff4132da267b1e1a48a2a1021fd9852f96083bb4",
+      "file_type": ".xml",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/pytest_targeted_junit.xml",
+      "size_bytes": 6840,
+      "sha256": "5513f721da866f23b55523ecaab3c1292764393ae92bf5987319ffb4cafe2a5b",
+      "file_type": ".xml",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/pytest_targeted_junit_final.xml",
+      "size_bytes": 4029,
+      "sha256": "b7c2adbcb056146b8dcd4ebd637d8e5007acc2210a4505bc30ae0cbf66dfbe13",
+      "file_type": ".xml",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/pytest_targeted_junit_final_v2.xml",
+      "size_bytes": 4311,
+      "sha256": "73f6ae9e56c58bfde55d42d59cd47d6b087d7dce658e9fd2e4af28498f5449b0",
+      "file_type": ".xml",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/session_template_validation.json",
+      "size_bytes": 1182,
+      "sha256": "4173eb88fe73641c25ffe7b1243bacff062c7d88af2570adb988df9bc7ba8ada",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/session_template_validation_final.json",
+      "size_bytes": 1430,
+      "sha256": "58df33e56cd674a088777a740444b584e19d031dd76b345c808c7401d4e36b29",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16/session_template_validation_final_v2.json",
+      "size_bytes": 1633,
+      "sha256": "f45b36c0215862d5e4195aba9ec44a37c2bbe867d49395ee11b990ff3ebd136f",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16_calibration_state.json",
+      "size_bytes": 1547,
+      "sha256": "8e36ec8836e44ed4fecfe9b9ba333d2bd245701c057fbf9007a4dd0c9b6fc618",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16_environment_inventory.json",
+      "size_bytes": 4535,
+      "sha256": "b02d92a9bfc169eee49669cb3527818de073b9a6b8fc809a580629d76ba22648",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16_exploratory_model_sensitivity_context.json",
+      "size_bytes": 44988,
+      "sha256": "90bfeaac0665496430732a0515a5d9d048bbaaf25299e09423ff13ff007df871",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16_integrity_audit.json",
+      "size_bytes": 38407,
+      "sha256": "322c6f8aa95c6514abb798e399ab96767594998ecc09afcd2328e1059347ee50",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16_measurement_readiness.json",
+      "size_bytes": 5772,
+      "sha256": "135f25469dc0cada14b0e5932ebcc6ca57deb729f98b1816f7c8958a95f70fbf",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase16_uncertainty_budget.json",
+      "size_bytes": 6635,
+      "sha256": "9aaf01004e392f7a2dd1ee45396112b9ee79573e8e864e097ba09b60d2f62414",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase17/protected_start_manifest.json",
+      "size_bytes": 34597,
+      "sha256": "ecd718fc69cf7de971c8f58121a5f8eee82bda3fa2f2d0a0a1c90bc1d5cfdc6f",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase17_adapter_status.json",
+      "size_bytes": 2803,
+      "sha256": "8582bf6189933f5ba83b6987176fcd2ec039f134c82bd3e44e55ef6b112c9132",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase17_closed_loop_run.json",
+      "size_bytes": 6870,
+      "sha256": "453e785e3b2a4d26c1a4dc50f6687fd38422609e7583497c67271af91e2748ec",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "synthetic_software_test_evidence",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase17_command_audit.json",
+      "size_bytes": 1923,
+      "sha256": "10c2fa1bdf04f14e15ef3bce533f3cded73b0372461f95becc8da71e6070553b",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase17_fault_injection_results.json",
+      "size_bytes": 19320,
+      "sha256": "98417bb676eca18f816f8a676cb345b9db1d9f5e39d500207e37540ca403e4c9",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "synthetic_software_test_evidence",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase17_integrity_audit.json",
+      "size_bytes": 69138,
+      "sha256": "59678fa6a03662a2de51e6d91df86f29f97481575bf434d6818c54ec634b1b2b",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase17_replay_validation.json",
+      "size_bytes": 245356,
+      "sha256": "f5662091854cf809b8f9e0bfba300460bffc6b0a562d9ad4a950c983c468d85e",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase17_validation_summary.json",
+      "size_bytes": 4798,
+      "sha256": "39f1ddf0954d973531afbf634a5b8bcb4bb31fc4992aaa9a8e88a6896640b7aa",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase18/browser/phase18-1366x768.png",
+      "size_bytes": 795925,
+      "sha256": "56673c5e6532aa58f088e7bb2a73aff583c531cdd38815e38170e664e20f8da1",
+      "file_type": ".png",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase18/browser/phase18-1920x1080.png",
+      "size_bytes": 865259,
+      "sha256": "09e4ccc2cc7ae79a8e451acded9f7344229e5be5bfc86f66b371ea2451617915",
+      "file_type": ".png",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase18/browser/phase18-390x844.png",
+      "size_bytes": 657747,
+      "sha256": "b1f399f978dd0632ac874180e050225ffdd9973410638c105281894b85cb28a8",
+      "file_type": ".png",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase18/phase18_test_execution.json",
+      "size_bytes": 6936,
+      "sha256": "42c4b238e33407ad577308e7c3b68a58cdd02f4b39320cb3c581bc7071d8b6cc",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase1_benchmark.json",
+      "size_bytes": 4157,
+      "sha256": "8db2e36c5c2d10728946ebc6498e77dc014380dbb0139669cebfe15dbf011306",
+      "file_type": ".json",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase2_20_seed_results.json",
+      "size_bytes": 5393061,
+      "sha256": "22b82563a9e2d760ef4140f9bfdb98a23174a4a1572b14d567d6fc6639d9e891",
+      "file_type": ".json",
+      "source_phase": "phase2",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase3_replay_seed_2026.json",
+      "size_bytes": 4276778,
+      "sha256": "692afc0e523c2ef9a3186533657cea706acf246d015429cb806872bf677d4cf1",
+      "file_type": ".json",
+      "source_phase": "phase3",
+      "evidence_class": "saved_abstract_simulation_replay",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase4_validation_4000_4019.json",
+      "size_bytes": 8899708,
+      "sha256": "e6feaf23b6449c74a6bfc652a7e1313ebb5d1a54083de6f9875f63df9f6b786a",
+      "file_type": ".json",
+      "source_phase": "phase4",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": false
+    },
+    {
+      "path": "results/phase5_development_dynamic_failures.json",
+      "size_bytes": 2560517,
+      "sha256": "34bbf277e1bd8f4ab5198a51573eb5de969a200a14d33e6c0445761ac6154dc0",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_development_high_load_backhaul_limit.json",
+      "size_bytes": 2560058,
+      "sha256": "83c82aa313edc565a924596c290bd55c889835ec1f749d0a1e92381abb9745ac",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_development_high_mobility_rescue.json",
+      "size_bytes": 2631962,
+      "sha256": "afee9193f7d8062cc4fddbbfa4ba530cbf3573113962310e6603ae0248f4c89f",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_development_pilot_dynamic_failures.json",
+      "size_bytes": 2574602,
+      "sha256": "a290a0999f235767d146c140d39827900f027c70e2a8076a88f1ca007790f884",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_development_pilot_high_load_backhaul_limit.json",
+      "size_bytes": 2572996,
+      "sha256": "2112b6103d075f71aa5e7483f6e933890f1a84cfe230c9a955a96b61b49466c2",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_development_pilot_high_mobility_rescue.json",
+      "size_bytes": 2606308,
+      "sha256": "7f0ed8e682d434a4bffe8fcc01cb358edc175aaa9c4d3812f039e3b517f41493",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_development_pilot_severe_persistent_faults.json",
+      "size_bytes": 2615358,
+      "sha256": "ce9463c2d53d748999ebddddcc586cc9cc4ca4808a64823648df2228d9dea10b",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_development_severe_persistent_faults.json",
+      "size_bytes": 2616862,
+      "sha256": "6912fed9cae9648b8f5fe62428d1a00de13981171875e591059969fc0501e6a6",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_failure_cases.json",
+      "size_bytes": 431097,
+      "sha256": "3558fdc13893edafd8754109f896e83d5ecfdbfbef6ed56d0bb83f9b0a5dba80",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_frozen_manifest.json",
+      "size_bytes": 5752,
+      "sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_integrity_audit.json",
+      "size_bytes": 4748,
+      "sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_validation_dynamic_failures.json",
+      "size_bytes": 10099142,
+      "sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_validation_high_load_backhaul_limit.json",
+      "size_bytes": 9992718,
+      "sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_validation_high_mobility_rescue.json",
+      "size_bytes": 10252245,
+      "sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_validation_severe_persistent_faults.json",
+      "size_bytes": 10094626,
+      "sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase5_validation_summary.json",
+      "size_bytes": 410463,
+      "sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+      "file_type": ".json",
+      "source_phase": "phase5",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_development_raw.json",
+      "size_bytes": 70138040,
+      "sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_development_summary.json",
+      "size_bytes": 4800439,
+      "sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_pytest_results.txt",
+      "size_bytes": 102,
+      "sha256": "6d5b2691cba84cfea378e4e4ca6f4e24dade79923c39eee31d7042985bba5819",
+      "file_type": ".txt",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_replication_postprocess_audit.json",
+      "size_bytes": 1393,
+      "sha256": "b8275fe81096ace6101320e5e91c9326b36145f34498ac293c84f80ab903f0ce",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_replication_raw.json",
+      "size_bytes": 182754761,
+      "sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_replication_summary.json",
+      "size_bytes": 2088660,
+      "sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_sensitivity_validation_audit.json",
+      "size_bytes": 555,
+      "sha256": "1851de5f88f17bc7193196a7b08671ebc8fc39a46fde3185a8e377858e49db4e",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_sensitivity_validation_raw.json",
+      "size_bytes": 317779704,
+      "sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_sensitivity_validation_summary.json",
+      "size_bytes": 3227498,
+      "sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_validation_raw.json",
+      "size_bytes": 90927045,
+      "sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase8_validation_summary.json",
+      "size_bytes": 2074287,
+      "sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+      "file_type": ".json",
+      "source_phase": "phase8",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_artifact_manifest.json",
+      "size_bytes": 6789,
+      "sha256": "3f1cb4da6fc6ec62ed7d0cc473869f6041777886d5c1ae0db71500747001abe0",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_confirmation_raw.json",
+      "size_bytes": 44847901,
+      "sha256": "7f30ae206eb016fb0ec0ae50f152df07b39745b9a026a3170218ba7e786e89fd",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_confirmation_summary.json",
+      "size_bytes": 475056,
+      "sha256": "377995a6904e792168f7614033301ac5346ed18ca0e97363848d16a7dacc3e5f",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_corrected_confirmation_raw.json",
+      "size_bytes": 53485358,
+      "sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_corrected_confirmation_summary.json",
+      "size_bytes": 471461,
+      "sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_corrected_energy_sensitivity_raw.json",
+      "size_bytes": 50685599,
+      "sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_corrected_energy_sensitivity_summary.json",
+      "size_bytes": 237677,
+      "sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_corrected_event_timeline.json",
+      "size_bytes": 6984204,
+      "sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_development_iteration1_raw.json",
+      "size_bytes": 15924519,
+      "sha256": "a757ab9e5a79c23853f3969df9222271c7ec37f279c36dc9467356a822f86f87",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_development_iteration1_summary.json",
+      "size_bytes": 10111,
+      "sha256": "18efc90081e269ea38395ef78ebff7547aff523917e3ff697edb9b6fb272dd68",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_development_pre_route_fix_raw.json",
+      "size_bytes": 15766298,
+      "sha256": "617f6d23ed721e329cc33cf210bfdea1976bd551a3aa08a2c1defe626d2f04d5",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_development_pre_route_fix_summary.json",
+      "size_bytes": 10208,
+      "sha256": "b50cfef6c924ed3d8f9f7dafa202abf22f2c3681f41b0cb03c95006af067101c",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_development_raw.json",
+      "size_bytes": 23760282,
+      "sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "frozen_or_derived_simulation_evidence",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_development_summary.json",
+      "size_bytes": 10261,
+      "sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_event_timeline.json",
+      "size_bytes": 1229155,
+      "sha256": "0c7934aa71cd31170cb7ed7238332f9a112d9c3b13dd4f0da54c9bcb5422f42d",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_initial_confirmation_status.json",
+      "size_bytes": 849,
+      "sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "results/phase9_verification_summary.json",
+      "size_bytes": 6307,
+      "sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+      "file_type": ".json",
+      "source_phase": "phase9",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": true
+    },
+    {
+      "path": "scripts/verify_phase18_release_manifest.py",
+      "size_bytes": 2495,
+      "sha256": "558e0de855b1d5e17ccc2673019d89ffe10b0f335badcac27b00993e5a96a138",
+      "file_type": ".py",
+      "source_phase": "phase1",
+      "evidence_class": "phase_report_audit_or_configuration",
+      "release_included": true,
+      "frozen_historical_data": false
+    }
+  ]
+}

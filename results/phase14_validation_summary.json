@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase14_radio_link_model",
+  "created_at_utc": "2026-10-20T17:38:23.175841+00:00",
+  "status": "PASS",
+  "experiments": {
+    "development_model_runs": 72,
+    "development_sensitivity_runs": 312,
+    "confirmation_runs": 480,
+    "confirmation_scenes": 4,
+    "confirmation_seeds_per_scene": 20
+  },
+  "tests": [
+    {
+      "name": "python_full_pytest",
+      "command": "uv run --frozen pytest -q",
+      "passed": 99,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "radio_link_unit",
+      "command": "uv run --frozen pytest tests/test_radio_link.py -q",
+      "passed": 29,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "frontend_component",
+      "command": "npm test",
+      "passed": 10,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "frontend_lint",
+      "command": "npm run lint",
+      "status": "PASS"
+    },
+    {
+      "name": "frontend_production_build",
+      "command": "npm run build",
+      "status": "PASS",
+      "warning": "ECharts chunk is 533.66 kB minified; Vite reports the 500 kB advisory threshold."
+    },
+    {
+      "name": "playwright_full_e2e",
+      "command": "npm run test:e2e",
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "phase14_three_viewports",
+      "viewports": [
+        "1920x1080",
+        "1366x768",
+        "390x844"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "integrity": {
+    "status": "PASS",
+    "historical_frozen_artifacts": 73,
+    "historical_frozen_expected": 73,
+    "phase6_replay_hashes": 5,
+    "confirmation_records": 480,
+    "confirmation_expected": 480,
+    "sensitivity_records": 312,
+    "legacy_replay_metrics_matched": 12
+  },
+  "local_demo": {
+    "frontend_url": "http://127.0.0.1:5173/research",
+    "frontend_status": 200,
+    "api_health_status": 200,
+    "phase14_proxy_status": 200,
+    "phase14_dataset": "phase14",
+    "phase14_policy_runs": 480,
+    "sensitivity_attached": true
+  },
+  "artifacts_sha256": {
+    "results/phase14_confirmation_raw.json": "954c903d595e1acab4a351fefd63393be37f81ba2df7ab7cbc6ad2767904d211",
+    "results/phase14_confirmation_summary.json": "20a8ac1791c9f2c1f701bcba5ef4f73bc4dec501bfec0af581034786075da9a0",
+    "results/phase14_model_sensitivity_raw.json": "0b6306bc6091fccc71431beecd06a7836df7e3b8b548d0bae25cc83b66949c83",
+    "results/phase14_model_sensitivity_summary.json": "0cc900f859062962baf9bd135e0057654b033d7401669fe41df637fa2a879f27",
+    "results/phase14_legacy_reproduction.json": "958c6a06fb5df3013b9dbc31e42cd30372bc675f1e5fbd217ade35836514cda7",
+    "results/phase14_integrity_audit.json": "5b745bcb06a6e7895a657c291be3e73de1f3ea7e2656c008b1b03c9aa237c3ad",
+    "configs/phase14/link_budget_v1.toml": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+    "configs/phase14/confirmation_protocol.json": "1f4a7330ec24b333a1e0cced82520eca4d39dca8b6651ac336176e124861ae53"
+  },
+  "screenshots": {
+    "artifacts/phase14/browser/research-1920x1080.png": "534bb520a79881ee82cbf5f288581dfddf685b6a78c8bc435395564542c52a14",
+    "artifacts/phase14/browser/research-1366x768.png": "16c07b10a3fa7fb2df180f7220ca50778826dc7e84d9a8f6c04e8d5a65d43fe6",
+    "artifacts/phase14/browser/research-390x844.png": "8a15714d0939d2a307741b9d921af752453f0b1739173f14eb4813835903420c"
+  },
+  "build_limitation": "No failed build; ECharts bundle advisory remains."
+}

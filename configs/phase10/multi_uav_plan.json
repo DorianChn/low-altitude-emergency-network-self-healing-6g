@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase10_multi_uav_coordination",
+  "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+  "scenario_config_paths": {
+    "severe_persistent_faults": "configs/phase5/severe_persistent_faults.toml",
+    "dynamic_failures": "configs/phase5/dynamic_failures.toml",
+    "high_mobility_rescue": "configs/phase5/high_mobility_rescue.toml",
+    "high_load_backhaul_limit": "configs/phase5/high_load_backhaul_limit.toml"
+  },
+  "seed_assignments": {
+    "development": {
+      "severe_persistent_faults": [94000, 94001, 94002],
+      "dynamic_failures": [94010, 94011, 94012],
+      "high_mobility_rescue": [94020, 94021, 94022],
+      "high_load_backhaul_limit": [94030, 94031, 94032]
+    },
+    "confirmation": {
+      "severe_persistent_faults": [94100, 94101, 94102, 94103, 94104, 94105, 94106, 94107, 94108, 94109, 94110, 94111, 94112, 94113, 94114, 94115, 94116, 94117, 94118, 94119],
+      "dynamic_failures": [94200, 94201, 94202, 94203, 94204, 94205, 94206, 94207, 94208, 94209, 94210, 94211, 94212, 94213, 94214, 94215, 94216, 94217, 94218, 94219],
+      "high_mobility_rescue": [94300, 94301, 94302, 94303, 94304, 94305, 94306, 94307, 94308, 94309, 94310, 94311, 94312, 94313, 94314, 94315, 94316, 94317, 94318, 94319],
+      "high_load_backhaul_limit": [94400, 94401, 94402, 94403, 94404, 94405, 94406, 94407, 94408, 94409, 94410, 94411, 94412, 94413, 94414, 94415, 94416, 94417, 94418, 94419]
+    }
+  },
+  "policies": [
+    {"id": "Bprime_static_grid_shared_safety", "fleet_size": 1, "source": "existing single-UAV implementation"},
+    {"id": "F_independent_greedy", "fleet_size": 2, "source": "Phase 10 independent per-UAV greedy"},
+    {"id": "G_centralized_coordination", "fleet_size": 2, "source": "Phase 10 joint candidate coordination"},
+    {"id": "F_independent_greedy", "fleet_size": 3, "source": "Phase 10 independent per-UAV greedy"},
+    {"id": "G_centralized_coordination", "fleet_size": 3, "source": "Phase 10 joint candidate coordination"}
+  ],
+  "fleet_model": {
+    "candidate_grid_spacing_km": 1.0,
+    "candidate_limit_per_uav": 6,
+    "min_uav_separation_km": 0.75,
+    "replan_interval_s": 60,
+    "decision_timeout_ms": 2000.0,
+    "max_joint_candidate_combinations": 512,
+    "sortie_service_budget_steps": 3,
+    "initial_staging": "deterministic positions around the legacy UAV start, separated by at least the configured minimum",
+    "same_hardware_parameters": "all UAVs inherit the scenario's access/backhaul radii, speed and capacity; battery and Wh/km/W rates are identical to Phase 5",
+    "shared_resources": "one station capacity pool per healthy base station; one access-capacity pool per UAV; configured backhaul cap is a separate per-UAV cap",
+    "wireless_interference": "not modeled; no co-channel interference claim",
+    "event_visibility": "policies see only current network/user/battery state and current-tick events; they do not receive future trace events"
+  },
+  "strategy_definitions": {
+    "F_independent_greedy": "Each UAV independently ranks single-UAV candidate positions lexicographically by rescue connections, estimated rescue arrival time, total unique connections, latency, sortie energy and travel. A shared safety arbiter resolves minimum-separation/path conflicts; the shared network evaluator allocates users and base-station capacity once.",
+    "G_centralized_coordination": "A deterministic bounded joint search evaluates combinations of each UAV's individually ranked candidate shortlist using the shared network evaluator. Lexicographic objective: rescue connection count, complete rescue coverage, estimated time until all currently assigned rescue links can be reached, total unique connections, rescue latency, total latency, fleet sortie energy, movement and target switching."
+  },
+  "analysis": {
+    "primary_endpoint": "rescue_user_service_success_rate",
+    "key_secondary_endpoints": ["first_full_recovery_success", "sustained_30s_recovery_success", "first_full_recovery_or_censor_time_s"],
+    "censoring_horizon_s": "scenario-specific duration from the existing Phase 5 configuration",
+    "latency_scope": "conditional on each policy's successful user-time samples; report sample counts and do not pair different served-user sets",
+    "seed_pairing": "Bprime/F2/G2/F3/G3 share the same DynamicWorldTrace for each scenario and seed",
+    "multiplicity": "Holm correction across the predeclared rescue-service and binary recovery comparison families; exploratory resource metrics use paired intervals/effect sizes"
+  }
+}

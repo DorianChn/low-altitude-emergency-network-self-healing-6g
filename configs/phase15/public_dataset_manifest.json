@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "mendeley_8p6r8ft4fz_v2",
+  "title": "Measured A2G Channel Dataset (CIR) in Multiple Scenarios",
+  "doi": "10.17632/8p6r8ft4fz.2",
+  "source_url": "https://data.mendeley.com/datasets/8p6r8ft4fz/2",
+  "metadata_api_url": "https://data.mendeley.com/public-api/datasets/8p6r8ft4fz/snapshot/2",
+  "version": 2,
+  "published_date": "2025-08-26",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "spdx_id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "citation": "Zhu, Qiuming; Li, Hangang; Mao, Kai; Li, Hanpeng; Wen, Xuhan; Zhang, Shaolong; Wang, Jie (2025). Measured A2G Channel Dataset (CIR) in Multiple Scenarios. Mendeley Data, v2. https://doi.org/10.17632/8p6r8ft4fz.2",
+  "accessed_date": "2026-10-21",
+  "measurement_scope": {
+    "source_type": "public_measurement",
+    "carrier_frequency_hz": 3600000000,
+    "bandwidth_hz": 61440000,
+    "scenarios": ["Sports field", "Farmland", "Over-water"],
+    "uav_altitude_agl_m": [10, 15],
+    "link_direction": "air_to_ground",
+    "measurement_artifacts": ["measured CIR in XLSX", "derived path loss in MAT v5"],
+    "target_applicability": "public_dataset_domain_only; not calibrated to project hardware or urban disaster scenarios"
+  },
+  "files": [
+    {"filename":"README!.txt","file_id":"16aa9b28-f820-4df9-b7a1-e7e6b76bb9f2","role":"dataset_readme","size_bytes":1898,"sha256":"062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2"},
+    {"filename":"guidemanual.pdf","file_id":"b4e85fb2-8705-477f-af2c-6f86dbb18c46","role":"measurement_protocol","size_bytes":680251,"sha256":"36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3"},
+    {"filename":"Farmland_10.xlsx","file_id":"6ca6a962-f497-476c-a879-d58d49592b38","role":"raw_measured_cir","scenario":"Farmland","altitude_m":10,"size_bytes":302061,"sha256":"07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a"},
+    {"filename":"Farmland_15.xlsx","file_id":"6bfea7e2-adeb-40f1-9b30-078099d5c0cf","role":"raw_measured_cir","scenario":"Farmland","altitude_m":15,"size_bytes":443749,"sha256":"bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8"},
+    {"filename":"OverWater_10.xlsx","file_id":"d465e46e-0ef0-4e74-94b9-c72ea6a3a413","role":"raw_measured_cir","scenario":"Over-water","altitude_m":10,"size_bytes":233836,"sha256":"32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c"},
+    {"filename":"OverWater_15.xlsx","file_id":"30567b5f-6482-4230-912e-a6c17071b009","role":"raw_measured_cir","scenario":"Over-water","altitude_m":15,"size_bytes":394136,"sha256":"1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad"},
+    {"filename":"SportsField_10.xlsx","file_id":"7a181f11-ef12-4c8f-a9aa-e9b9e5ab9c7d","role":"raw_measured_cir","scenario":"Sports field","altitude_m":10,"size_bytes":135129,"sha256":"df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4"},
+    {"filename":"SportsField_15.xlsx","file_id":"01b9d7cb-c980-46d6-85bb-826971b90d2b","role":"raw_measured_cir","scenario":"Sports field","altitude_m":15,"size_bytes":110564,"sha256":"3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd"},
+    {"filename":"Farmland_PL10.mat","file_id":"8d9bd9ec-9b37-4303-9353-b12d6aa4d9af","role":"derived_path_loss","scenario":"Farmland","altitude_m":10,"size_bytes":3614,"sha256":"36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd"},
+    {"filename":"Farmland_PL15.mat","file_id":"696b14ba-79a7-4f24-9e80-649448fab740","role":"derived_path_loss","scenario":"Farmland","altitude_m":15,"size_bytes":5698,"sha256":"a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4"},
+    {"filename":"OverWater_PL10.mat","file_id":"5ec56e62-0b32-4195-a236-aa0fb41a7359","role":"derived_path_loss","scenario":"Over-water","altitude_m":10,"size_bytes":3516,"sha256":"c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a"},
+    {"filename":"OverWater_PL15.mat","file_id":"b23cd950-a0b0-4203-b709-d88608360f15","role":"derived_path_loss","scenario":"Over-water","altitude_m":15,"size_bytes":5441,"sha256":"778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20"},
+    {"filename":"SportsField_PL10.mat","file_id":"4fb22b00-2c88-4d08-85fe-27e4356bd37e","role":"derived_path_loss","scenario":"Sports field","altitude_m":10,"size_bytes":1890,"sha256":"4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9"},
+    {"filename":"SportsField_PL15.mat","file_id":"c5dd9906-b94f-41bd-b02a-9dffe591c191","role":"derived_path_loss","scenario":"Sports field","altitude_m":15,"size_bytes":1594,"sha256":"b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89"}
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "historical_source": "results/phase10_confirmation_raw.json",
+  "historical_source_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+  "scenario_id": "severe_persistent_faults",
+  "seed": 94100,
+  "strategy_id": "Bprime_static_grid_shared_safety",
+  "model_id": "legacy_distance",
+  "historical_trace_sha256": "34ecace50bb4f098c5a12a4abbb75cb3503ee74f6e8f3086e5560abb76498c78",
+  "replayed_trace_sha256": "34ecace50bb4f098c5a12a4abbb75cb3503ee74f6e8f3086e5560abb76498c78",
+  "trace_matches": true,
+  "metrics_match": true,
+  "compared_metric_count": 12,
+  "wall_clock_compute_time_compared": false,
+  "metric_comparisons": {
+    "rescue_user_service_success_rate": {
+      "historical": 0.584016,
+      "replayed": 0.584016,
+      "matches": true
+    },
+    "normal_user_connection_success_rate": {
+      "historical": 0.3944672131147541,
+      "replayed": 0.3944672131147541,
+      "matches": true
+    },
+    "user_connection_success_rate": {
+      "historical": 0.432377,
+      "replayed": 0.432377,
+      "matches": true
+    },
+    "first_full_recovery_success": {
+      "historical": 1,
+      "replayed": 1,
+      "matches": true
+    },
+    "first_full_recovery_time_s": {
+      "historical": 270,
+      "replayed": 270,
+      "matches": true
+    },
+    "sustained_30s_recovery_success": {
+      "historical": 1,
+      "replayed": 1,
+      "matches": true
+    },
+    "sustained_30s_recovery_time_s": {
+      "historical": 270,
+      "replayed": 270,
+      "matches": true
+    },
+    "drone_energy_consumed_wh": {
+      "historical": 125.718235,
+      "replayed": 125.718235,
+      "matches": true
+    },
+    "drone_energy_wh_per_rescue_user_hour": {
+      "historical": 163.388319,
+      "replayed": 163.388319,
+      "matches": true
+    },
+    "average_latency_ms": {
+      "historical": 75.679415,
+      "replayed": 75.679415,
+      "matches": true
+    },
+    "p95_latency_ms": {
+      "historical": 127.779577,
+      "replayed": 127.779577,
+      "matches": true
+    },
+    "latency_sample_count": {
+      "historical": 1055,
+      "replayed": 1055,
+      "matches": true
+    }
+  },
+  "config_sha256": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c"
+}

@@ -1,0 +1,13 @@
+
+> frontend@0.0.0 test
+> vitest run --config vitest.config.ts --run
+
+
+ RUN  v5.0.5 D:/Codex Work/Ai+6G game/AAA工程文件/6G-RESCUE-改进工程/frontend
+
+
+ Test Files  7 passed (7)
+      Tests  21 passed (21)
+   Start at  01:03:01
+   Duration  2.18s (environment 65%, tests 14%, setup 14%, import 5%, transform 1%)
+

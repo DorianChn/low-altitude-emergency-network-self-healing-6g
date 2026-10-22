@@ -1,0 +1,2 @@
+{'health': 'ok', 'phase18': 'phase18', 'supporting': ['evidence_manifest', 'integrity_audit', 'release_manifest']}
+EXIT_CODE=0

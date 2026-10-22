@@ -1,0 +1,161 @@
+{
+  "candidate_selection": "No best variant is selected from the held-out set. The confirmatory contrasts are fixed in advance; development results are exploratory.",
+  "development_seed_map": {
+    "dynamic_failures": [
+      6510,
+      6511,
+      6512
+    ],
+    "high_load_backhaul_limit": [
+      6530,
+      6531,
+      6532
+    ],
+    "high_mobility_rescue": [
+      6520,
+      6521,
+      6522
+    ],
+    "severe_persistent_faults": [
+      6500,
+      6501,
+      6502
+    ]
+  },
+  "parameter_levels": {
+    "C_energy_penalty_weight": {
+      "base": 2,
+      "high": 4,
+      "low": 0
+    },
+    "C_relay_target_quantization_km": {
+      "base": 0.25,
+      "high": 0.5,
+      "low": 0.125
+    },
+    "C_replanning_interval_s": {
+      "base": 20,
+      "high": 40,
+      "low": 10
+    },
+    "D_coarse_grid_shortlist_limit": {
+      "base": 64,
+      "high": 128,
+      "low": 16,
+      "note": "limits the pre-ranked grid shortlist only; exact relay and rescue-cluster points are retained"
+    },
+    "D_effective_replanning_interval_s": {
+      "base": 60,
+      "high": 120,
+      "low": 60,
+      "middle": 90,
+      "note": "production D clamps this interval to at least 60 s"
+    },
+    "D_energy_tiebreak": {
+      "base": "enabled",
+      "high": "not_applicable_numeric_factor",
+      "low": "disabled"
+    },
+    "D_policy_grid_step_km": {
+      "base": 0.25,
+      "high": 0.5,
+      "low": 0.125
+    },
+    "D_switch_penalty_weight": {
+      "base": 1,
+      "high": 10,
+      "low": 0
+    },
+    "battery_reserve_wh": {
+      "high": 100,
+      "low": 50,
+      "middle": 75,
+      "production_base": 50
+    },
+    "prediction_horizon_steps": {
+      "base": 3,
+      "high": 6,
+      "low": 1,
+      "time_step_s": 10
+    },
+    "rescue_priority": {
+      "base": "enabled",
+      "high": "not_applicable_numeric_factor",
+      "low": "disabled"
+    }
+  },
+  "range_basis": "Ranges are bounded by the existing 10 s simulator step, 600 s scenario horizon, 0.25 km base grid, 20 s C interval, D's 60 s minimum interval, and 50 Wh configured reserve. They are engineering sensitivity probes, not literature-claimed optima.",
+  "role": "staged one-factor parameter screening and held-out confirmation",
+  "safety_constraints_always_on": [
+    "runtime speed and energy enforcement unchanged",
+    "return-to-healthy-station reserve check remains active",
+    "battery reserve remains positive and configurable at 50/75/100 Wh",
+    "backhaul, access-radius, capacity, city-boundary and link checks unchanged",
+    "no candidate result may bypass runtime simulator feasibility checks"
+  ],
+  "schema_version": "1.0",
+  "validation_seed_map": {
+    "dynamic_failures": [
+      90100,
+      90101,
+      90102,
+      90103,
+      90104,
+      90105,
+      90106,
+      90107,
+      90108,
+      90109
+    ],
+    "high_load_backhaul_limit": [
+      90300,
+      90301,
+      90302,
+      90303,
+      90304,
+      90305,
+      90306,
+      90307,
+      90308,
+      90309
+    ],
+    "high_mobility_rescue": [
+      90200,
+      90201,
+      90202,
+      90203,
+      90204,
+      90205,
+      90206,
+      90207,
+      90208,
+      90209
+    ],
+    "severe_persistent_faults": [
+      90000,
+      90001,
+      90002,
+      90003,
+      90004,
+      90005,
+      90006,
+      90007,
+      90008,
+      90009
+    ]
+  },
+  "validation_variant_ids_frozen_before_run": [
+    "C_replan_event_off",
+    "C_horizon_1",
+    "C_horizon_6",
+    "C_direct_heading_off",
+    "C_energy_weight_0",
+    "D_replan_event_off",
+    "D_horizon_1",
+    "D_horizon_6",
+    "D_switch_suppression_off",
+    "D_energy_tiebreak_off",
+    "D_rescue_priority_off",
+    "D_candidate_cap_16"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase14_radio_link_model",
+  "status": "frozen_before_confirmation",
+  "frozen_source_bundle_sha256": "196e62f483c5cffb2ae280d9bc2319e7b175ff024c874ee97fecef4d8955d1b0",
+  "frozen_link_budget_config_sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+  "frozen_phase10_plan_sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+  "scenario_config_sha256": {
+    "severe_persistent_faults": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c",
+    "dynamic_failures": "4b21a21525d9ef5557a40ef36a07451c0a56cdeb029230859dace620a4b548a4",
+    "high_mobility_rescue": "a7b0aad9fd503b6f6e7171ece4ab787c9f28b12ba69b04f03e3511d163a48fa8",
+    "high_load_backhaul_limit": "1bad9cfcb1d0b63904e256fa1f92c7a5e85eee3f191e0d387b2059beec0bf9ab"
+  },
+  "development_seeds": {
+    "severe_persistent_faults": [
+      96000,
+      96001,
+      96002
+    ],
+    "dynamic_failures": [
+      96010,
+      96011,
+      96012
+    ],
+    "high_mobility_rescue": [
+      96020,
+      96021,
+      96022
+    ],
+    "high_load_backhaul_limit": [
+      96030,
+      96031,
+      96032
+    ]
+  },
+  "confirmation_seeds": {
+    "severe_persistent_faults": [
+      96100,
+      96101,
+      96102,
+      96103,
+      96104,
+      96105,
+      96106,
+      96107,
+      96108,
+      96109,
+      96110,
+      96111,
+      96112,
+      96113,
+      96114,
+      96115,
+      96116,
+      96117,
+      96118,
+      96119
+    ],
+    "dynamic_failures": [
+      96200,
+      96201,
+      96202,
+      96203,
+      96204,
+      96205,
+      96206,
+      96207,
+      96208,
+      96209,
+      96210,
+      96211,
+      96212,
+      96213,
+      96214,
+      96215,
+      96216,
+      96217,
+      96218,
+      96219
+    ],
+    "high_mobility_rescue": [
+      96300,
+      96301,
+      96302,
+      96303,
+      96304,
+      96305,
+      96306,
+      96307,
+      96308,
+      96309,
+      96310,
+      96311,
+      96312,
+      96313,
+      96314,
+      96315,
+      96316,
+      96317,
+      96318,
+      96319
+    ],
+    "high_load_backhaul_limit": [
+      96400,
+      96401,
+      96402,
+      96403,
+      96404,
+      96405,
+      96406,
+      96407,
+      96408,
+      96409,
+      96410,
+      96411,
+      96412,
+      96413,
+      96414,
+      96415,
+      96416,
+      96417,
+      96418,
+      96419
+    ]
+  },
+  "seed_partitions_disjoint": true,
+  "strategies": [
+    "Bprime_static_grid_shared_safety",
+    "F_independent_greedy (3 UAV)",
+    "G_centralized_coordination (3 UAV)"
+  ],
+  "models": [
+    "legacy_distance",
+    "link_budget_v1"
+  ],
+  "primary_endpoint": "rescue_user_service_success_rate",
+  "primary_comparison": "within each scenario and policy, paired seed difference link_budget_v1 minus legacy_distance",
+  "primary_multiplicity": "Holm correction across 12 scenario-policy comparisons",
+  "confirmation_seed_count": 80,
+  "confirmation_runs": 480,
+  "sensitivity_analysis": "one-factor-at-a-time development screen only; no confirmation tuning",
+  "model_claim_boundary": "abstract research link budget; no real equipment calibration, full channel model, SINR, or interference"
+}

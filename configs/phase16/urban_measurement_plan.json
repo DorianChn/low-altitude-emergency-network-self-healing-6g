@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_urban_a2g_measurement_plan",
+  "status": "PLANNED_NOT_EXECUTED",
+  "target_frequency_hz": 3500000000,
+  "target_frequency_scope": "3.5 GHz vicinity; use only in a specifically authorized laboratory or other approved arrangement",
+  "transmission_authorized": false,
+  "uav_flight_authorized": false,
+  "design": {
+    "independent_unit": "complete route/session/batch",
+    "pilot": "one route per cell for variance and workflow review; pilot data excluded from final holdout",
+    "provisional_cells": {
+      "propagation_conditions": ["open_line_of_sight", "urban_street", "building_obstructed"],
+      "distance_levels": ["near", "middle", "far", "edge_of_reliable_measurement"],
+      "receiver_heights": ["low_approved_height", "middle_approved_height", "high_approved_height"],
+      "independent_routes_per_cell": 5,
+      "repeat_passes_per_route": 3
+    },
+    "sample_size_rule": "Recalculate after the pilot using observed between-route variance and a predeclared precision/power target; five routes are a planning floor, not a statistical guarantee.",
+    "split_rule": "Keep entire routes and measurement batches in exactly one of development, validation, or final holdout. Never split adjacent samples across partitions."
+  },
+  "scenarios": [
+    {"id":"open_line_of_sight","purpose":"reference propagation and repeatability","conditions":["clear LOS","documented antenna attitude","approved site"],"primary_sources":["position error","antenna alignment","temperature drift","multipath"]},
+    {"id":"urban_street","purpose":"street canyon and route variability","conditions":["record street geometry","record traffic and moving obstructions","fixed route segments"],"primary_sources":["multipath","time variation","route repeatability","position sync"]},
+    {"id":"building_obstructed","purpose":"obstruction loss and link margin changes","conditions":["record obstruction class","same Tx/Rx sites across batches","no private premises without permission"],"primary_sources":["building geometry","orientation","position error","environmental variation"]}
+  ],
+  "required_fields_per_sample": [
+    "measurement_id", "session_id", "route_id", "timestamp_utc", "frequency_hz", "bandwidth_hz",
+    "tx_power_dbm", "rx_metric_name", "rx_value", "tx_rx_distance_m", "tx_height_m", "rx_height_m",
+    "antenna_models_and_orientation", "feedline_loss_db", "device_model_and_serial_private",
+    "calibration_certificate_id", "weather", "obstruction", "quality_flags", "measurement_uncertainty_components"
+  ],
+  "safety_and_compliance_gates": [
+    "Confirm the specific frequency, emission, antenna, power, place and time are authorized by the relevant radio authority or approved lab.",
+    "Use type-approved equipment where applicable; do not connect or transmit with an unverified SDR.",
+    "Before any UAV work, verify registration, operator requirements, airspace status and operation approval for the actual aircraft, site and task.",
+    "Use receive-only or shielded-lab alternatives if outdoor emission authorization is unavailable.",
+    "No flight, RF emission, or device control is performed by this project software."
+  ],
+  "can_validate": ["data pipeline", "within-device repeatability", "route/session-held-out predictive error", "specified link budget under documented conditions"],
+  "cannot_establish_without_additional_evidence": ["universal urban propagation", "real 6G performance", "network-wide availability", "UAV flight safety certification", "regulatory authorization", "device calibration outside measured conditions"],
+  "official_sources": [
+    {"title":"中华人民共和国无线电管理条例","url":"https://www.miit.gov.cn/zwgk/zcwj/flfg/art/2020/art_9d66759198324b83a9dfbb44eb292b79.html","accessed":"2026-10-21","sections":["Articles 14-18, 27-31, 37-40, 44, 50"]},
+    {"title":"工信部无〔2017〕276号：5G系统使用3300-3600MHz和4800-5000MHz频段","url":"https://ythxxfb.miit.gov.cn/ythzxfwpt/hlwmh/zcwj/xzxk/wxdhwxtx/art/2020/art_8e89ad16e5b44fb89c5bc316c259fd3c.html","accessed":"2026-10-21","sections":["items 1-4"]},
+    {"title":"无人驾驶航空器飞行管理暂行条例","url":"https://www.caac.gov.cn/PHONE/XXGK_17/XXGK/FLFG/202401/t20240115_222642.html","accessed":"2026-10-21","sections":["Articles 25-27, 32-33"]}
+  ]
+}

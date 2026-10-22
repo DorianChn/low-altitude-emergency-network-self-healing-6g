@@ -1,0 +1,5434 @@
+{
+  "dynamic_failures": {
+    "Bprime_static_grid_shared_safety": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.06830633333333333,
+          "sample_sd": 0.0343096170968627,
+          "ci95": [
+            -0.01692348037269706,
+            0.15353614703936372
+          ],
+          "min": 0.028689,
+          "max": 0.088115
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 142.00043866666667,
+          "sample_sd": 9.344307063011271,
+          "ci95": [
+            118.78789310126544,
+            165.2129842320679
+          ],
+          "min": 132.588349,
+          "max": 151.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 236.51703333333333,
+          "sample_sd": 9.716013428527845,
+          "ci95": [
+            212.38111796765472,
+            260.6529486990119
+          ],
+          "min": 225.3757,
+          "max": 243.2296
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 139.22266066666666,
+          "sample_sd": 6.853142598146804,
+          "ci95": [
+            122.19851069460756,
+            156.24681063872575
+          ],
+          "min": 132.588349,
+          "max": 146.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 233.67476666666667,
+          "sample_sd": 10.157510715885728,
+          "ci95": [
+            208.4421112398269,
+            258.90742209350645
+          ],
+          "min": 222.1405,
+          "max": 241.2846
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06830633333333333,
+          "sample_sd": 0.0343096170968627,
+          "ci95": [
+            -0.15353614703936372,
+            0.01692348037269706
+          ],
+          "min": -0.088115,
+          "max": -0.028689
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.09836066666666667,
+          "sample_sd": 0.016004353918022855,
+          "ci95": [
+            0.058603647546706994,
+            0.13811768578662634
+          ],
+          "min": 0.088115,
+          "max": 0.116803
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 144.55599433333333,
+          "sample_sd": 7.476261929023521,
+          "ci95": [
+            125.98393013252276,
+            163.12805853414392
+          ],
+          "min": 138.588349,
+          "max": 152.942122
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 228.23616666666666,
+          "sample_sd": 5.32150462400751,
+          "ci95": [
+            215.01681634691587,
+            241.45551698641745
+          ],
+          "min": 222.5714,
+          "max": 233.1304
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.030054333333333332,
+          "sample_sd": 0.030760267494502273,
+          "ci95": [
+            -0.046358407173287486,
+            0.10646707383995416
+          ],
+          "min": 0.0,
+          "max": 0.061474999999999995
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 138.00043866666667,
+          "sample_sd": 7.2788377841412535,
+          "ci95": [
+            119.9188032293682,
+            156.08207410396514
+          ],
+          "min": 132.588349,
+          "max": 146.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 231.69500000000002,
+          "sample_sd": 1.4336014962324726,
+          "ci95": [
+            228.13373645958725,
+            235.2562635404128
+          ],
+          "min": 230.0405,
+          "max": 232.569
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06830633333333333,
+          "sample_sd": 0.0343096170968627,
+          "ci95": [
+            -0.15353614703936372,
+            0.01692348037269706
+          ],
+          "min": -0.088115,
+          "max": -0.028689
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.06830633333333333,
+          "sample_sd": 0.0343096170968627,
+          "ci95": [
+            -0.01692348037269706,
+            0.15353614703936372
+          ],
+          "min": 0.028689,
+          "max": 0.088115
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 142.00043866666667,
+          "sample_sd": 9.344307063011271,
+          "ci95": [
+            118.78789310126544,
+            165.2129842320679
+          ],
+          "min": 132.588349,
+          "max": 151.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 231.63233333333335,
+          "sample_sd": 1.7922660302905147,
+          "ci95": [
+            227.18009769799963,
+            236.08456896866707
+          ],
+          "min": 229.5817,
+          "max": 232.8993
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 138.00043866666667,
+          "sample_sd": 7.2788377841412535,
+          "ci95": [
+            119.9188032293682,
+            156.08207410396514
+          ],
+          "min": 132.588349,
+          "max": 146.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 231.1380333333333,
+          "sample_sd": 1.7941101424754662,
+          "ci95": [
+            226.68121666937625,
+            235.59484999729037
+          ],
+          "min": 229.4018,
+          "max": 232.9849
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06830633333333333,
+          "sample_sd": 0.0343096170968627,
+          "ci95": [
+            -0.15353614703936372,
+            0.01692348037269706
+          ],
+          "min": -0.088115,
+          "max": -0.028689
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.19945366666666667,
+          "sample_sd": 0.0861955015898935,
+          "ci95": [
+            -0.014667829416023015,
+            0.41357516274935635
+          ],
+          "min": 0.110656,
+          "max": 0.282787
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 152.22266066666666,
+          "sample_sd": 7.8431898760240575,
+          "ci95": [
+            132.73909691521692,
+            171.7062244181164
+          ],
+          "min": 147.470845,
+          "max": 161.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 232.0977333333333,
+          "sample_sd": 9.217973102766866,
+          "ci95": [
+            209.19901872284996,
+            254.99644794381666
+          ],
+          "min": 221.9337,
+          "max": 239.9166
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.13114733333333334,
+          "sample_sd": 0.05770549523514493,
+          "ci95": [
+            -0.012201063555518948,
+            0.27449573022218565
+          ],
+          "min": 0.08196700000000001,
+          "max": 0.194672
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 138.00043866666667,
+          "sample_sd": 7.2788377841412535,
+          "ci95": [
+            119.9188032293682,
+            156.08207410396514
+          ],
+          "min": 132.588349,
+          "max": 146.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 240.08990000000003,
+          "sample_sd": 2.8593819804286325,
+          "ci95": [
+            232.98680139011793,
+            247.19299860988212
+          ],
+          "min": 236.996,
+          "max": 242.6353
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06830633333333333,
+          "sample_sd": 0.0343096170968627,
+          "ci95": [
+            -0.15353614703936372,
+            0.01692348037269706
+          ],
+          "min": -0.088115,
+          "max": -0.028689
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.10655766666666666,
+          "sample_sd": 0.012464731217853567,
+          "ci95": [
+            0.07559355778156504,
+            0.13752177555176828
+          ],
+          "min": 0.098361,
+          "max": 0.120902
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 146.11155,
+          "sample_sd": 6.843589933864536,
+          "ci95": [
+            129.11113016153217,
+            163.11196983846781
+          ],
+          "min": 139.255016,
+          "max": 152.942122
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 234.2377,
+          "sample_sd": 2.7581011366518102,
+          "ci95": [
+            227.38619695362178,
+            241.0892030463782
+          ],
+          "min": 231.4143,
+          "max": 236.9255
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.03825133333333334,
+          "sample_sd": 0.029076179878610837,
+          "ci95": [
+            -0.03397790161675988,
+            0.11048056828342656
+          ],
+          "min": 0.012295,
+          "max": 0.06967200000000001
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.058743333333333335,
+          "sample_sd": 0.05087321896964388,
+          "ci95": [
+            -0.06763274842729111,
+            0.1851194150939578
+          ],
+          "min": 0.0,
+          "max": 0.088115
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 140.33377199999998,
+          "sample_sd": 7.019567376591594,
+          "ci95": [
+            122.8961999596365,
+            157.77134404036346
+          ],
+          "min": 132.588349,
+          "max": 146.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 233.9243333333333,
+          "sample_sd": 16.18133847378929,
+          "ci95": [
+            193.72766020399686,
+            274.12100646266975
+          ],
+          "min": 220.3652,
+          "max": 251.8371
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.009563,
+          "sample_sd": 0.016563601872781174,
+          "ci95": [
+            -0.050709268054594046,
+            0.03158326805459404
+          ],
+          "min": -0.028689,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.066257,
+          "sample_sd": 0.0384643081440444,
+          "ci95": [
+            -0.0292936384170059,
+            0.1618076384170059
+          ],
+          "min": 0.043033,
+          "max": 0.110656
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 153.33377199999998,
+          "sample_sd": 7.278838352571034,
+          "ci95": [
+            135.25213515064365,
+            171.4154088493563
+          ],
+          "min": 147.921682,
+          "max": 161.608789
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 243.0375333333333,
+          "sample_sd": 8.789837072627314,
+          "ci95": [
+            221.2023675810787,
+            264.8726990855879
+          ],
+          "min": 236.3635,
+          "max": 252.9968
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.002049333333333329,
+          "sample_sd": 0.07276749137034569,
+          "ci95": [
+            -0.1828138028358755,
+            0.17871513616920887
+          ],
+          "min": -0.045082,
+          "max": 0.08196700000000001
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.10655766666666666,
+          "sample_sd": 0.012464731217853567,
+          "ci95": [
+            0.07559355778156504,
+            0.13752177555176828
+          ],
+          "min": 0.098361,
+          "max": 0.120902
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 146.11155,
+          "sample_sd": 6.843589933864536,
+          "ci95": [
+            129.11113016153217,
+            163.11196983846781
+          ],
+          "min": 139.255016,
+          "max": 152.942122
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 235.57630000000003,
+          "sample_sd": 6.02680064627992,
+          "ci95": [
+            220.60489723337486,
+            250.5477027666252
+          ],
+          "min": 229.8294,
+          "max": 241.8486
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.03825133333333334,
+          "sample_sd": 0.029076179878610837,
+          "ci95": [
+            -0.03397790161675988,
+            0.11048056828342656
+          ],
+          "min": 0.012295,
+          "max": 0.06967200000000001
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 138.00043866666667,
+          "sample_sd": 7.2788377841412535,
+          "ci95": [
+            119.9188032293682,
+            156.08207410396514
+          ],
+          "min": 132.588349,
+          "max": 146.275455
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 231.7271333333333,
+          "sample_sd": 5.146331122589502,
+          "ci95": [
+            218.94293811455435,
+            244.51132855211227
+          ],
+          "min": 227.5121,
+          "max": 237.4623
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06830633333333333,
+          "sample_sd": 0.0343096170968627,
+          "ci95": [
+            -0.15353614703936372,
+            0.01692348037269706
+          ],
+          "min": -0.088115,
+          "max": -0.028689
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    },
+    "G_centralized_coordination": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.11885245901639345,
+          "sample_sd": 0.11932847017656285,
+          "ci95": [
+            -0.17757589383468042,
+            0.41528081186746735
+          ],
+          "min": 0.006147540983606557,
+          "max": 0.24385245901639344
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 195.9839764172818,
+          "sample_sd": 28.686720263359827,
+          "ci95": [
+            124.7222127846374,
+            267.2457400499262
+          ],
+          "min": 170.28526258517834,
+          "max": 226.93333333333354
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2093.2555333711207,
+          "sample_sd": 266.5998254287406,
+          "ci95": [
+            1430.9848530775325,
+            2755.526213664709
+          ],
+          "min": 1855.6836999487132,
+          "max": 2381.5855000866577
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.053961748633879786,
+          "sample_sd": 0.08646310740449172,
+          "ci95": [
+            -0.16082451714473697,
+            0.2687480144124965
+          ],
+          "min": 0.0,
+          "max": 0.15368852459016394
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 172.47869141594626,
+          "sample_sd": 27.526862019163858,
+          "ci95": [
+            104.09817538799358,
+            240.85920744389892
+          ],
+          "min": 144.50274091450524,
+          "max": 199.53333333333342
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2411.918666718217,
+          "sample_sd": 495.80654266619626,
+          "ci95": [
+            1180.2669363485718,
+            3643.570397087862
+          ],
+          "min": 1905.3456002147868,
+          "max": 2896.207199897617
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06489071038251366,
+          "sample_sd": 0.05103789301426951,
+          "ci95": [
+            -0.1916758651475391,
+            0.06189444438251175
+          ],
+          "min": -0.09836065573770492,
+          "max": -0.006147540983606557
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.14959016393442623,
+          "sample_sd": 0.1262534573831915,
+          "ci95": [
+            -0.16404081079002245,
+            0.46322113865887493
+          ],
+          "min": 0.006147540983606557,
+          "max": 0.24385245901639344
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 160.16210036659206,
+          "sample_sd": 26.488548954848014,
+          "ci95": [
+            94.36089697830941,
+            225.9633037548747
+          ],
+          "min": 142.97415147406738,
+          "max": 190.66666666666677
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1884.4994000392035,
+          "sample_sd": 161.37368886778228,
+          "ci95": [
+            1483.6249338384816,
+            2285.373866239925
+          ],
+          "min": 1762.608300196007,
+          "max": 2067.503900034353
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.03073770491803279,
+          "sample_sd": 0.053239266626092546,
+          "ci95": [
+            -0.10151596505377428,
+            0.16299137488983986
+          ],
+          "min": 0.0,
+          "max": 0.09221311475409837
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 162.28148148148168,
+          "sample_sd": 41.83731179744021,
+          "ci95": [
+            58.35183748720361,
+            266.21112547575973
+          ],
+          "min": 116.59999999999992,
+          "max": 198.73333333333355
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2994.440433452837,
+          "sample_sd": 995.3331652242549,
+          "ci95": [
+            521.8957819634466,
+            5466.985084942227
+          ],
+          "min": 1942.496000090614,
+          "max": 3921.3463000487536
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.11885245901639345,
+          "sample_sd": 0.11932847017656285,
+          "ci95": [
+            -0.41528081186746735,
+            0.17757589383468042
+          ],
+          "min": -0.24385245901639344,
+          "max": -0.006147540983606557
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.11885245901639345,
+          "sample_sd": 0.11932847017656285,
+          "ci95": [
+            -0.17757589383468042,
+            0.41528081186746735
+          ],
+          "min": 0.006147540983606557,
+          "max": 0.24385245901639344
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 195.9839764172818,
+          "sample_sd": 28.686720263359827,
+          "ci95": [
+            124.7222127846374,
+            267.2457400499262
+          ],
+          "min": 170.28526258517834,
+          "max": 226.93333333333354
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2077.4992000078782,
+          "sample_sd": 278.20918099202567,
+          "ci95": [
+            1386.3892817504152,
+            2768.6091182653413
+          ],
+          "min": 1833.3374002249911,
+          "max": 2380.3813997656107
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.00819672131147541,
+          "sample_sd": 0.01419713776695801,
+          "ci95": [
+            -0.027070924014339796,
+            0.04346436663729062
+          ],
+          "min": 0.0,
+          "max": 0.02459016393442623
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 188.04444444444485,
+          "sample_sd": 110.45138364071396,
+          "ci95": [
+            -86.33200297245574,
+            462.42089186134547
+          ],
+          "min": 69.86666666666677,
+          "max": 288.6666666666669
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2673.2700332455956,
+          "sample_sd": 321.8043942296195,
+          "ci95": [
+            1873.8636017328286,
+            3472.6764647583627
+          ],
+          "min": 2377.6931000174955,
+          "max": 3016.0809999797493
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.11065573770491803,
+          "sample_sd": 0.10661647163384069,
+          "ci95": [
+            -0.37550573558430067,
+            0.15419426017446458
+          ],
+          "min": -0.2192622950819672,
+          "max": -0.006147540983606557
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.2260928961748634,
+          "sample_sd": 0.1716588628835858,
+          "ci95": [
+            -0.2003313586704305,
+            0.6525171510201573
+          ],
+          "min": 0.03483606557377049,
+          "max": 0.3668032786885246
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 157.97622678136918,
+          "sample_sd": 36.5945583019187,
+          "ci95": [
+            67.07030445872694,
+            248.88214910401143
+          ],
+          "min": 131.26666666666674,
+          "max": 199.68786220337338
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1907.011300014953,
+          "sample_sd": 53.24455502886217,
+          "ci95": [
+            1774.744492922391,
+            2039.2781071075149
+          ],
+          "min": 1856.1426000669599,
+          "max": 1962.3498999280855
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.10724043715846994,
+          "sample_sd": 0.07199401706556306,
+          "ci95": [
+            -0.07160261565449184,
+            0.28608348997143174
+          ],
+          "min": 0.02868852459016393,
+          "max": 0.17008196721311475
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.049863387978142076,
+          "sample_sd": 0.08284198512642284,
+          "ci95": [
+            -0.15592751139066452,
+            0.25565428734694867
+          ],
+          "min": 0.0,
+          "max": 0.14549180327868852
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 175.91111111111124,
+          "sample_sd": 97.16518199742438,
+          "ci95": [
+            -65.46058175777458,
+            417.2828039799971
+          ],
+          "min": 69.86666666666677,
+          "max": 260.6666666666669
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2477.3901000153273,
+          "sample_sd": 304.8680273320369,
+          "ci95": [
+            1720.0559362128852,
+            3234.7242638177695
+          ],
+          "min": 2132.000699872151,
+          "max": 2709.026600117795
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06898907103825136,
+          "sample_sd": 0.054460926954310505,
+          "ci95": [
+            -0.20427751350233395,
+            0.06629937142583123
+          ],
+          "min": -0.10245901639344261,
+          "max": -0.006147540983606557
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.1557377049180328,
+          "sample_sd": 0.11734129755918367,
+          "ci95": [
+            -0.13575423749445187,
+            0.44722964733051745
+          ],
+          "min": 0.022540983606557378,
+          "max": 0.24385245901639344
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 139.19976948625882,
+          "sample_sd": 6.872955648511933,
+          "ci95": [
+            122.12640116860291,
+            156.27313780391472
+          ],
+          "min": 131.26666666666674,
+          "max": 143.35849031804239
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1910.8802332775667,
+          "sample_sd": 164.54098142636406,
+          "ci95": [
+            1502.1377761879257,
+            2319.6226903672077
+          ],
+          "min": 1745.2309000073,
+          "max": 2074.2900000186637
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.03688524590163935,
+          "sample_sd": 0.0503614988829693,
+          "ci95": [
+            -0.08821965269381662,
+            0.16199014449709534
+          ],
+          "min": 0.0,
+          "max": 0.09426229508196722
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.11270491803278689,
+          "sample_sd": 0.11932847017656284,
+          "ci95": [
+            -0.183723434818287,
+            0.40913327088386076
+          ],
+          "min": 0.0,
+          "max": 0.23770491803278687
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 160.90249493580032,
+          "sample_sd": 103.22054956744005,
+          "ci95": [
+            -95.51156487227135,
+            417.31655474387196
+          ],
+          "min": 53.66666666666657,
+          "max": 259.57415147406755
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2539.433166695138,
+          "sample_sd": 177.37021394718306,
+          "ci95": [
+            2098.8211292877168,
+            2980.045204102559
+          ],
+          "min": 2342.6558999344707,
+          "max": 2687.0074002072215
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.006147540983606557,
+          "sample_sd": 6.938893903907228e-18,
+          "ci95": [
+            -0.006147540983606575,
+            -0.00614754098360654
+          ],
+          "min": -0.006147540983606564,
+          "max": -0.00614754098360655
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.12158469945355192,
+          "sample_sd": 0.07629815053910245,
+          "ci95": [
+            -0.067950413637436,
+            0.31111981254453985
+          ],
+          "min": 0.03483606557377049,
+          "max": 0.17827868852459017
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 162.45770826285062,
+          "sample_sd": 44.274174088707355,
+          "ci95": [
+            52.474562752493526,
+            272.4408537732077
+          ],
+          "min": 131.26666666666674,
+          "max": 213.13230664781779
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 592.6183667421961,
+          "sample_sd": 30.49356018397878,
+          "ci95": [
+            516.8681639236462,
+            668.3685695607461
+          ],
+          "min": 559.1171998530626,
+          "max": 618.755700183101
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.002732240437158475,
+          "sample_sd": 0.05971992621419233,
+          "ci95": [
+            -0.1456202804144636,
+            0.15108476128878054
+          ],
+          "min": -0.06557377049180327,
+          "max": 0.04508196721311476
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.1557377049180328,
+          "sample_sd": 0.11734129755918367,
+          "ci95": [
+            -0.13575423749445187,
+            0.44722964733051745
+          ],
+          "min": 0.022540983606557378,
+          "max": 0.24385245901639344
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 139.19976948625882,
+          "sample_sd": 6.872955648511933,
+          "ci95": [
+            122.12640116860291,
+            156.27313780391472
+          ],
+          "min": 131.26666666666674,
+          "max": 143.35849031804239
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1908.2374000766624,
+          "sample_sd": 206.72065611026082,
+          "ci95": [
+            1394.714822435393,
+            2421.759977717932
+          ],
+          "min": 1702.4775001918897,
+          "max": 2115.9056001342833
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.03688524590163935,
+          "sample_sd": 0.0503614988829693,
+          "ci95": [
+            -0.08821965269381662,
+            0.16199014449709534
+          ],
+          "min": 0.0,
+          "max": 0.09426229508196722
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.049863387978142076,
+          "sample_sd": 0.08284198512642284,
+          "ci95": [
+            -0.15592751139066452,
+            0.25565428734694867
+          ],
+          "min": 0.0,
+          "max": 0.14549180327868852
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 175.91111111111124,
+          "sample_sd": 97.16518199742438,
+          "ci95": [
+            -65.46058175777458,
+            417.2828039799971
+          ],
+          "min": 69.86666666666677,
+          "max": 260.6666666666669
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2457.2109666187316,
+          "sample_sd": 324.76142073065233,
+          "ci95": [
+            1650.4588740601039,
+            3263.9630591773594
+          ],
+          "min": 2088.03390013054,
+          "max": 2698.818799923174
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.06898907103825136,
+          "sample_sd": 0.054460926954310505,
+          "ci95": [
+            -0.20427751350233395,
+            0.06629937142583123
+          ],
+          "min": -0.10245901639344261,
+          "max": -0.006147540983606557
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    }
+  },
+  "high_load_backhaul_limit": {
+    "Bprime_static_grid_shared_safety": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.28073766666666666,
+          "sample_sd": 0.12749473591616767,
+          "ci95": [
+            -0.03597681487233423,
+            0.5974521482056676
+          ],
+          "min": 0.137295,
+          "max": 0.381148
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 151.323361,
+          "sample_sd": 9.960702173503023,
+          "ci95": [
+            126.5796050952877,
+            176.0671169047123
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.5662,
+          "sample_sd": 6.8841980585976845,
+          "ci95": [
+            122.46490398747912,
+            156.6674960125209
+          ],
+          "min": 131.7463,
+          "max": 144.7127
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.25409866666666664,
+          "sample_sd": 0.15175003093684472,
+          "ci95": [
+            -0.12286930794282808,
+            0.6310666412761614
+          ],
+          "min": 0.086066,
+          "max": 0.381148
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 149.21224966666668,
+          "sample_sd": 9.923263751843201,
+          "ci95": [
+            124.56149595706795,
+            173.8630033762654
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 140.71586666666667,
+          "sample_sd": 3.735952979272267,
+          "ci95": [
+            131.43524498153045,
+            149.9964883518029
+          ],
+          "min": 136.4288,
+          "max": 143.2755
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.026638999999999996,
+          "sample_sd": 0.02567589163008755,
+          "ci95": [
+            -0.09042145068111504,
+            0.03714345068111505
+          ],
+          "min": -0.051229,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.3756833333333333,
+          "sample_sd": 0.004732540156547368,
+          "ci95": [
+            0.3639270518580812,
+            0.3874396148085854
+          ],
+          "min": 0.372951,
+          "max": 0.381148
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 153.434472,
+          "sample_sd": 11.256142856649737,
+          "ci95": [
+            125.47266304094734,
+            181.39628095905266
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 143.86756666666665,
+          "sample_sd": 4.0154232807181565,
+          "ci95": [
+            133.89270226639445,
+            153.84243106693884
+          ],
+          "min": 139.2436,
+          "max": 146.4759
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.09494566666666665,
+          "sample_sd": 0.12431508806389244,
+          "ci95": [
+            -0.21387013173241148,
+            0.4037614650657448
+          ],
+          "min": 0.0,
+          "max": 0.23565599999999998
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 134.10113866666666,
+          "sample_sd": 11.871639875882364,
+          "ci95": [
+            104.61035035066831,
+            163.591926982665
+          ],
+          "min": 120.437115,
+          "max": 141.885346
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.98080000000002,
+          "sample_sd": 1.7528535363800355,
+          "ci95": [
+            135.62647042710344,
+            144.3351295728966
+          ],
+          "min": 138.55,
+          "max": 141.936
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.28073766666666666,
+          "sample_sd": 0.12749473591616767,
+          "ci95": [
+            -0.5974521482056676,
+            0.03597681487233423
+          ],
+          "min": -0.381148,
+          "max": -0.137295
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.28073766666666666,
+          "sample_sd": 0.12749473591616767,
+          "ci95": [
+            -0.03597681487233423,
+            0.5974521482056676
+          ],
+          "min": 0.137295,
+          "max": 0.381148
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 151.323361,
+          "sample_sd": 9.960702173503023,
+          "ci95": [
+            126.5796050952877,
+            176.0671169047123
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.03263333333334,
+          "sample_sd": 9.004117770405564,
+          "ci95": [
+            116.6651648188276,
+            161.40010184783907
+          ],
+          "min": 128.9608,
+          "max": 146.303
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.014344333333333334,
+          "sample_sd": 0.024845114134037168,
+          "ci95": [
+            -0.04737435163976945,
+            0.07606301830643611
+          ],
+          "min": 0.0,
+          "max": 0.043033
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 136.99002733333333,
+          "sample_sd": 14.728586857881854,
+          "ci95": [
+            100.40218927887877,
+            173.57786538778788
+          ],
+          "min": 120.437115,
+          "max": 148.647621
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 141.6666,
+          "sample_sd": 11.157576754385326,
+          "ci95": [
+            113.94964281268258,
+            169.3835571873174
+          ],
+          "min": 129.2212,
+          "max": 150.7747
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.2663933333333333,
+          "sample_sd": 0.12255764758811802,
+          "ci95": [
+            -0.5708434075703838,
+            0.038056740903717134
+          ],
+          "min": -0.381148,
+          "max": -0.137295
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.3804646666666667,
+          "sample_sd": 0.004732540156547368,
+          "ci95": [
+            0.3687083851914146,
+            0.39222094814191877
+          ],
+          "min": 0.375,
+          "max": 0.383197
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 153.32336066666667,
+          "sample_sd": 11.448591624856322,
+          "ci95": [
+            124.88348246493214,
+            181.7632388684012
+          ],
+          "min": 140.103781,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 142.15509999999998,
+          "sample_sd": 6.323893967327403,
+          "ci95": [
+            126.4456765106516,
+            157.86452348934836
+          ],
+          "min": 135.0172,
+          "max": 147.058
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.09972700000000001,
+          "sample_sd": 0.12288818122179203,
+          "ci95": [
+            -0.2055441653014619,
+            0.40499816530146193
+          ],
+          "min": 0.002049000000000023,
+          "max": 0.237705
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.2438526666666667,
+          "sample_sd": 0.16595867936728506,
+          "ci95": [
+            -0.16841154734188693,
+            0.6561168806752203
+          ],
+          "min": 0.059426,
+          "max": 0.381148
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 148.65669433333332,
+          "sample_sd": 10.135073020090248,
+          "ci95": [
+            123.47977723278386,
+            173.83361143388277
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 138.8153,
+          "sample_sd": 8.24231528880084,
+          "ci95": [
+            118.34025375895355,
+            159.29034624104645
+          ],
+          "min": 129.4495,
+          "max": 144.9635
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.036884999999999994,
+          "sample_sd": 0.03909599264630583,
+          "ci95": [
+            -0.13400482971100175,
+            0.060234829711001754
+          ],
+          "min": -0.077869,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.37704933333333335,
+          "sample_sd": 0.005421711384178753,
+          "ci95": [
+            0.36358105562166887,
+            0.3905176110449978
+          ],
+          "min": 0.372951,
+          "max": 0.383197
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 153.434472,
+          "sample_sd": 11.256142856649737,
+          "ci95": [
+            125.47266304094734,
+            181.39628095905266
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 140.9966,
+          "sample_sd": 6.483139228028344,
+          "ci95": [
+            124.89158935312689,
+            157.1016106468731
+          ],
+          "min": 134.7981,
+          "max": 147.7311
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.09631166666666667,
+          "sample_sd": 0.12315569460781474,
+          "ci95": [
+            -0.20962403872541224,
+            0.4022473720587456
+          ],
+          "min": 0.002049000000000023,
+          "max": 0.23565599999999998
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.2520493333333333,
+          "sample_sd": 0.1565848187479659,
+          "ci95": [
+            -0.13692892000607831,
+            0.6410275866727448
+          ],
+          "min": 0.077869,
+          "max": 0.381148
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 149.545583,
+          "sample_sd": 9.97576551274357,
+          "ci95": [
+            124.76440768621536,
+            174.32675831378464
+          ],
+          "min": 140.103781,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 140.86026666666666,
+          "sample_sd": 2.9717107031696948,
+          "ci95": [
+            133.47812804051074,
+            148.24240529282258
+          ],
+          "min": 137.5028,
+          "max": 143.1527
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.028688333333333343,
+          "sample_sd": 0.029765956969889838,
+          "ci95": [
+            -0.10263106956857418,
+            0.04525440290190749
+          ],
+          "min": -0.05942600000000001,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.3804646666666667,
+          "sample_sd": 0.004732540156547368,
+          "ci95": [
+            0.3687083851914146,
+            0.39222094814191877
+          ],
+          "min": 0.375,
+          "max": 0.383197
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 154.10113866666666,
+          "sample_sd": 11.871639875882364,
+          "ci95": [
+            124.61035035066831,
+            183.591926982665
+          ],
+          "min": 140.437115,
+          "max": 161.885346
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 137.3614,
+          "sample_sd": 5.990788785293634,
+          "ci95": [
+            122.47945565532116,
+            152.24334434467886
+          ],
+          "min": 130.9052,
+          "max": 142.7407
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.09972700000000001,
+          "sample_sd": 0.12288818122179203,
+          "ci95": [
+            -0.2055441653014619,
+            0.40499816530146193
+          ],
+          "min": 0.002049000000000023,
+          "max": 0.237705
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.37704933333333335,
+          "sample_sd": 0.005421711384178753,
+          "ci95": [
+            0.36358105562166887,
+            0.3905176110449978
+          ],
+          "min": 0.372951,
+          "max": 0.383197
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 153.434472,
+          "sample_sd": 11.256142856649737,
+          "ci95": [
+            125.47266304094734,
+            181.39628095905266
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 143.45933333333335,
+          "sample_sd": 8.002264570940731,
+          "ci95": [
+            123.58060613325593,
+            163.33806053341075
+          ],
+          "min": 134.5311,
+          "max": 149.9853
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.09631166666666667,
+          "sample_sd": 0.12315569460781474,
+          "ci95": [
+            -0.20962403872541224,
+            0.4022473720587456
+          ],
+          "min": 0.002049000000000023,
+          "max": 0.23565599999999998
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.2438526666666667,
+          "sample_sd": 0.16595867936728506,
+          "ci95": [
+            -0.16841154734188693,
+            0.6561168806752203
+          ],
+          "min": 0.059426,
+          "max": 0.381148
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 148.65669433333332,
+          "sample_sd": 10.135073020090248,
+          "ci95": [
+            123.47977723278386,
+            173.83361143388277
+          ],
+          "min": 140.437115,
+          "max": 159.980955
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.83423333333334,
+          "sample_sd": 9.441426005817847,
+          "ci95": [
+            116.38043093958098,
+            163.2880357270857
+          ],
+          "min": 128.9337,
+          "max": 145.4404
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.036884999999999994,
+          "sample_sd": 0.03909599264630583,
+          "ci95": [
+            -0.13400482971100175,
+            0.060234829711001754
+          ],
+          "min": -0.077869,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    },
+    "G_centralized_coordination": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.44603825136612024,
+          "sample_sd": 0.030828645072122268,
+          "ci95": [
+            0.36945565154029547,
+            0.522620851191945
+          ],
+          "min": 0.4139344262295082,
+          "max": 0.47540983606557374
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 277.1419711346859,
+          "sample_sd": 20.51547095122413,
+          "ci95": [
+            226.17871607043168,
+            328.1052261989401
+          ],
+          "min": 259.15204255369906,
+          "max": 299.4844595622156
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3359.742966790994,
+          "sample_sd": 65.67493479942723,
+          "ci95": [
+            3196.597384538993,
+            3522.8885490429952
+          ],
+          "min": 3309.2497002799064,
+          "max": 3433.989799930714
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.4583333333333333,
+          "sample_sd": 0.024014201955255384,
+          "ci95": [
+            0.398678748638695,
+            0.5179879180279716
+          ],
+          "min": 0.4405737704918033,
+          "max": 0.48565573770491804
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 273.8011862073393,
+          "sample_sd": 15.184930143720951,
+          "ci95": [
+            236.07972858702777,
+            311.5226438276508
+          ],
+          "min": 257.29653244745737,
+          "max": 287.17985746407516
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3202.657033301269,
+          "sample_sd": 535.5198941592106,
+          "ci95": [
+            1872.3518688278307,
+            4532.962197774707
+          ],
+          "min": 2893.2729001389816,
+          "max": 3821.0220995824784
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.012295081967213128,
+          "sample_sd": 0.05228422468103717,
+          "ci95": [
+            -0.1175861322925785,
+            0.14217629622700476
+          ],
+          "min": -0.02663934426229503,
+          "max": 0.07172131147540983
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.45081967213114754,
+          "sample_sd": 0.002049180327868827,
+          "ci95": [
+            0.4457292260005117,
+            0.4559101182617834
+          ],
+          "min": 0.4487704918032787,
+          "max": 0.45286885245901637
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 272.2378548387432,
+          "sample_sd": 16.306763966476055,
+          "ci95": [
+            231.7296075130087,
+            312.7461021644777
+          ],
+          "min": 256.0352244791909,
+          "max": 288.64679471708075
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3371.039866547411,
+          "sample_sd": 640.5166794073139,
+          "ci95": [
+            1779.9082282266086,
+            4962.171504868213
+          ],
+          "min": 2631.7758997902274,
+          "max": 3760.119399637915
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.004781420765027318,
+          "sample_sd": 0.028785939215444648,
+          "ci95": [
+            -0.06672681640821135,
+            0.07628965793826598
+          ],
+          "min": -0.022540983606557374,
+          "max": 0.0348360655737705
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.02459016393442623,
+          "sample_sd": 0.04259141330087403,
+          "ci95": [
+            -0.0812127720430194,
+            0.13039309991187187
+          ],
+          "min": 0.0,
+          "max": 0.07377049180327869
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 33.47398946943325,
+          "sample_sd": 57.978650493083954,
+          "ci95": [
+            -110.55296269682826,
+            177.50094163569474
+          ],
+          "min": 0.0,
+          "max": 100.42196840829975
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3214.9422998772934,
+          "sample_sd": 902.972305506869,
+          "ci95": [
+            971.8347431015432,
+            5458.049856653044
+          ],
+          "min": 2667.8155998233706,
+          "max": 4257.172199897468
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.421448087431694,
+          "sample_sd": 0.07164320493279938,
+          "ci95": [
+            -0.5994196745959179,
+            -0.24347650026747003
+          ],
+          "min": -0.47540983606557374,
+          "max": -0.3401639344262295
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.44603825136612024,
+          "sample_sd": 0.030828645072122268,
+          "ci95": [
+            0.36945565154029547,
+            0.522620851191945
+          ],
+          "min": 0.4139344262295082,
+          "max": 0.47540983606557374
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 277.1419711346859,
+          "sample_sd": 20.51547095122413,
+          "ci95": [
+            226.17871607043168,
+            328.1052261989401
+          ],
+          "min": 259.15204255369906,
+          "max": 299.4844595622156
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3337.625600009536,
+          "sample_sd": 31.14770968846771,
+          "ci95": [
+            3260.250399737762,
+            3415.0008002813097
+          ],
+          "min": 3316.159200039692,
+          "max": 3373.350300011225
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.36680327868852464,
+          "sample_sd": 0.05532786885245902,
+          "ci95": [
+            0.2293612331613549,
+            0.5042453242156943
+          ],
+          "min": 0.3114754098360656,
+          "max": 0.42213114754098363
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 219.24584291625433,
+          "sample_sd": 13.468528458704725,
+          "ci95": [
+            185.78816345020343,
+            252.70352238230524
+          ],
+          "min": 209.43936846782705,
+          "max": 234.60259883094707
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2032.2302003235866,
+          "sample_sd": 392.6030262319279,
+          "ci95": [
+            1056.9502171135518,
+            3007.5101835336213
+          ],
+          "min": 1638.6368002276868,
+          "max": 2423.8353004911914
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.07923497267759562,
+          "sample_sd": 0.045652745386631,
+          "ci95": [
+            -0.19264267913746141,
+            0.03417273378227019
+          ],
+          "min": -0.10860655737704916,
+          "max": -0.026639344262295084
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.4788251366120219,
+          "sample_sd": 0.027821600894011346,
+          "ci95": [
+            0.4097124486299417,
+            0.5479378245941021
+          ],
+          "min": 0.44672131147540983,
+          "max": 0.4959016393442623
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 283.5093154237251,
+          "sample_sd": 9.739535988435591,
+          "ci95": [
+            259.31496677990276,
+            307.7036640675475
+          ],
+          "min": 274.1366894427624,
+          "max": 293.57837612664565
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3474.2726332430416,
+          "sample_sd": 466.55366885411036,
+          "ci95": [
+            2315.2890698870724,
+            4633.256196599011
+          ],
+          "min": 2943.486300064251,
+          "max": 3819.4888998987153
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.03278688524590164,
+          "sample_sd": 0.042344217868384895,
+          "ci95": [
+            -0.0724019832355253,
+            0.1379757537273286
+          ],
+          "min": -0.0020491803278688825,
+          "max": 0.07991803278688525
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.45286885245901637,
+          "sample_sd": 0.014344262295081983,
+          "ci95": [
+            0.41723572954456495,
+            0.4885019753734678
+          ],
+          "min": 0.4385245901639344,
+          "max": 0.4672131147540984
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 268.73026171403353,
+          "sample_sd": 4.315850389456876,
+          "ci95": [
+            258.00909500331136,
+            279.4514284247557
+          ],
+          "min": 264.16975792863565,
+          "max": 272.7506051278036
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2743.22499994499,
+          "sample_sd": 608.8887070667074,
+          "ci95": [
+            1230.6616004616847,
+            4255.788399428296
+          ],
+          "min": 2369.253500015475,
+          "max": 3445.821499917656
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.006830601092896164,
+          "sample_sd": 0.04069227051531826,
+          "ci95": [
+            -0.09425460267095181,
+            0.10791580485674415
+          ],
+          "min": -0.022540983606557374,
+          "max": 0.05327868852459017
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.44808743169398907,
+          "sample_sd": 0.006587193142754732,
+          "ci95": [
+            0.43172393679348886,
+            0.4644509265944893
+          ],
+          "min": 0.4405737704918033,
+          "max": 0.45286885245901637
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 272.25080473464436,
+          "sample_sd": 14.785120056016883,
+          "ci95": [
+            235.5225304307367,
+            308.979079038552
+          ],
+          "min": 260.9370616743282,
+          "max": 288.98012805041407
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3303.898433378587,
+          "sample_sd": 661.5838805346094,
+          "ci95": [
+            1660.432966256441,
+            4947.3639005007335
+          ],
+          "min": 2622.545800055377,
+          "max": 3943.7605999410152
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0020491803278688456,
+          "sample_sd": 0.02459016393442623,
+          "ci95": [
+            -0.05903617323976213,
+            0.06313453389549982
+          ],
+          "min": -0.022540983606557374,
+          "max": 0.026639344262295084
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.4685792349726776,
+          "sample_sd": 0.024447445584936164,
+          "ci95": [
+            0.40784841343917366,
+            0.5293100565061816
+          ],
+          "min": 0.4405737704918033,
+          "max": 0.48565573770491804
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 259.8638881637606,
+          "sample_sd": 16.703706899340833,
+          "ci95": [
+            218.3695799290839,
+            301.35819639843726
+          ],
+          "min": 246.34858732503727,
+          "max": 278.538598061374
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3418.398133207423,
+          "sample_sd": 1390.8322714237313,
+          "ci95": [
+            -36.620762955633836,
+            6873.41702937048
+          ],
+          "min": 2337.6573998248205,
+          "max": 4987.560999696143
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.022540983606557374,
+          "sample_sd": 0.0430327868852459,
+          "ci95": [
+            -0.08435838513679683,
+            0.12944035234991158
+          ],
+          "min": -0.008196721311475419,
+          "max": 0.07172131147540983
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.4931693989071038,
+          "sample_sd": 0.03696106354772863,
+          "ci95": [
+            0.4013530270817908,
+            0.5849857707324169
+          ],
+          "min": 0.45491803278688525,
+          "max": 0.5286885245901639
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 275.577510102183,
+          "sample_sd": 14.280777270197635,
+          "ci95": [
+            240.10209273217816,
+            311.05292747218783
+          ],
+          "min": 259.2070850517201,
+          "max": 285.47954736843394
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1145.2115667440619,
+          "sample_sd": 167.15621710100584,
+          "ci95": [
+            729.9725040899284,
+            1560.4506293981954
+          ],
+          "min": 952.2052000975236,
+          "max": 1243.3296001981944
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.047131147540983596,
+          "sample_sd": 0.05900073790527854,
+          "ci95": [
+            -0.09943481051061578,
+            0.193697105592583
+          ],
+          "min": 0.0061475409836065364,
+          "max": 0.1147540983606557
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.44808743169398907,
+          "sample_sd": 0.006587193142754732,
+          "ci95": [
+            0.43172393679348886,
+            0.4644509265944893
+          ],
+          "min": 0.4405737704918033,
+          "max": 0.45286885245901637
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 272.25080473464436,
+          "sample_sd": 14.785120056016883,
+          "ci95": [
+            235.5225304307367,
+            308.979079038552
+          ],
+          "min": 260.9370616743282,
+          "max": 288.98012805041407
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3300.2152333501726,
+          "sample_sd": 659.7823115837441,
+          "ci95": [
+            1661.2251115991896,
+            4939.205355101156
+          ],
+          "min": 2619.3103999830782,
+          "max": 3936.6222996031865
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0020491803278688456,
+          "sample_sd": 0.02459016393442623,
+          "ci95": [
+            -0.05903617323976213,
+            0.06313453389549982
+          ],
+          "min": -0.022540983606557374,
+          "max": 0.026639344262295084
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.45286885245901637,
+          "sample_sd": 0.014344262295081983,
+          "ci95": [
+            0.41723572954456495,
+            0.4885019753734678
+          ],
+          "min": 0.4385245901639344,
+          "max": 0.4672131147540984
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 268.73026171403353,
+          "sample_sd": 4.315850389456876,
+          "ci95": [
+            258.00909500331136,
+            279.4514284247557
+          ],
+          "min": 264.16975792863565,
+          "max": 272.7506051278036
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2733.587200054899,
+          "sample_sd": 608.4829552370173,
+          "ci95": [
+            1222.0317439933383,
+            4245.142656116459
+          ],
+          "min": 2374.1886001080275,
+          "max": 3436.1402000067756
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.006830601092896164,
+          "sample_sd": 0.04069227051531826,
+          "ci95": [
+            -0.09425460267095181,
+            0.10791580485674415
+          ],
+          "min": -0.022540983606557374,
+          "max": 0.05327868852459017
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    }
+  },
+  "high_mobility_rescue": {
+    "Bprime_static_grid_shared_safety": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.375683,
+          "sample_sd": 0.2697636824722705,
+          "ci95": [
+            -0.2944471368900078,
+            1.0458131368900077
+          ],
+          "min": 0.067623,
+          "max": 0.569672
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 124.79210166666667,
+          "sample_sd": 11.795320222153032,
+          "ci95": [
+            95.49090188064508,
+            154.09330145268825
+          ],
+          "min": 111.522397,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 136.61726666666667,
+          "sample_sd": 14.465172598117631,
+          "ci95": [
+            100.6837859087052,
+            172.55074742462813
+          ],
+          "min": 119.9702,
+          "max": 146.123
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.321038,
+          "sample_sd": 0.28613269336445984,
+          "ci95": [
+            -0.3897550141513471,
+            1.0318310141513471
+          ],
+          "min": 0.0,
+          "max": 0.54918
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 121.01432366666666,
+          "sample_sd": 17.712302826735613,
+          "ci95": [
+            77.01452425283082,
+            165.0141230805025
+          ],
+          "min": 100.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 136.71896666666666,
+          "sample_sd": 16.26654698033155,
+          "ci95": [
+            96.31062387286666,
+            177.12730946046668
+          ],
+          "min": 119.1247,
+          "max": 151.211
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.05464499999999998,
+          "sample_sd": 0.029859977545202566,
+          "ci95": [
+            -0.12882129629205563,
+            0.019531296292055668
+          ],
+          "min": -0.07582,
+          "max": -0.020491999999999955
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5457653333333333,
+          "sample_sd": 0.03996338185556036,
+          "ci95": [
+            0.4464907893768571,
+            0.6450398772898096
+          ],
+          "min": 0.506148,
+          "max": 0.586066
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 128.125435,
+          "sample_sd": 6.711277706032509,
+          "ci95": [
+            111.45369695641543,
+            144.7971730435846
+          ],
+          "min": 120.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 133.0370333333333,
+          "sample_sd": 18.67446453565225,
+          "ci95": [
+            86.64709173357551,
+            179.42697493309112
+          ],
+          "min": 114.1471,
+          "max": 151.4883
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.17008233333333334,
+          "sample_sd": 0.2661960018639148,
+          "ci95": [
+            -0.4911851936139775,
+            0.8313498602806442
+          ],
+          "min": 0.01639400000000002,
+          "max": 0.47745899999999997
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 108.125435,
+          "sample_sd": 6.711277706032517,
+          "ci95": [
+            91.4536969564154,
+            124.79717304358459
+          ],
+          "min": 100.85573,
+          "max": 114.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 131.40593333333334,
+          "sample_sd": 16.798043374849733,
+          "ci95": [
+            89.67728030225138,
+            173.1345863644153
+          ],
+          "min": 113.7261,
+          "max": 147.1554
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.375683,
+          "sample_sd": 0.2697636824722705,
+          "ci95": [
+            -1.0458131368900077,
+            0.2944471368900078
+          ],
+          "min": -0.569672,
+          "max": -0.067623
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.375683,
+          "sample_sd": 0.2697636824722705,
+          "ci95": [
+            -0.2944471368900078,
+            1.0458131368900077
+          ],
+          "min": 0.067623,
+          "max": 0.569672
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 124.79210166666667,
+          "sample_sd": 11.795320222153032,
+          "ci95": [
+            95.49090188064508,
+            154.09330145268825
+          ],
+          "min": 111.522397,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 131.6965,
+          "sample_sd": 16.277900020887216,
+          "ci95": [
+            91.25995469001262,
+            172.13304530998735
+          ],
+          "min": 114.222,
+          "max": 146.4297
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.17213133333333333,
+          "sample_sd": 0.26344522069176607,
+          "ci95": [
+            -0.4823028743674702,
+            0.8265655410341368
+          ],
+          "min": 0.0,
+          "max": 0.47541
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 116.79210166666667,
+          "sample_sd": 16.11764848794086,
+          "ci95": [
+            76.75364323303715,
+            156.83056010029617
+          ],
+          "min": 100.85573,
+          "max": 133.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 133.8828,
+          "sample_sd": 19.085635509199058,
+          "ci95": [
+            86.47145307887749,
+            181.29414692112252
+          ],
+          "min": 114.089,
+          "max": 152.1711
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.20355166666666666,
+          "sample_sd": 0.21278259405396235,
+          "ci95": [
+            -0.7321329329601753,
+            0.32502959962684197
+          ],
+          "min": -0.44877,
+          "max": -0.067623
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5765030000000001,
+          "sample_sd": 0.020112573977489855,
+          "ci95": [
+            0.5265405965021492,
+            0.626465403497851
+          ],
+          "min": 0.553279,
+          "max": 0.588115
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 128.125435,
+          "sample_sd": 6.711277706032509,
+          "ci95": [
+            111.45369695641543,
+            144.7971730435846
+          ],
+          "min": 120.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 136.70293333333333,
+          "sample_sd": 17.501461463927324,
+          "ci95": [
+            93.2268929000464,
+            180.1789737666203
+          ],
+          "min": 120.1098,
+          "max": 154.9896
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.20082000000000003,
+          "sample_sd": 0.24989073983043064,
+          "ci95": [
+            -0.4199430106299621,
+            0.8215830106299621
+          ],
+          "min": 0.018443000000000098,
+          "max": 0.485656
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.29781399999999997,
+          "sample_sd": 0.27322048027737594,
+          "ci95": [
+            -0.3809032986795659,
+            0.9765312986795658
+          ],
+          "min": 0.0,
+          "max": 0.536885
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 120.90321266666666,
+          "sample_sd": 17.64653245372703,
+          "ci95": [
+            77.06679591673732,
+            164.73962941659602
+          ],
+          "min": 100.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 134.17403333333334,
+          "sample_sd": 17.129006497264616,
+          "ci95": [
+            91.62322232866194,
+            176.72484433800474
+          ],
+          "min": 115.2662,
+          "max": 148.6552
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.07786900000000001,
+          "sample_sd": 0.050983109085264704,
+          "ci95": [
+            -0.20451806394098676,
+            0.04878006394098673
+          ],
+          "min": -0.133197,
+          "max": -0.03278700000000001
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5676233333333334,
+          "sample_sd": 0.01878092272316071,
+          "ci95": [
+            0.5209689349352612,
+            0.6142777317314055
+          ],
+          "min": 0.55123,
+          "max": 0.588115
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 128.125435,
+          "sample_sd": 6.711277706032509,
+          "ci95": [
+            111.45369695641543,
+            144.7971730435846
+          ],
+          "min": 120.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 138.50230000000002,
+          "sample_sd": 21.532488306742447,
+          "ci95": [
+            85.01263376939818,
+            191.99196623060186
+          ],
+          "min": 119.9541,
+          "max": 162.1159
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.19194033333333338,
+          "sample_sd": 0.25410112205445556,
+          "ci95": [
+            -0.4392818465602123,
+            0.8231625132268791
+          ],
+          "min": 0.018443000000000098,
+          "max": 0.483607
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.321038,
+          "sample_sd": 0.2822023603303133,
+          "ci95": [
+            -0.3799915256414857,
+            1.0220675256414857
+          ],
+          "min": 0.004098,
+          "max": 0.545082
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 122.125435,
+          "sample_sd": 13.47720066667403,
+          "ci95": [
+            88.6462125750884,
+            155.60465742491158
+          ],
+          "min": 107.522397,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 131.89856666666665,
+          "sample_sd": 16.7793103977289,
+          "ci95": [
+            90.21644893050393,
+            173.58068440282938
+          ],
+          "min": 114.2502,
+          "max": 147.6471
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.054645,
+          "sample_sd": 0.026744513923419883,
+          "ci95": [
+            -0.12108205561959902,
+            0.01179205561959902
+          ],
+          "min": -0.07582,
+          "max": -0.02459
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5771860000000001,
+          "sample_sd": 0.02072940151089755,
+          "ci95": [
+            0.5256913119647653,
+            0.6286806880352349
+          ],
+          "min": 0.553279,
+          "max": 0.590164
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 128.125435,
+          "sample_sd": 6.711277706032509,
+          "ci95": [
+            111.45369695641543,
+            144.7971730435846
+          ],
+          "min": 120.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 137.8368,
+          "sample_sd": 11.313796814951194,
+          "ci95": [
+            109.73177066889902,
+            165.94182933110102
+          ],
+          "min": 125.4715,
+          "max": 147.67
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.20150300000000002,
+          "sample_sd": 0.24947313047500722,
+          "ci95": [
+            -0.4182226114813751,
+            0.821228611481375
+          ],
+          "min": 0.018443000000000098,
+          "max": 0.485656
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5676233333333334,
+          "sample_sd": 0.01878092272316071,
+          "ci95": [
+            0.5209689349352612,
+            0.6142777317314055
+          ],
+          "min": 0.55123,
+          "max": 0.588115
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 128.125435,
+          "sample_sd": 6.711277706032509,
+          "ci95": [
+            111.45369695641543,
+            144.7971730435846
+          ],
+          "min": 120.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 138.72643333333335,
+          "sample_sd": 23.091885112379494,
+          "ci95": [
+            81.36301069026553,
+            196.08985597640117
+          ],
+          "min": 114.6796,
+          "max": 160.7272
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.19194033333333338,
+          "sample_sd": 0.25410112205445556,
+          "ci95": [
+            -0.4392818465602123,
+            0.8231625132268791
+          ],
+          "min": 0.018443000000000098,
+          "max": 0.483607
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.29781399999999997,
+          "sample_sd": 0.27322048027737594,
+          "ci95": [
+            -0.3809032986795659,
+            0.9765312986795658
+          ],
+          "min": 0.0,
+          "max": 0.536885
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 120.90321266666666,
+          "sample_sd": 17.64653245372703,
+          "ci95": [
+            77.06679591673732,
+            164.73962941659602
+          ],
+          "min": 100.85573,
+          "max": 134.085108
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 137.74266666666668,
+          "sample_sd": 19.72251786774025,
+          "ci95": [
+            88.74921626074348,
+            186.73611707258988
+          ],
+          "min": 116.4441,
+          "max": 155.3745
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.07786900000000001,
+          "sample_sd": 0.050983109085264704,
+          "ci95": [
+            -0.20451806394098676,
+            0.04878006394098673
+          ],
+          "min": -0.133197,
+          "max": -0.03278700000000001
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    },
+    "G_centralized_coordination": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6495901639344263,
+          "sample_sd": 0.013437374025209012,
+          "ci95": [
+            0.6162098763715103,
+            0.6829704514973423
+          ],
+          "min": 0.6372950819672131,
+          "max": 0.6639344262295082
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 159.11838094798486,
+          "sample_sd": 65.1686898779879,
+          "ci95": [
+            -2.7696192032866804,
+            321.0063810992564
+          ],
+          "min": 98.13333333333338,
+          "max": 227.78911995707693
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1887.9165665324156,
+          "sample_sd": 393.16760069864665,
+          "ci95": [
+            911.2341025985133,
+            2864.599030466318
+          ],
+          "min": 1443.9628998516127,
+          "max": 2192.110299714841
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6284153005464481,
+          "sample_sd": 0.02878593921544462,
+          "ci95": [
+            0.5569070633732095,
+            0.6999235377196867
+          ],
+          "min": 0.5983606557377049,
+          "max": 0.6557377049180327
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 171.2871889561212,
+          "sample_sd": 110.93397135837165,
+          "ci95": [
+            -104.2880728094404,
+            446.8624507216828
+          ],
+          "min": 103.15367724674361,
+          "max": 299.29389604536783
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3032.5445665900284,
+          "sample_sd": 2246.8241125150485,
+          "ci95": [
+            -2548.8759429785628,
+            8613.96507615862
+          ],
+          "min": 1658.2479998469353,
+          "max": 5625.394899747334
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.021174863387978138,
+          "sample_sd": 0.015916912838430358,
+          "ci95": [
+            -0.06071466682456592,
+            0.018364940048609647
+          ],
+          "min": -0.03893442622950816,
+          "max": -0.008196721311475419
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6577868852459017,
+          "sample_sd": 0.0061475409836065364,
+          "ci95": [
+            0.642515546853994,
+            0.6730582236378093
+          ],
+          "min": 0.6516393442622951,
+          "max": 0.6639344262295082
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 168.2345028705212,
+          "sample_sd": 83.46982534833947,
+          "ci95": [
+            -39.11603807050221,
+            375.5850438115446
+          ],
+          "min": 98.13333333333338,
+          "max": 260.5701752782305
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1892.484766469958,
+          "sample_sd": 343.4287520542479,
+          "ci95": [
+            1039.3604521926482,
+            2745.609080747268
+          ],
+          "min": 1515.0205999379978,
+          "max": 2186.4969996968284
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.008196721311475419,
+          "sample_sd": 0.007388424744803273,
+          "ci95": [
+            -0.010157143227519674,
+            0.02655058585047051
+          ],
+          "min": 0.0,
+          "max": 0.014344262295082011
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.018442622950819672,
+          "sample_sd": 0.031943559975655525,
+          "ci95": [
+            -0.060909579032264564,
+            0.0977948249339039
+          ],
+          "min": 0.0,
+          "max": 0.055327868852459015
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 98.3708205388612,
+          "sample_sd": 82.51180733149802,
+          "ci95": [
+            -106.5998717179901,
+            303.3415127957125
+          ],
+          "min": 24.199999999999974,
+          "max": 187.24633975347825
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2871.3403332512826,
+          "sample_sd": 1326.4465402408525,
+          "ci95": [
+            -423.7355399817661,
+            6166.416206484331
+          ],
+          "min": 1692.1457998687401,
+          "max": 4307.45139985811
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.6311475409836066,
+          "sample_sd": 0.03625370084621742,
+          "ci95": [
+            -0.72120672644621,
+            -0.5410883555210032
+          ],
+          "min": -0.6639344262295082,
+          "max": -0.5922131147540984
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6495901639344263,
+          "sample_sd": 0.013437374025209012,
+          "ci95": [
+            0.6162098763715103,
+            0.6829704514973423
+          ],
+          "min": 0.6372950819672131,
+          "max": 0.6639344262295082
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 159.11838094798486,
+          "sample_sd": 65.1686898779879,
+          "ci95": [
+            -2.7696192032866804,
+            321.0063810992564
+          ],
+          "min": 98.13333333333338,
+          "max": 227.78911995707693
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1811.3194666414831,
+          "sample_sd": 355.482348044425,
+          "ci95": [
+            928.252360002772,
+            2694.386573280194
+          ],
+          "min": 1412.191699957475,
+          "max": 2093.8921999186277
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.4077868852459016,
+          "sample_sd": 0.20141472561801607,
+          "ci95": [
+            -0.0925550303636567,
+            0.90812880085546
+          ],
+          "min": 0.18032786885245902,
+          "max": 0.5635245901639344
+        },
+        "first_full_recovery_success_count": 2,
+        "sustained_30s_recovery_success_count": 2,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 224.91557605254354,
+          "sample_sd": 86.3715278582947,
+          "ci95": [
+            10.356806478259784,
+            439.4743456268273
+          ],
+          "min": 133.62346410983463,
+          "max": 305.3373929408946
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 4144.017133240898,
+          "sample_sd": 1845.36602196189,
+          "ci95": [
+            -440.1261938973139,
+            8728.16046037911
+          ],
+          "min": 2258.725799852982,
+          "max": 5946.682099835016
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.2418032786885246,
+          "sample_sd": 0.21263146651804526,
+          "ci95": [
+            -0.7700091233707776,
+            0.2864025659937285
+          ],
+          "min": -0.48360655737704916,
+          "max": -0.08401639344262302
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6605191256830601,
+          "sample_sd": 0.01766737316445022,
+          "ci95": [
+            0.6166309377376836,
+            0.7044073136284367
+          ],
+          "min": 0.6413934426229508,
+          "max": 0.6762295081967213
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 172.3936036234894,
+          "sample_sd": 78.91739318591387,
+          "ci95": [
+            -23.64806890266749,
+            368.4352761496463
+          ],
+          "min": 108.80057870726026,
+          "max": 260.71356549654166
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2561.9616667972878,
+          "sample_sd": 381.25915774148234,
+          "ci95": [
+            1614.861415101505,
+            3509.0619184930706
+          ],
+          "min": 2128.292200155556,
+          "max": 2844.4214002229273
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.010928961748633892,
+          "sample_sd": 0.015516143021312196,
+          "ci95": [
+            -0.027615274271519386,
+            0.04947319776878717
+          ],
+          "min": 0.0,
+          "max": 0.02868852459016391
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6038251366120219,
+          "sample_sd": 0.05694853646747189,
+          "ci95": [
+            0.46235712954418623,
+            0.7452931436798576
+          ],
+          "min": 0.5389344262295082,
+          "max": 0.6454918032786885
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 185.33521142224893,
+          "sample_sd": 65.78219038407005,
+          "ci95": [
+            21.923191527640824,
+            348.74723131685704
+          ],
+          "min": 114.3333333333334,
+          "max": 244.21020772279985
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3265.288799923534,
+          "sample_sd": 2369.4732428308416,
+          "ci95": [
+            -2620.8090395758986,
+            9151.386639422966
+          ],
+          "min": 1810.030699823983,
+          "max": 5999.425100162625
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.045765027322404395,
+          "sample_sd": 0.045560672529104604,
+          "ci95": [
+            -0.15894401212466028,
+            0.06741395747985149
+          ],
+          "min": -0.09836065573770492,
+          "max": -0.018442622950819665
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6673497267759562,
+          "sample_sd": 0.01165213258827319,
+          "ci95": [
+            0.6384042247911118,
+            0.6962952287608005
+          ],
+          "min": 0.6577868852459017,
+          "max": 0.680327868852459
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 180.75361017518318,
+          "sample_sd": 61.93514286474959,
+          "ci95": [
+            26.898186102214595,
+            334.6090342481518
+          ],
+          "min": 143.99999999999974,
+          "max": 252.26083052555003
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2211.287133434477,
+          "sample_sd": 569.7205001130486,
+          "ci95": [
+            796.0229539463967,
+            3626.551312922557
+          ],
+          "min": 1567.6358004566282,
+          "max": 2650.867500109598
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.017759562841530057,
+          "sample_sd": 0.01656332739478432,
+          "ci95": [
+            -0.023386023371920955,
+            0.058905149054981065
+          ],
+          "min": 0.0,
+          "max": 0.032786885245901565
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6181693989071038,
+          "sample_sd": 0.052096488977235886,
+          "ci95": [
+            0.4887545459889669,
+            0.7475842518252407
+          ],
+          "min": 0.5614754098360656,
+          "max": 0.6639344262295082
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 219.71345799110966,
+          "sample_sd": 117.46346857878405,
+          "ci95": [
+            -72.08197405844729,
+            511.50889004066664
+          ],
+          "min": 98.13333333333338,
+          "max": 332.5743510864516
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 4064.7553999830657,
+          "sample_sd": 2084.369460450285,
+          "ci95": [
+            -1113.1053819421672,
+            9242.616181908299
+          ],
+          "min": 1819.9181999079883,
+          "max": 5938.922300003469
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.03142076502732242,
+          "sample_sd": 0.039540862400017175,
+          "ci95": [
+            -0.1296457124703356,
+            0.06680418241569078
+          ],
+          "min": -0.07581967213114749,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6605191256830601,
+          "sample_sd": 0.01766737316445022,
+          "ci95": [
+            0.6166309377376836,
+            0.7044073136284367
+          ],
+          "min": 0.6413934426229508,
+          "max": 0.6762295081967213
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 172.72693695682275,
+          "sample_sd": 79.47709256425092,
+          "ci95": [
+            -24.70510590230441,
+            370.1589798159499
+          ],
+          "min": 108.80057870726026,
+          "max": 261.71356549654166
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 851.4050665544346,
+          "sample_sd": 120.11305688795542,
+          "ci95": [
+            553.0276922654523,
+            1149.782440843417
+          ],
+          "min": 718.6349998228252,
+          "max": 952.5208999402821
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.010928961748633892,
+          "sample_sd": 0.015516143021312196,
+          "ci95": [
+            -0.027615274271519386,
+            0.04947319776878717
+          ],
+          "min": 0.0,
+          "max": 0.02868852459016391
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6673497267759562,
+          "sample_sd": 0.01165213258827319,
+          "ci95": [
+            0.6384042247911118,
+            0.6962952287608005
+          ],
+          "min": 0.6577868852459017,
+          "max": 0.680327868852459
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 180.75361017518318,
+          "sample_sd": 61.93514286474959,
+          "ci95": [
+            26.898186102214595,
+            334.6090342481518
+          ],
+          "min": 143.99999999999974,
+          "max": 252.26083052555003
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2229.2097334284335,
+          "sample_sd": 577.5739733195131,
+          "ci95": [
+            794.4364449799541,
+            3663.983021876913
+          ],
+          "min": 1571.553700021468,
+          "max": 2653.9966004202142
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.017759562841530057,
+          "sample_sd": 0.01656332739478432,
+          "ci95": [
+            -0.023386023371920955,
+            0.058905149054981065
+          ],
+          "min": 0.0,
+          "max": 0.032786885245901565
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6038251366120219,
+          "sample_sd": 0.05694853646747189,
+          "ci95": [
+            0.46235712954418623,
+            0.7452931436798576
+          ],
+          "min": 0.5389344262295082,
+          "max": 0.6454918032786885
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 185.33521142224893,
+          "sample_sd": 65.78219038407005,
+          "ci95": [
+            21.923191527640824,
+            348.74723131685704
+          ],
+          "min": 114.3333333333334,
+          "max": 244.21020772279985
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3287.6247000337266,
+          "sample_sd": 2382.5568570216583,
+          "ci95": [
+            -2630.974638883105,
+            9206.224038950559
+          ],
+          "min": 1867.7269001491368,
+          "max": 6038.283000001684
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.045765027322404395,
+          "sample_sd": 0.045560672529104604,
+          "ci95": [
+            -0.15894401212466028,
+            0.06741395747985149
+          ],
+          "min": -0.09836065573770492,
+          "max": -0.018442622950819665
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    }
+  },
+  "severe_persistent_faults": {
+    "Bprime_static_grid_shared_safety": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.181694,
+          "sample_sd": 0.30763173204823974,
+          "ci95": [
+            -0.5825055869121039,
+            0.9458935869121039
+          ],
+          "min": 0.0,
+          "max": 0.536885
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 116.02612433333333,
+          "sample_sd": 24.6786530207747,
+          "ci95": [
+            54.72095168922578,
+            177.33129697744087
+          ],
+          "min": 98.676874,
+          "max": 144.278506
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 137.15973333333332,
+          "sample_sd": 11.033117321198633,
+          "ci95": [
+            109.75195051757805,
+            164.5675161490886
+          ],
+          "min": 124.6421,
+          "max": 145.4707
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.1680326666666667,
+          "sample_sd": 0.291041115997952,
+          "ci95": [
+            -0.5549535452537472,
+            0.8910188785870806
+          ],
+          "min": 0.0,
+          "max": 0.504098
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 113.470569,
+          "sample_sd": 24.951449104045615,
+          "ci95": [
+            51.48773331782139,
+            175.45340468217861
+          ],
+          "min": 98.676874,
+          "max": 142.278506
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.5791,
+          "sample_sd": 12.483857987016668,
+          "ci95": [
+            108.56747758631639,
+            170.59072241368364
+          ],
+          "min": 125.1863,
+          "max": 147.4699
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.013661333333333298,
+          "sample_sd": 0.017062855749649043,
+          "ci95": [
+            -0.056047816771192374,
+            0.028725150104525782
+          ],
+          "min": -0.0327869999999999,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.352459,
+          "sample_sd": 0.307459021856572,
+          "ci95": [
+            -0.41131155101177835,
+            1.1162295510117783
+          ],
+          "min": 0.0,
+          "max": 0.565574
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 121.02612466666666,
+          "sample_sd": 23.17406031803781,
+          "ci95": [
+            63.458567496252165,
+            178.59368183708116
+          ],
+          "min": 98.676874,
+          "max": 144.945173
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 141.35903333333331,
+          "sample_sd": 8.50797228153298,
+          "ci95": [
+            120.22405853825077,
+            162.49400812841586
+          ],
+          "min": 131.8293,
+          "max": 148.1912
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.17076500000000003,
+          "sample_sd": 0.2713077277576147,
+          "ci95": [
+            -0.5032007580119815,
+            0.8447307580119816
+          ],
+          "min": 0.0,
+          "max": 0.483606
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 108.359458,
+          "sample_sd": 16.100418885566953,
+          "ci95": [
+            68.36380027138597,
+            148.35511572861404
+          ],
+          "min": 98.676874,
+          "max": 126.945173
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 137.11776666666665,
+          "sample_sd": 11.355875470580568,
+          "ci95": [
+            108.90820816025698,
+            165.32732517307633
+          ],
+          "min": 124.0483,
+          "max": 144.5732
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.181694,
+          "sample_sd": 0.30763173204823974,
+          "ci95": [
+            -0.9458935869121039,
+            0.5825055869121039
+          ],
+          "min": -0.536885,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.181694,
+          "sample_sd": 0.30763173204823974,
+          "ci95": [
+            -0.5825055869121039,
+            0.9458935869121039
+          ],
+          "min": 0.0,
+          "max": 0.536885
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 116.02612433333333,
+          "sample_sd": 24.6786530207747,
+          "ci95": [
+            54.72095168922578,
+            177.33129697744087
+          ],
+          "min": 98.676874,
+          "max": 144.278506
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 138.96873333333335,
+          "sample_sd": 12.854720876523663,
+          "ci95": [
+            107.0358364299367,
+            170.90163023673
+          ],
+          "min": 124.5296,
+          "max": 149.1678
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.147541,
+          "sample_sd": 0.25554850819951974,
+          "ci95": [
+            -0.48727668639996446,
+            0.7823586863999645
+          ],
+          "min": 0.0,
+          "max": 0.442623
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 112.24834700000001,
+          "sample_sd": 22.834780689018867,
+          "ci95": [
+            55.52360715086014,
+            168.9730868491399
+          ],
+          "min": 98.676874,
+          "max": 138.61184
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 138.69719999999998,
+          "sample_sd": 13.399125165845712,
+          "ci95": [
+            105.4119278710598,
+            171.98247212894017
+          ],
+          "min": 124.3591,
+          "max": 150.9012
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.03415299999999998,
+          "sample_sd": 0.052217014592946594,
+          "ci95": [
+            -0.16386725514535574,
+            0.09556125514535577
+          ],
+          "min": -0.09426199999999996,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5724043333333334,
+          "sample_sd": 0.015380389115147055,
+          "ci95": [
+            0.5341973287110023,
+            0.6106113379556645
+          ],
+          "min": 0.557377,
+          "max": 0.588115
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 127.69279133333333,
+          "sample_sd": 14.94608281872058,
+          "ci95": [
+            90.56466336040592,
+            164.82091930626075
+          ],
+          "min": 118.676874,
+          "max": 144.945173
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 138.81323333333333,
+          "sample_sd": 13.577849646513739,
+          "ci95": [
+            105.08398498195271,
+            172.54248168471395
+          ],
+          "min": 123.1832,
+          "max": 147.6934
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.39071033333333344,
+          "sample_sd": 0.29401465769980467,
+          "ci95": [
+            -0.3396625656661149,
+            1.1210832323327817
+          ],
+          "min": 0.05123000000000011,
+          "max": 0.563524
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.16256833333333334,
+          "sample_sd": 0.28157661303512643,
+          "ci95": [
+            -0.5369067498541528,
+            0.8620434165208194
+          ],
+          "min": 0.0,
+          "max": 0.487705
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 112.91501366666667,
+          "sample_sd": 23.989321133556956,
+          "ci95": [
+            53.32223635950874,
+            172.5077909738246
+          ],
+          "min": 98.676874,
+          "max": 140.61184
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 141.6498,
+          "sample_sd": 13.123453685291839,
+          "ci95": [
+            109.04933379195774,
+            174.25026620804226
+          ],
+          "min": 127.5497,
+          "max": 153.5077
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.01912566666666665,
+          "sample_sd": 0.026348527783034325,
+          "ci95": [
+            -0.08457903818160344,
+            0.04632770484827013
+          ],
+          "min": -0.049179999999999946,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.35792333333333337,
+          "sample_sd": 0.3129435627990027,
+          "ci95": [
+            -0.41947157266517576,
+            1.1353182393318426
+          ],
+          "min": 0.0,
+          "max": 0.579918
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 121.02612466666666,
+          "sample_sd": 23.17406031803781,
+          "ci95": [
+            63.458567496252165,
+            178.59368183708116
+          ],
+          "min": 98.676874,
+          "max": 144.945173
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.18646666666666,
+          "sample_sd": 10.195340223029987,
+          "ci95": [
+            113.85983753451289,
+            164.51309579882044
+          ],
+          "min": 127.8842,
+          "max": 147.6905
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.17622933333333335,
+          "sample_sd": 0.268832926120171,
+          "ci95": [
+            -0.4915886766019729,
+            0.8440473432686396
+          ],
+          "min": 0.0,
+          "max": 0.485655
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.16256833333333334,
+          "sample_sd": 0.28157661303512643,
+          "ci95": [
+            -0.5369067498541528,
+            0.8620434165208194
+          ],
+          "min": 0.0,
+          "max": 0.487705
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 113.470569,
+          "sample_sd": 24.951449104045615,
+          "ci95": [
+            51.48773331782139,
+            175.45340468217861
+          ],
+          "min": 98.676874,
+          "max": 142.278506
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.97986666666668,
+          "sample_sd": 14.090332434805559,
+          "ci95": [
+            104.9775404942674,
+            174.98219283906596
+          ],
+          "min": 123.8455,
+          "max": 149.8634
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.01912566666666665,
+          "sample_sd": 0.026348527783034325,
+          "ci95": [
+            -0.08457903818160344,
+            0.04632770484827013
+          ],
+          "min": -0.049179999999999946,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5724043333333334,
+          "sample_sd": 0.015380389115147055,
+          "ci95": [
+            0.5341973287110023,
+            0.6106113379556645
+          ],
+          "min": 0.557377,
+          "max": 0.588115
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 127.69279133333333,
+          "sample_sd": 14.94608281872058,
+          "ci95": [
+            90.56466336040592,
+            164.82091930626075
+          ],
+          "min": 118.676874,
+          "max": 144.945173
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 141.89176666666665,
+          "sample_sd": 15.530098843643374,
+          "ci95": [
+            103.31286246196201,
+            180.47067087137128
+          ],
+          "min": 123.9837,
+          "max": 151.6581
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.39071033333333344,
+          "sample_sd": 0.29401465769980467,
+          "ci95": [
+            -0.3396625656661149,
+            1.1210832323327817
+          ],
+          "min": 0.05123000000000011,
+          "max": 0.563524
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.35792333333333337,
+          "sample_sd": 0.3129435627990027,
+          "ci95": [
+            -0.41947157266517576,
+            1.1353182393318426
+          ],
+          "min": 0.0,
+          "max": 0.579918
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 121.02612466666666,
+          "sample_sd": 23.17406031803781,
+          "ci95": [
+            63.458567496252165,
+            178.59368183708116
+          ],
+          "min": 98.676874,
+          "max": 144.945173
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 139.27766666666665,
+          "sample_sd": 10.905029381131142,
+          "ci95": [
+            112.18807193325345,
+            166.36726140007983
+          ],
+          "min": 126.6873,
+          "max": 145.7508
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.17622933333333335,
+          "sample_sd": 0.268832926120171,
+          "ci95": [
+            -0.4915886766019729,
+            0.8440473432686396
+          ],
+          "min": 0.0,
+          "max": 0.485655
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.16256833333333334,
+          "sample_sd": 0.28157661303512643,
+          "ci95": [
+            -0.5369067498541528,
+            0.8620434165208194
+          ],
+          "min": 0.0,
+          "max": 0.487705
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 112.91501366666667,
+          "sample_sd": 23.989321133556956,
+          "ci95": [
+            53.32223635950874,
+            172.5077909738246
+          ],
+          "min": 98.676874,
+          "max": 140.61184
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 136.8193,
+          "sample_sd": 10.97404770219266,
+          "ci95": [
+            109.5582542524362,
+            164.0803457475638
+          ],
+          "min": 124.2736,
+          "max": 144.6361
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.01912566666666665,
+          "sample_sd": 0.026348527783034325,
+          "ci95": [
+            -0.08457903818160344,
+            0.04632770484827013
+          ],
+          "min": -0.049179999999999946,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    },
+    "G_centralized_coordination": {
+      "baseline": {
+        "parameter": "baseline",
+        "level": "base",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.630464480874317,
+          "sample_sd": 0.01051557672017808,
+          "ci95": [
+            0.6043423401829188,
+            0.6565866215657151
+          ],
+          "min": 0.6188524590163934,
+          "max": 0.639344262295082
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 186.95889023568418,
+          "sample_sd": 26.623894910733338,
+          "ci95": [
+            120.8214688542539,
+            253.09631161711445
+          ],
+          "min": 160.19999999999936,
+          "max": 213.44570447298383
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2330.7511667565755,
+          "sample_sd": 1175.4863456777734,
+          "ci95": [
+            -589.318794189162,
+            5250.821127702313
+          ],
+          "min": 1284.418800030835,
+          "max": 3602.6893999660388
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_high": {
+        "parameter": "fade_margin_db",
+        "level": "base + 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5997267759562841,
+          "sample_sd": 0.03136875000875692,
+          "ci95": [
+            0.5218024810890627,
+            0.6776510708235055
+          ],
+          "min": 0.5635245901639344,
+          "max": 0.6188524590163934
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 194.12426841043566,
+          "sample_sd": 102.49101995270502,
+          "ci95": [
+            -60.477539369834034,
+            448.7260761907054
+          ],
+          "min": 100.89935622021144,
+          "max": 303.87344901109617
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2431.094899890013,
+          "sample_sd": 808.803130036281,
+          "ci95": [
+            421.9165431851841,
+            4440.273256594842
+          ],
+          "min": 1497.2428000764921,
+          "max": 2908.154799602926
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.03073770491803281,
+          "sample_sd": 0.021394070714980597,
+          "ci95": [
+            -0.08388352278896938,
+            0.02240811295290376
+          ],
+          "min": -0.055327868852458995,
+          "max": -0.016393442622950838
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "fade_margin_low": {
+        "parameter": "fade_margin_db",
+        "level": "base - 2 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6584699453551912,
+          "sample_sd": 0.0023661896278263698,
+          "ci95": [
+            0.6525920044675553,
+            0.6643478862428271
+          ],
+          "min": 0.6557377049180327,
+          "max": 0.6598360655737705
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 143.8364711242315,
+          "sample_sd": 46.240500412388265,
+          "ci95": [
+            28.968700239611294,
+            258.70424200885174
+          ],
+          "min": 95.80000000000004,
+          "max": 188.0427467060281
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2393.1204666538783,
+          "sample_sd": 1189.2645670352758,
+          "ci95": [
+            -561.1764935668748,
+            5347.417426874632
+          ],
+          "min": 1441.1018000682816,
+          "max": 3726.215299917385
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.028005464480874303,
+          "sample_sd": 0.00828166369739218,
+          "ci95": [
+            0.007432671374148745,
+            0.04857825758759986
+          ],
+          "min": 0.020491803278688492,
+          "max": 0.03688524590163933
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_high": {
+        "parameter": "obstruction_loss_db",
+        "level": "12 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.014344262295081968,
+          "sample_sd": 0.024844991092176517,
+          "ci95": [
+            -0.04737411702509465,
+            0.07606264161525858
+          ],
+          "min": 0.0,
+          "max": 0.0430327868852459
+        },
+        "first_full_recovery_success_count": 0,
+        "sustained_30s_recovery_success_count": 0,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 37.788708538486496,
+          "sample_sd": 65.45196314107046,
+          "ci95": [
+            -124.80298140833898,
+            200.38039848531199
+          ],
+          "min": 0.0,
+          "max": 113.36612561545948
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2569.929033246202,
+          "sample_sd": 886.7081668014408,
+          "ci95": [
+            367.2238367777436,
+            4772.63422971466
+          ],
+          "min": 1878.819200093858,
+          "max": 3569.7214999236166
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.616120218579235,
+          "sample_sd": 0.018593794520240698,
+          "ci95": [
+            -0.6623097647515015,
+            -0.5699306724069686
+          ],
+          "min": -0.6331967213114754,
+          "max": -0.5963114754098361
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "obstruction_low": {
+        "parameter": "obstruction_loss_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.630464480874317,
+          "sample_sd": 0.01051557672017808,
+          "ci95": [
+            0.6043423401829188,
+            0.6565866215657151
+          ],
+          "min": 0.6188524590163934,
+          "max": 0.639344262295082
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 186.95889023568418,
+          "sample_sd": 26.623894910733338,
+          "ci95": [
+            120.8214688542539,
+            253.09631161711445
+          ],
+          "min": 160.19999999999936,
+          "max": 213.44570447298383
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2332.3721665268145,
+          "sample_sd": 1157.1631057436714,
+          "ci95": [
+            -542.1803430971704,
+            5206.924676150799
+          ],
+          "min": 1304.68339973595,
+          "max": 3585.755799897015
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.0,
+          "sample_sd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "min": 0.0,
+          "max": 0.0
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_high": {
+        "parameter": "path_loss_exponent",
+        "level": "base + 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.14617486338797814,
+          "sample_sd": 0.25318229017741783,
+          "ci95": [
+            -0.4827648115890597,
+            0.775114538365016
+          ],
+          "min": 0.0,
+          "max": 0.4385245901639344
+        },
+        "first_full_recovery_success_count": 1,
+        "sustained_30s_recovery_success_count": 1,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 152.30526160162097,
+          "sample_sd": 79.21869751385023,
+          "ci95": [
+            -44.484892368276206,
+            349.0954155715182
+          ],
+          "min": 94.6756213270711,
+          "max": 242.64016347779142
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3663.6084665854773,
+          "sample_sd": 1238.2783350719865,
+          "ci95": [
+            587.5545567897489,
+            6739.662376381206
+          ],
+          "min": 2857.433799887076,
+          "max": 5089.385899715126
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.48428961748633875,
+          "sample_sd": 0.2455969195754577,
+          "ci95": [
+            -1.0943861872934453,
+            0.12580695232076772
+          ],
+          "min": -0.6331967213114754,
+          "max": -0.2008196721311476
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "pathloss_exponent_low": {
+        "parameter": "path_loss_exponent",
+        "level": "base - 0.2",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6639344262295083,
+          "sample_sd": 0.007388424744803226,
+          "ci95": [
+            0.6455805616905133,
+            0.6822882907685033
+          ],
+          "min": 0.6577868852459017,
+          "max": 0.6721311475409836
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 114.31111111111103,
+          "sample_sd": 28.020733064669624,
+          "ci95": [
+            44.70375139427591,
+            183.91847082794615
+          ],
+          "min": 98.13333333333338,
+          "max": 146.66666666666634
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2510.1272333413363,
+          "sample_sd": 957.2572145196673,
+          "ci95": [
+            132.1684869079586,
+            4888.085979774714
+          ],
+          "min": 1793.4163000900298,
+          "max": 3597.238800022751
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.033469945355191245,
+          "sample_sd": 0.009464758511305384,
+          "ci95": [
+            0.009958181804647661,
+            0.056981708905734826
+          ],
+          "min": 0.02254098360655732,
+          "max": 0.03893442622950827
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_high": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base + 3 dB (more sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5744535519125683,
+          "sample_sd": 0.027288229993767985,
+          "ci95": [
+            0.5066658306981329,
+            0.6422412731270037
+          ],
+          "min": 0.5430327868852459,
+          "max": 0.5922131147540983
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 192.09777887428018,
+          "sample_sd": 79.08745028759493,
+          "ci95": [
+            -4.366338911313591,
+            388.5618966598739
+          ],
+          "min": 108.50202998475434,
+          "max": 265.73333333333284
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2887.215033484002,
+          "sample_sd": 544.4118649427431,
+          "ci95": [
+            1534.8209890554083,
+            4239.609077912596
+          ],
+          "min": 2286.5342003060505,
+          "max": 3348.0894999811426
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.05601092896174864,
+          "sample_sd": 0.030692133795984934,
+          "ci95": [
+            -0.1322544159784415,
+            0.02023255805494424
+          ],
+          "min": -0.0901639344262295,
+          "max": -0.030737704918032738
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "rx_sensitivity_low": {
+        "parameter": "rx_sensitivity_dbm",
+        "level": "base - 3 dB (less sensitive)",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6584699453551913,
+          "sample_sd": 0.007196484803861182,
+          "ci95": [
+            0.6405928860618816,
+            0.6763470046485011
+          ],
+          "min": 0.6516393442622951,
+          "max": 0.6659836065573771
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 114.31111111111103,
+          "sample_sd": 28.89108538658252,
+          "ci95": [
+            42.54167636890263,
+            186.08054585331945
+          ],
+          "min": 97.1333333333334,
+          "max": 147.66666666666634
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1994.1317667253315,
+          "sample_sd": 768.127360714177,
+          "ci95": [
+            85.99762254799816,
+            3902.265910902665
+          ],
+          "min": 1450.4247002769262,
+          "max": 2872.868000064045
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.028005464480874338,
+          "sample_sd": 0.01394848214252884,
+          "ci95": [
+            -0.006644486031057547,
+            0.06265541499280622
+          ],
+          "min": 0.012295081967213073,
+          "max": 0.03893442622950827
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_high": {
+        "parameter": "shadowing_sigma_db",
+        "level": "8 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6092896174863388,
+          "sample_sd": 0.008531418030598906,
+          "ci95": [
+            0.5880964002218214,
+            0.6304828347508562
+          ],
+          "min": 0.6024590163934426,
+          "max": 0.6188524590163934
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 181.06456711858405,
+          "sample_sd": 59.2024501645936,
+          "ci95": [
+            33.99752803669779,
+            328.1316062004703
+          ],
+          "min": 113.66666666666674,
+          "max": 224.66666666666606
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 3648.099199985154,
+          "sample_sd": 860.4184579140317,
+          "ci95": [
+            1510.7012607948468,
+            5785.497139175461
+          ],
+          "min": 2926.148400059901,
+          "max": 4600.183899980038
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.021174863387978176,
+          "sample_sd": 0.005156990734474543,
+          "ci95": [
+            -0.0339855385506334,
+            -0.00836418822532295
+          ],
+          "min": -0.026639344262295084,
+          "max": -0.016393442622950838
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "shadowing_low": {
+        "parameter": "shadowing_sigma_db",
+        "level": "0 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.662568306010929,
+          "sample_sd": 0.0042657090152994435,
+          "ci95": [
+            0.6519716973786702,
+            0.6731649146431877
+          ],
+          "min": 0.6577868852459017,
+          "max": 0.6659836065573771
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 141.84444444444412,
+          "sample_sd": 41.11038437796066,
+          "ci95": [
+            39.720588266600544,
+            243.9683006222877
+          ],
+          "min": 98.13333333333338,
+          "max": 179.7333333333326
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 731.1191998887807,
+          "sample_sd": 131.1852466899143,
+          "ci95": [
+            405.23698136109493,
+            1057.0014184164665
+          ],
+          "min": 581.8411000072956,
+          "max": 828.0428997240961
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.03210382513661203,
+          "sample_sd": 0.007196484803861239,
+          "ci95": [
+            0.014226765843302173,
+            0.049980884429921886
+          ],
+          "min": 0.024590163934426146,
+          "max": 0.03893442622950827
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_high": {
+        "parameter": "tx_power_dbm",
+        "level": "base + 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.6584699453551913,
+          "sample_sd": 0.007196484803861182,
+          "ci95": [
+            0.6405928860618816,
+            0.6763470046485011
+          ],
+          "min": 0.6516393442622951,
+          "max": 0.6659836065573771
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 114.31111111111103,
+          "sample_sd": 28.89108538658252,
+          "ci95": [
+            42.54167636890263,
+            186.08054585331945
+          ],
+          "min": 97.1333333333334,
+          "max": 147.66666666666634
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 1915.1999667519704,
+          "sample_sd": 656.3617040583522,
+          "ci95": [
+            284.70710515191035,
+            3545.69282835203
+          ],
+          "min": 1427.9287998797372,
+          "max": 2661.5639002993703
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": 0.028005464480874338,
+          "sample_sd": 0.01394848214252884,
+          "ci95": [
+            -0.006644486031057547,
+            0.06265541499280622
+          ],
+          "min": 0.012295081967213073,
+          "max": 0.03893442622950827
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      },
+      "tx_power_low": {
+        "parameter": "tx_power_dbm",
+        "level": "base - 3 dB",
+        "seed_count": 3,
+        "rescue_user_service_success_rate": {
+          "n": 3,
+          "mean": 0.5744535519125683,
+          "sample_sd": 0.027288229993767985,
+          "ci95": [
+            0.5066658306981329,
+            0.6422412731270037
+          ],
+          "min": 0.5430327868852459,
+          "max": 0.5922131147540983
+        },
+        "first_full_recovery_success_count": 3,
+        "sustained_30s_recovery_success_count": 3,
+        "uav_energy_total_wh": {
+          "n": 3,
+          "mean": 192.09777887428018,
+          "sample_sd": 79.08745028759493,
+          "ci95": [
+            -4.366338911313591,
+            388.5618966598739
+          ],
+          "min": 108.50202998475434,
+          "max": 265.73333333333284
+        },
+        "decision_compute_total_ms": {
+          "n": 3,
+          "mean": 2842.156733308608,
+          "sample_sd": 506.8624764530173,
+          "ci95": [
+            1583.0405408805061,
+            4101.27292573671
+          ],
+          "min": 2284.783599898219,
+          "max": 3275.4750000312924
+        },
+        "paired_service_delta_from_baseline": {
+          "n": 3,
+          "mean": -0.05601092896174864,
+          "sample_sd": 0.030692133795984934,
+          "ci95": [
+            -0.1322544159784415,
+            0.02023255805494424
+          ],
+          "min": -0.0901639344262295,
+          "max": -0.030737704918032738
+        },
+        "interpretation": "exploratory; no independent validation inference"
+      }
+    }
+  }
+}

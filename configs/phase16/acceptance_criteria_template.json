@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "template_only": true,
+  "frozen_before_holdout": false,
+  "criteria_sha256": null,
+  "primary_metric": null,
+  "maximum_error_db": null,
+  "required_measurement_uncertainty_complete": true,
+  "minimum_independent_routes_or_sessions": null,
+  "holdout_group_definition": null,
+  "notes": "The project has no target-device measurement basis to set a defensible numerical acceptance limit yet. Fill and hash this protocol before collecting or opening final holdout results."
+}

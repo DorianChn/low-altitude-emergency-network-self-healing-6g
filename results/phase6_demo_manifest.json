@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "mode": "precomputed_offline_replay",
+  "live_stream": false,
+  "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+  "source_phase": "phase5_frozen_validation",
+  "frozen_manifest_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+  "scenario_order": [
+    "severe_persistent_faults",
+    "dynamic_failures",
+    "high_mobility_rescue",
+    "high_load_backhaul_limit"
+  ],
+  "seed_selection_rule": "first numeric seed in each frozen validation partition; no outcome-based selection",
+  "scenarios": {
+    "severe_persistent_faults": {
+      "label": "严重持续故障",
+      "artifact": "phase6_demo_severe_persistent_faults.json",
+      "seed": 7000,
+      "validation_seed_count": 20,
+      "strategy_count_in_full_validation": 100,
+      "duration_s": 600,
+      "time_step_s": 10,
+      "world_trace_sha256": "8a653b87289aab2015cae47b0658b5f0c4d191981571d59fddb9a4d25c6bb4df",
+      "effective_config_sha256": "f32be625316e280adcf066c82f078721e09a8371c899e774b5cfa7f936f99314",
+      "source_validation_file": "phase5_validation_severe_persistent_faults.json"
+    },
+    "dynamic_failures": {
+      "label": "动态故障",
+      "artifact": "phase6_demo_dynamic_failures.json",
+      "seed": 7020,
+      "validation_seed_count": 20,
+      "strategy_count_in_full_validation": 100,
+      "duration_s": 600,
+      "time_step_s": 10,
+      "world_trace_sha256": "e713dd24d00abf4d38ae28fc796e7f6f29b3f79eef15624ac2eae51a15672c77",
+      "effective_config_sha256": "f9bb72fa706d63955313c7b39cdf8c4c1e7a4b1648d6687742101844c1807ac6",
+      "source_validation_file": "phase5_validation_dynamic_failures.json"
+    },
+    "high_mobility_rescue": {
+      "label": "高移动救援",
+      "artifact": "phase6_demo_high_mobility_rescue.json",
+      "seed": 7040,
+      "validation_seed_count": 20,
+      "strategy_count_in_full_validation": 100,
+      "duration_s": 600,
+      "time_step_s": 10,
+      "world_trace_sha256": "d10a8b9819f74de7271d364249ad3c043c6331a788fe88ee555821af85efa542",
+      "effective_config_sha256": "9e324770d132f3ce297ae3b58c7cb1a08f0fbadce98bb0671227ce2c4acd4291",
+      "source_validation_file": "phase5_validation_high_mobility_rescue.json"
+    },
+    "high_load_backhaul_limit": {
+      "label": "高负载 / 回传受限",
+      "artifact": "phase6_demo_high_load_backhaul_limit.json",
+      "seed": 7060,
+      "validation_seed_count": 20,
+      "strategy_count_in_full_validation": 100,
+      "duration_s": 600,
+      "time_step_s": 10,
+      "world_trace_sha256": "1f86a737e0e59aaf1feea69a8dc8f6e016805ac1a0d6a1fdcc4192ed35880adf",
+      "effective_config_sha256": "d689b9a28ffd78d49ee6bf3ebdb048b80626b4db0d4d514bbdc1d29aef39da33",
+      "source_validation_file": "phase5_validation_high_load_backhaul_limit.json"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase18_test_execution",
+  "created_at_utc": "2026-10-21T11:25:00+00:00",
+  "branch": "phase18-final-audit-delivery",
+  "head": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+  "environment": {
+    "os": "Windows 11",
+    "python": "3.12.14",
+    "node": "22.23.1",
+    "vite": "8.3.4",
+    "playwright_browser": "Google Chrome (local executable selected by frontend/playwright.config.ts)",
+    "python_dependency_mode": "uv --frozen --offline",
+    "project_device": false,
+    "real_network": false
+  },
+  "overall_status": "PASS_WITH_DOCUMENTED_WARNINGS",
+  "checks": [
+    {
+      "id": "historical_integrity",
+      "name": "Phase 18 historical integrity audit",
+      "status": "PASS",
+      "result": "182/182 protected hashes; Phase 9 32/32, Phase 10 15/15, Phase 11 26/26 artifact manifests; 14/14 public Phase 15 source files; 26/26 raw experiment structure checks.",
+      "command": "uv run --frozen --offline python scripts/run_phase18_final_audit.py",
+      "exit_code": 0,
+      "evidence_path": "results/phase18/phase18_integrity_audit.json"
+    },
+    {
+      "id": "release_manifest_verification",
+      "name": "Local release manifest self-check",
+      "status": "PASS",
+      "result": "All listed files match their recorded size and SHA-256; manifest paths remain relative, the manifest excludes its own hash, and public raw source files remain outside the candidate.",
+      "command": "uv run --frozen --offline python scripts/verify_phase18_release_manifest.py",
+      "exit_code": 0,
+      "evidence_path": "results/phase18/phase18_release_manifest.json"
+    },
+    {
+      "id": "python_full_suite",
+      "name": "Complete Python pytest suite",
+      "status": "PASS",
+      "result": "193 passed in 48.86 seconds; 0 failed.",
+      "command": "uv run --frozen --offline pytest -q",
+      "exit_code": 0,
+      "evidence_path": "tests/"
+    },
+    {
+      "id": "phase18_api_contract",
+      "name": "Phase 18 API contract and fail-closed behavior",
+      "status": "PASS",
+      "result": "3 passed: saved JSON hashes, missing required artifact returns 503, historical read-only routes remain available.",
+      "command": "uv run --frozen --offline pytest tests/test_phase18_api.py -q",
+      "exit_code": 0,
+      "evidence_path": "tests/test_phase18_api.py"
+    },
+    {
+      "id": "frontend_unit_suite",
+      "name": "Complete frontend unit/component suite",
+      "status": "PASS",
+      "result": "5 test files and 17 tests passed.",
+      "command": "cd frontend && npm run test",
+      "exit_code": 0,
+      "evidence_path": "frontend/src/test/"
+    },
+    {
+      "id": "frontend_lint",
+      "name": "Frontend lint",
+      "status": "PASS",
+      "result": "oxlint completed with exit code 0.",
+      "command": "cd frontend && npm run lint",
+      "exit_code": 0,
+      "evidence_path": "frontend/package.json"
+    },
+    {
+      "id": "frontend_production_build",
+      "name": "Frontend TypeScript and production build",
+      "status": "PASS_WITH_WARNING",
+      "result": "TypeScript and Vite build succeeded. EChartsView chunk is 533.66 kB minified, above the 500 kB advisory threshold; charts were retained.",
+      "command": "cd frontend && npm run build",
+      "exit_code": 0,
+      "evidence_path": "frontend/dist/"
+    },
+    {
+      "id": "phase18_playwright",
+      "name": "Phase 18 browser API/data/layout checks",
+      "status": "PASS",
+      "result": "4/4 targeted browser checks passed: API/UI values, evidence navigation, and widths 1920x1080, 1366x768, 390x844. No page exceptions or console errors in final run.",
+      "command": "cd frontend && npm run test:e2e -- --grep \"Phase 18\"",
+      "exit_code": 0,
+      "evidence_path": "results/phase18/browser/"
+    },
+    {
+      "id": "playwright_full_suite",
+      "name": "Complete browser end-to-end suite",
+      "status": "PASS",
+      "result": "27/27 passed, including Phase 6 four-scene replays, historical research screens, Phase 17 evidence, Phase 18 final audit, strategy/data consistency, and responsive layouts.",
+      "command": "cd frontend && npm run test:e2e",
+      "exit_code": 0,
+      "evidence_path": "frontend/e2e/"
+    },
+    {
+      "id": "windows_demo_start_and_stop",
+      "name": "Windows local demo startup, health and managed shutdown",
+      "status": "PASS",
+      "result": "Start checks found Python, uv, Node/npm, frontend dependencies and saved replay. API health and Phase 18 route returned 200; /research HTML returned 200. A bounded acceptance run exited 0 through the script finally block and both owned ports were closed. The normal interactive launch also opened the browser and served the pages.",
+      "command": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File scripts/start_demo.ps1 -RunDurationSeconds 1 -NoBrowser",
+      "exit_code": 0,
+      "evidence_path": "scripts/start_demo.cmd · scripts/start_demo.ps1"
+    }
+  ],
+  "warnings": [
+    "An initial Phase 18 browser run found an undeclared favicon request returning 404. A project-matched relay favicon and explicit link were added; the final targeted and full browser suites passed.",
+    "The Windows terminal harness did not deliver the interactive Q/Ctrl+C keystroke to the first demo process. The harness run was stopped and the exact owned API/frontend processes were verified and closed; a subsequent bounded run exercised the script cleanup path and confirmed both ports closed.",
+    "Playwright worker environments printed a NO_COLOR/FORCE_COLOR configuration warning; tests were unaffected.",
+    "The ECharts production chunk advisory remains at 533.66 kB minified; not addressed by removing research visualizations."
+  ],
+  "screenshots": [
+    {
+      "path": "results/phase18/browser/phase18-1920x1080.png",
+      "viewport": "1920x1080",
+      "page_overflow": false
+    },
+    {
+      "path": "results/phase18/browser/phase18-1366x768.png",
+      "viewport": "1366x768",
+      "page_overflow": false
+    },
+    {
+      "path": "results/phase18/browser/phase18-390x844.png",
+      "viewport": "390x844",
+      "page_overflow": false
+    }
+  ],
+  "scope_notice": "These checks validate software, saved abstract simulation artifacts and local presentation behavior. They do not constitute real 6G network, radio equipment, UAV flight, device calibration or physical hardware-in-the-loop validation.",
+  "final_revalidation": {
+    "completed_at_utc": "2026-10-21T11:32:01+00:00",
+    "check": "complete_browser_end_to_end_suite",
+    "command": "cd frontend && npm run test:e2e",
+    "status": "PASS",
+    "passed": 27,
+    "failed": 0,
+    "duration_seconds": 20.7436,
+    "exit_code": 0,
+    "note": "Fresh rerun after final UI updates; browser app and API test servers shut down normally."
+  }
+}

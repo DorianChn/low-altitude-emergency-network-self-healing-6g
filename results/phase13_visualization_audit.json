@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase13_scientific_visualization",
+  "audit_scope": "read-only hashes of frozen experiment outputs, source datasets, offline replay frames, and current application route registration",
+  "created_at_utc": "2026-10-20T16:29:23.740389+00:00",
+  "git_branch": "phase13-scientific-visualization",
+  "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+  "data_sources": {
+    "phase5": {
+      "path": "results/phase5_validation_summary.json",
+      "exists": true,
+      "sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+      "size_bytes": 410463
+    },
+    "phase8": {
+      "path": "results/phase8_replication_summary.json",
+      "exists": true,
+      "sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+      "size_bytes": 2088660
+    },
+    "phase9": {
+      "path": "results/phase9_corrected_confirmation_summary.json",
+      "exists": true,
+      "sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+      "size_bytes": 471461
+    },
+    "phase10": {
+      "path": "results/phase10_confirmation_summary.json",
+      "exists": true,
+      "sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+      "size_bytes": 699696
+    },
+    "phase11": {
+      "path": "results/phase11_confirmation_summary.json",
+      "exists": true,
+      "sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+      "size_bytes": 951044
+    }
+  },
+  "historical_frozen_result_integrity": {
+    "expected_count": 32,
+    "verified_count": 32,
+    "missing": [],
+    "mismatches": [],
+    "status": "PASS"
+  },
+  "phase6_replay_integrity": {
+    "manifest": "results/phase6_demo_manifest.json",
+    "manifest_sha256": "8bdc6a440d676130a9629f29049ef7e3182516fd7cc10cf54bc9ea18379cf4e4",
+    "mode": "precomputed_offline_replay",
+    "live_stream": false,
+    "multi_uav_frame_replay_available": false,
+    "scenarios": {
+      "severe_persistent_faults": {
+        "artifact": "results/phase6_demo_severe_persistent_faults.json",
+        "seed": 7000,
+        "valid": true,
+        "sha256": "22f0d1fcd59396bddb7ccc311421955d3ffb28110f3b8938738b0c0c3e755e65",
+        "scenario_id_matches": true,
+        "seed_matches": true,
+        "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+        "policy_frame_counts": {
+          "A_no_recovery": 61,
+          "B_phase1_static_grid": 61,
+          "Bprime_static_grid_shared_safety": 61,
+          "C_rolling_horizon_mpc": 61,
+          "D_lexicographic_rescue_priority": 61
+        },
+        "status": "PASS"
+      },
+      "dynamic_failures": {
+        "artifact": "results/phase6_demo_dynamic_failures.json",
+        "seed": 7020,
+        "valid": true,
+        "sha256": "a0173ae46add5797d0efa119c72a7ffa63ac903b9674ddda9c6d512d91d972d2",
+        "scenario_id_matches": true,
+        "seed_matches": true,
+        "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+        "policy_frame_counts": {
+          "A_no_recovery": 61,
+          "B_phase1_static_grid": 61,
+          "Bprime_static_grid_shared_safety": 61,
+          "C_rolling_horizon_mpc": 61,
+          "D_lexicographic_rescue_priority": 61
+        },
+        "status": "PASS"
+      },
+      "high_mobility_rescue": {
+        "artifact": "results/phase6_demo_high_mobility_rescue.json",
+        "seed": 7040,
+        "valid": true,
+        "sha256": "98380327de684ef9e353f3d83c765a310df4a28e16fee4b5f3d5bed9b0cdf303",
+        "scenario_id_matches": true,
+        "seed_matches": true,
+        "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+        "policy_frame_counts": {
+          "A_no_recovery": 61,
+          "B_phase1_static_grid": 61,
+          "Bprime_static_grid_shared_safety": 61,
+          "C_rolling_horizon_mpc": 61,
+          "D_lexicographic_rescue_priority": 61
+        },
+        "status": "PASS"
+      },
+      "high_load_backhaul_limit": {
+        "artifact": "results/phase6_demo_high_load_backhaul_limit.json",
+        "seed": 7060,
+        "valid": true,
+        "sha256": "fd8cc979f586fe3a9df0cae7e714f7070c19262c1576d3792ca14a9561e010bb",
+        "scenario_id_matches": true,
+        "seed_matches": true,
+        "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+        "policy_frame_counts": {
+          "A_no_recovery": 61,
+          "B_phase1_static_grid": 61,
+          "Bprime_static_grid_shared_safety": 61,
+          "C_rolling_horizon_mpc": 61,
+          "D_lexicographic_rescue_priority": 61
+        },
+        "status": "PASS"
+      }
+    },
+    "status": "PASS"
+  },
+  "route_inventory": {
+    "api_routes": {
+      "/api/demo/phase6": true,
+      "/api/demo/phase6/{scenario_id}": true,
+      "/api/experiments/phase2": true,
+      "/api/experiments/phase5": true,
+      "/api/experiments/phase5/{scenario_id}": true,
+      "/api/health": true,
+      "/api/replay/{seed}": true,
+      "/api/research/{phase_id}": true
+    },
+    "frontend_routes": {
+      "/": true,
+      "/command": true,
+      "/decision": true,
+      "/demo": true,
+      "/lab": true,
+      "/research": true
+    },
+    "status": "PASS"
+  },
+  "browser_screenshot_evidence": {
+    "screenshots": {
+      "artifacts/phase13/browser/demo-1920x1080.png": {
+        "exists": true,
+        "width": 1920,
+        "height": 2683,
+        "expected_viewport_width": 1920,
+        "size_bytes": 917702,
+        "status": "PASS"
+      },
+      "artifacts/phase13/browser/demo-1366x768.png": {
+        "exists": true,
+        "width": 1366,
+        "height": 2672,
+        "expected_viewport_width": 1366,
+        "size_bytes": 774997,
+        "status": "PASS"
+      },
+      "artifacts/phase13/browser/research-1920x1080.png": {
+        "exists": true,
+        "width": 1920,
+        "height": 3562,
+        "expected_viewport_width": 1920,
+        "size_bytes": 974614,
+        "status": "PASS"
+      },
+      "artifacts/phase13/browser/research-1366x768.png": {
+        "exists": true,
+        "width": 1366,
+        "height": 3614,
+        "expected_viewport_width": 1366,
+        "size_bytes": 834146,
+        "status": "PASS"
+      },
+      "artifacts/phase13/browser/research-390x844.png": {
+        "exists": true,
+        "width": 390,
+        "height": 4922,
+        "expected_viewport_width": 390,
+        "size_bytes": 493235,
+        "status": "PASS"
+      },
+      "artifacts/phase13/browser/research-phase9-1920x1080.png": {
+        "exists": true,
+        "width": 1920,
+        "height": 2665,
+        "expected_viewport_width": 1920,
+        "size_bytes": 765636,
+        "status": "PASS"
+      }
+    },
+    "status": "PASS"
+  },
+  "phase13_source_hashes": {
+    "src/lowalt6g/api.py": {
+      "exists": true,
+      "sha256": "d4a0b3df8276917ca2618d2181d25154a67052192547380ff719ef0d32ecd9ca"
+    },
+    "tests/test_phase13_api.py": {
+      "exists": true,
+      "sha256": "06f82958fa3e6eee624c55991a6f7257efc776dd562dd98bcf635ccafdb1b30c"
+    },
+    "frontend/src/App.tsx": {
+      "exists": true,
+      "sha256": "9bc6eec038d31a440e86c80c72a95b48432dc1abf3e01a128316279be7c56310"
+    },
+    "frontend/src/components.tsx": {
+      "exists": true,
+      "sha256": "f88251e882df4d7fcfa6fcff266d1c49265dbac6e9827b1c8ce67de83f0f79c6"
+    },
+    "frontend/src/ResearchPage.tsx": {
+      "exists": true,
+      "sha256": "5a3c8a4c7372a229de3f8fc24b7352911e6e907d20fecc07f2795b605a14b8c3"
+    },
+    "frontend/src/research-model.ts": {
+      "exists": true,
+      "sha256": "349754cabfa12124c6d8d85688e76194cb50445030d088e5e27fd482ad8218bc"
+    },
+    "frontend/src/research.css": {
+      "exists": true,
+      "sha256": "ee951cbdda1934105769207b4d90b6fe40967ec9f8990bf3c9633d7402cc766e"
+    },
+    "frontend/src/Phase6DemoPage.tsx": {
+      "exists": true,
+      "sha256": "975a7c2b096d5fcb360138dca85f299cc56c0be0ef9bb995e28038fa483d37c1"
+    }
+  },
+  "status": "PASS"
+}

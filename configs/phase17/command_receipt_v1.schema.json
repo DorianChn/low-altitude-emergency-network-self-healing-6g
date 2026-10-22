@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lowalt6g.invalid/schemas/command-receipt-v1.json",
+  "title": "Phase 17 command execution receipt contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "command_id", "execution_status", "executed_in", "requested_state", "reported_state", "feedback_matches", "completed", "timestamp", "fault_injection"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "command_id": { "type": "string", "minLength": 1 },
+    "execution_status": { "enum": ["COMPLETED", "TIMEOUT_UNKNOWN", "REJECTED_BY_TEST_EXECUTOR", "FEEDBACK_MISMATCH"] },
+    "executed_in": { "enum": ["SIMULATED"] },
+    "requested_state": { "type": "object" },
+    "reported_state": { "type": ["object", "null"] },
+    "feedback_matches": { "type": ["boolean", "null"] },
+    "completed": { "type": "boolean" },
+    "timestamp": { "$ref": "#/$defs/clock_stamp" },
+    "fault_injection": { "type": ["string", "null"] }
+  },
+  "$defs": {
+    "clock_stamp": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "domain", "precision_ms"],
+      "properties": {
+        "value": { "type": "number" },
+        "domain": { "enum": ["device_raw", "receiver_wall_clock", "simulation_time", "replay_time", "wall_clock_utc"] },
+        "precision_ms": { "type": ["number", "null"], "minimum": 0 },
+        "offset_to_receiver_ms": { "type": ["number", "null"] },
+        "utc_iso": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

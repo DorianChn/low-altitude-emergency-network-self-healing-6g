@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase14_radio_link_model",
+  "status": "development_plan_pre_confirmation_freeze",
+  "model_pairs": [
+    "legacy_distance",
+    "link_budget_v1"
+  ],
+  "scenarios": {
+    "severe_persistent_faults": "configs/phase5/severe_persistent_faults.toml",
+    "dynamic_failures": "configs/phase5/dynamic_failures.toml",
+    "high_mobility_rescue": "configs/phase5/high_mobility_rescue.toml",
+    "high_load_backhaul_limit": "configs/phase5/high_load_backhaul_limit.toml"
+  },
+  "policies": {
+    "Bprime_static_grid_shared_safety": 1,
+    "F_independent_greedy": 3,
+    "G_centralized_coordination": 3
+  },
+  "development_seeds": {
+    "severe_persistent_faults": [96000, 96001, 96002],
+    "dynamic_failures": [96010, 96011, 96012],
+    "high_mobility_rescue": [96020, 96021, 96022],
+    "high_load_backhaul_limit": [96030, 96031, 96032]
+  },
+  "proposed_confirmation_seeds": {
+    "severe_persistent_faults": [96100, 96101, 96102, 96103, 96104, 96105, 96106, 96107, 96108, 96109, 96110, 96111, 96112, 96113, 96114, 96115, 96116, 96117, 96118, 96119],
+    "dynamic_failures": [96200, 96201, 96202, 96203, 96204, 96205, 96206, 96207, 96208, 96209, 96210, 96211, 96212, 96213, 96214, 96215, 96216, 96217, 96218, 96219],
+    "high_mobility_rescue": [96300, 96301, 96302, 96303, 96304, 96305, 96306, 96307, 96308, 96309, 96310, 96311, 96312, 96313, 96314, 96315, 96316, 96317, 96318, 96319],
+    "high_load_backhaul_limit": [96400, 96401, 96402, 96403, 96404, 96405, 96406, 96407, 96408, 96409, 96410, 96411, 96412, 96413, 96414, 96415, 96416, 96417, 96418, 96419]
+  },
+  "primary_endpoint": "rescue_user_service_success_rate",
+  "primary_estimand": "paired per-seed difference link_budget_v1 minus legacy_distance within a scenario-policy stratum",
+  "primary_multiplicity": "Holm adjustment across 12 scenario-policy strata",
+  "other_metrics": [
+    "normal_user_connection_success_rate",
+    "user_connection_success_rate",
+    "first_full_recovery_success and successful-only time",
+    "all-run horizon-censored recovery time",
+    "sustained_30s_recovery_success and time",
+    "conditional mean and P95 latency with sample counts",
+    "UAV energy and energy per rescue-user hour",
+    "decision wall-clock time",
+    "potential geometry link feasibility disagreement"
+  ],
+  "uncertainty_design": "one-factor-at-a-time development-only screen: path-loss exponent +/-0.2; transmit power +/-3 dB; receiver sensitivity +/-3 dB; fade margin +/-2 dB; shadow standard deviation 0/8 dB; obstruction 0/12 dB",
+  "confirmation_runs": 480,
+  "model_boundary": "abstract configured link budget; not device-calibrated, not full channel/SINR/interference simulation, not a real 6G test"
+}

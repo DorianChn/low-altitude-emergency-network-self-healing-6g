@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_measurement_uncertainty_budget",
+  "status": "NOT_ASSESSABLE_NO_TARGET_DEVICE_UNCERTAINTIES",
+  "output_quantity": "received power / path-loss difference",
+  "output_unit": "dB",
+  "sources": [
+    {
+      "id": "tx_power",
+      "category": "instrument",
+      "quantity": "transmit power",
+      "unit": "dB",
+      "effect": "received-power budget",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "rx_power",
+      "category": "instrument",
+      "quantity": "received power",
+      "unit": "dB",
+      "effect": "path-loss/received-power reference",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "tx_antenna_gain",
+      "category": "systematic",
+      "quantity": "transmit antenna gain",
+      "unit": "dB",
+      "effect": "received-power budget",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "rx_antenna_gain",
+      "category": "systematic",
+      "quantity": "receive antenna gain",
+      "unit": "dB",
+      "effect": "received-power budget",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "feedline_loss",
+      "category": "systematic",
+      "quantity": "cable/connector/feedline loss",
+      "unit": "dB",
+      "effect": "received-power budget",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "frequency",
+      "category": "configuration",
+      "quantity": "carrier frequency",
+      "unit": "Hz",
+      "effect": "frequency-dependent path loss",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "bandwidth",
+      "category": "configuration",
+      "quantity": "measurement bandwidth",
+      "unit": "Hz",
+      "effect": "measurement definition and noise floor",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "distance",
+      "category": "geometry",
+      "quantity": "Tx-Rx distance",
+      "unit": "m",
+      "effect": "path-loss predictor",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "antenna_height",
+      "category": "geometry",
+      "quantity": "antenna height",
+      "unit": "m",
+      "effect": "propagation geometry",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "antenna_attitude",
+      "category": "geometry",
+      "quantity": "antenna attitude/orientation",
+      "unit": "deg",
+      "effect": "antenna pattern alignment; needs pattern/model",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "temperature_gain_drift",
+      "category": "systematic",
+      "quantity": "temperature and gain drift",
+      "unit": "dB",
+      "effect": "calibration stability",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "repeatability",
+      "category": "repeatability",
+      "quantity": "repeat measurement variation",
+      "unit": "dB",
+      "effect": "within-session repeatability",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "between_batch",
+      "category": "repeatability",
+      "quantity": "between-batch variation",
+      "unit": "dB",
+      "effect": "cross-session reproducibility",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "environmental_variation",
+      "category": "natural_variability",
+      "quantity": "shadowing, obstruction and multipath variation",
+      "unit": "dB",
+      "effect": "population variability; not instrument error",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "model_residual",
+      "category": "model_residual",
+      "quantity": "model residual",
+      "unit": "dB",
+      "effect": "predictive residual; distinct from measurement uncertainty",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    },
+    {
+      "id": "parameter_estimation",
+      "category": "parameter_estimation",
+      "quantity": "fitted parameter uncertainty",
+      "unit": "dB",
+      "effect": "estimated-model parameter uncertainty",
+      "standard_uncertainty": null,
+      "evidence": null,
+      "status": "UNKNOWN_NO_PROJECT_DEVICE_EVIDENCE"
+    }
+  ],
+  "coverage": {
+    "instrument_measurement_uncertainty": "not quantified",
+    "systematic_error": "sources identified; magnitudes and correlations unknown",
+    "natural_sample_variability": "must be estimated from independent repeat routes/batches",
+    "model_residual": "Phase 15 public-domain residual exists but is not target-device measurement uncertainty",
+    "parameter_estimation": "Phase 15 public candidate interval is public-domain only, not target-device calibration uncertainty"
+  },
+  "combined_standard_uncertainty_db": null,
+  "expanded_uncertainty_db": null,
+  "coverage_factor": null,
+  "coverage_probability": null,
+  "reason": "No project-device measurement values, calibration certificates, or per-sample uncertainty metadata are present.",
+  "created_at_utc": "2026-10-21T06:36:23.231006+00:00",
+  "source_evidence": {
+    "phase14_link_budget_config_sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+    "phase15_calibration_summary_sha256": "1b221d37a0be0cfddf98e7ec56f95e8012501f2d7888d5ae30c6f19a383698ff",
+    "phase15_holdout_validation_sha256": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+    "project_device_measurement_count": 0,
+    "public_dataset_measurement_count": 1370,
+    "public_dataset_measurement_uncertainty_available": false
+  }
+}

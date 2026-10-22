@@ -1,0 +1,89 @@
+{
+  "schema_version": "2.0",
+  "title": "Phase 9 one-factor-at-a-time energy model sensitivity",
+  "scenario": "dynamic_failures",
+  "seed_ids": [
+    93500,
+    93501,
+    93502,
+    93503,
+    93504,
+    93505,
+    93506,
+    93507,
+    93508,
+    93509
+  ],
+  "role": "independent one-factor sensitivity cohort for corrected E2; not used to tune policy parameters",
+  "base_parameters": {
+    "movement_wh_per_km": 18.0,
+    "hover_power_w": 80.0,
+    "relay_power_w": 120.0,
+    "battery_capacity_wh": 600.0,
+    "initial_battery_wh": 600.0,
+    "reserve_wh": 50.0
+  },
+  "variants": [
+    {
+      "id": "base",
+      "parameter": "none",
+      "factor": 1.0
+    },
+    {
+      "id": "movement_low_0p75",
+      "parameter": "movement_wh_per_km",
+      "factor": 0.75
+    },
+    {
+      "id": "movement_high_1p25",
+      "parameter": "movement_wh_per_km",
+      "factor": 1.25
+    },
+    {
+      "id": "hover_low_0p75",
+      "parameter": "hover_power_w",
+      "factor": 0.75
+    },
+    {
+      "id": "hover_high_1p25",
+      "parameter": "hover_power_w",
+      "factor": 1.25
+    },
+    {
+      "id": "relay_low_0p75",
+      "parameter": "relay_power_w",
+      "factor": 0.75
+    },
+    {
+      "id": "relay_high_1p25",
+      "parameter": "relay_power_w",
+      "factor": 1.25
+    }
+  ],
+  "range_interpretation": "Plus/minus 25 percent are explicit engineering stress scenarios around uncalibrated simulator coefficients, not literature-derived confidence intervals or claims about any device. Each factor is changed independently and applied identically to every strategy's planning and runtime calculations.",
+  "formula_audit": {
+    "movement": "moved_km * movement_wh_per_km",
+    "hover": "hover_power_w * time_step_s / 3600",
+    "relay": "relay_power_w * time_step_s / 3600 only for a runtime interval with drone-relayed service; the conservative return budget reserves both hover and relay power",
+    "runtime_accounting": "movement and operation energy are added once in each simulation tick; planning estimates and protected return budgets constrain feasibility but are not separately added to measured energy"
+  },
+  "policies": [
+    "A_no_recovery",
+    "B_phase1_static_grid",
+    "Bprime_static_grid_shared_safety",
+    "C_rolling_horizon_mpc",
+    "D_lexicographic_rescue_priority",
+    "E_event_driven_rescue_recovery"
+  ],
+  "metrics": [
+    "rescue_user_service_success_rate",
+    "network_recovery_success",
+    "sustained_rescue_recovery_success",
+    "network_recovery_or_censoring_time_s",
+    "drone_energy_consumed_wh",
+    "drone_energy_wh_per_rescue_user_hour",
+    "algorithm_decision_total_ms",
+    "drone_battery_minimum_wh",
+    "target_switch_count"
+  ]
+}

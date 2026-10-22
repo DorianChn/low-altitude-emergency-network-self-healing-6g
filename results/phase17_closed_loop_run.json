@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0",
+  "test_mode": "SOFTWARE_CLOSED_LOOP",
+  "source_classification": "SYNTHETIC_TEST_ONLY",
+  "live_device": false,
+  "real_hardware_output_enabled": false,
+  "seed": 1717,
+  "test_configuration": {
+    "backhaul_available": true,
+    "initial_battery_wh": 120.0,
+    "reserve_wh": 30.0,
+    "manual_stop": false,
+    "telemetry_missing_steps": [],
+    "backhaul_schedule": {}
+  },
+  "time_step_s": 1.0,
+  "timeline": [
+    {
+      "simulation_step": 0,
+      "simulation_time_s": 0.0,
+      "event": null,
+      "input_source": "SYNTHETIC_TEST_ONLY",
+      "telemetry": {
+        "accepted": true,
+        "trusted_for_control": true,
+        "reasons": [],
+        "age_seconds": 0.0,
+        "age_comparable": true
+      },
+      "observed_state": {
+        "station_healthy": false,
+        "backhaul_available": true,
+        "rescue_connected": 0,
+        "rescue_total": 2,
+        "relay_active": true,
+        "battery_wh": 112.0
+      },
+      "decision": {
+        "action": "set_relay_active",
+        "reason": "software_executor_feedback_confirmed"
+      },
+      "command_id": "phase17-1717-step-0-relay-on",
+      "auto_lockout": false
+    },
+    {
+      "simulation_step": 1,
+      "simulation_time_s": 1.0,
+      "event": null,
+      "input_source": "SYNTHETIC_TEST_ONLY",
+      "telemetry": {
+        "accepted": true,
+        "trusted_for_control": true,
+        "reasons": [],
+        "age_seconds": 0.0,
+        "age_comparable": true
+      },
+      "observed_state": {
+        "station_healthy": false,
+        "backhaul_available": true,
+        "rescue_connected": 2,
+        "rescue_total": 2,
+        "relay_active": true,
+        "battery_wh": 112.0
+      },
+      "decision": {
+        "action": "hold",
+        "reason": "rescue_path_confirmed_by_test_plant"
+      },
+      "command_id": null,
+      "auto_lockout": false
+    },
+    {
+      "simulation_step": 2,
+      "simulation_time_s": 2.0,
+      "event": null,
+      "input_source": "SYNTHETIC_TEST_ONLY",
+      "telemetry": {
+        "accepted": true,
+        "trusted_for_control": true,
+        "reasons": [],
+        "age_seconds": 0.0,
+        "age_comparable": true
+      },
+      "observed_state": {
+        "station_healthy": false,
+        "backhaul_available": true,
+        "rescue_connected": 2,
+        "rescue_total": 2,
+        "relay_active": true,
+        "battery_wh": 112.0
+      },
+      "decision": {
+        "action": "hold",
+        "reason": "rescue_path_confirmed_by_test_plant"
+      },
+      "command_id": null,
+      "auto_lockout": false
+    },
+    {
+      "simulation_step": 3,
+      "simulation_time_s": 3.0,
+      "event": null,
+      "input_source": "SYNTHETIC_TEST_ONLY",
+      "telemetry": {
+        "accepted": true,
+        "trusted_for_control": true,
+        "reasons": [],
+        "age_seconds": 0.0,
+        "age_comparable": true
+      },
+      "observed_state": {
+        "station_healthy": false,
+        "backhaul_available": true,
+        "rescue_connected": 2,
+        "rescue_total": 2,
+        "relay_active": true,
+        "battery_wh": 112.0
+      },
+      "decision": {
+        "action": "hold",
+        "reason": "rescue_path_confirmed_by_test_plant"
+      },
+      "command_id": null,
+      "auto_lockout": false
+    },
+    {
+      "simulation_step": 4,
+      "simulation_time_s": 4.0,
+      "event": null,
+      "input_source": "SYNTHETIC_TEST_ONLY",
+      "telemetry": {
+        "accepted": true,
+        "trusted_for_control": true,
+        "reasons": [],
+        "age_seconds": 0.0,
+        "age_comparable": true
+      },
+      "observed_state": {
+        "station_healthy": false,
+        "backhaul_available": true,
+        "rescue_connected": 2,
+        "rescue_total": 2,
+        "relay_active": true,
+        "battery_wh": 112.0
+      },
+      "decision": {
+        "action": "hold",
+        "reason": "rescue_path_confirmed_by_test_plant"
+      },
+      "command_id": null,
+      "auto_lockout": false
+    },
+    {
+      "simulation_step": 5,
+      "simulation_time_s": 5.0,
+      "event": null,
+      "input_source": "SYNTHETIC_TEST_ONLY",
+      "telemetry": {
+        "accepted": true,
+        "trusted_for_control": true,
+        "reasons": [],
+        "age_seconds": 0.0,
+        "age_comparable": true
+      },
+      "observed_state": {
+        "station_healthy": false,
+        "backhaul_available": true,
+        "rescue_connected": 2,
+        "rescue_total": 2,
+        "relay_active": true,
+        "battery_wh": 112.0
+      },
+      "decision": {
+        "action": "hold",
+        "reason": "rescue_path_confirmed_by_test_plant"
+      },
+      "command_id": null,
+      "auto_lockout": false
+    }
+  ],
+  "command_audit": [
+    {
+      "command": {
+        "schema_version": "1.0",
+        "command_id": "phase17-1717-step-0-relay-on",
+        "target_device_id": "uav-test-01",
+        "action": "set_relay_active",
+        "parameters": {
+          "active": true
+        },
+        "source": "automatic",
+        "request_time": {
+          "value": 0.0,
+          "domain": "simulation_time",
+          "precision_ms": 1.0,
+          "offset_to_receiver_ms": null,
+          "utc_iso": null
+        },
+        "test_mode": "SOFTWARE_CLOSED_LOOP",
+        "experiment_id": "phase17-software-1717",
+        "simulation_step": 0,
+        "authorization_reference": null
+      },
+      "safety": {
+        "allowed": true,
+        "priority": "AUTOMATIC_EXECUTION",
+        "reason": "software_test_command_allowed"
+      },
+      "receipt": {
+        "schema_version": "1.0",
+        "command_id": "phase17-1717-step-0-relay-on",
+        "execution_status": "COMPLETED",
+        "executed_in": "SIMULATED",
+        "requested_state": {
+          "relay_active": true
+        },
+        "reported_state": {
+          "relay_active": true,
+          "battery_wh": 112.0,
+          "emergency_stop": false,
+          "manual_stop": false
+        },
+        "feedback_matches": true,
+        "completed": true,
+        "timestamp": {
+          "value": 0.0,
+          "domain": "simulation_time",
+          "precision_ms": 1.0,
+          "offset_to_receiver_ms": null,
+          "utc_iso": null
+        },
+        "fault_injection": null
+      }
+    }
+  ],
+  "summary": {
+    "steps": 6,
+    "commands_requested": 1,
+    "commands_allowed": 1,
+    "feedback_matches": 1,
+    "first_rescue_recovery_step": 1,
+    "final_rescue_connected": 2,
+    "final_rescue_total": 2,
+    "final_battery_wh": 112.0,
+    "automatic_lockout": false
+  },
+  "deterministic_output_sha256": "6688d1383a5beb3300c145bf17052d873f002975cd191b405423d70b8fc7cd3f"
+}

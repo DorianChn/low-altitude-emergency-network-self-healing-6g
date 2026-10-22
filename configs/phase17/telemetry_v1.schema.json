@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lowalt6g.invalid/schemas/telemetry-v1.json",
+  "title": "Phase 17 versioned device telemetry contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "device_id", "session_id", "sequence_number", "timestamp", "received_at", "source", "measurement_type", "value", "unit", "quality", "uncertainty", "validity", "provenance"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "device_id": { "type": "string", "minLength": 1 },
+    "session_id": { "type": "string", "minLength": 1 },
+    "sequence_number": { "type": "integer", "minimum": 0 },
+    "timestamp": { "$ref": "#/$defs/clock_stamp" },
+    "received_at": { "$ref": "#/$defs/clock_stamp" },
+    "source": { "type": "string", "minLength": 1 },
+    "measurement_type": { "type": "string", "minLength": 1 },
+    "value": { "oneOf": [{ "type": "number" }, { "type": "object" }] },
+    "unit": { "type": "string", "minLength": 1 },
+    "quality": { "enum": ["GOOD", "SUSPECT", "INVALID", "UNKNOWN"] },
+    "uncertainty": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["standard_uncertainty", "unit"],
+          "properties": {
+            "standard_uncertainty": { "type": "number", "minimum": 0 },
+            "unit": { "type": "string", "minLength": 1 },
+            "coverage_factor": { "type": ["number", "null"], "exclusiveMinimum": 0 }
+          }
+        }
+      ]
+    },
+    "validity": { "type": "boolean" },
+    "provenance": { "type": "object", "minProperties": 1 }
+  },
+  "$defs": {
+    "clock_stamp": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "domain", "precision_ms"],
+      "properties": {
+        "value": { "type": "number" },
+        "domain": { "enum": ["device_raw", "receiver_wall_clock", "simulation_time", "replay_time", "wall_clock_utc"] },
+        "precision_ms": { "type": ["number", "null"], "minimum": 0 },
+        "offset_to_receiver_ms": { "type": ["number", "null"] },
+        "utc_iso": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

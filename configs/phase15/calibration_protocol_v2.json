@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase15_link_calibration_pipeline",
+  "protocol_id": "public_a2g_offset_calibration_v2",
+  "protocol_status": "frozen_before_holdout_metrics_review",
+  "dataset_id": "mendeley_8p6r8ft4fz_v2",
+  "response": "published derived path_loss_db from dataset PL appendix; not received power, RSRP or SINR",
+  "predictor": "published 3D Tx-Rx distance in meters",
+  "model": "PL(d) = FSPL(3.6 GHz, 1 m) + 10 * n_fixed * log10(d / 1 m) + delta_PL_dataset",
+  "parameter_estimated": "one dataset-specific additive path-loss offset",
+  "fixed_parameters": {
+    "carrier_frequency_hz": 3600000000,
+    "reference_distance_m": 1.0,
+    "path_loss_exponent": 2.3,
+    "path_loss_exponent_source": "Phase 14 project simulation assumption; not estimated from public measurements"
+  },
+  "fit_groups": ["Sports field_10m", "Sports field_15m", "Farmland_10m", "Farmland_15m"],
+  "holdout_groups": ["Over-water_10m", "Over-water_15m"],
+  "split_unit": "entire environment-height route file; no point-level random split",
+  "training_distance_identifiability_audit": {
+    "pooled_span_decades": 0.5255878559,
+    "decision": "do_not_estimate_path_loss_exponent_and_intercept_together",
+    "rationale": "training distance spans less than one decade and distance is confounded with four environment-height groups"
+  },
+  "baselines": {
+    "phase14_exact": {
+      "model_id": "phase14_uav_access_mean_path_loss",
+      "carrier_frequency_hz": 3500000000,
+      "reference_distance_m": 1.0,
+      "path_loss_exponent": 2.3,
+      "shadowing_for_point_prediction_db": 0.0,
+      "obstruction_loss_db": 0.0
+    },
+    "frequency_matched_unfitted": {
+      "model_id": "phase15_free_space_3p6ghz_n2p3_no_offset",
+      "carrier_frequency_hz": 3600000000,
+      "reference_distance_m": 1.0,
+      "path_loss_exponent": 2.3,
+      "dataset_offset_db": 0.0
+    }
+  },
+  "candidate_model_id": "phase15_public_a2g_offset_fit_v2",
+  "bootstrap": {
+    "method": "equal-weight measurement-group means with whole route-file cluster bootstrap",
+    "replicates": 4000,
+    "seed": 150042
+  },
+  "holdout_bootstrap": {
+    "method": "paired resampling of whole holdout environment-height files",
+    "replicates": 4000,
+    "seed": 150043
+  },
+  "primary_comparison": "candidate versus exact Phase 14 mean path-loss baseline on identical over-water holdout rows",
+  "secondary_comparison": "candidate versus frequency-matched 3.6 GHz free-space/log-distance baseline on identical over-water holdout rows",
+  "acceptance_rule": "do not claim improvement absent documented per-measurement uncertainty, a group-bootstrap 95% interval below zero against the exact Phase 14 baseline, and an effect exceeding measurement uncertainty",
+  "measurement_uncertainty_available": false,
+  "holdout_group_count_warning": "two independent environment-height groups only; intervals are descriptive and low-resolution",
+  "formal_project_simulation_use": false,
+  "reason_not_applied": "Public non-urban 3.6 GHz path-loss labels do not identify target-device transmit power, antenna gains, receiver sensitivity, urban obstruction, or reliable link-failure labels"
+}

@@ -1,0 +1,13 @@
+{
+  "checked_at_local": "2026-10-22T01:25:26+08:00",
+  "python": "3.12.10",
+  "python_source": "system Python found by py launcher",
+  "node": "v24.19.0",
+  "npm": "11.17.0",
+  "uv": "uv 0.13.4 (7456b60bc 2026-10-20 x86_64-pc-windows-msvc)",
+  "chromium": "Google Chrome 155.0.8059.85",
+  "python_sync": "uv sync --locked --all-extras",
+  "frontend_install": "npm ci",
+  "runtime": ".runtime excluded from package",
+  "prepare_result": "PASS - independent ZIP extraction prepared; uv sync --locked --all-extras and npm ci completed; startup and Playwright 40/40 passed"
+}

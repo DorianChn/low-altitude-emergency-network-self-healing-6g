@@ -1,0 +1,40 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 2026年10月21日 23:37:10
+   Source : D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\
+     Dest : D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-�Ľ�����\
+
+    Files : *.*
+	    
+ Exc Dirs : D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\.pytest_cache
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\frontend\node_modules
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\frontend\node_modules\.vite
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\frontend\node_modules\@tailwindcss\node\node_modules
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\frontend\node_modules\@testing-library\jest-dom\node_modules
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\frontend\node_modules\@vitest\mocker\node_modules
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\frontend\node_modules\vitest\node_modules
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\scripts\__pycache__
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\src\lowalt6g\__pycache__
+	    D:\Codex Work\Ai+6G game\AAA�����ļ�\6G-RESCUE-���ս��-20261021\��ѡ���̽�ѹ\tests\__pycache__
+	    
+  Options : *.* /NDL /NFL /S /E /DCOPY:DAT /COPY:DAT /NP /XJ /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :        64        58         6         0         0         1
+   Files :       620       620         0         0         0         0
+   Bytes :   1.990 g   1.990 g         0         0         0         0
+   Times :   0:00:01   0:00:01                       0:00:00   0:00:00
+
+
+   Speed :           1,354,474,620 Bytes/sec.
+   Speed :              77,503.656 MegaBytes/min.
+   Ended : 2026年10月21日 23:37:12
+

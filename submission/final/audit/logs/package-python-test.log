@@ -1,0 +1,71 @@
+cwd=<LOCAL_PATH_REDACTED>\AppData\Local\Temp\lowalt6g-phase18-stage-e821ca85aa9e4335a1ccd2db5822fbeb
+command=uv sync --frozen --offline --all-extras --all-groups
+command=uv run --frozen --offline python -m pytest -q
+started_utc=2026-10-21T12:50:20.5439595Z
+previous_collection_failure=package-python-test-missing-api.log
+....................F................................................... [ 37%]
+.................................................F...................... [ 74%]
+.................................................                        [100%]
+================================== FAILURES ===================================
+_ test_phase11_seed_partitions_are_disjoint_and_phase10_artifacts_are_intact __
+
+    def test_phase11_seed_partitions_are_disjoint_and_phase10_artifacts_are_intact():
+        validate_seed_plan(load_plan())
+>       audit = verify_phase10_baseline()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_phase11.py:136: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def verify_phase10_baseline() -> dict[str, Any]:
+        """Verify frozen Phase 10 files and actual held-out row/run/trace counts."""
+    
+        protocol = _verify_phase10_protocol()
+        manifest_path = ROOT / PHASE10_ARTIFACT_MANIFEST
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        missing: list[str] = []
+        mismatched: list[str] = []
+        for relative, expected in manifest["artifacts_sha256"].items():
+            path = ROOT / relative
+            if not path.is_file():
+                missing.append(relative)
+            elif _sha256(path) != expected:
+                mismatched.append(relative)
+        raw = json.loads((ROOT / PHASE10_CONFIRMATION).read_text(encoding="utf-8"))
+        trace_mismatches: list[str] = []
+        run_count = 0
+        for row in raw.get("records", []):
+            for key, run in row.get("strategy_runs", {}).items():
+                run_count += 1
+                if run.get("world_trace_sha256") != row.get("world_trace_sha256"):
+                    trace_mismatches.append(f"{row.get('scenario_id')}/{row.get('seed')}/{key}")
+        problems = []
+        if missing:
+            problems.append(f"missing Phase 10 manifest artifacts: {missing}")
+        if mismatched:
+            problems.append(f"Phase 10 manifest hash mismatches: {mismatched}")
+        if len(raw.get("records", [])) != 80:
+            problems.append(f"Phase 10 confirmation row count is {len(raw.get('records', []))}, expected 80")
+        if run_count != 400 or int(raw.get("policy_run_count", -1)) != 400:
+            problems.append(f"Phase 10 confirmation has {run_count} decoded runs, expected 400")
+        if trace_mismatches:
+            problems.append(f"Phase 10 policy trace mismatches: {trace_mismatches[:5]}")
+        if problems:
+>           raise RuntimeError("Phase 10 baseline audit failed: " + "; ".join(problems))
+E           RuntimeError: Phase 10 baseline audit failed: missing Phase 10 manifest artifacts: ['DEVELOPMENT_LOG_PHASE10.md']
+
+src\lowalt6g\phase11_experiments.py:142: RuntimeError
+________ test_phase18_api_returns_saved_summary_and_allowlisted_hashes ________
+
+    def test_phase18_api_returns_saved_summary_and_allowlisted_hashes():
+        status, body = _get("/api/research/phase18")
+>       assert status == 200
+E       assert 503 == 200
+
+tests\test_phase18_api.py:49: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_phase11.py::test_phase11_seed_partitions_are_disjoint_and_phase10_artifacts_are_intact
+FAILED tests/test_phase18_api.py::test_phase18_api_returns_saved_summary_and_allowlisted_hashes
+2 failed, 191 passed in 49.66s
+exit_code=1
+ended_utc=2026-10-21T12:51:11.7566245Z

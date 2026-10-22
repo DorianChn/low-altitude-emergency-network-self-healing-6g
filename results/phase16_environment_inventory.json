@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_measurement_environment_inventory",
+  "created_at_utc": "2026-10-21T06:36:23.231006+00:00",
+  "project_root": "<LOCAL_PATH_REDACTED>\\Desktop\\工作\\low-altitude-emergency-network-self-healing-6g",
+  "git_branch": "phase16-field-measurement-readiness",
+  "host_platform": "Windows-11-10.0.26200-SP0",
+  "equipment_scan": {
+    "status": "COMPLETED",
+    "method": "present Windows PnP device names filtered for known RF/GNSS instrumentation; serial-port count only",
+    "matched_devices": [],
+    "serial_port_count": 0,
+    "serial_numbers_recorded": false,
+    "limitation": "A name-filtered device scan cannot prove that no unrecognized, unenumerated, borrowed, or off-machine equipment exists."
+  },
+  "project_device_measurements": {
+    "status": "NO_PROJECT_DEVICE_MEASUREMENTS",
+    "file_count": 0,
+    "evidence_scope": "scoped project data/results/configs/docs inventory plus Phase 15 calibration artifacts"
+  },
+  "project_device_manuals_and_calibration_certificates": {
+    "status": "NOT_FOUND_IN_SCOPED_PROJECT_INVENTORY",
+    "scope": "project workspace only; does not inspect unrelated user directories"
+  },
+  "available_measurement_data": {
+    "source_type": "public_measurement",
+    "dataset_id": "mendeley_8p6r8ft4fz_v2",
+    "doi": "10.17632/8p6r8ft4fz.2",
+    "source_url": "https://data.mendeley.com/datasets/8p6r8ft4fz/2",
+    "source_file_count": 14,
+    "record_count": 1370,
+    "carrier_frequency_hz": 3600000000,
+    "measurement_scope": "CIR measured; path_loss_db is publisher-derived; not project-device received-power calibration",
+    "measurement_uncertainty_per_record_available": false,
+    "license": "CC-BY-4.0"
+  },
+  "link_budget_parameters": {
+    "configuration_path": "configs/phase14/link_budget_v1.toml",
+    "configuration_sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+    "status": "PROJECT_ASSUMPTIONS_NOT_DEVICE_CALIBRATED",
+    "profiles": {
+      "model": {
+        "version": "link_budget_v1",
+        "shadowing_model": "static_per_link_per_run"
+      },
+      "base_access": {
+        "carrier_frequency_mhz": 3500.0,
+        "tx_power_dbm": 46.0,
+        "tx_antenna_gain_dbi": 0.0,
+        "rx_antenna_gain_dbi": 0.0,
+        "other_losses_db": 2.0,
+        "reference_distance_m": 1.0,
+        "path_loss_exponent": 2.8,
+        "rx_sensitivity_dbm": -100.0,
+        "fade_margin_db": 8.0,
+        "shadowing_sigma_db": 4.0,
+        "obstruction_loss_db": 0.0
+      },
+      "uav_access": {
+        "carrier_frequency_mhz": 3500.0,
+        "tx_power_dbm": 27.0,
+        "tx_antenna_gain_dbi": 1.0,
+        "rx_antenna_gain_dbi": 1.0,
+        "other_losses_db": 2.0,
+        "reference_distance_m": 1.0,
+        "path_loss_exponent": 2.3,
+        "rx_sensitivity_dbm": -102.0,
+        "fade_margin_db": 6.0,
+        "shadowing_sigma_db": 4.0,
+        "obstruction_loss_db": 0.0
+      },
+      "backhaul": {
+        "carrier_frequency_mhz": 3500.0,
+        "tx_power_dbm": 30.0,
+        "tx_antenna_gain_dbi": 3.0,
+        "rx_antenna_gain_dbi": 3.0,
+        "other_losses_db": 3.0,
+        "reference_distance_m": 1.0,
+        "path_loss_exponent": 2.3,
+        "rx_sensitivity_dbm": -103.0,
+        "fade_margin_db": 8.0,
+        "shadowing_sigma_db": 4.0,
+        "obstruction_loss_db": 0.0
+      }
+    }
+  },
+  "spectrum_and_flight_authorization": {
+    "project_authorization_evidence_found": false,
+    "3p5_ghz_emission_status": "NOT_AUTHORIZED_OR_VERIFIED_FOR_THIS_PROJECT",
+    "uav_flight_status": "NOT_AUTHORIZED_OR_VERIFIED_FOR_THIS_PROJECT",
+    "must_be_rechecked_for_actual_site_equipment_frequency_power_and_date": true,
+    "software_does_not_transmit_or_control_aircraft": true
+  },
+  "phase15_import_audit": {
+    "path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+    "raw_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+    "records_before": 1370,
+    "records_after": 1370,
+    "device_metadata_complete": false
+  },
+  "limitations": [
+    "Windows device-name enumeration is only a bounded read-only check, not proof that no equipment exists.",
+    "No field site, radio authorization, drone flight authorization, or target hardware was supplied to this project workspace.",
+    "The public 3.6 GHz non-urban data are not re-labelled as 3.5 GHz urban device measurements."
+  ]
+}

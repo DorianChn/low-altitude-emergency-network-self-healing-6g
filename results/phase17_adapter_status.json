@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "hardware_output_enabled": false,
+  "adapters": [
+    {
+      "adapter_id": "phase16_offline_measurement_file_import",
+      "device_type": "measurement_file_import",
+      "status": "IMPLEMENTED_AND_TESTED",
+      "implementation": "CSV/JSON read-only import and audit",
+      "live_device": false
+    },
+    {
+      "adapter_id": "phase17_saved_simulation_replay",
+      "device_type": "offline_file_and_record_replay",
+      "status": "REPLAY_ONLY",
+      "implementation": "offline discrete frame cursor with pause/resume/step",
+      "live_device": false
+    },
+    {
+      "adapter_id": "phase17_software_test_executor",
+      "device_type": "isolated_software_test_executor",
+      "status": "SIMULATED",
+      "implementation": "isolated in-memory executor; test data only",
+      "live_device": false
+    },
+    {
+      "adapter_id": "radio_measurement_driver",
+      "device_type": "radio_measurement_device",
+      "status": "UNAVAILABLE",
+      "implementation": "no verified hardware driver",
+      "live_device": false
+    },
+    {
+      "adapter_id": "wireless_link_state_driver_contract",
+      "device_type": "wireless_link_state_device",
+      "status": "INTERFACE_ONLY",
+      "implementation": "versioned software contract only",
+      "live_device": false
+    },
+    {
+      "adapter_id": "uav_telemetry_driver_contract",
+      "device_type": "uav_telemetry_device",
+      "status": "INTERFACE_ONLY",
+      "implementation": "versioned software contract only",
+      "live_device": false
+    },
+    {
+      "adapter_id": "uav_flight_control_driver",
+      "device_type": "uav_flight_control",
+      "status": "UNAVAILABLE",
+      "implementation": "not implemented; physical commands disabled",
+      "live_device": false
+    },
+    {
+      "adapter_id": "base_station_status_driver_contract",
+      "device_type": "base_station_status_interface",
+      "status": "INTERFACE_ONLY",
+      "implementation": "versioned software contract only",
+      "live_device": false
+    }
+  ],
+  "mode_availability": {
+    "OFFLINE_REPLAY": "AVAILABLE_READ_ONLY",
+    "SOFTWARE_CLOSED_LOOP": "AVAILABLE_SYNTHETIC_TEST_ONLY",
+    "HARDWARE_IN_LOOP": "UNAVAILABLE_NO_VERIFIED_HARDWARE_OR_DRIVER",
+    "LIVE_DEVICE": "UNAVAILABLE_AND_BLOCKED_BY_SAFETY_GATE"
+  },
+  "last_health_check": {
+    "adapter_id": "phase17_software_test_executor",
+    "result": {
+      "status": "SOFTWARE_EXECUTOR_READY",
+      "executor": "in_memory_test_only",
+      "live_device": false
+    },
+    "recorded_at": "deterministic_test_run_not_wall_clock_health_stream"
+  },
+  "physical_adapter_count": 0,
+  "physical_adapter_count_basis": "verified device drivers only; replay and software executor excluded"
+}

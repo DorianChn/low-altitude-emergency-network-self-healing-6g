@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "test_mode": "SOFTWARE_CLOSED_LOOP",
+  "source_classification": "SYNTHETIC_TEST_ONLY",
+  "seed": 1717,
+  "time_step_s": 1.0,
+  "steps": 6,
+  "initial_battery_wh": 120.0,
+  "return_reserve_wh": 30.0,
+  "relay_activation_energy_wh": 8.0,
+  "rescue_users": 2,
+  "telemetry_max_age_s": 1.0,
+  "backhaul_available": true,
+  "backhaul_schedule": {},
+  "telemetry_missing_steps": [],
+  "manual_stop": false,
+  "real_hardware_output_enabled": false
+}

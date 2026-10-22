@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "viewport_checks": [
+    "1920x1080",
+    "1366x768",
+    "390x844"
+  ],
+  "screenshots": [
+    {
+      "file": "phase17-1366x768.png",
+      "bytes": 698035,
+      "sha256": "ecf17453425f116d15a0102d6bee2d0eb9e8850a85127749c52887fd0b4ced84"
+    },
+    {
+      "file": "phase17-1920x1080.png",
+      "bytes": 864748,
+      "sha256": "3ef7527decab88648ecbb50a74493acc6e77785239317d7dc24047052b23bda0"
+    },
+    {
+      "file": "phase17-390x844.png",
+      "bytes": 550524,
+      "sha256": "07e6084668cca833c37afa3496ecb35a554f5dd10a75b7f9738b6d61b9f33c6b"
+    }
+  ]
+}

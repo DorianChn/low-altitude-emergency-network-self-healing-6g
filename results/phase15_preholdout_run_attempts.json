@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase15_link_calibration_pipeline",
+  "attempts": [
+    {
+      "attempt_id": "v1_two_parameter_fit_preholdout",
+      "protocol_path": "configs/phase15/calibration_protocol.json",
+      "freeze_path": "configs/phase15/confirmation_freeze.json",
+      "status": "FAILED_BEFORE_HOLDOUT_SCORING",
+      "failure": "training distances must span at least one decade",
+      "training_distance_range_m": [32.6007, 109.349],
+      "training_distance_span_decades": 0.5255878559,
+      "holdout_predictions_or_metrics_computed": false,
+      "holdout_metrics_viewed": false,
+      "response": "preserved v1 protocol and freeze; v2 changes only the parameterization to estimate one additive offset with the path-loss exponent fixed to the documented Phase 14 assumption"
+    }
+  ]
+}

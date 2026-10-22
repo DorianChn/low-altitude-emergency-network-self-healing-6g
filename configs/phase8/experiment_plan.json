@@ -1,0 +1,385 @@
+{
+  "baseline_strategies": [
+    "A_no_recovery",
+    "B_phase1_static_grid",
+    "Bprime_static_grid_shared_safety",
+    "C_rolling_horizon_mpc",
+    "D_lexicographic_rescue_priority"
+  ],
+  "confirmatory_selection_rule": "Mechanism contrasts fixed before development outcomes are inspected: event trigger, H=1/6, C direct headings and energy weight, D switch suppression/energy tie-break/rescue priority/candidate cap. No best-development variant is relabeled as an unbiased discovery.",
+  "control": "Each seed uses one generated world trace for A/B/Bprime/C/D and every variant.",
+  "development_seed_role": "exploratory; first three seeds from each existing Phase 5 development partition",
+  "development_seeds": {
+    "dynamic_failures": [
+      6510,
+      6511,
+      6512
+    ],
+    "high_load_backhaul_limit": [
+      6530,
+      6531,
+      6532
+    ],
+    "high_mobility_rescue": [
+      6520,
+      6521,
+      6522
+    ],
+    "severe_persistent_faults": [
+      6500,
+      6501,
+      6502
+    ]
+  },
+  "parameter_levels": {
+    "C_energy_penalty_weight": {
+      "base": 2,
+      "high": 4,
+      "low": 0
+    },
+    "C_relay_target_quantization_km": {
+      "base": 0.25,
+      "high": 0.5,
+      "low": 0.125
+    },
+    "C_replanning_interval_s": {
+      "base": 20,
+      "high": 40,
+      "low": 10
+    },
+    "D_coarse_grid_shortlist_limit": {
+      "base": 64,
+      "high": 128,
+      "low": 16,
+      "note": "limits the pre-ranked grid shortlist only; exact relay and rescue-cluster points are retained"
+    },
+    "D_effective_replanning_interval_s": {
+      "base": 60,
+      "high": 120,
+      "low": 60,
+      "middle": 90,
+      "note": "production D clamps this interval to at least 60 s"
+    },
+    "D_energy_tiebreak": {
+      "base": "enabled",
+      "high": "not_applicable_numeric_factor",
+      "low": "disabled"
+    },
+    "D_policy_grid_step_km": {
+      "base": 0.25,
+      "high": 0.5,
+      "low": 0.125
+    },
+    "D_switch_penalty_weight": {
+      "base": 1,
+      "high": 10,
+      "low": 0
+    },
+    "battery_reserve_wh": {
+      "high": 100,
+      "low": 50,
+      "middle": 75,
+      "production_base": 50
+    },
+    "prediction_horizon_steps": {
+      "base": 3,
+      "high": 6,
+      "low": 1,
+      "time_step_s": 10
+    },
+    "rescue_priority": {
+      "base": "enabled",
+      "high": "not_applicable_numeric_factor",
+      "low": "disabled"
+    }
+  },
+  "phase5_scenarios": [
+    "severe_persistent_faults",
+    "dynamic_failures",
+    "high_mobility_rescue",
+    "high_load_backhaul_limit"
+  ],
+  "safety_invariants": [
+    "runtime speed and energy enforcement unchanged",
+    "return-to-healthy-station reserve check remains active",
+    "battery reserve remains positive and configurable at 50/75/100 Wh",
+    "backhaul, access-radius, capacity, city-boundary and link checks unchanged",
+    "no candidate result may bypass runtime simulator feasibility checks"
+  ],
+  "schema_version": "1.0",
+  "statistical_plan": {
+    "confidence_intervals": "two-sided 95% Student-t intervals over per-seed means/differences; Wilson interval for binary success rate",
+    "effect_size": "paired Hedges g_z with paired Cohen d_z also retained",
+    "latency": "conditional on each policy's successful user-time samples; per-seed means and pooled P95 with sample counts; no user-level paired test",
+    "multiplicity": "Holm correction separately over efficacy and resource/cost families across all confirmatory comparisons and scenes",
+    "p_values": "exact two-sided sign-flip randomization for continuous paired outcomes; exact McNemar/binomial tail for binary outcomes",
+    "pairing": "within seed and identical exogenous world trace",
+    "unrecovered": "remain failures; recovery-or-censoring time uses simulation horizon for paired comparison; recovered-only time reports n_success/n_total"
+  },
+  "title": "Phase 8 one-factor ablation and parameter sensitivity",
+  "validation_seed_role": "confirmatory; new seed IDs not present in Phase 2/4/5 development or validation data",
+  "validation_seeds": {
+    "dynamic_failures": [
+      90100,
+      90101,
+      90102,
+      90103,
+      90104,
+      90105,
+      90106,
+      90107,
+      90108,
+      90109
+    ],
+    "high_load_backhaul_limit": [
+      90300,
+      90301,
+      90302,
+      90303,
+      90304,
+      90305,
+      90306,
+      90307,
+      90308,
+      90309
+    ],
+    "high_mobility_rescue": [
+      90200,
+      90201,
+      90202,
+      90203,
+      90204,
+      90205,
+      90206,
+      90207,
+      90208,
+      90209
+    ],
+    "severe_persistent_faults": [
+      90000,
+      90001,
+      90002,
+      90003,
+      90004,
+      90005,
+      90006,
+      90007,
+      90008,
+      90009
+    ]
+  },
+  "validation_variants_frozen_before_run": [
+    "C_replan_event_off",
+    "C_horizon_1",
+    "C_horizon_6",
+    "C_direct_heading_off",
+    "C_energy_weight_0",
+    "D_replan_event_off",
+    "D_horizon_1",
+    "D_horizon_6",
+    "D_switch_suppression_off",
+    "D_energy_tiebreak_off",
+    "D_rescue_priority_off",
+    "D_candidate_cap_16"
+  ],
+  "variants": [
+    {
+      "algorithm": "C",
+      "factor": "event_triggered_replanning",
+      "value": false,
+      "variant_id": "C_replan_event_off"
+    },
+    {
+      "algorithm": "C",
+      "factor": "prediction_horizon_steps",
+      "value": 1,
+      "variant_id": "C_horizon_1"
+    },
+    {
+      "algorithm": "C",
+      "factor": "prediction_horizon_steps",
+      "value": 6,
+      "variant_id": "C_horizon_6"
+    },
+    {
+      "algorithm": "C",
+      "factor": "direct_target_heading_candidates",
+      "value": false,
+      "variant_id": "C_direct_heading_off"
+    },
+    {
+      "algorithm": "C",
+      "factor": "relay_target_quantization_km",
+      "value": 0.125,
+      "variant_id": "C_target_grid_0p125"
+    },
+    {
+      "algorithm": "C",
+      "factor": "relay_target_quantization_km",
+      "value": 0.5,
+      "variant_id": "C_target_grid_0p5"
+    },
+    {
+      "algorithm": "C",
+      "factor": "beam_width",
+      "value": 3,
+      "variant_id": "C_beam_width_3"
+    },
+    {
+      "algorithm": "C",
+      "factor": "beam_width",
+      "value": 12,
+      "variant_id": "C_beam_width_12"
+    },
+    {
+      "algorithm": "C",
+      "factor": "energy_penalty_weight",
+      "value": 0.0,
+      "variant_id": "C_energy_weight_0"
+    },
+    {
+      "algorithm": "C",
+      "factor": "energy_penalty_weight",
+      "value": 4.0,
+      "variant_id": "C_energy_weight_4"
+    },
+    {
+      "algorithm": "C",
+      "factor": "rescue_service_weight",
+      "value": 5.0,
+      "variant_id": "C_rescue_weight_5"
+    },
+    {
+      "algorithm": "C",
+      "factor": "rescue_service_weight",
+      "value": 20.0,
+      "variant_id": "C_rescue_weight_20"
+    },
+    {
+      "algorithm": "C",
+      "factor": "decision_interval_s",
+      "value": 10,
+      "variant_id": "C_interval_10"
+    },
+    {
+      "algorithm": "C",
+      "factor": "decision_interval_s",
+      "value": 40,
+      "variant_id": "C_interval_40"
+    },
+    {
+      "algorithm": "C",
+      "factor": "reserve_wh",
+      "value": 75.0,
+      "variant_id": "C_reserve_75"
+    },
+    {
+      "algorithm": "C",
+      "factor": "reserve_wh",
+      "value": 100.0,
+      "variant_id": "C_reserve_100"
+    },
+    {
+      "algorithm": "D",
+      "factor": "event_triggered_replanning",
+      "value": false,
+      "variant_id": "D_replan_event_off"
+    },
+    {
+      "algorithm": "D",
+      "factor": "prediction_horizon_steps",
+      "value": 1,
+      "variant_id": "D_horizon_1"
+    },
+    {
+      "algorithm": "D",
+      "factor": "prediction_horizon_steps",
+      "value": 6,
+      "variant_id": "D_horizon_6"
+    },
+    {
+      "algorithm": "D",
+      "factor": "policy_search_grid_km",
+      "value": 0.125,
+      "variant_id": "D_grid_0p125"
+    },
+    {
+      "algorithm": "D",
+      "factor": "policy_search_grid_km",
+      "value": 0.5,
+      "variant_id": "D_grid_0p5"
+    },
+    {
+      "algorithm": "D",
+      "factor": "candidate_limit",
+      "value": 16,
+      "variant_id": "D_candidate_cap_16"
+    },
+    {
+      "algorithm": "D",
+      "factor": "candidate_limit",
+      "value": 128,
+      "variant_id": "D_candidate_cap_128"
+    },
+    {
+      "algorithm": "D",
+      "factor": "switch_suppression",
+      "value": false,
+      "variant_id": "D_switch_suppression_off"
+    },
+    {
+      "algorithm": "D",
+      "factor": "switch_penalty_weight",
+      "value": 0.0,
+      "variant_id": "D_switch_penalty_0"
+    },
+    {
+      "algorithm": "D",
+      "factor": "switch_penalty_weight",
+      "value": 10.0,
+      "variant_id": "D_switch_penalty_10"
+    },
+    {
+      "algorithm": "D",
+      "factor": "energy_tiebreak",
+      "value": false,
+      "variant_id": "D_energy_tiebreak_off"
+    },
+    {
+      "algorithm": "D",
+      "factor": "rescue_priority",
+      "value": false,
+      "variant_id": "D_rescue_priority_off"
+    },
+    {
+      "algorithm": "D",
+      "factor": "decision_interval_s",
+      "value": 60,
+      "variant_id": "D_interval_60"
+    },
+    {
+      "algorithm": "D",
+      "factor": "decision_interval_s",
+      "value": 90,
+      "variant_id": "D_interval_90"
+    },
+    {
+      "algorithm": "D",
+      "factor": "decision_interval_s",
+      "value": 120,
+      "variant_id": "D_interval_120"
+    },
+    {
+      "algorithm": "D",
+      "factor": "reserve_wh",
+      "value": 75.0,
+      "variant_id": "D_reserve_75"
+    },
+    {
+      "algorithm": "D",
+      "factor": "reserve_wh",
+      "value": 100.0,
+      "variant_id": "D_reserve_100"
+    }
+  ]
+}

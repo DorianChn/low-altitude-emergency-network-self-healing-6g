@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_measurement_session_validation",
+  "created_at_utc": "2026-10-21T06:27:32.429740+00:00",
+  "source_path": "configs/phase16/measurement_session_template.json",
+  "source_sha256": "93612b9e481f7e0be3a632e35dab04d1660387eccb344ab954c343cb3c5c15e6",
+  "ready_for_measurement": false,
+  "acquisition_mode": null,
+  "missing_fields": [
+    "experiment_id",
+    "measurement_batch_id",
+    "operator_id",
+    "acquisition_mode",
+    "measurement_points",
+    "data_storage_path",
+    "frequency.value",
+    "bandwidth.value",
+    "transmitter.model",
+    "transmitter.tx_power_dbm",
+    "receiver.model",
+    "receiver.measurement_metric",
+    "antennas.transmit_model",
+    "antennas.receive_model",
+    "route_or_site_id",
+    "environment.scenario",
+    "environment.weather",
+    "calibration.status",
+    "calibration.certificate_reference",
+    "time_sync.source",
+    "data_storage_path",
+    "authorization.status"
+  ],
+  "errors": [],
+  "warnings": [
+    "required fields are incomplete; do not start a measurement session"
+  ],
+  "acquisition_started": false,
+  "hardware_accessed": false
+}

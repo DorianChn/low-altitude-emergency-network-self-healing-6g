@@ -1,0 +1,49 @@
+{
+  "baseline": {
+    "cold": {
+      "n": 3,
+      "median": 452.56,
+      "p95": 577.32,
+      "min": 412.01,
+      "max": 577.32
+    },
+    "hot": {
+      "n": 120,
+      "median": 231.88,
+      "p95": 241.14,
+      "min": 223.91,
+      "max": 244.45
+    },
+    "api_resource_count": 6,
+    "api_decoded_bytes": 8289227.0,
+    "api_transferred_bytes": 500849.0,
+    "js_heap_bytes": 23336483
+  },
+  "final": {
+    "cold": {
+      "n": 3,
+      "median": 363.19,
+      "p95": 559.26,
+      "min": 356.79,
+      "max": 559.26
+    },
+    "hot": {
+      "n": 120,
+      "median": 234.53,
+      "p95": 243.25,
+      "min": 220.87,
+      "max": 482.16
+    },
+    "api_resource_count": 2,
+    "api_decoded_bytes": 3612663.0,
+    "api_transferred_bytes": 195141.0,
+    "js_heap_bytes": 13318298
+  },
+  "delta": {
+    "cold_median_percent": 19.75,
+    "hot_median_percent": 1.14,
+    "hot_p95_percent": 0.88,
+    "api_decoded_percent": 56.42,
+    "heap_percent": 42.93
+  }
+}

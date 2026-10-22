@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "status": "diagnostic_only_not_confirmatory_for_corrected_E",
+  "preserved_raw_file": "results/phase9_confirmation_raw.json",
+  "preserved_raw_sha256": "7f30ae206eb016fb0ec0ae50f152df07b39745b9a026a3170218ba7e786e89fd",
+  "preserved_old_protocol": "configs/phase9/validation_protocol.json",
+  "preserved_old_protocol_sha256": "643c632a1db6aa3347710d6db06e834d8348b85d1d7073b13178ba3033d3dd3e",
+  "finding": "The E controller reused a one-tick MPC waypoint during no-event hold periods. The actuator reached that waypoint then stopped, while the static policies continued toward their terminal target.",
+  "action": "Raw data and protocol were not edited. The corrected implementation was retuned only on the designated development seeds and evaluated on new, non-overlapping confirmation IDs 93100-93419."
+}

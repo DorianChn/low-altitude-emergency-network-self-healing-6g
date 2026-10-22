@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase11_baseline_benchmark",
+  "branch": "phase11-baseline-benchmark",
+  "git_head": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+  "manifest_scope": "Phase 11 deliverables only; inherited Phase 1-10 worktree changes are not included in a commit.",
+  "phase11_confirmation_protocol_sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+  "phase11_frozen_source_sha256": "99683bfaa1111580c5ac75d16d7eab96888ae1324e83df02583e185ff58b66f7",
+  "phase11_frozen_design_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+  "phase10_protected_references": {
+    "artifact_manifest_sha256": "4942c97e97d4de538c12029854386bb50142c8c800c66f53b8772e033769940a",
+    "confirmation_raw_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+    "verified_phase10_artifacts": 15,
+    "phase10_hash_mismatches": 0,
+    "phase10_confirmation_seed_rows": 80,
+    "phase10_confirmation_policy_runs": 400,
+    "phase1_to_phase9_hash_mismatches": 0
+  },
+  "confirmation_integrity": {
+    "status": "complete",
+    "matched_seed_trajectories": 80,
+    "policy_runs": 880,
+    "trace_mismatches": 0,
+    "runtime_constraint_violations": 0,
+    "decision_timeouts": 0
+  },
+  "validation": {
+    "python_pytest": "61 passed in 44.53s",
+    "frontend_unit_tests": "4 passed",
+    "frontend_build": "passed_with_existing_ECharts_chunk_warning",
+    "playwright_e2e": "9 passed"
+  },
+  "git_hygiene": {
+    "branch": "phase11-baseline-benchmark",
+    "staged_changes_present": false,
+    "mixed_worktree_commit_created": false
+  },
+  "artifacts": {
+    "PHASE11_REPORT.md": {
+      "sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+      "size_bytes": 30227
+    },
+    "PHASE11_ALGORITHM_DESIGN.md": {
+      "sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+      "size_bytes": 7937
+    },
+    "configs/phase11/benchmark_plan.json": {
+      "sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+      "size_bytes": 6882
+    },
+    "configs/phase11/confirmation_protocol.json": {
+      "sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+      "size_bytes": 14708
+    },
+    "src/lowalt6g/phase11_algorithms.py": {
+      "sha256": "b65835896cb580a0b6f82e2f93da5e55764e91c628cb992122841480b2ae14da",
+      "size_bytes": 27755
+    },
+    "src/lowalt6g/phase11_simulation.py": {
+      "sha256": "ba81a4f6c5b89811a89f3b8cb03ac1e2158198d24d38d61e3deba490d31411f7",
+      "size_bytes": 23425
+    },
+    "src/lowalt6g/phase11_experiments.py": {
+      "sha256": "e99fae9b4ef18094c5506ef2f3750a275cb3a8034a6714af15eddef4bb8f7c36",
+      "size_bytes": 37770
+    },
+    "tests/test_phase11.py": {
+      "sha256": "152bc829451693a632ccc8f701f85a5bc97a8f482b7ec4a3e1cd424cfdb9b9d9",
+      "size_bytes": 5657
+    },
+    "scripts/run_phase11_experiments.py": {
+      "sha256": "c111ef24c6352af78dbda5cd7ba528595727e0e9d7f5e61e4ef5bc3d7d2b0868",
+      "size_bytes": 1596
+    },
+    "scripts/summarize_phase11_fleet_size.py": {
+      "sha256": "5c012e61dad72c8593c85224957ea406bcc8d6738dde60ce18fd9c68379199c0",
+      "size_bytes": 5786
+    },
+    "scripts/plot_phase11_fleet_size.py": {
+      "sha256": "ee4ae80d863d05cad99bb243187dcdccea267ff5a05f3a9ed663ac2082a3c764",
+      "size_bytes": 2332
+    },
+    "results/phase11_development_raw.json": {
+      "sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+      "size_bytes": 52794746
+    },
+    "results/phase11_development_summary.json": {
+      "sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+      "size_bytes": 905594
+    },
+    "results/phase11_development_progress.jsonl": {
+      "sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+      "size_bytes": 26305647
+    },
+    "results/phase11_confirmation_raw.json": {
+      "sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+      "size_bytes": 350308579
+    },
+    "results/phase11_confirmation_summary.json": {
+      "sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+      "size_bytes": 951044
+    },
+    "results/phase11_confirmation_progress.jsonl": {
+      "sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+      "size_bytes": 174355200
+    },
+    "results/phase11_fleet_size_exploratory.json": {
+      "sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+      "size_bytes": 45557
+    },
+    "results/phase11_delivery_audit.json": {
+      "sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+      "size_bytes": 2434
+    },
+    "results/phase11_validation_evidence.txt": {
+      "sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+      "size_bytes": 1476
+    },
+    "plots/phase11/confirmation_rescue_service.png": {
+      "sha256": "32b32e89e632c7b7ad2ab2c498b7c1f9d844dddece949478f98465aada470833",
+      "size_bytes": 128130
+    },
+    "plots/phase11/confirmation_rescue_service.svg": {
+      "sha256": "b717930ce2d75e3fa970884de9b1e3dfa2c8b35bbcdc02beeb4e545919063eab",
+      "size_bytes": 107973
+    },
+    "plots/phase11/confirmation_compute_vs_service.png": {
+      "sha256": "7a73ada2759a4fe57db01ff7824478eb9ed84cf1f4e6a1fc3bb1f9cb14dd1561",
+      "size_bytes": 193828
+    },
+    "plots/phase11/confirmation_compute_vs_service.svg": {
+      "sha256": "a913bcdcd07517f77ee34698236f7523a073175d989925725298e398f47f0218",
+      "size_bytes": 127176
+    },
+    "plots/phase11/fleet_size_increment.png": {
+      "sha256": "a508f21eff52f90abe5d9c93dd5bce2048c03536202213710b2584610cf0643e",
+      "size_bytes": 138516
+    },
+    "plots/phase11/fleet_size_increment.svg": {
+      "sha256": "03b9c854505af9c9ff604b4e26c7a1ed9cb42dd7fd70e9186495d1ce723e19a8",
+      "size_bytes": 101677
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "status": "frozen_before_validation",
+  "freeze_rule": "No confirmatory result was read before this file was written; no code/config changes are permitted after freeze.",
+  "plan_sha256": "5c8e95a0c8d66ac230afcdee7d5208ce9ec9d748f2f2610cdea90d1b63202ae4",
+  "code_sha256": {
+    "src/lowalt6g/phase8_experiments.py": "6b9b61c9c0e8fdc7651477f8ba5387866dd67d2914154680ca974614d02218b1",
+    "src/lowalt6g/phase8_d_optimizer.py": "50de530d010c913c7d7e2920037a7697ed1b286446bcbdb9a746a71a1ae92956",
+    "src/lowalt6g/phase8_charts.py": "260ebbeb8aae9132529a9b3bef374716941e387604055ed4b5130531b913a18d",
+    "scripts/run_phase8_experiments.py": "d9b2c4224f1d05a3d716e113da33f876f64f9d138522189baf0f6027cbda1692",
+    "scripts/materialize_phase8_d_optimizer.py": "230c6e545381a508f78a43ebc92ca33093ea98c355d746fc06d25abf66181e52",
+    "configs/phase8/experiment_plan.json": "5c8e95a0c8d66ac230afcdee7d5208ce9ec9d748f2f2610cdea90d1b63202ae4",
+    "configs/phase8/ablation_plan.json": "f2c469eaded74a73880fbad7fec1e15bba4397bd622e9d8034023195ed80d0fe",
+    "configs/phase8/sensitivity_plan.json": "ef0b589ab09a5e29ebc42e12ec2fdaf6c7f2495381b42f15275a16b7bda61e16"
+  },
+  "phase5_source_sha256": {
+    "api.py": "1e81b1c05c249f0f8719470a1feb549288d999e7c636f67856c8ac8030afc186",
+    "charts.py": "548136becaaf5ee44a1af051e2544b73a501fa26f41d5bc9f18fb542e6633514",
+    "cli.py": "d4bd5b3f8dc3ada69c702e47b1a99f47cc5b5bfe5f1c9bb7808889ec37fd8d82",
+    "config.py": "231f8e5c49d4cc0f3d383057074fef97bfbd96cc456e2e78363b7dbc1129f61b",
+    "dynamic_config.py": "404cbb0b2b1e76bb776a9431095ae2df7cc21648b099dbcad8e691eb9c709163",
+    "dynamic_simulation.py": "2aa1b62f8bbef7758aaaeba3c8f8a9771320e3ed7796c42d92f790959a2faf54",
+    "dynamic_world.py": "e93cb954dfa43c9c52118a3178a8904eb0737e568a6fd9213588ee8ca48104f2",
+    "energy_budget.py": "5f0ef6edd0cd55cfcf499a03fd1b343ee85b78338e13c17525366c8da406decf",
+    "engine.py": "b9d295e3ec1a1a7708f88b8b311995f07317029da1c5a732f1107dbaafbd4601",
+    "experiment.py": "b7a88ddf1bc51436ca153fb1e9bf2b93dec4238e3da5492f742875a34012cd03",
+    "optimizer.py": "11162120c657a529db4a81649998cb00250be206935ba216458a96f988486525",
+    "phase5.py": "73555809197d2b53073ecebb49f2cf5d77c54dbeb24b0beda4053520a9ba0e6f"
+  },
+  "frozen_phase5_manifest_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+  "validation_seed_map": {
+    "severe_persistent_faults": [
+      90000,
+      90001,
+      90002,
+      90003,
+      90004,
+      90005,
+      90006,
+      90007,
+      90008,
+      90009
+    ],
+    "dynamic_failures": [
+      90100,
+      90101,
+      90102,
+      90103,
+      90104,
+      90105,
+      90106,
+      90107,
+      90108,
+      90109
+    ],
+    "high_mobility_rescue": [
+      90200,
+      90201,
+      90202,
+      90203,
+      90204,
+      90205,
+      90206,
+      90207,
+      90208,
+      90209
+    ],
+    "high_load_backhaul_limit": [
+      90300,
+      90301,
+      90302,
+      90303,
+      90304,
+      90305,
+      90306,
+      90307,
+      90308,
+      90309
+    ]
+  },
+  "validation_variants": [
+    "C_replan_event_off",
+    "C_horizon_1",
+    "C_horizon_6",
+    "C_direct_heading_off",
+    "C_energy_weight_0",
+    "D_replan_event_off",
+    "D_horizon_1",
+    "D_horizon_6",
+    "D_switch_suppression_off",
+    "D_energy_tiebreak_off",
+    "D_rescue_priority_off",
+    "D_candidate_cap_16"
+  ],
+  "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+  "comparison_and_statistics": {
+    "pairing": "within seed and identical exogenous world trace",
+    "confidence_intervals": "two-sided 95% Student-t intervals over per-seed means/differences; Wilson interval for binary success rate",
+    "effect_size": "paired Hedges g_z with paired Cohen d_z also retained",
+    "p_values": "exact two-sided sign-flip randomization for continuous paired outcomes; exact McNemar/binomial tail for binary outcomes",
+    "multiplicity": "Holm correction separately over efficacy and resource/cost families across all confirmatory comparisons and scenes",
+    "latency": "conditional on each policy's successful user-time samples; per-seed means and pooled P95 with sample counts; no user-level paired test",
+    "unrecovered": "remain failures; recovery-or-censoring time uses simulation horizon for paired comparison; recovered-only time reports n_success/n_total"
+  },
+  "created_from_development_artifact_sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+  "git_head": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5"
+}

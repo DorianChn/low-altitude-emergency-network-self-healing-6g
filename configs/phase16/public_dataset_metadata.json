@@ -1,0 +1,15 @@
+{
+  "source_type": "public_measurement",
+  "dataset_id": "mendeley_8p6r8ft4fz_v2",
+  "source_dataset_doi": "10.17632/8p6r8ft4fz.2",
+  "source_url": "https://data.mendeley.com/datasets/8p6r8ft4fz/2",
+  "license": "CC-BY-4.0",
+  "carrier_frequency_hz": 3600000000,
+  "bandwidth_hz": 61440000,
+  "measurement_metric": "measured CIR with publisher-derived path_loss_db labels",
+  "device_model": null,
+  "calibration_status": null,
+  "measurement_uncertainty_db": null,
+  "target_project_device": false,
+  "private_coordinates_included": false
+}

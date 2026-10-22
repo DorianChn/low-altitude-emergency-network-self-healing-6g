@@ -1,0 +1,27 @@
+Phase 11 final verification evidence (2026-10-20)
+
+Python
+- Command: uv run pytest -q
+- Result: 61 passed in 44.53s
+
+Frontend component tests
+- Command: npm run test
+- Result: 1 test file passed; 4 tests passed (Vitest 5.0.5; 2.49s)
+
+Frontend production build
+- Command: npm run build
+- Result: TypeScript build and Vite production build passed (Vite 8.3.4; 626 modules; 509ms).
+- Existing warning: ECharts chunk 533.66 kB exceeds Vite's 500 kB notice threshold.
+
+Browser end-to-end
+- Command: npm run test:e2e -- --output <LOCAL_PATH_REDACTED>/AppData/Local/Temp/phase11-baseline-benchmark-e2e-final-20261020 --reporter=list
+- Result: 9 passed (13.1s); tests ran against local FastAPI and Vite servers.
+- Browser output was directed to a new OS temp path; Phase 6 screenshots/results were not overwritten.
+
+Integrity
+- Phase 10 frozen baseline: 15 protected artifact hashes matched; 80 trace rows / 400 policy runs; 0 matched-trace mismatches.
+- Phase 11 confirmation: 80 matched trace groups, 880 unique scenario-seed-policy records; 0 trace mismatches.
+- Phase 1-9 protected hash comparisons: 0 mismatches.
+- Phase 11 protocol: frozen_before_confirmation; source/config/design/development hashes verified.
+- Aggregate runtime safety counters: speed=0, boundary=0, separation=0, shared-capacity=0, duplicate-service=0, decision-timeout=0.
+- 2,095 logged infeasible decisions and 3,197 safety_action execution marks are explainability/safe-action counts, not constraint violations.

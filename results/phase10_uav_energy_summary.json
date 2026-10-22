@@ -1,0 +1,580 @@
+{
+  "schema_version": "1.0",
+  "source_raw_file": "results/phase10_confirmation_raw.json",
+  "unit": "Wh",
+  "scope": "per-aircraft cumulative simulated energy over one run",
+  "rows": [
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "Bprime_static_grid_shared_safety_uav1",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 158.285175,
+      "sample_sd_wh": 5.443677,
+      "median_wh": 160.386209,
+      "ci95_t_wh": [
+        155.737485,
+        160.832865
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 124.445932,
+      "sample_sd_wh": 23.525214,
+      "median_wh": 127.933333,
+      "ci95_t_wh": [
+        113.435919,
+        135.455945
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 130.869974,
+      "sample_sd_wh": 25.47197,
+      "median_wh": 137.542094,
+      "ci95_t_wh": [
+        118.948862,
+        142.791085
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 80.153333,
+      "sample_sd_wh": 19.399766,
+      "median_wh": 77.5,
+      "ci95_t_wh": [
+        71.074068,
+        89.232599
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 132.062186,
+      "sample_sd_wh": 25.739143,
+      "median_wh": 139.36352,
+      "ci95_t_wh": [
+        120.016035,
+        144.108338
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 128.819202,
+      "sample_sd_wh": 4.519482,
+      "median_wh": 129.1,
+      "ci95_t_wh": [
+        126.704044,
+        130.93436
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 23.453333,
+      "sample_sd_wh": 31.960623,
+      "median_wh": 0.0,
+      "ci95_t_wh": [
+        8.495473,
+        38.411194
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 133.421691,
+      "sample_sd_wh": 25.666424,
+      "median_wh": 140.167207,
+      "ci95_t_wh": [
+        121.409573,
+        145.433809
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 10.868889,
+      "sample_sd_wh": 18.72569,
+      "median_wh": 0.0,
+      "ci95_t_wh": [
+        2.105097,
+        19.632681
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 2.445556,
+      "sample_sd_wh": 10.936857,
+      "median_wh": 0.0,
+      "ci95_t_wh": [
+        -2.672992,
+        7.564103
+      ]
+    },
+    {
+      "scenario_id": "dynamic_failures",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 136.931801,
+      "sample_sd_wh": 4.681344,
+      "median_wh": 137.388223,
+      "ci95_t_wh": [
+        134.74089,
+        139.122712
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "Bprime_static_grid_shared_safety_uav1",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 137.028297,
+      "sample_sd_wh": 15.104248,
+      "median_wh": 136.095242,
+      "ci95_t_wh": [
+        129.959373,
+        144.097222
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 113.780534,
+      "sample_sd_wh": 6.774398,
+      "median_wh": 113.587247,
+      "ci95_t_wh": [
+        110.610054,
+        116.951014
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 102.861415,
+      "sample_sd_wh": 7.022388,
+      "median_wh": 102.702288,
+      "ci95_t_wh": [
+        99.574873,
+        106.147956
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 107.29504,
+      "sample_sd_wh": 11.016195,
+      "median_wh": 108.457637,
+      "ci95_t_wh": [
+        102.139362,
+        112.450719
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 102.600157,
+      "sample_sd_wh": 6.285586,
+      "median_wh": 102.218633,
+      "ci95_t_wh": [
+        99.658446,
+        105.541868
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 101.971625,
+      "sample_sd_wh": 8.489214,
+      "median_wh": 103.803188,
+      "ci95_t_wh": [
+        97.998597,
+        105.944654
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 109.433011,
+      "sample_sd_wh": 11.276728,
+      "median_wh": 112.07156,
+      "ci95_t_wh": [
+        104.155401,
+        114.710622
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 110.520551,
+      "sample_sd_wh": 10.65435,
+      "median_wh": 111.667329,
+      "ci95_t_wh": [
+        105.534219,
+        115.506883
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 65.013476,
+      "sample_sd_wh": 19.925493,
+      "median_wh": 61.2,
+      "ci95_t_wh": [
+        55.688166,
+        74.338787
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 95.778495,
+      "sample_sd_wh": 17.929316,
+      "median_wh": 96.845232,
+      "ci95_t_wh": [
+        87.387413,
+        104.169576
+      ]
+    },
+    {
+      "scenario_id": "high_load_backhaul_limit",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 107.693244,
+      "sample_sd_wh": 10.393169,
+      "median_wh": 109.203846,
+      "ci95_t_wh": [
+        102.829147,
+        112.55734
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "Bprime_static_grid_shared_safety_uav1",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 143.134824,
+      "sample_sd_wh": 15.197085,
+      "median_wh": 143.256306,
+      "ci95_t_wh": [
+        136.022451,
+        150.247197
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 113.825942,
+      "sample_sd_wh": 7.966709,
+      "median_wh": 112.0,
+      "ci95_t_wh": [
+        110.09745,
+        117.554433
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 102.822806,
+      "sample_sd_wh": 4.718989,
+      "median_wh": 102.295918,
+      "ci95_t_wh": [
+        100.614276,
+        105.031335
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 113.903643,
+      "sample_sd_wh": 10.368697,
+      "median_wh": 110.666667,
+      "ci95_t_wh": [
+        109.050999,
+        118.756287
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 102.095392,
+      "sample_sd_wh": 5.343801,
+      "median_wh": 102.16007,
+      "ci95_t_wh": [
+        99.594445,
+        104.596339
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 107.573032,
+      "sample_sd_wh": 8.327612,
+      "median_wh": 108.580035,
+      "ci95_t_wh": [
+        103.675635,
+        111.47043
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 56.235238,
+      "sample_sd_wh": 40.558246,
+      "median_wh": 47.2,
+      "ci95_t_wh": [
+        37.253613,
+        75.216863
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 100.485931,
+      "sample_sd_wh": 5.106619,
+      "median_wh": 98.133333,
+      "ci95_t_wh": [
+        98.095987,
+        102.875875
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 27.23202,
+      "sample_sd_wh": 38.028253,
+      "median_wh": 0.0,
+      "ci95_t_wh": [
+        9.434455,
+        45.029586
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 52.238236,
+      "sample_sd_wh": 48.018564,
+      "median_wh": 59.166667,
+      "ci95_t_wh": [
+        29.765114,
+        74.711357
+      ]
+    },
+    {
+      "scenario_id": "high_mobility_rescue",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 83.312995,
+      "sample_sd_wh": 31.037932,
+      "median_wh": 98.133333,
+      "ci95_t_wh": [
+        68.786963,
+        97.839028
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "Bprime_static_grid_shared_safety_uav1",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 139.210931,
+      "sample_sd_wh": 16.457559,
+      "median_wh": 137.504203,
+      "ci95_t_wh": [
+        131.508644,
+        146.913217
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 108.770178,
+      "sample_sd_wh": 7.76234,
+      "median_wh": 110.623821,
+      "ci95_t_wh": [
+        105.137333,
+        112.403023
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "F_independent_greedy_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 99.651086,
+      "sample_sd_wh": 4.583177,
+      "median_wh": 98.133333,
+      "ci95_t_wh": [
+        97.506117,
+        101.796054
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 111.239915,
+      "sample_sd_wh": 8.900021,
+      "median_wh": 111.166667,
+      "ci95_t_wh": [
+        107.074625,
+        115.405205
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 100.053069,
+      "sample_sd_wh": 4.92279,
+      "median_wh": 98.516345,
+      "ci95_t_wh": [
+        97.749159,
+        102.356979
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "F_independent_greedy_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 96.975638,
+      "sample_sd_wh": 7.788161,
+      "median_wh": 98.849678,
+      "ci95_t_wh": [
+        93.330708,
+        100.620567
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 51.940859,
+      "sample_sd_wh": 40.425599,
+      "median_wh": 54.3,
+      "ci95_t_wh": [
+        33.021313,
+        70.860404
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "G_centralized_coordination_uav2",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 97.138231,
+      "sample_sd_wh": 3.346773,
+      "median_wh": 98.133333,
+      "ci95_t_wh": [
+        95.571911,
+        98.704551
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-1",
+      "n": 20,
+      "mean_wh": 13.355946,
+      "sample_sd_wh": 26.380436,
+      "median_wh": 0.0,
+      "ci95_t_wh": [
+        1.009663,
+        25.702228
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-2",
+      "n": 20,
+      "mean_wh": 68.117471,
+      "sample_sd_wh": 45.862816,
+      "median_wh": 95.813052,
+      "ci95_t_wh": [
+        46.653259,
+        89.581683
+      ]
+    },
+    {
+      "scenario_id": "severe_persistent_faults",
+      "policy_id": "G_centralized_coordination_uav3",
+      "uav_id": "uav-relay-3",
+      "n": 20,
+      "mean_wh": 81.224566,
+      "sample_sd_wh": 28.617507,
+      "median_wh": 93.616192,
+      "ci95_t_wh": [
+        67.831315,
+        94.617818
+      ]
+    }
+  ]
+}

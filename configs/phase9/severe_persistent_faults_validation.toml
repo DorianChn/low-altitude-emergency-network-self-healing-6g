@@ -1,0 +1,37 @@
+base_scenario = "../disaster_scenario.toml"
+
+[experiment]
+seeds = [92200, 92201, 92202, 92203, 92204, 92205, 92206, 92207, 92208, 92209, 92210, 92211, 92212, 92213, 92214, 92215, 92216, 92217, 92218, 92219]
+mobility_axis_max_km_per_tick = 0.005
+
+[phase5]
+hazard_class = "severe_persistent_faults"
+development_seeds = []
+validation_seeds = [92200, 92201, 92202, 92203, 92204, 92205, 92206, 92207, 92208, 92209, 92210, 92211, 92212, 92213, 92214, 92215, 92216, 92217, 92218, 92219]
+ground_repair_policy = "no_station_recovery_events"
+
+[energy]
+battery_capacity_wh = 600.0
+initial_battery_wh = 600.0
+reserve_wh = 50.0
+movement_wh_per_km = 18.0
+hover_power_w = 80.0
+relay_power_w = 120.0
+
+[optimizer]
+decision_interval_s = 20
+prediction_horizon_steps = 3
+beam_width = 6
+position_signature_quantum_km = 0.05
+congestion_threshold = 0.85
+rescue_service_weight = 10.0
+connection_weight = 3.0
+recovery_bonus = 2.0
+latency_penalty_weight = 1.5
+energy_penalty_weight = 2.0
+rescue_progress_weight = 4.0
+
+[phase9]
+stage = "confirmation"
+scenario_id = "severe_persistent_faults"
+

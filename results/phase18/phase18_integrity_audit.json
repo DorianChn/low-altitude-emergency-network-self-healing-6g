@@ -1,0 +1,3547 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase18_final_audit",
+  "created_at_utc": "2026-10-21T11:32:12.765805+00:00",
+  "scope": "Read-only historical audit; only results/phase18 artifacts are written by this script.",
+  "status": "PASS",
+  "workspace": {
+    "branch": "phase18-final-audit-delivery",
+    "head": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+    "remotes": [],
+    "branches": [
+      "phase1-simulation",
+      "phase10-multi-uav-coordination",
+      "phase11-baseline-benchmark",
+      "phase12-6g-architecture-mapping",
+      "phase13-scientific-visualization",
+      "phase14-radio-link-model",
+      "phase15-link-calibration-pipeline",
+      "phase16-field-measurement-readiness",
+      "phase17-hil-validation-framework",
+      "phase18-final-audit-delivery",
+      "phase2-dynamic-ai-scheduling",
+      "phase3-digital-twin-frontend",
+      "phase4-algorithm-audit",
+      "phase5-multihazard-robustness",
+      "phase6-integrated-demo",
+      "phase8-ablation-sensitivity",
+      "phase9-event-driven-self-healing"
+    ],
+    "status_entry_count_expanded": 672,
+    "staged_path_count": 0,
+    "untracked_status_count": 658,
+    "conflict_count": 0,
+    "phase18_branch_created_without_file_changes": true,
+    "phase18_commit_created": false,
+    "remote_push_performed": false,
+    "raw_status_entries": [
+      "M .gitignore",
+      " M README.md",
+      " M pyproject.toml",
+      " M src/lowalt6g/charts.py",
+      " M src/lowalt6g/cli.py",
+      " M src/lowalt6g/dynamic_config.py",
+      " M src/lowalt6g/dynamic_simulation.py",
+      " M src/lowalt6g/dynamic_world.py",
+      " M src/lowalt6g/engine.py",
+      " M src/lowalt6g/experiment.py",
+      " M src/lowalt6g/models.py",
+      " M src/lowalt6g/optimizer.py",
+      " M tests/test_dynamic.py",
+      " M uv.lock",
+      "?? .hallmark/log.json",
+      "?? .hallmark/preflight.json",
+      "?? .impeccable/design.json",
+      "?? .impeccable/questions/roll.json",
+      "?? .impeccable/review/command-1920.png",
+      "?? .impeccable/review/decision-1920.png",
+      "?? .impeccable/review/desktop.png",
+      "?? .impeccable/review/lab-1920.png",
+      "?? .impeccable/review/mobile.png",
+      "?? .impeccable/review/user-1274.png",
+      "?? .taste-skill/direction.json",
+      "?? .taste-skill/final-1920x1080/command.png",
+      "?? .taste-skill/final-1920x1080/decision.png",
+      "?? .taste-skill/final-1920x1080/home.png",
+      "?? .taste-skill/final-1920x1080/lab.png",
+      "?? .taste-skill/final-command/desktop-fold.jpg",
+      "?? .taste-skill/final-command/desktop-page-01.jpg",
+      "?? .taste-skill/final-command/mobile-fold.jpg",
+      "?? .taste-skill/final-command/mobile-page-01.jpg",
+      "?? .taste-skill/final-command/report.json",
+      "?? .taste-skill/final-decision/desktop-fold.jpg",
+      "?? .taste-skill/final-decision/desktop-page-01.jpg",
+      "?? .taste-skill/final-decision/mobile-fold.jpg",
+      "?? .taste-skill/final-decision/mobile-page-01.jpg",
+      "?? .taste-skill/final-decision/report.json",
+      "?? .taste-skill/final-home/desktop-fold.jpg",
+      "?? .taste-skill/final-home/desktop-page-01.jpg",
+      "?? .taste-skill/final-home/mobile-fold.jpg",
+      "?? .taste-skill/final-home/mobile-page-01.jpg",
+      "?? .taste-skill/final-home/report.json",
+      "?? .taste-skill/final-lab/desktop-fold.jpg",
+      "?? .taste-skill/final-lab/desktop-page-01.jpg",
+      "?? .taste-skill/final-lab/mobile-fold.jpg",
+      "?? .taste-skill/final-lab/mobile-page-01.jpg",
+      "?? .taste-skill/final-lab/report.json",
+      "?? .taste-skill/final-qa-command/desktop-fold.jpg",
+      "?? .taste-skill/final-qa-command/desktop-page-01.jpg",
+      "?? .taste-skill/final-qa-command/mobile-fold.jpg",
+      "?? .taste-skill/final-qa-command/mobile-page-01.jpg",
+      "?? .taste-skill/final-qa-command/report.json",
+      "?? .taste-skill/final-qa-decision/desktop-fold.jpg",
+      "?? .taste-skill/final-qa-decision/desktop-page-01.jpg",
+      "?? .taste-skill/final-qa-decision/mobile-fold.jpg",
+      "?? .taste-skill/final-qa-decision/mobile-page-01.jpg",
+      "?? .taste-skill/final-qa-decision/report.json",
+      "?? .taste-skill/final-qa-home-fixed/desktop-1920x1080.png",
+      "?? .taste-skill/final-qa-home-fixed/desktop-fold.jpg",
+      "?? .taste-skill/final-qa-home-fixed/desktop-page-01.jpg",
+      "?? .taste-skill/final-qa-home-fixed/mobile-fold.jpg",
+      "?? .taste-skill/final-qa-home-fixed/mobile-page-01.jpg",
+      "?? .taste-skill/final-qa-home-fixed/report.json",
+      "?? .taste-skill/final-qa-home/desktop-fold.jpg",
+      "?? .taste-skill/final-qa-home/desktop-page-01.jpg",
+      "?? .taste-skill/final-qa-home/desktop-page-02.jpg",
+      "?? .taste-skill/final-qa-home/mobile-fold.jpg",
+      "?? .taste-skill/final-qa-home/mobile-page-01.jpg",
+      "?? .taste-skill/final-qa-home/report.json",
+      "?? .taste-skill/final-qa-lab/desktop-fold.jpg",
+      "?? .taste-skill/final-qa-lab/desktop-page-01.jpg",
+      "?? .taste-skill/final-qa-lab/mobile-fold.jpg",
+      "?? .taste-skill/final-qa-lab/mobile-page-01.jpg",
+      "?? .taste-skill/final-qa-lab/report.json",
+      "?? .taste-skill/final-qa2-command/desktop-fold.jpg",
+      "?? .taste-skill/final-qa2-command/desktop-page-01.jpg",
+      "?? .taste-skill/final-qa2-command/mobile-fold.jpg",
+      "?? .taste-skill/final-qa2-command/mobile-page-01.jpg",
+      "?? .taste-skill/final-qa2-command/report.json",
+      "?? .taste-skill/final-qa2-decision/desktop-fold.jpg",
+      "?? .taste-skill/final-qa2-decision/desktop-page-01.jpg",
+      "?? .taste-skill/final-qa2-decision/mobile-fold.jpg",
+      "?? .taste-skill/final-qa2-decision/mobile-page-01.jpg",
+      "?? .taste-skill/final-qa2-decision/report.json",
+      "?? .taste-skill/final-review/desktop-fold.jpg",
+      "?? .taste-skill/final-review/desktop-page-01.jpg",
+      "?? .taste-skill/final-review/mobile-fold.jpg",
+      "?? .taste-skill/final-review/mobile-page-01.jpg",
+      "?? .taste-skill/final-review/report.json",
+      "?? .taste-skill/final-review/tablet-fold.jpg",
+      "?? .taste-skill/final-review/tablet-page-01.jpg",
+      "?? .taste-skill/inspect-lab-final/desktop-fold.jpg",
+      "?? .taste-skill/inspect-lab-final/desktop-page-01.jpg",
+      "?? .taste-skill/inspect-lab-final/mobile-fold.jpg",
+      "?? .taste-skill/inspect-lab-final/mobile-page-01.jpg",
+      "?? .taste-skill/inspect-lab-final/report.json",
+      "?? .taste-skill/inspect-lab-final/tablet-fold.jpg",
+      "?? .taste-skill/inspect-lab-final/tablet-page-01.jpg",
+      "?? .taste-skill/inspect-lab/desktop-fold.jpg",
+      "?? .taste-skill/inspect-lab/desktop-page-01.jpg",
+      "?? .taste-skill/inspect-lab/mobile-fold.jpg",
+      "?? .taste-skill/inspect-lab/mobile-page-01.jpg",
+      "?? .taste-skill/inspect-lab/report.json",
+      "?? .taste-skill/inspect-lab/tablet-fold.jpg",
+      "?? .taste-skill/inspect-lab/tablet-page-01.jpg",
+      "?? .taste-skill/inspect-redesign-final/desktop-fold.jpg",
+      "?? .taste-skill/inspect-redesign-final/desktop-page-01.jpg",
+      "?? .taste-skill/inspect-redesign-final/mobile-fold.jpg",
+      "?? .taste-skill/inspect-redesign-final/mobile-page-01.jpg",
+      "?? .taste-skill/inspect-redesign-final/report.json",
+      "?? .taste-skill/inspect-redesign/desktop-fold.jpg",
+      "?? .taste-skill/inspect-redesign/desktop-page-01.jpg",
+      "?? .taste-skill/inspect-redesign/mobile-fold.jpg",
+      "?? .taste-skill/inspect-redesign/mobile-page-01.jpg",
+      "?? .taste-skill/inspect-redesign/report.json",
+      "?? .taste-skill/inspect/desktop-fold.jpg",
+      "?? .taste-skill/inspect/desktop-page-01.jpg",
+      "?? .taste-skill/inspect/mobile-fold.jpg",
+      "?? .taste-skill/inspect/mobile-page-01.jpg",
+      "?? .taste-skill/inspect/report.json",
+      "?? .taste-skill/inspect/tablet-fold.jpg",
+      "?? .taste-skill/inspect/tablet-page-01.jpg",
+      "?? .taste-skill/phase3-skills-review-final/desktop-fold.jpg",
+      "?? .taste-skill/phase3-skills-review-final/desktop-page-01.jpg",
+      "?? .taste-skill/phase3-skills-review-final/mobile-fold.jpg",
+      "?? .taste-skill/phase3-skills-review-final/mobile-page-01.jpg",
+      "?? .taste-skill/phase3-skills-review-final/mobile-page-02.jpg",
+      "?? .taste-skill/phase3-skills-review-final/report.json",
+      "?? .taste-skill/phase3-skills-review-final/tablet-fold.jpg",
+      "?? .taste-skill/phase3-skills-review-final/tablet-page-01.jpg",
+      "?? .taste-skill/phase3-skills-review/desktop-fold.jpg",
+      "?? .taste-skill/phase3-skills-review/desktop-page-01.jpg",
+      "?? .taste-skill/phase3-skills-review/mobile-fold.jpg",
+      "?? .taste-skill/phase3-skills-review/mobile-page-01.jpg",
+      "?? .taste-skill/phase3-skills-review/mobile-page-02.jpg",
+      "?? .taste-skill/phase3-skills-review/report.json",
+      "?? .taste-skill/phase3-skills-review/tablet-fold.jpg",
+      "?? .taste-skill/phase3-skills-review/tablet-page-01.jpg",
+      "?? .taste-skill/qa-home/desktop-fold.jpg",
+      "?? .taste-skill/qa-home/desktop-page-01.jpg",
+      "?? .taste-skill/qa-home/mobile-fold.jpg",
+      "?? .taste-skill/qa-home/mobile-page-01.jpg",
+      "?? .taste-skill/qa-home/report.json",
+      "?? .taste-skill/qa-lab/desktop-fold.jpg",
+      "?? .taste-skill/qa-lab/desktop-page-01.jpg",
+      "?? .taste-skill/qa-lab/mobile-fold.jpg",
+      "?? .taste-skill/qa-lab/mobile-page-01.jpg",
+      "?? .taste-skill/qa-lab/report.json",
+      "?? .taste-skill/redesign-brief.md",
+      "?? .taste-skill/route-command/desktop-fold.jpg",
+      "?? .taste-skill/route-command/desktop-page-01.jpg",
+      "?? .taste-skill/route-command/mobile-fold.jpg",
+      "?? .taste-skill/route-command/mobile-page-01.jpg",
+      "?? .taste-skill/route-command/report.json",
+      "?? .taste-skill/route-decision/desktop-fold.jpg",
+      "?? .taste-skill/route-decision/desktop-page-01.jpg",
+      "?? .taste-skill/route-decision/mobile-fold.jpg",
+      "?? .taste-skill/route-decision/mobile-page-01.jpg",
+      "?? .taste-skill/route-decision/report.json",
+      "?? .taste-skill/route-lab/desktop-fold.jpg",
+      "?? .taste-skill/route-lab/desktop-page-01.jpg",
+      "?? .taste-skill/route-lab/mobile-fold.jpg",
+      "?? .taste-skill/route-lab/mobile-page-01.jpg",
+      "?? .taste-skill/route-lab/report.json",
+      "?? DESIGN.md",
+      "?? DEVELOPMENT_LOG_PHASE10.md",
+      "?? DEVELOPMENT_LOG_PHASE15.md",
+      "?? DEVELOPMENT_LOG_PHASE16.md",
+      "?? DEVELOPMENT_LOG_PHASE17.md",
+      "?? DEVELOPMENT_LOG_PHASE4.md",
+      "?? DEVELOPMENT_LOG_PHASE8.md",
+      "?? PHASE10_MODEL_DESIGN.md",
+      "?? PHASE10_REPORT.md",
+      "?? PHASE11_ALGORITHM_DESIGN.md",
+      "?? PHASE11_REPORT.md",
+      "?? PHASE12_ARCHITECTURE.md",
+      "?? PHASE12_OFFICIAL_REFERENCES.md",
+      "?? PHASE12_REPORT.md",
+      "?? PHASE12_REQUIREMENT_TRACEABILITY.md",
+      "?? PHASE12_STANDARDS_MAPPING.md",
+      "?? PHASE13_DATA_LINEAGE.md",
+      "?? PHASE13_REPORT.md",
+      "?? PHASE13_VISUALIZATION_DESIGN.md",
+      "?? PHASE14_BASELINE_AUDIT.md",
+      "?? PHASE14_DATA_LINEAGE.md",
+      "?? PHASE14_EXPERIMENT_PROTOCOL.md",
+      "?? PHASE14_LINK_MODEL_DESIGN.md",
+      "?? PHASE14_PARAMETER_PROVENANCE.md",
+      "?? PHASE14_REPORT.md",
+      "?? PHASE15_BASELINE_AUDIT.md",
+      "?? PHASE15_CALIBRATION_METHOD.md",
+      "?? PHASE15_DATA_DICTIONARY.md",
+      "?? PHASE15_DATA_LINEAGE.md",
+      "?? PHASE15_MEASUREMENT_PROTOCOL.md",
+      "?? PHASE15_REPORT.md",
+      "?? PHASE16_BASELINE_AUDIT.md",
+      "?? PHASE16_DATA_LINEAGE.md",
+      "?? PHASE16_EQUIPMENT_REQUIREMENTS.md",
+      "?? PHASE16_REPORT.md",
+      "?? PHASE16_UNCERTAINTY_BUDGET.md",
+      "?? PHASE16_URBAN_MEASUREMENT_PLAN.md",
+      "?? PHASE17_ARCHITECTURE.md",
+      "?? PHASE17_BASELINE_AUDIT.md",
+      "?? PHASE17_DATA_LINEAGE.md",
+      "?? PHASE17_DEVICE_INTERFACE_SPEC.md",
+      "?? PHASE17_HIL_TEST_PLAN.md",
+      "?? PHASE17_REPORT.md",
+      "?? PHASE17_SAFETY_CASE.md",
+      "?? PHASE18_DATA_INTEGRITY_REPORT.md",
+      "?? PHASE18_DEFENSE_QA.md",
+      "?? PHASE18_EVIDENCE_INDEX.md",
+      "?? PHASE18_FINAL_ACCEPTANCE_MATRIX.md",
+      "?? PHASE18_KNOWN_ISSUES.md",
+      "?? PHASE18_OFFICIAL_REFERENCES.md",
+      "?? PHASE18_RELEASE_READINESS.md",
+      "?? PHASE18_REPORT.md",
+      "?? PHASE18_REPRODUCIBILITY_REPORT.md",
+      "?? PHASE3_REPORT.md",
+      "?? PHASE4_REPORT.md",
+      "?? PHASE5_REPORT.md",
+      "?? PHASE6_REPORT.md",
+      "?? PHASE8_REPORT.md",
+      "?? PHASE9_ENERGY_SENSITIVITY_REPORT.md",
+      "?? PHASE9_REPORT.md",
+      "?? PRODUCT.md",
+      "?? artifacts/phase13/browser/demo-1366x768.png",
+      "?? artifacts/phase13/browser/demo-1920x1080.png",
+      "?? artifacts/phase13/browser/research-1366x768.png",
+      "?? artifacts/phase13/browser/research-1920x1080.png",
+      "?? artifacts/phase13/browser/research-390x844.png",
+      "?? artifacts/phase13/browser/research-phase9-1920x1080.png",
+      "?? artifacts/phase14/browser/research-1366x768.png",
+      "?? artifacts/phase14/browser/research-1920x1080.png",
+      "?? artifacts/phase14/browser/research-390x844.png",
+      "?? artifacts/phase15/api-stderr.log",
+      "?? artifacts/phase15/api-stdout.log",
+      "?? artifacts/phase15/browser/phase15-1366x768.png",
+      "?? artifacts/phase15/browser/phase15-1920x1080.png",
+      "?? artifacts/phase15/browser/phase15-390x844.png",
+      "?? artifacts/phase15/source_pdf/manual-1.png",
+      "?? artifacts/phase15/source_pdf/manual-2.png",
+      "?? artifacts/phase15/source_pdf/manual-3.png",
+      "?? artifacts/phase15/source_pdf/manual-4.png",
+      "?? artifacts/phase15/taste-inspection/desktop-fold.jpg",
+      "?? artifacts/phase15/taste-inspection/desktop-page-01.jpg",
+      "?? artifacts/phase15/taste-inspection/desktop-page-02.jpg",
+      "?? artifacts/phase15/taste-inspection/mobile-fold.jpg",
+      "?? artifacts/phase15/taste-inspection/mobile-page-01.jpg",
+      "?? artifacts/phase15/taste-inspection/report.json",
+      "?? artifacts/phase15/validation_results.json",
+      "?? artifacts/phase16/browser/phase16-1366x768.png",
+      "?? artifacts/phase16/browser/phase16-1920x1080.png",
+      "?? artifacts/phase16/browser/phase16-390x844.png",
+      "?? artifacts/phase6/browser/demo-1366x768.png",
+      "?? artifacts/phase6/browser/demo-1920x1080.png",
+      "?? assets/aerial-view-of-villa-nueva-city-at.jpg",
+      "?? assets/credits.json",
+      "?? assets/mumbai-night-city-18219784390.jpg",
+      "?? assets/night-views-of-chievres-air-base-6010389.jpg",
+      "?? assets/price-building-illuminated-at-night-in-quebec.jpg",
+      "?? assets/the-city-lights-of-lucknow-india-iss069e010770.jpg",
+      "?? configs/phase10/multi_uav_plan.json",
+      "?? configs/phase10/validation_protocol.json",
+      "?? configs/phase11/benchmark_plan.json",
+      "?? configs/phase11/confirmation_protocol.json",
+      "?? configs/phase14/confirmation_protocol.json",
+      "?? configs/phase14/experiment_plan.json",
+      "?? configs/phase14/link_budget_v1.toml",
+      "?? configs/phase15/calibration_protocol.json",
+      "?? configs/phase15/calibration_protocol_v2.json",
+      "?? configs/phase15/confirmation_freeze.json",
+      "?? configs/phase15/confirmation_freeze_v2.json",
+      "?? configs/phase15/protected_artifacts_baseline.json",
+      "?? configs/phase15/public_dataset_manifest.json",
+      "?? configs/phase16/acceptance_criteria_template.json",
+      "?? configs/phase16/measurement_session_template.json",
+      "?? configs/phase16/public_dataset_metadata.json",
+      "?? configs/phase16/urban_measurement_plan.json",
+      "?? configs/phase17/command_receipt_v1.schema.json",
+      "?? configs/phase17/command_v1.schema.json",
+      "?? configs/phase17/fault_injection_plan.json",
+      "?? configs/phase17/software_closed_loop.json",
+      "?? configs/phase17/telemetry_v1.schema.json",
+      "?? configs/phase5/dynamic_failure_base.toml",
+      "?? configs/phase5/dynamic_failures.toml",
+      "?? configs/phase5/high_load_backhaul_limit.toml",
+      "?? configs/phase5/high_mobility_rescue.toml",
+      "?? configs/phase5/severe_persistent_faults.toml",
+      "?? configs/phase8/ablation_plan.json",
+      "?? configs/phase8/algorithm_mechanism_audit.json",
+      "?? configs/phase8/experiment_plan.json",
+      "?? configs/phase8/replication_protocol.json",
+      "?? configs/phase8/sensitivity_plan.json",
+      "?? configs/phase8/sensitivity_validation_protocol.json",
+      "?? configs/phase8/validation_protocol.json",
+      "?? configs/phase9/dynamic_failures_development.toml",
+      "?? configs/phase9/dynamic_failures_validation.toml",
+      "?? configs/phase9/energy_sensitivity_plan.json",
+      "?? configs/phase9/energy_sensitivity_plan_corrected.json",
+      "?? configs/phase9/experiment_plan.json",
+      "?? configs/phase9/experiment_plan_corrected.json",
+      "?? configs/phase9/high_load_backhaul_limit_validation.toml",
+      "?? configs/phase9/high_mobility_rescue_validation.toml",
+      "?? configs/phase9/severe_persistent_faults_validation.toml",
+      "?? configs/phase9/validation_protocol.json",
+      "?? configs/phase9/validation_protocol_corrected.json",
+      "?? deliverables/phase18/FINAL_DATA_PROVENANCE.md",
+      "?? deliverables/phase18/FINAL_DEMO_SCRIPT.md",
+      "?? deliverables/phase18/FINAL_DEPLOYMENT_GUIDE.md",
+      "?? deliverables/phase18/FINAL_EXPERIMENT_RESULTS.md",
+      "?? deliverables/phase18/FINAL_PROJECT_REPORT.md",
+      "?? deliverables/phase18/FINAL_REPRODUCIBILITY_CHECKLIST.md",
+      "?? deliverables/phase18/FINAL_REQUIREMENTS_TRACEABILITY.md",
+      "?? deliverables/phase18/FINAL_SCIENTIFIC_LIMITATIONS.md",
+      "?? deliverables/phase18/FINAL_TECHNICAL_ARCHITECTURE.md",
+      "?? deliverables/phase18/FINAL_USER_MANUAL.md",
+      "?? docs/phase12/module_inventory.json",
+      "?? docs/phase12/research_dataflow.mmd",
+      "?? docs/phase12/research_dataflow.png",
+      "?? docs/phase12/research_dataflow.svg",
+      "?? docs/phase12/system_architecture.mmd",
+      "?? docs/phase12/system_architecture.png",
+      "?? docs/phase12/system_architecture.svg",
+      "?? docs/phase13/research-api-schema.md",
+      "?? docs/phase13/research-api.schema.json",
+      "?? frontend/.gitignore",
+      "?? frontend/.oxlintrc.json",
+      "?? frontend/README.md",
+      "?? frontend/e2e/phase14-research.spec.ts",
+      "?? frontend/e2e/phase15-calibration.spec.ts",
+      "?? frontend/e2e/phase16-readiness.spec.ts",
+      "?? frontend/e2e/phase17-hil.spec.ts",
+      "?? frontend/e2e/phase18-final-audit.spec.ts",
+      "?? frontend/e2e/phase6-demo.spec.ts",
+      "?? frontend/index.html",
+      "?? frontend/package-lock.json",
+      "?? frontend/package.json",
+      "?? frontend/playwright.config.ts",
+      "?? frontend/public/assets/images/aerial-view-of-villa-nueva-city-at.jpg",
+      "?? frontend/public/assets/images/night-views-of-chievres-air-base-6010389.jpg",
+      "?? frontend/public/assets/images/price-building-illuminated-at-night-in-quebec.jpg",
+      "?? frontend/public/assets/images/the-city-lights-of-lucknow-india-iss069e010770.jpg",
+      "?? frontend/public/favicon.svg",
+      "?? frontend/public/icons.svg",
+      "?? frontend/public/relay-mark.svg",
+      "?? frontend/src/App.tsx",
+      "?? frontend/src/EChartsView.tsx",
+      "?? frontend/src/Phase14ResearchSection.tsx",
+      "?? frontend/src/Phase15ResearchSection.tsx",
+      "?? frontend/src/Phase16ResearchSection.test.tsx",
+      "?? frontend/src/Phase16ResearchSection.tsx",
+      "?? frontend/src/Phase17ResearchSection.tsx",
+      "?? frontend/src/Phase18ResearchSection.tsx",
+      "?? frontend/src/Phase6DemoPage.tsx",
+      "?? frontend/src/ResearchPage.tsx",
+      "?? frontend/src/assets/hero.png",
+      "?? frontend/src/assets/react.svg",
+      "?? frontend/src/assets/vite.svg",
+      "?? frontend/src/components.tsx",
+      "?? frontend/src/data.tsx",
+      "?? frontend/src/index.css",
+      "?? frontend/src/main.tsx",
+      "?? frontend/src/pages.tsx",
+      "?? frontend/src/phase6-demo-types.ts",
+      "?? frontend/src/presentation.ts",
+      "?? frontend/src/replay-context.ts",
+      "?? frontend/src/research-model.ts",
+      "?? frontend/src/research.css",
+      "?? frontend/src/test/Phase17ResearchSection.test.tsx",
+      "?? frontend/src/test/Phase18ResearchSection.test.tsx",
+      "?? frontend/src/test/Phase6DemoPage.test.tsx",
+      "?? frontend/src/test/ResearchPage.test.tsx",
+      "?? frontend/src/test/setup.ts",
+      "?? frontend/src/types.ts",
+      "?? frontend/src/useReplay.ts",
+      "?? frontend/tsconfig.app.json",
+      "?? frontend/tsconfig.json",
+      "?? frontend/tsconfig.node.json",
+      "?? frontend/vite.config.ts",
+      "?? frontend/vitest.config.ts",
+      "?? plots/phase10/confirmation_policy_comparison.png",
+      "?? plots/phase10/confirmation_policy_comparison.svg",
+      "?? plots/phase10/confirmation_recovery_heatmap.png",
+      "?? plots/phase11/confirmation_compute_vs_service.png",
+      "?? plots/phase11/confirmation_compute_vs_service.svg",
+      "?? plots/phase11/confirmation_rescue_service.png",
+      "?? plots/phase11/confirmation_rescue_service.svg",
+      "?? plots/phase11/fleet_size_increment.png",
+      "?? plots/phase11/fleet_size_increment.svg",
+      "?? plots/phase14/phase14_link_feasibility.png",
+      "?? plots/phase14/phase14_link_feasibility.svg",
+      "?? plots/phase14/phase14_model_sensitivity.png",
+      "?? plots/phase14/phase14_model_sensitivity.svg",
+      "?? plots/phase14/phase14_model_service.png",
+      "?? plots/phase14/phase14_model_service.svg",
+      "?? plots/phase15/phase15_fit_and_holdout.png",
+      "?? plots/phase15/phase15_fit_and_holdout.svg",
+      "?? plots/phase15/phase15_holdout_residuals.png",
+      "?? plots/phase15/phase15_holdout_residuals.svg",
+      "?? plots/phase15/phase15_parameter_uncertainty.png",
+      "?? plots/phase15/phase15_parameter_uncertainty.svg",
+      "?? plots/phase16/phase16_uncertainty_budget.png",
+      "?? plots/phase16/phase16_uncertainty_budget.svg",
+      "?? plots/phase4_validation_latency.png",
+      "?? plots/phase4_validation_latency.svg",
+      "?? plots/phase4_validation_metrics.png",
+      "?? plots/phase4_validation_metrics.svg",
+      "?? plots/phase5_reliability.png",
+      "?? plots/phase5_reliability.svg",
+      "?? plots/phase5_service_and_cost.png",
+      "?? plots/phase5_service_and_cost.svg",
+      "?? plots/phase8/phase8_parameter_sensitivity_development.png",
+      "?? plots/phase8/phase8_parameter_sensitivity_development.svg",
+      "?? plots/phase8_replication/phase8_validation_ablation_effects.png",
+      "?? plots/phase8_replication/phase8_validation_ablation_effects.svg",
+      "?? plots/phase8_replication/phase8_validation_policy_comparison.png",
+      "?? plots/phase8_replication/phase8_validation_policy_comparison.svg",
+      "?? plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png",
+      "?? plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.svg",
+      "?? plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png",
+      "?? plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.svg",
+      "?? plots/phase8_validation_ablation_effects.png",
+      "?? plots/phase8_validation_ablation_effects.svg",
+      "?? plots/phase8_validation_policy_comparison.png",
+      "?? plots/phase8_validation_policy_comparison.svg",
+      "?? plots/phase9/phase9_compute_by_scene.png",
+      "?? plots/phase9/phase9_rescue_service_by_scene.png",
+      "?? plots/phase9_corrected/phase9_compute_by_scene.png",
+      "?? plots/phase9_corrected/phase9_energy_sensitivity.png",
+      "?? plots/phase9_corrected/phase9_rescue_service_by_scene.png",
+      "?? results/phase10_artifact_manifest.json",
+      "?? results/phase10_confirmation_event_timeline.json",
+      "?? results/phase10_confirmation_progress.jsonl",
+      "?? results/phase10_confirmation_raw.json",
+      "?? results/phase10_confirmation_summary.json",
+      "?? results/phase10_development_progress.jsonl",
+      "?? results/phase10_development_raw.json",
+      "?? results/phase10_development_summary.json",
+      "?? results/phase10_uav_energy_summary.json",
+      "?? results/phase11_artifact_manifest.json",
+      "?? results/phase11_confirmation_progress.jsonl",
+      "?? results/phase11_confirmation_raw.json",
+      "?? results/phase11_confirmation_summary.json",
+      "?? results/phase11_delivery_audit.json",
+      "?? results/phase11_development_progress.jsonl",
+      "?? results/phase11_development_raw.json",
+      "?? results/phase11_development_summary.json",
+      "?? results/phase11_fleet_size_exploratory.json",
+      "?? results/phase11_validation_evidence.txt",
+      "?? results/phase12_integrity_audit.json",
+      "?? results/phase13_visualization_audit.json",
+      "?? results/phase14_confirmation_raw.json",
+      "?? results/phase14_confirmation_summary.json",
+      "?? results/phase14_development_raw.json",
+      "?? results/phase14_development_summary.json",
+      "?? results/phase14_integrity_audit.json",
+      "?? results/phase14_legacy_reproduction.json",
+      "?? results/phase14_model_sensitivity_raw.json",
+      "?? results/phase14_model_sensitivity_summary.json",
+      "?? results/phase14_validation_summary.json",
+      "?? results/phase15_calibration_summary.json",
+      "?? results/phase15_dataset_audit.json",
+      "?? results/phase15_dataset_download_audit.json",
+      "?? results/phase15_holdout_validation.json",
+      "?? results/phase15_integrity_audit.json",
+      "?? results/phase15_measurements_public_clean.csv",
+      "?? results/phase15_preholdout_run_attempts.json",
+      "?? results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+      "?? results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+      "?? results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+      "?? results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+      "?? results/phase16/pytest_junit.xml",
+      "?? results/phase16/pytest_junit_final.xml",
+      "?? results/phase16/pytest_junit_final_v2.xml",
+      "?? results/phase16/pytest_targeted_junit.xml",
+      "?? results/phase16/pytest_targeted_junit_final.xml",
+      "?? results/phase16/pytest_targeted_junit_final_v2.xml",
+      "?? results/phase16/session_template_validation.json",
+      "?? results/phase16/session_template_validation_final.json",
+      "?? results/phase16/session_template_validation_final_v2.json",
+      "?? results/phase16_calibration_state.json",
+      "?? results/phase16_environment_inventory.json",
+      "?? results/phase16_exploratory_model_sensitivity_context.json",
+      "?? results/phase16_integrity_audit.json",
+      "?? results/phase16_measurement_readiness.json",
+      "?? results/phase16_uncertainty_budget.json",
+      "?? results/phase17/browser/phase17-1366x768.png",
+      "?? results/phase17/browser/phase17-1920x1080.png",
+      "?? results/phase17/browser/phase17-390x844.png",
+      "?? results/phase17/browser_screenshot_manifest.json",
+      "?? results/phase17/frontend_build.log",
+      "?? results/phase17/frontend_lint.log",
+      "?? results/phase17/frontend_unit_test.log",
+      "?? results/phase17/phase17_pytest.log",
+      "?? results/phase17/playwright_e2e.log",
+      "?? results/phase17/protected_start_manifest.json",
+      "?? results/phase17/python_pytest.log",
+      "?? results/phase17_adapter_status.json",
+      "?? results/phase17_closed_loop_run.json",
+      "?? results/phase17_command_audit.json",
+      "?? results/phase17_environment_inventory.json",
+      "?? results/phase17_fault_injection_results.json",
+      "?? results/phase17_integrity_audit.json",
+      "?? results/phase17_replay_validation.json",
+      "?? results/phase17_validation_summary.json",
+      "?? results/phase18/browser/phase18-1366x768.png",
+      "?? results/phase18/browser/phase18-1920x1080.png",
+      "?? results/phase18/browser/phase18-390x844.png",
+      "?? results/phase18/phase18_evidence_manifest.json",
+      "?? results/phase18/phase18_integrity_audit.json",
+      "?? results/phase18/phase18_release_manifest.json",
+      "?? results/phase18/phase18_test_execution.json",
+      "?? results/phase18/phase18_validation_summary.json",
+      "?? results/phase3_replay_seed_2026.json",
+      "?? results/phase4_development_3000_3004.json",
+      "?? results/phase4_development_trial_01_3000_3004.json",
+      "?? results/phase4_development_trial_02_3000_3004.json",
+      "?? results/phase4_development_trial_03_3000_3004.json",
+      "?? results/phase4_validation_4000_4019.json",
+      "?? results/phase5_development_dynamic_failures.json",
+      "?? results/phase5_development_high_load_backhaul_limit.json",
+      "?? results/phase5_development_high_mobility_rescue.json",
+      "?? results/phase5_development_pilot_dynamic_failures.json",
+      "?? results/phase5_development_pilot_high_load_backhaul_limit.json",
+      "?? results/phase5_development_pilot_high_mobility_rescue.json",
+      "?? results/phase5_development_pilot_severe_persistent_faults.json",
+      "?? results/phase5_development_severe_persistent_faults.json",
+      "?? results/phase5_failure_cases.json",
+      "?? results/phase5_frozen_manifest.json",
+      "?? results/phase5_integrity_audit.json",
+      "?? results/phase5_v1/phase5_development_dynamic_failures.json",
+      "?? results/phase5_v1/phase5_development_high_load_backhaul_limit.json",
+      "?? results/phase5_v1/phase5_development_high_mobility_rescue.json",
+      "?? results/phase5_v1/phase5_development_pilot_dynamic_failures.json",
+      "?? results/phase5_v1/phase5_development_pilot_high_load_backhaul_limit.json",
+      "?? results/phase5_v1/phase5_development_pilot_high_mobility_rescue.json",
+      "?? results/phase5_v1/phase5_development_pilot_severe_persistent_faults.json",
+      "?? results/phase5_v1/phase5_development_severe_persistent_faults.json",
+      "?? results/phase5_v1/phase5_frozen_manifest.json",
+      "?? results/phase5_v1/phase5_reliability.png",
+      "?? results/phase5_v1/phase5_reliability.svg",
+      "?? results/phase5_v1/phase5_service_and_cost.png",
+      "?? results/phase5_v1/phase5_service_and_cost.svg",
+      "?? results/phase5_v1/phase5_validation_dynamic_failures.json",
+      "?? results/phase5_v1/phase5_validation_high_load_backhaul_limit.json",
+      "?? results/phase5_v1/phase5_validation_high_mobility_rescue.json",
+      "?? results/phase5_v1/phase5_validation_severe_persistent_faults.json",
+      "?? results/phase5_v1/phase5_validation_summary.json",
+      "?? results/phase5_validation_dynamic_failures.json",
+      "?? results/phase5_validation_high_load_backhaul_limit.json",
+      "?? results/phase5_validation_high_mobility_rescue.json",
+      "?? results/phase5_validation_severe_persistent_faults.json",
+      "?? results/phase5_validation_summary.json",
+      "?? results/phase6_demo_dynamic_failures.json",
+      "?? results/phase6_demo_high_load_backhaul_limit.json",
+      "?? results/phase6_demo_high_mobility_rescue.json",
+      "?? results/phase6_demo_manifest.json",
+      "?? results/phase6_demo_severe_persistent_faults.json",
+      "?? results/phase8_development_raw.json",
+      "?? results/phase8_development_summary.json",
+      "?? results/phase8_pytest_results.txt",
+      "?? results/phase8_replication_postprocess_audit.json",
+      "?? results/phase8_replication_raw.json",
+      "?? results/phase8_replication_summary.json",
+      "?? results/phase8_sensitivity_validation_audit.json",
+      "?? results/phase8_sensitivity_validation_raw.json",
+      "?? results/phase8_sensitivity_validation_summary.json",
+      "?? results/phase8_validation_raw.json",
+      "?? results/phase8_validation_summary.json",
+      "?? results/phase9_artifact_manifest.json",
+      "?? results/phase9_confirmation_raw.json",
+      "?? results/phase9_confirmation_summary.json",
+      "?? results/phase9_corrected_confirmation_raw.json",
+      "?? results/phase9_corrected_confirmation_summary.json",
+      "?? results/phase9_corrected_energy_sensitivity_raw.json",
+      "?? results/phase9_corrected_energy_sensitivity_summary.json",
+      "?? results/phase9_corrected_event_timeline.json",
+      "?? results/phase9_development_iteration1_raw.json",
+      "?? results/phase9_development_iteration1_summary.json",
+      "?? results/phase9_development_pre_route_fix_raw.json",
+      "?? results/phase9_development_pre_route_fix_summary.json",
+      "?? results/phase9_development_raw.json",
+      "?? results/phase9_development_summary.json",
+      "?? results/phase9_event_timeline.json",
+      "?? results/phase9_initial_confirmation_status.json",
+      "?? results/phase9_verification_summary.json",
+      "?? scripts/audit_phase15_integrity.py",
+      "?? scripts/audit_phase17_integrity.py",
+      "?? scripts/build_phase16_readiness.py",
+      "?? scripts/build_phase18_release_manifest.py",
+      "?? scripts/build_phase18_validation_summary.py",
+      "?? scripts/capture_phase15_integrity_baseline.py",
+      "?? scripts/fetch_phase15_public_dataset.py",
+      "?? scripts/finalize_phase8_replication.py",
+      "?? scripts/freeze_phase15_confirmation.py",
+      "?? scripts/generate_phase6_demo_replays.py",
+      "?? scripts/import_phase16_measurements.py",
+      "?? scripts/materialize_phase8_d_optimizer.py",
+      "?? scripts/phase12_audit.py",
+      "?? scripts/phase13_visualization_audit.py",
+      "?? scripts/phase14_integrity_audit.py",
+      "?? scripts/phase5_audit.py",
+      "?? scripts/phase5_inspect_seed.py",
+      "?? scripts/phase5_summary.py",
+      "?? scripts/plot_phase10_results.py",
+      "?? scripts/plot_phase11_fleet_size.py",
+      "?? scripts/plot_phase14_results.py",
+      "?? scripts/plot_phase15_calibration.py",
+      "?? scripts/plot_phase16_uncertainty_budget.py",
+      "?? scripts/plot_phase8_parameter_sensitivity.py",
+      "?? scripts/plot_phase8_sensitivity_confirmation.py",
+      "?? scripts/prepare_phase15_dataset.py",
+      "?? scripts/render_phase12_architecture.py",
+      "?? scripts/run_phase10_experiments.py",
+      "?? scripts/run_phase11_experiments.py",
+      "?? scripts/run_phase14_experiments.py",
+      "?? scripts/run_phase15_calibration.py",
+      "?? scripts/run_phase17_hil_validation.py",
+      "?? scripts/run_phase18_final_audit.py",
+      "?? scripts/run_phase8_experiments.py",
+      "?? scripts/run_phase8_replication.py",
+      "?? scripts/run_phase8_sensitivity_confirmation.py",
+      "?? scripts/run_phase9_experiments.py",
+      "?? scripts/start_demo.cmd",
+      "?? scripts/start_demo.ps1",
+      "?? scripts/summarize_phase11_fleet_size.py",
+      "?? scripts/summarize_phase16_model_sensitivity_context.py",
+      "?? scripts/validate_phase16_session.py",
+      "?? scripts/verify_phase14_legacy_reproduction.py",
+      "?? scripts/verify_phase18_release_manifest.py",
+      "?? src/lowalt6g/api.py",
+      "?? src/lowalt6g/energy_budget.py",
+      "?? src/lowalt6g/multi_uav.py",
+      "?? src/lowalt6g/multi_uav_simulation.py",
+      "?? src/lowalt6g/phase10_experiments.py",
+      "?? src/lowalt6g/phase11_algorithms.py",
+      "?? src/lowalt6g/phase11_experiments.py",
+      "?? src/lowalt6g/phase11_simulation.py",
+      "?? src/lowalt6g/phase14_experiments.py",
+      "?? src/lowalt6g/phase14_radio.py",
+      "?? src/lowalt6g/phase15_calibration.py",
+      "?? src/lowalt6g/phase15_data.py",
+      "?? src/lowalt6g/phase15_integrity.py",
+      "?? src/lowalt6g/phase16_measurement.py",
+      "?? src/lowalt6g/phase17_hil.py",
+      "?? src/lowalt6g/phase5.py",
+      "?? src/lowalt6g/phase6_api.py",
+      "?? src/lowalt6g/phase6_demo.py",
+      "?? src/lowalt6g/phase8_charts.py",
+      "?? src/lowalt6g/phase8_d_optimizer.py",
+      "?? src/lowalt6g/phase8_experiments.py",
+      "?? src/lowalt6g/phase9_experiments.py",
+      "?? src/lowalt6g/phase9_strategy_e.py",
+      "?? src/lowalt6g/radio_link.py",
+      "?? tests/test_phase10.py",
+      "?? tests/test_phase11.py",
+      "?? tests/test_phase13_api.py",
+      "?? tests/test_phase15_artifacts.py",
+      "?? tests/test_phase15_calibration.py",
+      "?? tests/test_phase15_data.py",
+      "?? tests/test_phase16_api.py",
+      "?? tests/test_phase16_measurement.py",
+      "?? tests/test_phase17_api.py",
+      "?? tests/test_phase17_hil.py",
+      "?? tests/test_phase18_api.py",
+      "?? tests/test_phase5.py",
+      "?? tests/test_phase6.py",
+      "?? tests/test_phase8.py",
+      "?? tests/test_phase9.py",
+      "?? tests/test_radio_link.py"
+    ]
+  },
+  "reports": [
+    {
+      "phase": 1,
+      "path": "PHASE1_REPORT.md",
+      "present": true,
+      "sha256": "ba9c18a19e8d5aa26da9eb889208ebad9b59c0903afc00f4662f70ede5081af5"
+    },
+    {
+      "phase": 2,
+      "path": "PHASE2_REPORT.md",
+      "present": true,
+      "sha256": "eaab54132b1af0e2566267b2d60724ff2e387f37008938c1fa26f5d9e588f45a"
+    },
+    {
+      "phase": 3,
+      "path": "PHASE3_REPORT.md",
+      "present": true,
+      "sha256": "aa48b58a1661247e8e71c31f95afbdb0ef57a6ae60ccb1b40a9f1b69b0e62ded"
+    },
+    {
+      "phase": 4,
+      "path": "PHASE4_REPORT.md",
+      "present": true,
+      "sha256": "a61335791e8553a3ef1ca7756530298c58c9f8bf12532144b1a220bf1bcf2fc8"
+    },
+    {
+      "phase": 5,
+      "path": "PHASE5_REPORT.md",
+      "present": true,
+      "sha256": "b1c3ea3b4356722bc1cbaffe416a21fc210404f0893ce90650c0173c948d6666"
+    },
+    {
+      "phase": 6,
+      "path": "PHASE6_REPORT.md",
+      "present": true,
+      "sha256": "9eb9a10d39c7072de8e99dde55795d9653e51b63446828cb45de53c1e872eab9"
+    },
+    {
+      "phase": 7,
+      "path": "PHASE7_REPORT.md",
+      "present": false,
+      "sha256": null
+    },
+    {
+      "phase": 8,
+      "path": "PHASE8_REPORT.md",
+      "present": true,
+      "sha256": "af7c22ff949a2340a632b6c96da3ecd39f252a15032b34008bf3e97f656e6418"
+    },
+    {
+      "phase": 9,
+      "path": "PHASE9_REPORT.md",
+      "present": true,
+      "sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f"
+    },
+    {
+      "phase": 10,
+      "path": "PHASE10_REPORT.md",
+      "present": true,
+      "sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5"
+    },
+    {
+      "phase": 11,
+      "path": "PHASE11_REPORT.md",
+      "present": true,
+      "sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f"
+    },
+    {
+      "phase": 12,
+      "path": "PHASE12_REPORT.md",
+      "present": true,
+      "sha256": "115a59eef12519d5d48f583afea3a511127577658d7164be33973404151ab2e8"
+    },
+    {
+      "phase": 13,
+      "path": "PHASE13_REPORT.md",
+      "present": true,
+      "sha256": "97e5e1dfb9e14bf7c814fd3385a148856bf00f4c58b6c10f162151e6c05a4d45"
+    },
+    {
+      "phase": 14,
+      "path": "PHASE14_REPORT.md",
+      "present": true,
+      "sha256": "17d25adba19c4b8a0bde7620350c67c9e225e3c971eeb78727b8afdce55fe339"
+    },
+    {
+      "phase": 15,
+      "path": "PHASE15_REPORT.md",
+      "present": true,
+      "sha256": "4ff3ee13fbc2e435572e11b9d00f5dd993b28a5457358ecfd10b496b6cd6bbec"
+    },
+    {
+      "phase": 16,
+      "path": "PHASE16_REPORT.md",
+      "present": true,
+      "sha256": "92f5263232bab1ab4fa220a29c5c66cd17104b7d24f0b95d4b2b4717dc4e14fe"
+    },
+    {
+      "phase": 17,
+      "path": "PHASE17_REPORT.md",
+      "present": true,
+      "sha256": "440bd55511aa537c42842db3d77c918b34ce71886f03bbaf537b7d9c44260a2a"
+    }
+  ],
+  "phase7_evidence": {
+    "report_present": false,
+    "matching_named_artifacts": [],
+    "branch_present": false,
+    "commit_search_matches": [],
+    "conclusion": "NO_PHASE7_EVIDENCE_FOUND"
+  },
+  "protected_history": {
+    "phase17_start_manifest_path": "results/phase17/protected_start_manifest.json",
+    "protected_file_count": 182,
+    "matched_file_count": 182,
+    "all_protected_hashes_match": true,
+    "files": [
+      {
+        "path": "configs/phase10/multi_uav_plan.json",
+        "expected_sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+        "actual_sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+        "expected_size_bytes": 4565,
+        "actual_size_bytes": 4565,
+        "matches": true
+      },
+      {
+        "path": "configs/phase10/validation_protocol.json",
+        "expected_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+        "actual_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+        "expected_size_bytes": 20611,
+        "actual_size_bytes": 20611,
+        "matches": true
+      },
+      {
+        "path": "configs/phase11/benchmark_plan.json",
+        "expected_sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+        "actual_sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+        "expected_size_bytes": 6882,
+        "actual_size_bytes": 6882,
+        "matches": true
+      },
+      {
+        "path": "configs/phase11/confirmation_protocol.json",
+        "expected_sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+        "actual_sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+        "expected_size_bytes": 14708,
+        "actual_size_bytes": 14708,
+        "matches": true
+      },
+      {
+        "path": "configs/phase14/confirmation_protocol.json",
+        "expected_sha256": "1f4a7330ec24b333a1e0cced82520eca4d39dca8b6651ac336176e124861ae53",
+        "actual_sha256": "1f4a7330ec24b333a1e0cced82520eca4d39dca8b6651ac336176e124861ae53",
+        "expected_size_bytes": 3326,
+        "actual_size_bytes": 3326,
+        "matches": true
+      },
+      {
+        "path": "configs/phase14/experiment_plan.json",
+        "expected_sha256": "9b3afc796405e5b4378110c4e4e8f9e358ecc946fd4ce5090f5a7cbd1a17feae",
+        "actual_sha256": "9b3afc796405e5b4378110c4e4e8f9e358ecc946fd4ce5090f5a7cbd1a17feae",
+        "expected_size_bytes": 2715,
+        "actual_size_bytes": 2715,
+        "matches": true
+      },
+      {
+        "path": "configs/phase14/link_budget_v1.toml",
+        "expected_sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+        "actual_sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+        "expected_size_bytes": 1097,
+        "actual_size_bytes": 1097,
+        "matches": true
+      },
+      {
+        "path": "configs/phase15/calibration_protocol.json",
+        "expected_sha256": "6cc291ee4ffce92498205d166f840b165ba90821ce737c56a56b05bab0ef9a26",
+        "actual_sha256": "6cc291ee4ffce92498205d166f840b165ba90821ce737c56a56b05bab0ef9a26",
+        "expected_size_bytes": 2119,
+        "actual_size_bytes": 2119,
+        "matches": true
+      },
+      {
+        "path": "configs/phase15/calibration_protocol_v2.json",
+        "expected_sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62",
+        "actual_sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62",
+        "expected_size_bytes": 3158,
+        "actual_size_bytes": 3158,
+        "matches": true
+      },
+      {
+        "path": "configs/phase15/confirmation_freeze.json",
+        "expected_sha256": "1b21715f741eb13c0edb49efac0d5d010dada63614759e25a547a83adc40bad1",
+        "actual_sha256": "1b21715f741eb13c0edb49efac0d5d010dada63614759e25a547a83adc40bad1",
+        "expected_size_bytes": 3423,
+        "actual_size_bytes": 3423,
+        "matches": true
+      },
+      {
+        "path": "configs/phase15/confirmation_freeze_v2.json",
+        "expected_sha256": "aa16c5071207067bc93d78ac7a30b4074e709fba18f83656a3b6fee7d239a257",
+        "actual_sha256": "aa16c5071207067bc93d78ac7a30b4074e709fba18f83656a3b6fee7d239a257",
+        "expected_size_bytes": 3784,
+        "actual_size_bytes": 3784,
+        "matches": true
+      },
+      {
+        "path": "configs/phase15/protected_artifacts_baseline.json",
+        "expected_sha256": "0f8001b9e8d6311cd7a2a7b50501b52b187e3078c6bdc01dba4ccc2a6ed0d00b",
+        "actual_sha256": "0f8001b9e8d6311cd7a2a7b50501b52b187e3078c6bdc01dba4ccc2a6ed0d00b",
+        "expected_size_bytes": 16820,
+        "actual_size_bytes": 16820,
+        "matches": true
+      },
+      {
+        "path": "configs/phase15/public_dataset_manifest.json",
+        "expected_sha256": "0826941fa206a6678b809799458442576549357d53d6b66c57cbc181e6521e68",
+        "actual_sha256": "0826941fa206a6678b809799458442576549357d53d6b66c57cbc181e6521e68",
+        "expected_size_bytes": 4720,
+        "actual_size_bytes": 4720,
+        "matches": true
+      },
+      {
+        "path": "configs/phase16/acceptance_criteria_template.json",
+        "expected_sha256": "ea507c0ec5279e2abe54372485fbe2d9db9db96e0e5ad65c73a57a9bf122802a",
+        "actual_sha256": "ea507c0ec5279e2abe54372485fbe2d9db9db96e0e5ad65c73a57a9bf122802a",
+        "expected_size_bytes": 506,
+        "actual_size_bytes": 506,
+        "matches": true
+      },
+      {
+        "path": "configs/phase16/measurement_session_template.json",
+        "expected_sha256": "93612b9e481f7e0be3a632e35dab04d1660387eccb344ab954c343cb3c5c15e6",
+        "actual_sha256": "93612b9e481f7e0be3a632e35dab04d1660387eccb344ab954c343cb3c5c15e6",
+        "expected_size_bytes": 1304,
+        "actual_size_bytes": 1304,
+        "matches": true
+      },
+      {
+        "path": "configs/phase16/public_dataset_metadata.json",
+        "expected_sha256": "67e926d76c061d016cb0d871834db39a00e5b5c22bbaf189fe628738587dbdd3",
+        "actual_sha256": "67e926d76c061d016cb0d871834db39a00e5b5c22bbaf189fe628738587dbdd3",
+        "expected_size_bytes": 542,
+        "actual_size_bytes": 542,
+        "matches": true
+      },
+      {
+        "path": "configs/phase16/urban_measurement_plan.json",
+        "expected_sha256": "872d6482269817f525a728cf2fa1cbf8a2ea1193df0dbe9a9bddf3e5ddcb7fde",
+        "actual_sha256": "872d6482269817f525a728cf2fa1cbf8a2ea1193df0dbe9a9bddf3e5ddcb7fde",
+        "expected_size_bytes": 4349,
+        "actual_size_bytes": 4349,
+        "matches": true
+      },
+      {
+        "path": "configs/phase5/dynamic_failure_base.toml",
+        "expected_sha256": "889bc71a89fbe90e9ab84164050df1d4ef93588b257f6afcf9f35d31af3d7244",
+        "actual_sha256": "889bc71a89fbe90e9ab84164050df1d4ef93588b257f6afcf9f35d31af3d7244",
+        "expected_size_bytes": 1031,
+        "actual_size_bytes": 1031,
+        "matches": true
+      },
+      {
+        "path": "configs/phase5/dynamic_failures.toml",
+        "expected_sha256": "4b21a21525d9ef5557a40ef36a07451c0a56cdeb029230859dace620a4b548a4",
+        "actual_sha256": "4b21a21525d9ef5557a40ef36a07451c0a56cdeb029230859dace620a4b548a4",
+        "expected_size_bytes": 1433,
+        "actual_size_bytes": 1433,
+        "matches": true
+      },
+      {
+        "path": "configs/phase5/high_load_backhaul_limit.toml",
+        "expected_sha256": "1bad9cfcb1d0b63904e256fa1f92c7a5e85eee3f191e0d387b2059beec0bf9ab",
+        "actual_sha256": "1bad9cfcb1d0b63904e256fa1f92c7a5e85eee3f191e0d387b2059beec0bf9ab",
+        "expected_size_bytes": 1549,
+        "actual_size_bytes": 1549,
+        "matches": true
+      },
+      {
+        "path": "configs/phase5/high_mobility_rescue.toml",
+        "expected_sha256": "a7b0aad9fd503b6f6e7171ece4ab787c9f28b12ba69b04f03e3511d163a48fa8",
+        "actual_sha256": "a7b0aad9fd503b6f6e7171ece4ab787c9f28b12ba69b04f03e3511d163a48fa8",
+        "expected_size_bytes": 1214,
+        "actual_size_bytes": 1214,
+        "matches": true
+      },
+      {
+        "path": "configs/phase5/severe_persistent_faults.toml",
+        "expected_sha256": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c",
+        "actual_sha256": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c",
+        "expected_size_bytes": 979,
+        "actual_size_bytes": 979,
+        "matches": true
+      },
+      {
+        "path": "configs/phase8/ablation_plan.json",
+        "expected_sha256": "f2c469eaded74a73880fbad7fec1e15bba4397bd622e9d8034023195ed80d0fe",
+        "actual_sha256": "f2c469eaded74a73880fbad7fec1e15bba4397bd622e9d8034023195ed80d0fe",
+        "expected_size_bytes": 3816,
+        "actual_size_bytes": 3816,
+        "matches": true
+      },
+      {
+        "path": "configs/phase8/algorithm_mechanism_audit.json",
+        "expected_sha256": "2c0dcc8f16cebcfb04a8d812e8c4653959e6c34d3e1bcbd7bdb2ca134aa39976",
+        "actual_sha256": "2c0dcc8f16cebcfb04a8d812e8c4653959e6c34d3e1bcbd7bdb2ca134aa39976",
+        "expected_size_bytes": 4366,
+        "actual_size_bytes": 4366,
+        "matches": true
+      },
+      {
+        "path": "configs/phase8/experiment_plan.json",
+        "expected_sha256": "5c8e95a0c8d66ac230afcdee7d5208ce9ec9d748f2f2610cdea90d1b63202ae4",
+        "actual_sha256": "5c8e95a0c8d66ac230afcdee7d5208ce9ec9d748f2f2610cdea90d1b63202ae4",
+        "expected_size_bytes": 9554,
+        "actual_size_bytes": 9554,
+        "matches": true
+      },
+      {
+        "path": "configs/phase8/replication_protocol.json",
+        "expected_sha256": "c8d2fd5067d6cf0959b5d43fa512f4e3ca74c4f0b6b5439d2b2b494bc983b07f",
+        "actual_sha256": "c8d2fd5067d6cf0959b5d43fa512f4e3ca74c4f0b6b5439d2b2b494bc983b07f",
+        "expected_size_bytes": 5973,
+        "actual_size_bytes": 5973,
+        "matches": true
+      },
+      {
+        "path": "configs/phase8/sensitivity_plan.json",
+        "expected_sha256": "ef0b589ab09a5e29ebc42e12ec2fdaf6c7f2495381b42f15275a16b7bda61e16",
+        "actual_sha256": "ef0b589ab09a5e29ebc42e12ec2fdaf6c7f2495381b42f15275a16b7bda61e16",
+        "expected_size_bytes": 3688,
+        "actual_size_bytes": 3688,
+        "matches": true
+      },
+      {
+        "path": "configs/phase8/sensitivity_validation_protocol.json",
+        "expected_sha256": "7ba6453a05365c99b6faa64bf2752f0aca4dffcaa757694ba620011b6502534e",
+        "actual_sha256": "7ba6453a05365c99b6faa64bf2752f0aca4dffcaa757694ba620011b6502534e",
+        "expected_size_bytes": 6866,
+        "actual_size_bytes": 6866,
+        "matches": true
+      },
+      {
+        "path": "configs/phase8/validation_protocol.json",
+        "expected_sha256": "f56aa866aaea42b544d0d80ac78acc925c2c3a3e6473abfe331f9085e71fb02e",
+        "actual_sha256": "f56aa866aaea42b544d0d80ac78acc925c2c3a3e6473abfe331f9085e71fb02e",
+        "expected_size_bytes": 4563,
+        "actual_size_bytes": 4563,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/dynamic_failures_development.toml",
+        "expected_sha256": "b0f49834eedbe3b2eda7140be0d24ccf99debccc39d5606f308c2e878ec3d30b",
+        "actual_sha256": "b0f49834eedbe3b2eda7140be0d24ccf99debccc39d5606f308c2e878ec3d30b",
+        "expected_size_bytes": 1659,
+        "actual_size_bytes": 1659,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/dynamic_failures_validation.toml",
+        "expected_sha256": "1b4bd7a4c421086830fd879f705202659a731cf04a81f20bcb03467540e3889c",
+        "actual_sha256": "1b4bd7a4c421086830fd879f705202659a731cf04a81f20bcb03467540e3889c",
+        "expected_size_bytes": 1660,
+        "actual_size_bytes": 1660,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/energy_sensitivity_plan.json",
+        "expected_sha256": "f28b1ebcaf5a38625c5310b3392f27665ed689cebef327947d8c84dc9b28c243",
+        "actual_sha256": "f28b1ebcaf5a38625c5310b3392f27665ed689cebef327947d8c84dc9b28c243",
+        "expected_size_bytes": 2381,
+        "actual_size_bytes": 2381,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/energy_sensitivity_plan_corrected.json",
+        "expected_sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+        "actual_sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+        "expected_size_bytes": 2785,
+        "actual_size_bytes": 2785,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/experiment_plan.json",
+        "expected_sha256": "34cf16f8d5bb8b99c12c2ba18e6ed1b81b73dac95ecb0e79944c1e73a938e51d",
+        "actual_sha256": "34cf16f8d5bb8b99c12c2ba18e6ed1b81b73dac95ecb0e79944c1e73a938e51d",
+        "expected_size_bytes": 3901,
+        "actual_size_bytes": 3901,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/experiment_plan_corrected.json",
+        "expected_sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+        "actual_sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+        "expected_size_bytes": 5328,
+        "actual_size_bytes": 5328,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/high_load_backhaul_limit_validation.toml",
+        "expected_sha256": "8efe6f214b2a321e02b534c238cd455650baa85cd705bc22c7d895611de73b0f",
+        "actual_sha256": "8efe6f214b2a321e02b534c238cd455650baa85cd705bc22c7d895611de73b0f",
+        "expected_size_bytes": 1636,
+        "actual_size_bytes": 1636,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/high_mobility_rescue_validation.toml",
+        "expected_sha256": "b6b0a61cdcb44a600bb075ca18a2c6ea262ccea994321b080f1b68b7b180fa3a",
+        "actual_sha256": "b6b0a61cdcb44a600bb075ca18a2c6ea262ccea994321b080f1b68b7b180fa3a",
+        "expected_size_bytes": 1297,
+        "actual_size_bytes": 1297,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/severe_persistent_faults_validation.toml",
+        "expected_sha256": "5d7c461e830d16aab9b2d03d1d770e57c863918f14555938869c61fb6ca7af76",
+        "actual_sha256": "5d7c461e830d16aab9b2d03d1d770e57c863918f14555938869c61fb6ca7af76",
+        "expected_size_bytes": 1066,
+        "actual_size_bytes": 1066,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/validation_protocol.json",
+        "expected_sha256": "643c632a1db6aa3347710d6db06e834d8348b85d1d7073b13178ba3033d3dd3e",
+        "actual_sha256": "643c632a1db6aa3347710d6db06e834d8348b85d1d7073b13178ba3033d3dd3e",
+        "expected_size_bytes": 8322,
+        "actual_size_bytes": 8322,
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/validation_protocol_corrected.json",
+        "expected_sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+        "actual_sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+        "expected_size_bytes": 8740,
+        "actual_size_bytes": 8740,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_10.xlsx",
+        "expected_sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+        "actual_sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+        "expected_size_bytes": 302061,
+        "actual_size_bytes": 302061,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_15.xlsx",
+        "expected_sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+        "actual_sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+        "expected_size_bytes": 443749,
+        "actual_size_bytes": 443749,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_PL10.mat",
+        "expected_sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd",
+        "actual_sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd",
+        "expected_size_bytes": 3614,
+        "actual_size_bytes": 3614,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_PL15.mat",
+        "expected_sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4",
+        "actual_sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4",
+        "expected_size_bytes": 5698,
+        "actual_size_bytes": 5698,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/guidemanual.pdf",
+        "expected_sha256": "36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3",
+        "actual_sha256": "36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3",
+        "expected_size_bytes": 680251,
+        "actual_size_bytes": 680251,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_10.xlsx",
+        "expected_sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+        "actual_sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+        "expected_size_bytes": 233836,
+        "actual_size_bytes": 233836,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_15.xlsx",
+        "expected_sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+        "actual_sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+        "expected_size_bytes": 394136,
+        "actual_size_bytes": 394136,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_PL10.mat",
+        "expected_sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a",
+        "actual_sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a",
+        "expected_size_bytes": 3516,
+        "actual_size_bytes": 3516,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_PL15.mat",
+        "expected_sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20",
+        "actual_sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20",
+        "expected_size_bytes": 5441,
+        "actual_size_bytes": 5441,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/README!.txt",
+        "expected_sha256": "062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2",
+        "actual_sha256": "062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2",
+        "expected_size_bytes": 1898,
+        "actual_size_bytes": 1898,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_10.xlsx",
+        "expected_sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+        "actual_sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+        "expected_size_bytes": 135129,
+        "actual_size_bytes": 135129,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_15.xlsx",
+        "expected_sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+        "actual_sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+        "expected_size_bytes": 110564,
+        "actual_size_bytes": 110564,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_PL10.mat",
+        "expected_sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9",
+        "actual_sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9",
+        "expected_size_bytes": 1890,
+        "actual_size_bytes": 1890,
+        "matches": true
+      },
+      {
+        "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_PL15.mat",
+        "expected_sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89",
+        "actual_sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89",
+        "expected_size_bytes": 1594,
+        "actual_size_bytes": 1594,
+        "matches": true
+      },
+      {
+        "path": "DEVELOPMENT_LOG_PHASE10.md",
+        "expected_sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+        "actual_sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+        "expected_size_bytes": 2761,
+        "actual_size_bytes": 2761,
+        "matches": true
+      },
+      {
+        "path": "DEVELOPMENT_LOG_PHASE15.md",
+        "expected_sha256": "59c13725fba18c60666c35be8c0ef8bb9be5aad05170f425a8784780c6a1eb10",
+        "actual_sha256": "59c13725fba18c60666c35be8c0ef8bb9be5aad05170f425a8784780c6a1eb10",
+        "expected_size_bytes": 2381,
+        "actual_size_bytes": 2381,
+        "matches": true
+      },
+      {
+        "path": "DEVELOPMENT_LOG_PHASE16.md",
+        "expected_sha256": "4ef90d70c8de71eccb0fee455c9f0635c16d5db984cc8d3f6b94c99a92817a43",
+        "actual_sha256": "4ef90d70c8de71eccb0fee455c9f0635c16d5db984cc8d3f6b94c99a92817a43",
+        "expected_size_bytes": 4020,
+        "actual_size_bytes": 4020,
+        "matches": true
+      },
+      {
+        "path": "DEVELOPMENT_LOG_PHASE8.md",
+        "expected_sha256": "0e951f69053441957972a7c2058261e9ac5b15d7695bfb550223a1f0e41699e2",
+        "actual_sha256": "0e951f69053441957972a7c2058261e9ac5b15d7695bfb550223a1f0e41699e2",
+        "expected_size_bytes": 6607,
+        "actual_size_bytes": 6607,
+        "matches": true
+      },
+      {
+        "path": "PHASE10_MODEL_DESIGN.md",
+        "expected_sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+        "actual_sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+        "expected_size_bytes": 5463,
+        "actual_size_bytes": 5463,
+        "matches": true
+      },
+      {
+        "path": "PHASE10_REPORT.md",
+        "expected_sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+        "actual_sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+        "expected_size_bytes": 19849,
+        "actual_size_bytes": 19849,
+        "matches": true
+      },
+      {
+        "path": "PHASE11_ALGORITHM_DESIGN.md",
+        "expected_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+        "actual_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+        "expected_size_bytes": 7937,
+        "actual_size_bytes": 7937,
+        "matches": true
+      },
+      {
+        "path": "PHASE11_REPORT.md",
+        "expected_sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+        "actual_sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+        "expected_size_bytes": 30227,
+        "actual_size_bytes": 30227,
+        "matches": true
+      },
+      {
+        "path": "PHASE14_BASELINE_AUDIT.md",
+        "expected_sha256": "588083e767f31b766178ccbcad16ef556170fb81aa0855690c188e33185cc602",
+        "actual_sha256": "588083e767f31b766178ccbcad16ef556170fb81aa0855690c188e33185cc602",
+        "expected_size_bytes": 5842,
+        "actual_size_bytes": 5842,
+        "matches": true
+      },
+      {
+        "path": "PHASE14_DATA_LINEAGE.md",
+        "expected_sha256": "685831989650ce441ed05a20cf09139b769315ce92c8771e80b42befeb615fb3",
+        "actual_sha256": "685831989650ce441ed05a20cf09139b769315ce92c8771e80b42befeb615fb3",
+        "expected_size_bytes": 5013,
+        "actual_size_bytes": 5013,
+        "matches": true
+      },
+      {
+        "path": "PHASE14_EXPERIMENT_PROTOCOL.md",
+        "expected_sha256": "1292e3e1b739e91e92c62dc8e2493125bd3fd7c8373b2c0d192aed9c50e789b8",
+        "actual_sha256": "1292e3e1b739e91e92c62dc8e2493125bd3fd7c8373b2c0d192aed9c50e789b8",
+        "expected_size_bytes": 5713,
+        "actual_size_bytes": 5713,
+        "matches": true
+      },
+      {
+        "path": "PHASE14_LINK_MODEL_DESIGN.md",
+        "expected_sha256": "d023847834dc5d651ef31ad0ea2f23ec9e6a22b4bd629369b61246f024588ee7",
+        "actual_sha256": "d023847834dc5d651ef31ad0ea2f23ec9e6a22b4bd629369b61246f024588ee7",
+        "expected_size_bytes": 4266,
+        "actual_size_bytes": 4266,
+        "matches": true
+      },
+      {
+        "path": "PHASE14_PARAMETER_PROVENANCE.md",
+        "expected_sha256": "6ae3653ba87598b9efd528ff5670127e34508c794dee77525422c66c7910e3b3",
+        "actual_sha256": "6ae3653ba87598b9efd528ff5670127e34508c794dee77525422c66c7910e3b3",
+        "expected_size_bytes": 4115,
+        "actual_size_bytes": 4115,
+        "matches": true
+      },
+      {
+        "path": "PHASE14_REPORT.md",
+        "expected_sha256": "17d25adba19c4b8a0bde7620350c67c9e225e3c971eeb78727b8afdce55fe339",
+        "actual_sha256": "17d25adba19c4b8a0bde7620350c67c9e225e3c971eeb78727b8afdce55fe339",
+        "expected_size_bytes": 15816,
+        "actual_size_bytes": 15816,
+        "matches": true
+      },
+      {
+        "path": "PHASE15_BASELINE_AUDIT.md",
+        "expected_sha256": "b8aaeb40550cfe9bfb9a362d708be24b4a8d4117c7d9870a5a6f9b60e3dacc05",
+        "actual_sha256": "b8aaeb40550cfe9bfb9a362d708be24b4a8d4117c7d9870a5a6f9b60e3dacc05",
+        "expected_size_bytes": 6473,
+        "actual_size_bytes": 6473,
+        "matches": true
+      },
+      {
+        "path": "PHASE15_CALIBRATION_METHOD.md",
+        "expected_sha256": "d4caf17359b6816b7507ba6a7c1549a2682a4fdb064ec5bca59942a080ec4ffd",
+        "actual_sha256": "d4caf17359b6816b7507ba6a7c1549a2682a4fdb064ec5bca59942a080ec4ffd",
+        "expected_size_bytes": 5587,
+        "actual_size_bytes": 5587,
+        "matches": true
+      },
+      {
+        "path": "PHASE15_DATA_DICTIONARY.md",
+        "expected_sha256": "bfc3ad79df6a8daf938599dbec215238971b4dff2212220233d740caa1744c81",
+        "actual_sha256": "bfc3ad79df6a8daf938599dbec215238971b4dff2212220233d740caa1744c81",
+        "expected_size_bytes": 4151,
+        "actual_size_bytes": 4151,
+        "matches": true
+      },
+      {
+        "path": "PHASE15_DATA_LINEAGE.md",
+        "expected_sha256": "ca2e47f1bd60eae27ed03525c84615ca1aed2fb0cd9f23a1ff18ffe2be54a8ad",
+        "actual_sha256": "ca2e47f1bd60eae27ed03525c84615ca1aed2fb0cd9f23a1ff18ffe2be54a8ad",
+        "expected_size_bytes": 4233,
+        "actual_size_bytes": 4233,
+        "matches": true
+      },
+      {
+        "path": "PHASE15_MEASUREMENT_PROTOCOL.md",
+        "expected_sha256": "55a04fbe47f14aeb58764e8338ca2445f20aec526ce1050c36a559e3161eb977",
+        "actual_sha256": "55a04fbe47f14aeb58764e8338ca2445f20aec526ce1050c36a559e3161eb977",
+        "expected_size_bytes": 4868,
+        "actual_size_bytes": 4868,
+        "matches": true
+      },
+      {
+        "path": "PHASE15_REPORT.md",
+        "expected_sha256": "4ff3ee13fbc2e435572e11b9d00f5dd993b28a5457358ecfd10b496b6cd6bbec",
+        "actual_sha256": "4ff3ee13fbc2e435572e11b9d00f5dd993b28a5457358ecfd10b496b6cd6bbec",
+        "expected_size_bytes": 15784,
+        "actual_size_bytes": 15784,
+        "matches": true
+      },
+      {
+        "path": "PHASE16_BASELINE_AUDIT.md",
+        "expected_sha256": "990e0dd17f667d7ac1394e52748f3db1bcdcf399759d02fbe7510d9d80d74ec5",
+        "actual_sha256": "990e0dd17f667d7ac1394e52748f3db1bcdcf399759d02fbe7510d9d80d74ec5",
+        "expected_size_bytes": 3629,
+        "actual_size_bytes": 3629,
+        "matches": true
+      },
+      {
+        "path": "PHASE16_DATA_LINEAGE.md",
+        "expected_sha256": "cf83b48c4bf93d27a9409df3fb0c80b72f9901eab317d4909b2fa5bb9c9ffb8d",
+        "actual_sha256": "cf83b48c4bf93d27a9409df3fb0c80b72f9901eab317d4909b2fa5bb9c9ffb8d",
+        "expected_size_bytes": 3085,
+        "actual_size_bytes": 3085,
+        "matches": true
+      },
+      {
+        "path": "PHASE16_EQUIPMENT_REQUIREMENTS.md",
+        "expected_sha256": "d829b1d4949723590a37319967eeefbdde7da232078e0a4a5854ad2b62adc84e",
+        "actual_sha256": "d829b1d4949723590a37319967eeefbdde7da232078e0a4a5854ad2b62adc84e",
+        "expected_size_bytes": 2500,
+        "actual_size_bytes": 2500,
+        "matches": true
+      },
+      {
+        "path": "PHASE16_REPORT.md",
+        "expected_sha256": "92f5263232bab1ab4fa220a29c5c66cd17104b7d24f0b95d4b2b4717dc4e14fe",
+        "actual_sha256": "92f5263232bab1ab4fa220a29c5c66cd17104b7d24f0b95d4b2b4717dc4e14fe",
+        "expected_size_bytes": 14102,
+        "actual_size_bytes": 14102,
+        "matches": true
+      },
+      {
+        "path": "PHASE16_UNCERTAINTY_BUDGET.md",
+        "expected_sha256": "2bbd64ef0744fd4c3ad38dd732f77d9cc74a2b4523d05d12594b656e0a155680",
+        "actual_sha256": "2bbd64ef0744fd4c3ad38dd732f77d9cc74a2b4523d05d12594b656e0a155680",
+        "expected_size_bytes": 3769,
+        "actual_size_bytes": 3769,
+        "matches": true
+      },
+      {
+        "path": "PHASE16_URBAN_MEASUREMENT_PLAN.md",
+        "expected_sha256": "3c5acc145829d65cbafdbe806f40c3baf2ff5f7c696a9cc42ebe5b8cb73827cb",
+        "actual_sha256": "3c5acc145829d65cbafdbe806f40c3baf2ff5f7c696a9cc42ebe5b8cb73827cb",
+        "expected_size_bytes": 4063,
+        "actual_size_bytes": 4063,
+        "matches": true
+      },
+      {
+        "path": "PHASE5_REPORT.md",
+        "expected_sha256": "b1c3ea3b4356722bc1cbaffe416a21fc210404f0893ce90650c0173c948d6666",
+        "actual_sha256": "b1c3ea3b4356722bc1cbaffe416a21fc210404f0893ce90650c0173c948d6666",
+        "expected_size_bytes": 19947,
+        "actual_size_bytes": 19947,
+        "matches": true
+      },
+      {
+        "path": "PHASE8_REPORT.md",
+        "expected_sha256": "af7c22ff949a2340a632b6c96da3ecd39f252a15032b34008bf3e97f656e6418",
+        "actual_sha256": "af7c22ff949a2340a632b6c96da3ecd39f252a15032b34008bf3e97f656e6418",
+        "expected_size_bytes": 42108,
+        "actual_size_bytes": 42108,
+        "matches": true
+      },
+      {
+        "path": "PHASE9_ENERGY_SENSITIVITY_REPORT.md",
+        "expected_sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+        "actual_sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+        "expected_size_bytes": 5288,
+        "actual_size_bytes": 5288,
+        "matches": true
+      },
+      {
+        "path": "PHASE9_REPORT.md",
+        "expected_sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+        "actual_sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+        "expected_size_bytes": 16851,
+        "actual_size_bytes": 16851,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_artifact_manifest.json",
+        "expected_sha256": "4942c97e97d4de538c12029854386bb50142c8c800c66f53b8772e033769940a",
+        "actual_sha256": "4942c97e97d4de538c12029854386bb50142c8c800c66f53b8772e033769940a",
+        "expected_size_bytes": 2144,
+        "actual_size_bytes": 2144,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_confirmation_event_timeline.json",
+        "expected_sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+        "actual_sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+        "expected_size_bytes": 43176040,
+        "actual_size_bytes": 43176040,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_confirmation_progress.jsonl",
+        "expected_sha256": "1c13a0c0ac9f96f46bf41b9f78ea00480f17b6e70a447a53e9bb8971e9755f94",
+        "actual_sha256": "1c13a0c0ac9f96f46bf41b9f78ea00480f17b6e70a447a53e9bb8971e9755f94",
+        "expected_size_bytes": 70913639,
+        "actual_size_bytes": 70913639,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_confirmation_raw.json",
+        "expected_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+        "actual_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+        "expected_size_bytes": 152084576,
+        "actual_size_bytes": 152084576,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_confirmation_summary.json",
+        "expected_sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+        "actual_sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+        "expected_size_bytes": 699696,
+        "actual_size_bytes": 699696,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_development_progress.jsonl",
+        "expected_sha256": "215c1cfa0d9109b959b0341efd12ba205d7474bece13d739ac4ed074ecb3fb27",
+        "actual_sha256": "215c1cfa0d9109b959b0341efd12ba205d7474bece13d739ac4ed074ecb3fb27",
+        "expected_size_bytes": 10650683,
+        "actual_size_bytes": 10650683,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_development_raw.json",
+        "expected_sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+        "actual_sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+        "expected_size_bytes": 22811864,
+        "actual_size_bytes": 22811864,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_development_summary.json",
+        "expected_sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+        "actual_sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+        "expected_size_bytes": 692260,
+        "actual_size_bytes": 692260,
+        "matches": true
+      },
+      {
+        "path": "results/phase10_uav_energy_summary.json",
+        "expected_sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+        "actual_sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+        "expected_size_bytes": 14584,
+        "actual_size_bytes": 14584,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_artifact_manifest.json",
+        "expected_sha256": "987495e83d3c965165a8b284f74e7410a344738212e6ff61638b00c7fd7cca51",
+        "actual_sha256": "987495e83d3c965165a8b284f74e7410a344738212e6ff61638b00c7fd7cca51",
+        "expected_size_bytes": 5925,
+        "actual_size_bytes": 5925,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_confirmation_progress.jsonl",
+        "expected_sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+        "actual_sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+        "expected_size_bytes": 174355200,
+        "actual_size_bytes": 174355200,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_confirmation_raw.json",
+        "expected_sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+        "actual_sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+        "expected_size_bytes": 350308579,
+        "actual_size_bytes": 350308579,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_confirmation_summary.json",
+        "expected_sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+        "actual_sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+        "expected_size_bytes": 951044,
+        "actual_size_bytes": 951044,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_delivery_audit.json",
+        "expected_sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+        "actual_sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+        "expected_size_bytes": 2434,
+        "actual_size_bytes": 2434,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_development_progress.jsonl",
+        "expected_sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+        "actual_sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+        "expected_size_bytes": 26305647,
+        "actual_size_bytes": 26305647,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_development_raw.json",
+        "expected_sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+        "actual_sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+        "expected_size_bytes": 52794746,
+        "actual_size_bytes": 52794746,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_development_summary.json",
+        "expected_sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+        "actual_sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+        "expected_size_bytes": 905594,
+        "actual_size_bytes": 905594,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_fleet_size_exploratory.json",
+        "expected_sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+        "actual_sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+        "expected_size_bytes": 45557,
+        "actual_size_bytes": 45557,
+        "matches": true
+      },
+      {
+        "path": "results/phase11_validation_evidence.txt",
+        "expected_sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+        "actual_sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+        "expected_size_bytes": 1476,
+        "actual_size_bytes": 1476,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_confirmation_raw.json",
+        "expected_sha256": "954c903d595e1acab4a351fefd63393be37f81ba2df7ab7cbc6ad2767904d211",
+        "actual_sha256": "954c903d595e1acab4a351fefd63393be37f81ba2df7ab7cbc6ad2767904d211",
+        "expected_size_bytes": 84454812,
+        "actual_size_bytes": 84454812,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_confirmation_summary.json",
+        "expected_sha256": "20a8ac1791c9f2c1f701bcba5ef4f73bc4dec501bfec0af581034786075da9a0",
+        "actual_sha256": "20a8ac1791c9f2c1f701bcba5ef4f73bc4dec501bfec0af581034786075da9a0",
+        "expected_size_bytes": 200064,
+        "actual_size_bytes": 200064,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_development_raw.json",
+        "expected_sha256": "4275cf00d723de0d0fffcae67d6171bae6b5c9b94e12143137df7265f65ad8a4",
+        "actual_sha256": "4275cf00d723de0d0fffcae67d6171bae6b5c9b94e12143137df7265f65ad8a4",
+        "expected_size_bytes": 12636025,
+        "actual_size_bytes": 12636025,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_development_summary.json",
+        "expected_sha256": "91a624a2fb94f6ca9590e5ed5e8d4347c9b370fd39dc971ec87e42da33660800",
+        "actual_sha256": "91a624a2fb94f6ca9590e5ed5e8d4347c9b370fd39dc971ec87e42da33660800",
+        "expected_size_bytes": 189719,
+        "actual_size_bytes": 189719,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_integrity_audit.json",
+        "expected_sha256": "5b745bcb06a6e7895a657c291be3e73de1f3ea7e2656c008b1b03c9aa237c3ad",
+        "actual_sha256": "5b745bcb06a6e7895a657c291be3e73de1f3ea7e2656c008b1b03c9aa237c3ad",
+        "expected_size_bytes": 24765,
+        "actual_size_bytes": 24765,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_legacy_reproduction.json",
+        "expected_sha256": "958c6a06fb5df3013b9dbc31e42cd30372bc675f1e5fbd217ade35836514cda7",
+        "actual_sha256": "958c6a06fb5df3013b9dbc31e42cd30372bc675f1e5fbd217ade35836514cda7",
+        "expected_size_bytes": 2335,
+        "actual_size_bytes": 2335,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_model_sensitivity_raw.json",
+        "expected_sha256": "0b6306bc6091fccc71431beecd06a7836df7e3b8b548d0bae25cc83b66949c83",
+        "actual_sha256": "0b6306bc6091fccc71431beecd06a7836df7e3b8b548d0bae25cc83b66949c83",
+        "expected_size_bytes": 6878505,
+        "actual_size_bytes": 6878505,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_model_sensitivity_summary.json",
+        "expected_sha256": "0cc900f859062962baf9bd135e0057654b033d7401669fe41df637fa2a879f27",
+        "actual_sha256": "0cc900f859062962baf9bd135e0057654b033d7401669fe41df637fa2a879f27",
+        "expected_size_bytes": 165579,
+        "actual_size_bytes": 165579,
+        "matches": true
+      },
+      {
+        "path": "results/phase14_validation_summary.json",
+        "expected_sha256": "e28feebfff02b84d2af1f4626decfee72aab126e81d573363d0725dacd0ff080",
+        "actual_sha256": "e28feebfff02b84d2af1f4626decfee72aab126e81d573363d0725dacd0ff080",
+        "expected_size_bytes": 3543,
+        "actual_size_bytes": 3543,
+        "matches": true
+      },
+      {
+        "path": "results/phase15_calibration_summary.json",
+        "expected_sha256": "1b221d37a0be0cfddf98e7ec56f95e8012501f2d7888d5ae30c6f19a383698ff",
+        "actual_sha256": "1b221d37a0be0cfddf98e7ec56f95e8012501f2d7888d5ae30c6f19a383698ff",
+        "expected_size_bytes": 7287,
+        "actual_size_bytes": 7287,
+        "matches": true
+      },
+      {
+        "path": "results/phase15_dataset_audit.json",
+        "expected_sha256": "d15818d27bd8801073c936b5d23ceeb16d2b5dc89916a0bc35aa3e8be82be1b5",
+        "actual_sha256": "d15818d27bd8801073c936b5d23ceeb16d2b5dc89916a0bc35aa3e8be82be1b5",
+        "expected_size_bytes": 16659,
+        "actual_size_bytes": 16659,
+        "matches": true
+      },
+      {
+        "path": "results/phase15_dataset_download_audit.json",
+        "expected_sha256": "472b4f4b5e047b83585fbe4f9a27fe7a1a7afacde2155c5d403b62bb064328c7",
+        "actual_sha256": "472b4f4b5e047b83585fbe4f9a27fe7a1a7afacde2155c5d403b62bb064328c7",
+        "expected_size_bytes": 6663,
+        "actual_size_bytes": 6663,
+        "matches": true
+      },
+      {
+        "path": "results/phase15_holdout_validation.json",
+        "expected_sha256": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+        "actual_sha256": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+        "expected_size_bytes": 10577,
+        "actual_size_bytes": 10577,
+        "matches": true
+      },
+      {
+        "path": "results/phase15_integrity_audit.json",
+        "expected_sha256": "573bebf9304c966acbd6f3d2b3e5d939d7074ae5eebfb9f90b6e26fc5a54db3e",
+        "actual_sha256": "573bebf9304c966acbd6f3d2b3e5d939d7074ae5eebfb9f90b6e26fc5a54db3e",
+        "expected_size_bytes": 38982,
+        "actual_size_bytes": 38982,
+        "matches": true
+      },
+      {
+        "path": "results/phase15_measurements_public_clean.csv",
+        "expected_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+        "actual_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+        "expected_size_bytes": 685486,
+        "actual_size_bytes": 685486,
+        "matches": true
+      },
+      {
+        "path": "results/phase15_preholdout_run_attempts.json",
+        "expected_sha256": "75dbdf9b9589f917c3f22b462f5cf6e4731297777a5b828dc3c6084b8046fa2f",
+        "actual_sha256": "75dbdf9b9589f917c3f22b462f5cf6e4731297777a5b828dc3c6084b8046fa2f",
+        "expected_size_bytes": 816,
+        "actual_size_bytes": 816,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+        "expected_sha256": "8c2382c8dcb347f66d7353233a11c63e5efdd02ef45437c53d076680495bb45d",
+        "actual_sha256": "8c2382c8dcb347f66d7353233a11c63e5efdd02ef45437c53d076680495bb45d",
+        "expected_size_bytes": 1953,
+        "actual_size_bytes": 1953,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+        "expected_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+        "actual_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+        "expected_size_bytes": 685486,
+        "actual_size_bytes": 685486,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+        "expected_sha256": "6ec328ae9a0032acfe7c566840a0080a5d2805d6f4baf5f954d56b55f49ea5a3",
+        "actual_sha256": "6ec328ae9a0032acfe7c566840a0080a5d2805d6f4baf5f954d56b55f49ea5a3",
+        "expected_size_bytes": 1841,
+        "actual_size_bytes": 1841,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+        "expected_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+        "actual_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+        "expected_size_bytes": 685486,
+        "actual_size_bytes": 685486,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/pytest_junit.xml",
+        "expected_sha256": "b87691ace8a61cff1df58c6527182b22a35ee6b9128913b9b4105cecc4fcac38",
+        "actual_sha256": "b87691ace8a61cff1df58c6527182b22a35ee6b9128913b9b4105cecc4fcac38",
+        "expected_size_bytes": 22495,
+        "actual_size_bytes": 22495,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/pytest_junit_final.xml",
+        "expected_sha256": "6436290643ed93ccc7a292edd5085451522aa4b2dfe90b67ba37d6ab160c7992",
+        "actual_sha256": "6436290643ed93ccc7a292edd5085451522aa4b2dfe90b67ba37d6ab160c7992",
+        "expected_size_bytes": 19684,
+        "actual_size_bytes": 19684,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/pytest_junit_final_v2.xml",
+        "expected_sha256": "af287e62f8a827464241e477ff4132da267b1e1a48a2a1021fd9852f96083bb4",
+        "actual_sha256": "af287e62f8a827464241e477ff4132da267b1e1a48a2a1021fd9852f96083bb4",
+        "expected_size_bytes": 19966,
+        "actual_size_bytes": 19966,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/pytest_targeted_junit.xml",
+        "expected_sha256": "5513f721da866f23b55523ecaab3c1292764393ae92bf5987319ffb4cafe2a5b",
+        "actual_sha256": "5513f721da866f23b55523ecaab3c1292764393ae92bf5987319ffb4cafe2a5b",
+        "expected_size_bytes": 6840,
+        "actual_size_bytes": 6840,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/pytest_targeted_junit_final.xml",
+        "expected_sha256": "b7c2adbcb056146b8dcd4ebd637d8e5007acc2210a4505bc30ae0cbf66dfbe13",
+        "actual_sha256": "b7c2adbcb056146b8dcd4ebd637d8e5007acc2210a4505bc30ae0cbf66dfbe13",
+        "expected_size_bytes": 4029,
+        "actual_size_bytes": 4029,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/pytest_targeted_junit_final_v2.xml",
+        "expected_sha256": "73f6ae9e56c58bfde55d42d59cd47d6b087d7dce658e9fd2e4af28498f5449b0",
+        "actual_sha256": "73f6ae9e56c58bfde55d42d59cd47d6b087d7dce658e9fd2e4af28498f5449b0",
+        "expected_size_bytes": 4311,
+        "actual_size_bytes": 4311,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/session_template_validation.json",
+        "expected_sha256": "4173eb88fe73641c25ffe7b1243bacff062c7d88af2570adb988df9bc7ba8ada",
+        "actual_sha256": "4173eb88fe73641c25ffe7b1243bacff062c7d88af2570adb988df9bc7ba8ada",
+        "expected_size_bytes": 1182,
+        "actual_size_bytes": 1182,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/session_template_validation_final.json",
+        "expected_sha256": "58df33e56cd674a088777a740444b584e19d031dd76b345c808c7401d4e36b29",
+        "actual_sha256": "58df33e56cd674a088777a740444b584e19d031dd76b345c808c7401d4e36b29",
+        "expected_size_bytes": 1430,
+        "actual_size_bytes": 1430,
+        "matches": true
+      },
+      {
+        "path": "results/phase16/session_template_validation_final_v2.json",
+        "expected_sha256": "f45b36c0215862d5e4195aba9ec44a37c2bbe867d49395ee11b990ff3ebd136f",
+        "actual_sha256": "f45b36c0215862d5e4195aba9ec44a37c2bbe867d49395ee11b990ff3ebd136f",
+        "expected_size_bytes": 1633,
+        "actual_size_bytes": 1633,
+        "matches": true
+      },
+      {
+        "path": "results/phase16_calibration_state.json",
+        "expected_sha256": "8e36ec8836e44ed4fecfe9b9ba333d2bd245701c057fbf9007a4dd0c9b6fc618",
+        "actual_sha256": "8e36ec8836e44ed4fecfe9b9ba333d2bd245701c057fbf9007a4dd0c9b6fc618",
+        "expected_size_bytes": 1547,
+        "actual_size_bytes": 1547,
+        "matches": true
+      },
+      {
+        "path": "results/phase16_environment_inventory.json",
+        "expected_sha256": "b02d92a9bfc169eee49669cb3527818de073b9a6b8fc809a580629d76ba22648",
+        "actual_sha256": "b02d92a9bfc169eee49669cb3527818de073b9a6b8fc809a580629d76ba22648",
+        "expected_size_bytes": 4535,
+        "actual_size_bytes": 4535,
+        "matches": true
+      },
+      {
+        "path": "results/phase16_exploratory_model_sensitivity_context.json",
+        "expected_sha256": "90bfeaac0665496430732a0515a5d9d048bbaaf25299e09423ff13ff007df871",
+        "actual_sha256": "90bfeaac0665496430732a0515a5d9d048bbaaf25299e09423ff13ff007df871",
+        "expected_size_bytes": 44988,
+        "actual_size_bytes": 44988,
+        "matches": true
+      },
+      {
+        "path": "results/phase16_integrity_audit.json",
+        "expected_sha256": "322c6f8aa95c6514abb798e399ab96767594998ecc09afcd2328e1059347ee50",
+        "actual_sha256": "322c6f8aa95c6514abb798e399ab96767594998ecc09afcd2328e1059347ee50",
+        "expected_size_bytes": 38407,
+        "actual_size_bytes": 38407,
+        "matches": true
+      },
+      {
+        "path": "results/phase16_measurement_readiness.json",
+        "expected_sha256": "135f25469dc0cada14b0e5932ebcc6ca57deb729f98b1816f7c8958a95f70fbf",
+        "actual_sha256": "135f25469dc0cada14b0e5932ebcc6ca57deb729f98b1816f7c8958a95f70fbf",
+        "expected_size_bytes": 5772,
+        "actual_size_bytes": 5772,
+        "matches": true
+      },
+      {
+        "path": "results/phase16_uncertainty_budget.json",
+        "expected_sha256": "9aaf01004e392f7a2dd1ee45396112b9ee79573e8e864e097ba09b60d2f62414",
+        "actual_sha256": "9aaf01004e392f7a2dd1ee45396112b9ee79573e8e864e097ba09b60d2f62414",
+        "expected_size_bytes": 6635,
+        "actual_size_bytes": 6635,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_dynamic_failures.json",
+        "expected_sha256": "34bbf277e1bd8f4ab5198a51573eb5de969a200a14d33e6c0445761ac6154dc0",
+        "actual_sha256": "34bbf277e1bd8f4ab5198a51573eb5de969a200a14d33e6c0445761ac6154dc0",
+        "expected_size_bytes": 2560517,
+        "actual_size_bytes": 2560517,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_high_load_backhaul_limit.json",
+        "expected_sha256": "83c82aa313edc565a924596c290bd55c889835ec1f749d0a1e92381abb9745ac",
+        "actual_sha256": "83c82aa313edc565a924596c290bd55c889835ec1f749d0a1e92381abb9745ac",
+        "expected_size_bytes": 2560058,
+        "actual_size_bytes": 2560058,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_high_mobility_rescue.json",
+        "expected_sha256": "afee9193f7d8062cc4fddbbfa4ba530cbf3573113962310e6603ae0248f4c89f",
+        "actual_sha256": "afee9193f7d8062cc4fddbbfa4ba530cbf3573113962310e6603ae0248f4c89f",
+        "expected_size_bytes": 2631962,
+        "actual_size_bytes": 2631962,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_pilot_dynamic_failures.json",
+        "expected_sha256": "a290a0999f235767d146c140d39827900f027c70e2a8076a88f1ca007790f884",
+        "actual_sha256": "a290a0999f235767d146c140d39827900f027c70e2a8076a88f1ca007790f884",
+        "expected_size_bytes": 2574602,
+        "actual_size_bytes": 2574602,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_pilot_high_load_backhaul_limit.json",
+        "expected_sha256": "2112b6103d075f71aa5e7483f6e933890f1a84cfe230c9a955a96b61b49466c2",
+        "actual_sha256": "2112b6103d075f71aa5e7483f6e933890f1a84cfe230c9a955a96b61b49466c2",
+        "expected_size_bytes": 2572996,
+        "actual_size_bytes": 2572996,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_pilot_high_mobility_rescue.json",
+        "expected_sha256": "7f0ed8e682d434a4bffe8fcc01cb358edc175aaa9c4d3812f039e3b517f41493",
+        "actual_sha256": "7f0ed8e682d434a4bffe8fcc01cb358edc175aaa9c4d3812f039e3b517f41493",
+        "expected_size_bytes": 2606308,
+        "actual_size_bytes": 2606308,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_pilot_severe_persistent_faults.json",
+        "expected_sha256": "ce9463c2d53d748999ebddddcc586cc9cc4ca4808a64823648df2228d9dea10b",
+        "actual_sha256": "ce9463c2d53d748999ebddddcc586cc9cc4ca4808a64823648df2228d9dea10b",
+        "expected_size_bytes": 2615358,
+        "actual_size_bytes": 2615358,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_development_severe_persistent_faults.json",
+        "expected_sha256": "6912fed9cae9648b8f5fe62428d1a00de13981171875e591059969fc0501e6a6",
+        "actual_sha256": "6912fed9cae9648b8f5fe62428d1a00de13981171875e591059969fc0501e6a6",
+        "expected_size_bytes": 2616862,
+        "actual_size_bytes": 2616862,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_failure_cases.json",
+        "expected_sha256": "3558fdc13893edafd8754109f896e83d5ecfdbfbef6ed56d0bb83f9b0a5dba80",
+        "actual_sha256": "3558fdc13893edafd8754109f896e83d5ecfdbfbef6ed56d0bb83f9b0a5dba80",
+        "expected_size_bytes": 431097,
+        "actual_size_bytes": 431097,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_frozen_manifest.json",
+        "expected_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+        "actual_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+        "expected_size_bytes": 5752,
+        "actual_size_bytes": 5752,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_integrity_audit.json",
+        "expected_sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+        "actual_sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+        "expected_size_bytes": 4748,
+        "actual_size_bytes": 4748,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_dynamic_failures.json",
+        "expected_sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+        "actual_sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+        "expected_size_bytes": 10099142,
+        "actual_size_bytes": 10099142,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_high_load_backhaul_limit.json",
+        "expected_sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+        "actual_sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+        "expected_size_bytes": 9992718,
+        "actual_size_bytes": 9992718,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_high_mobility_rescue.json",
+        "expected_sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+        "actual_sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+        "expected_size_bytes": 10252245,
+        "actual_size_bytes": 10252245,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_severe_persistent_faults.json",
+        "expected_sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+        "actual_sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+        "expected_size_bytes": 10094626,
+        "actual_size_bytes": 10094626,
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_summary.json",
+        "expected_sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+        "actual_sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+        "expected_size_bytes": 410463,
+        "actual_size_bytes": 410463,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_development_raw.json",
+        "expected_sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+        "actual_sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+        "expected_size_bytes": 70138040,
+        "actual_size_bytes": 70138040,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_development_summary.json",
+        "expected_sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+        "actual_sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+        "expected_size_bytes": 4800439,
+        "actual_size_bytes": 4800439,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_pytest_results.txt",
+        "expected_sha256": "6d5b2691cba84cfea378e4e4ca6f4e24dade79923c39eee31d7042985bba5819",
+        "actual_sha256": "6d5b2691cba84cfea378e4e4ca6f4e24dade79923c39eee31d7042985bba5819",
+        "expected_size_bytes": 102,
+        "actual_size_bytes": 102,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_replication_postprocess_audit.json",
+        "expected_sha256": "b8275fe81096ace6101320e5e91c9326b36145f34498ac293c84f80ab903f0ce",
+        "actual_sha256": "b8275fe81096ace6101320e5e91c9326b36145f34498ac293c84f80ab903f0ce",
+        "expected_size_bytes": 1393,
+        "actual_size_bytes": 1393,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_replication_raw.json",
+        "expected_sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+        "actual_sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+        "expected_size_bytes": 182754761,
+        "actual_size_bytes": 182754761,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_replication_summary.json",
+        "expected_sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+        "actual_sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+        "expected_size_bytes": 2088660,
+        "actual_size_bytes": 2088660,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_sensitivity_validation_audit.json",
+        "expected_sha256": "1851de5f88f17bc7193196a7b08671ebc8fc39a46fde3185a8e377858e49db4e",
+        "actual_sha256": "1851de5f88f17bc7193196a7b08671ebc8fc39a46fde3185a8e377858e49db4e",
+        "expected_size_bytes": 555,
+        "actual_size_bytes": 555,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_sensitivity_validation_raw.json",
+        "expected_sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+        "actual_sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+        "expected_size_bytes": 317779704,
+        "actual_size_bytes": 317779704,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_sensitivity_validation_summary.json",
+        "expected_sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+        "actual_sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+        "expected_size_bytes": 3227498,
+        "actual_size_bytes": 3227498,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_validation_raw.json",
+        "expected_sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+        "actual_sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+        "expected_size_bytes": 90927045,
+        "actual_size_bytes": 90927045,
+        "matches": true
+      },
+      {
+        "path": "results/phase8_validation_summary.json",
+        "expected_sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+        "actual_sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+        "expected_size_bytes": 2074287,
+        "actual_size_bytes": 2074287,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_artifact_manifest.json",
+        "expected_sha256": "3f1cb4da6fc6ec62ed7d0cc473869f6041777886d5c1ae0db71500747001abe0",
+        "actual_sha256": "3f1cb4da6fc6ec62ed7d0cc473869f6041777886d5c1ae0db71500747001abe0",
+        "expected_size_bytes": 6789,
+        "actual_size_bytes": 6789,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_confirmation_raw.json",
+        "expected_sha256": "7f30ae206eb016fb0ec0ae50f152df07b39745b9a026a3170218ba7e786e89fd",
+        "actual_sha256": "7f30ae206eb016fb0ec0ae50f152df07b39745b9a026a3170218ba7e786e89fd",
+        "expected_size_bytes": 44847901,
+        "actual_size_bytes": 44847901,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_confirmation_summary.json",
+        "expected_sha256": "377995a6904e792168f7614033301ac5346ed18ca0e97363848d16a7dacc3e5f",
+        "actual_sha256": "377995a6904e792168f7614033301ac5346ed18ca0e97363848d16a7dacc3e5f",
+        "expected_size_bytes": 475056,
+        "actual_size_bytes": 475056,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_confirmation_raw.json",
+        "expected_sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+        "actual_sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+        "expected_size_bytes": 53485358,
+        "actual_size_bytes": 53485358,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_confirmation_summary.json",
+        "expected_sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+        "actual_sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+        "expected_size_bytes": 471461,
+        "actual_size_bytes": 471461,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_energy_sensitivity_raw.json",
+        "expected_sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+        "actual_sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+        "expected_size_bytes": 50685599,
+        "actual_size_bytes": 50685599,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_energy_sensitivity_summary.json",
+        "expected_sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+        "actual_sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+        "expected_size_bytes": 237677,
+        "actual_size_bytes": 237677,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_event_timeline.json",
+        "expected_sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+        "actual_sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+        "expected_size_bytes": 6984204,
+        "actual_size_bytes": 6984204,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_iteration1_raw.json",
+        "expected_sha256": "a757ab9e5a79c23853f3969df9222271c7ec37f279c36dc9467356a822f86f87",
+        "actual_sha256": "a757ab9e5a79c23853f3969df9222271c7ec37f279c36dc9467356a822f86f87",
+        "expected_size_bytes": 15924519,
+        "actual_size_bytes": 15924519,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_iteration1_summary.json",
+        "expected_sha256": "18efc90081e269ea38395ef78ebff7547aff523917e3ff697edb9b6fb272dd68",
+        "actual_sha256": "18efc90081e269ea38395ef78ebff7547aff523917e3ff697edb9b6fb272dd68",
+        "expected_size_bytes": 10111,
+        "actual_size_bytes": 10111,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_pre_route_fix_raw.json",
+        "expected_sha256": "617f6d23ed721e329cc33cf210bfdea1976bd551a3aa08a2c1defe626d2f04d5",
+        "actual_sha256": "617f6d23ed721e329cc33cf210bfdea1976bd551a3aa08a2c1defe626d2f04d5",
+        "expected_size_bytes": 15766298,
+        "actual_size_bytes": 15766298,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_pre_route_fix_summary.json",
+        "expected_sha256": "b50cfef6c924ed3d8f9f7dafa202abf22f2c3681f41b0cb03c95006af067101c",
+        "actual_sha256": "b50cfef6c924ed3d8f9f7dafa202abf22f2c3681f41b0cb03c95006af067101c",
+        "expected_size_bytes": 10208,
+        "actual_size_bytes": 10208,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_raw.json",
+        "expected_sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+        "actual_sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+        "expected_size_bytes": 23760282,
+        "actual_size_bytes": 23760282,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_summary.json",
+        "expected_sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+        "actual_sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+        "expected_size_bytes": 10261,
+        "actual_size_bytes": 10261,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_event_timeline.json",
+        "expected_sha256": "0c7934aa71cd31170cb7ed7238332f9a112d9c3b13dd4f0da54c9bcb5422f42d",
+        "actual_sha256": "0c7934aa71cd31170cb7ed7238332f9a112d9c3b13dd4f0da54c9bcb5422f42d",
+        "expected_size_bytes": 1229155,
+        "actual_size_bytes": 1229155,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_initial_confirmation_status.json",
+        "expected_sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+        "actual_sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+        "expected_size_bytes": 849,
+        "actual_size_bytes": 849,
+        "matches": true
+      },
+      {
+        "path": "results/phase9_verification_summary.json",
+        "expected_sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+        "actual_sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+        "expected_size_bytes": 6307,
+        "actual_size_bytes": 6307,
+        "matches": true
+      }
+    ],
+    "phase5_current_source_snapshot_checks": [
+      {
+        "path": "src/lowalt6g/api.py",
+        "expected_phase5_sha256": "1e81b1c05c249f0f8719470a1feb549288d999e7c636f67856c8ac8030afc186",
+        "current_sha256": "0a06e09397fda7bf593ba4df14807f5c40ac8d2c63001c5c5114c17bb06012fa",
+        "matches": false,
+        "classification": "later_phase_source_drift_requires_history_context"
+      },
+      {
+        "path": "src/lowalt6g/charts.py",
+        "expected_phase5_sha256": "548136becaaf5ee44a1af051e2544b73a501fa26f41d5bc9f18fb542e6633514",
+        "current_sha256": "548136becaaf5ee44a1af051e2544b73a501fa26f41d5bc9f18fb542e6633514",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/cli.py",
+        "expected_phase5_sha256": "d4bd5b3f8dc3ada69c702e47b1a99f47cc5b5bfe5f1c9bb7808889ec37fd8d82",
+        "current_sha256": "d4bd5b3f8dc3ada69c702e47b1a99f47cc5b5bfe5f1c9bb7808889ec37fd8d82",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/config.py",
+        "expected_phase5_sha256": "231f8e5c49d4cc0f3d383057074fef97bfbd96cc456e2e78363b7dbc1129f61b",
+        "current_sha256": "231f8e5c49d4cc0f3d383057074fef97bfbd96cc456e2e78363b7dbc1129f61b",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/dynamic_config.py",
+        "expected_phase5_sha256": "404cbb0b2b1e76bb776a9431095ae2df7cc21648b099dbcad8e691eb9c709163",
+        "current_sha256": "404cbb0b2b1e76bb776a9431095ae2df7cc21648b099dbcad8e691eb9c709163",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/dynamic_simulation.py",
+        "expected_phase5_sha256": "2aa1b62f8bbef7758aaaeba3c8f8a9771320e3ed7796c42d92f790959a2faf54",
+        "current_sha256": "4ac204e579dbeec70a066fcacb5417cdf587384403a021fb7ce5a29b87e5b02c",
+        "matches": false,
+        "classification": "later_phase_source_drift_requires_history_context"
+      },
+      {
+        "path": "src/lowalt6g/dynamic_world.py",
+        "expected_phase5_sha256": "e93cb954dfa43c9c52118a3178a8904eb0737e568a6fd9213588ee8ca48104f2",
+        "current_sha256": "e93cb954dfa43c9c52118a3178a8904eb0737e568a6fd9213588ee8ca48104f2",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/energy_budget.py",
+        "expected_phase5_sha256": "5f0ef6edd0cd55cfcf499a03fd1b343ee85b78338e13c17525366c8da406decf",
+        "current_sha256": "5f0ef6edd0cd55cfcf499a03fd1b343ee85b78338e13c17525366c8da406decf",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/engine.py",
+        "expected_phase5_sha256": "b9d295e3ec1a1a7708f88b8b311995f07317029da1c5a732f1107dbaafbd4601",
+        "current_sha256": "b9d295e3ec1a1a7708f88b8b311995f07317029da1c5a732f1107dbaafbd4601",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/experiment.py",
+        "expected_phase5_sha256": "b7a88ddf1bc51436ca153fb1e9bf2b93dec4238e3da5492f742875a34012cd03",
+        "current_sha256": "b7a88ddf1bc51436ca153fb1e9bf2b93dec4238e3da5492f742875a34012cd03",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/optimizer.py",
+        "expected_phase5_sha256": "11162120c657a529db4a81649998cb00250be206935ba216458a96f988486525",
+        "current_sha256": "11162120c657a529db4a81649998cb00250be206935ba216458a96f988486525",
+        "matches": true,
+        "classification": "historical_version_match"
+      },
+      {
+        "path": "src/lowalt6g/phase5.py",
+        "expected_phase5_sha256": "73555809197d2b53073ecebb49f2cf5d77c54dbeb24b0beda4053520a9ba0e6f",
+        "current_sha256": "73555809197d2b53073ecebb49f2cf5d77c54dbeb24b0beda4053520a9ba0e6f",
+        "matches": true,
+        "classification": "historical_version_match"
+      }
+    ],
+    "phase5_source_snapshot_drift_count": 2,
+    "phase15_public_source_count": 14,
+    "phase15_public_sources_match": true,
+    "phase15_public_sources": [
+      {
+        "filename": "README!.txt",
+        "expected_sha256": "062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2",
+        "actual_sha256": "062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2",
+        "expected_size_bytes": 1898,
+        "actual_size_bytes": 1898,
+        "matches": true
+      },
+      {
+        "filename": "guidemanual.pdf",
+        "expected_sha256": "36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3",
+        "actual_sha256": "36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3",
+        "expected_size_bytes": 680251,
+        "actual_size_bytes": 680251,
+        "matches": true
+      },
+      {
+        "filename": "Farmland_10.xlsx",
+        "expected_sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+        "actual_sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+        "expected_size_bytes": 302061,
+        "actual_size_bytes": 302061,
+        "matches": true
+      },
+      {
+        "filename": "Farmland_15.xlsx",
+        "expected_sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+        "actual_sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+        "expected_size_bytes": 443749,
+        "actual_size_bytes": 443749,
+        "matches": true
+      },
+      {
+        "filename": "OverWater_10.xlsx",
+        "expected_sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+        "actual_sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+        "expected_size_bytes": 233836,
+        "actual_size_bytes": 233836,
+        "matches": true
+      },
+      {
+        "filename": "OverWater_15.xlsx",
+        "expected_sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+        "actual_sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+        "expected_size_bytes": 394136,
+        "actual_size_bytes": 394136,
+        "matches": true
+      },
+      {
+        "filename": "SportsField_10.xlsx",
+        "expected_sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+        "actual_sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+        "expected_size_bytes": 135129,
+        "actual_size_bytes": 135129,
+        "matches": true
+      },
+      {
+        "filename": "SportsField_15.xlsx",
+        "expected_sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+        "actual_sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+        "expected_size_bytes": 110564,
+        "actual_size_bytes": 110564,
+        "matches": true
+      },
+      {
+        "filename": "Farmland_PL10.mat",
+        "expected_sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd",
+        "actual_sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd",
+        "expected_size_bytes": 3614,
+        "actual_size_bytes": 3614,
+        "matches": true
+      },
+      {
+        "filename": "Farmland_PL15.mat",
+        "expected_sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4",
+        "actual_sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4",
+        "expected_size_bytes": 5698,
+        "actual_size_bytes": 5698,
+        "matches": true
+      },
+      {
+        "filename": "OverWater_PL10.mat",
+        "expected_sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a",
+        "actual_sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a",
+        "expected_size_bytes": 3516,
+        "actual_size_bytes": 3516,
+        "matches": true
+      },
+      {
+        "filename": "OverWater_PL15.mat",
+        "expected_sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20",
+        "actual_sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20",
+        "expected_size_bytes": 5441,
+        "actual_size_bytes": 5441,
+        "matches": true
+      },
+      {
+        "filename": "SportsField_PL10.mat",
+        "expected_sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9",
+        "actual_sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9",
+        "expected_size_bytes": 1890,
+        "actual_size_bytes": 1890,
+        "matches": true
+      },
+      {
+        "filename": "SportsField_PL15.mat",
+        "expected_sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89",
+        "actual_sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89",
+        "expected_size_bytes": 1594,
+        "actual_size_bytes": 1594,
+        "matches": true
+      }
+    ],
+    "artifact_manifests": {
+      "phase9": [
+        {
+          "path": "results/phase5_frozen_manifest.json",
+          "expected_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+          "actual_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 5752,
+          "matches": true
+        },
+        {
+          "path": "results/phase5_integrity_audit.json",
+          "expected_sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+          "actual_sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 4748,
+          "matches": true
+        },
+        {
+          "path": "results/phase5_validation_summary.json",
+          "expected_sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+          "actual_sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 410463,
+          "matches": true
+        },
+        {
+          "path": "results/phase5_validation_dynamic_failures.json",
+          "expected_sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+          "actual_sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 10099142,
+          "matches": true
+        },
+        {
+          "path": "results/phase5_validation_severe_persistent_faults.json",
+          "expected_sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+          "actual_sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 10094626,
+          "matches": true
+        },
+        {
+          "path": "results/phase5_validation_high_mobility_rescue.json",
+          "expected_sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+          "actual_sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 10252245,
+          "matches": true
+        },
+        {
+          "path": "results/phase5_validation_high_load_backhaul_limit.json",
+          "expected_sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+          "actual_sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 9992718,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_development_raw.json",
+          "expected_sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+          "actual_sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 70138040,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_development_summary.json",
+          "expected_sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+          "actual_sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 4800439,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_validation_raw.json",
+          "expected_sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+          "actual_sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 90927045,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_validation_summary.json",
+          "expected_sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+          "actual_sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 2074287,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_sensitivity_validation_raw.json",
+          "expected_sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+          "actual_sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 317779704,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_sensitivity_validation_summary.json",
+          "expected_sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+          "actual_sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 3227498,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_replication_raw.json",
+          "expected_sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+          "actual_sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 182754761,
+          "matches": true
+        },
+        {
+          "path": "results/phase8_replication_summary.json",
+          "expected_sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+          "actual_sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 2088660,
+          "matches": true
+        },
+        {
+          "path": "configs/phase9/validation_protocol_corrected.json",
+          "expected_sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+          "actual_sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 8740,
+          "matches": true
+        },
+        {
+          "path": "configs/phase9/experiment_plan_corrected.json",
+          "expected_sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+          "actual_sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 5328,
+          "matches": true
+        },
+        {
+          "path": "configs/phase9/energy_sensitivity_plan_corrected.json",
+          "expected_sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+          "actual_sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 2785,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_development_raw.json",
+          "expected_sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+          "actual_sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 23760282,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_development_summary.json",
+          "expected_sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+          "actual_sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 10261,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_corrected_confirmation_raw.json",
+          "expected_sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+          "actual_sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 53485358,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_corrected_confirmation_summary.json",
+          "expected_sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+          "actual_sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 471461,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_corrected_event_timeline.json",
+          "expected_sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+          "actual_sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 6984204,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_corrected_energy_sensitivity_raw.json",
+          "expected_sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+          "actual_sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 50685599,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_corrected_energy_sensitivity_summary.json",
+          "expected_sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+          "actual_sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 237677,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_verification_summary.json",
+          "expected_sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+          "actual_sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 6307,
+          "matches": true
+        },
+        {
+          "path": "results/phase9_initial_confirmation_status.json",
+          "expected_sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+          "actual_sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 849,
+          "matches": true
+        },
+        {
+          "path": "PHASE9_REPORT.md",
+          "expected_sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+          "actual_sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 16851,
+          "matches": true
+        },
+        {
+          "path": "PHASE9_ENERGY_SENSITIVITY_REPORT.md",
+          "expected_sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+          "actual_sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 5288,
+          "matches": true
+        },
+        {
+          "path": "plots/phase9_corrected/phase9_rescue_service_by_scene.png",
+          "expected_sha256": "56dcef5a446d87028afa09738d432dfdc93cc2a71465ebc08cf26a039bbe6fa5",
+          "actual_sha256": "56dcef5a446d87028afa09738d432dfdc93cc2a71465ebc08cf26a039bbe6fa5",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 113167,
+          "matches": true
+        },
+        {
+          "path": "plots/phase9_corrected/phase9_compute_by_scene.png",
+          "expected_sha256": "021c1d45ba598818ca786d8bf264b979108e6f19aaa5b9ee937b666c8b8d3025",
+          "actual_sha256": "021c1d45ba598818ca786d8bf264b979108e6f19aaa5b9ee937b666c8b8d3025",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 53865,
+          "matches": true
+        },
+        {
+          "path": "plots/phase9_corrected/phase9_energy_sensitivity.png",
+          "expected_sha256": "22f6c24cc544172740760ac5ea32850b9e36727bb52e9c3f05ee7915f42ec00a",
+          "actual_sha256": "22f6c24cc544172740760ac5ea32850b9e36727bb52e9c3f05ee7915f42ec00a",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 175969,
+          "matches": true
+        }
+      ],
+      "phase10": [
+        {
+          "path": "DEVELOPMENT_LOG_PHASE10.md",
+          "expected_sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+          "actual_sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 2761,
+          "matches": true
+        },
+        {
+          "path": "PHASE10_MODEL_DESIGN.md",
+          "expected_sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+          "actual_sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 5463,
+          "matches": true
+        },
+        {
+          "path": "PHASE10_REPORT.md",
+          "expected_sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+          "actual_sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 19849,
+          "matches": true
+        },
+        {
+          "path": "configs/phase10/multi_uav_plan.json",
+          "expected_sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+          "actual_sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 4565,
+          "matches": true
+        },
+        {
+          "path": "configs/phase10/validation_protocol.json",
+          "expected_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+          "actual_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 20611,
+          "matches": true
+        },
+        {
+          "path": "plots/phase10/confirmation_policy_comparison.png",
+          "expected_sha256": "3edb449a191729b01fc8e4fc485659bf97910022ef890872674a55dc35d89ebd",
+          "actual_sha256": "3edb449a191729b01fc8e4fc485659bf97910022ef890872674a55dc35d89ebd",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 165213,
+          "matches": true
+        },
+        {
+          "path": "plots/phase10/confirmation_policy_comparison.svg",
+          "expected_sha256": "c315ddc8065157e1c892da408c2c8aa2c749fbe25fca25082ac86a7829e3629d",
+          "actual_sha256": "c315ddc8065157e1c892da408c2c8aa2c749fbe25fca25082ac86a7829e3629d",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 176434,
+          "matches": true
+        },
+        {
+          "path": "plots/phase10/confirmation_recovery_heatmap.png",
+          "expected_sha256": "84b404f771bf82633fc77fc4174b85544ec95a8c46522550c104a40b10b9ca8d",
+          "actual_sha256": "84b404f771bf82633fc77fc4174b85544ec95a8c46522550c104a40b10b9ca8d",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 139343,
+          "matches": true
+        },
+        {
+          "path": "results/phase10_confirmation_event_timeline.json",
+          "expected_sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+          "actual_sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 43176040,
+          "matches": true
+        },
+        {
+          "path": "results/phase10_confirmation_raw.json",
+          "expected_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+          "actual_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 152084576,
+          "matches": true
+        },
+        {
+          "path": "results/phase10_confirmation_summary.json",
+          "expected_sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+          "actual_sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 699696,
+          "matches": true
+        },
+        {
+          "path": "results/phase10_development_raw.json",
+          "expected_sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+          "actual_sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 22811864,
+          "matches": true
+        },
+        {
+          "path": "results/phase10_development_summary.json",
+          "expected_sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+          "actual_sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 692260,
+          "matches": true
+        },
+        {
+          "path": "results/phase10_uav_energy_summary.json",
+          "expected_sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+          "actual_sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 14584,
+          "matches": true
+        },
+        {
+          "path": "scripts/plot_phase10_results.py",
+          "expected_sha256": "4ec37c9e201a4cac2d82481860309bde3219f2c6da1d8be723d0203c55afc21f",
+          "actual_sha256": "4ec37c9e201a4cac2d82481860309bde3219f2c6da1d8be723d0203c55afc21f",
+          "expected_size_bytes": null,
+          "actual_size_bytes": 12939,
+          "matches": true
+        }
+      ],
+      "phase11": [
+        {
+          "path": "PHASE11_REPORT.md",
+          "expected_sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+          "actual_sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+          "expected_size_bytes": 30227,
+          "actual_size_bytes": 30227,
+          "matches": true
+        },
+        {
+          "path": "PHASE11_ALGORITHM_DESIGN.md",
+          "expected_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+          "actual_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+          "expected_size_bytes": 7937,
+          "actual_size_bytes": 7937,
+          "matches": true
+        },
+        {
+          "path": "configs/phase11/benchmark_plan.json",
+          "expected_sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+          "actual_sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+          "expected_size_bytes": 6882,
+          "actual_size_bytes": 6882,
+          "matches": true
+        },
+        {
+          "path": "configs/phase11/confirmation_protocol.json",
+          "expected_sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+          "actual_sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+          "expected_size_bytes": 14708,
+          "actual_size_bytes": 14708,
+          "matches": true
+        },
+        {
+          "path": "src/lowalt6g/phase11_algorithms.py",
+          "expected_sha256": "b65835896cb580a0b6f82e2f93da5e55764e91c628cb992122841480b2ae14da",
+          "actual_sha256": "b65835896cb580a0b6f82e2f93da5e55764e91c628cb992122841480b2ae14da",
+          "expected_size_bytes": 27755,
+          "actual_size_bytes": 27755,
+          "matches": true
+        },
+        {
+          "path": "src/lowalt6g/phase11_simulation.py",
+          "expected_sha256": "ba81a4f6c5b89811a89f3b8cb03ac1e2158198d24d38d61e3deba490d31411f7",
+          "actual_sha256": "ba81a4f6c5b89811a89f3b8cb03ac1e2158198d24d38d61e3deba490d31411f7",
+          "expected_size_bytes": 23425,
+          "actual_size_bytes": 23425,
+          "matches": true
+        },
+        {
+          "path": "src/lowalt6g/phase11_experiments.py",
+          "expected_sha256": "e99fae9b4ef18094c5506ef2f3750a275cb3a8034a6714af15eddef4bb8f7c36",
+          "actual_sha256": "e99fae9b4ef18094c5506ef2f3750a275cb3a8034a6714af15eddef4bb8f7c36",
+          "expected_size_bytes": 37770,
+          "actual_size_bytes": 37770,
+          "matches": true
+        },
+        {
+          "path": "tests/test_phase11.py",
+          "expected_sha256": "152bc829451693a632ccc8f701f85a5bc97a8f482b7ec4a3e1cd424cfdb9b9d9",
+          "actual_sha256": "152bc829451693a632ccc8f701f85a5bc97a8f482b7ec4a3e1cd424cfdb9b9d9",
+          "expected_size_bytes": 5657,
+          "actual_size_bytes": 5657,
+          "matches": true
+        },
+        {
+          "path": "scripts/run_phase11_experiments.py",
+          "expected_sha256": "c111ef24c6352af78dbda5cd7ba528595727e0e9d7f5e61e4ef5bc3d7d2b0868",
+          "actual_sha256": "c111ef24c6352af78dbda5cd7ba528595727e0e9d7f5e61e4ef5bc3d7d2b0868",
+          "expected_size_bytes": 1596,
+          "actual_size_bytes": 1596,
+          "matches": true
+        },
+        {
+          "path": "scripts/summarize_phase11_fleet_size.py",
+          "expected_sha256": "5c012e61dad72c8593c85224957ea406bcc8d6738dde60ce18fd9c68379199c0",
+          "actual_sha256": "5c012e61dad72c8593c85224957ea406bcc8d6738dde60ce18fd9c68379199c0",
+          "expected_size_bytes": 5786,
+          "actual_size_bytes": 5786,
+          "matches": true
+        },
+        {
+          "path": "scripts/plot_phase11_fleet_size.py",
+          "expected_sha256": "ee4ae80d863d05cad99bb243187dcdccea267ff5a05f3a9ed663ac2082a3c764",
+          "actual_sha256": "ee4ae80d863d05cad99bb243187dcdccea267ff5a05f3a9ed663ac2082a3c764",
+          "expected_size_bytes": 2332,
+          "actual_size_bytes": 2332,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_development_raw.json",
+          "expected_sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+          "actual_sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+          "expected_size_bytes": 52794746,
+          "actual_size_bytes": 52794746,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_development_summary.json",
+          "expected_sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+          "actual_sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+          "expected_size_bytes": 905594,
+          "actual_size_bytes": 905594,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_development_progress.jsonl",
+          "expected_sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+          "actual_sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+          "expected_size_bytes": 26305647,
+          "actual_size_bytes": 26305647,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_confirmation_raw.json",
+          "expected_sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+          "actual_sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+          "expected_size_bytes": 350308579,
+          "actual_size_bytes": 350308579,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_confirmation_summary.json",
+          "expected_sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+          "actual_sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+          "expected_size_bytes": 951044,
+          "actual_size_bytes": 951044,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_confirmation_progress.jsonl",
+          "expected_sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+          "actual_sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+          "expected_size_bytes": 174355200,
+          "actual_size_bytes": 174355200,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_fleet_size_exploratory.json",
+          "expected_sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+          "actual_sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+          "expected_size_bytes": 45557,
+          "actual_size_bytes": 45557,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_delivery_audit.json",
+          "expected_sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+          "actual_sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+          "expected_size_bytes": 2434,
+          "actual_size_bytes": 2434,
+          "matches": true
+        },
+        {
+          "path": "results/phase11_validation_evidence.txt",
+          "expected_sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+          "actual_sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+          "expected_size_bytes": 1476,
+          "actual_size_bytes": 1476,
+          "matches": true
+        },
+        {
+          "path": "plots/phase11/confirmation_rescue_service.png",
+          "expected_sha256": "32b32e89e632c7b7ad2ab2c498b7c1f9d844dddece949478f98465aada470833",
+          "actual_sha256": "32b32e89e632c7b7ad2ab2c498b7c1f9d844dddece949478f98465aada470833",
+          "expected_size_bytes": 128130,
+          "actual_size_bytes": 128130,
+          "matches": true
+        },
+        {
+          "path": "plots/phase11/confirmation_rescue_service.svg",
+          "expected_sha256": "b717930ce2d75e3fa970884de9b1e3dfa2c8b35bbcdc02beeb4e545919063eab",
+          "actual_sha256": "b717930ce2d75e3fa970884de9b1e3dfa2c8b35bbcdc02beeb4e545919063eab",
+          "expected_size_bytes": 107973,
+          "actual_size_bytes": 107973,
+          "matches": true
+        },
+        {
+          "path": "plots/phase11/confirmation_compute_vs_service.png",
+          "expected_sha256": "7a73ada2759a4fe57db01ff7824478eb9ed84cf1f4e6a1fc3bb1f9cb14dd1561",
+          "actual_sha256": "7a73ada2759a4fe57db01ff7824478eb9ed84cf1f4e6a1fc3bb1f9cb14dd1561",
+          "expected_size_bytes": 193828,
+          "actual_size_bytes": 193828,
+          "matches": true
+        },
+        {
+          "path": "plots/phase11/confirmation_compute_vs_service.svg",
+          "expected_sha256": "a913bcdcd07517f77ee34698236f7523a073175d989925725298e398f47f0218",
+          "actual_sha256": "a913bcdcd07517f77ee34698236f7523a073175d989925725298e398f47f0218",
+          "expected_size_bytes": 127176,
+          "actual_size_bytes": 127176,
+          "matches": true
+        },
+        {
+          "path": "plots/phase11/fleet_size_increment.png",
+          "expected_sha256": "a508f21eff52f90abe5d9c93dd5bce2048c03536202213710b2584610cf0643e",
+          "actual_sha256": "a508f21eff52f90abe5d9c93dd5bce2048c03536202213710b2584610cf0643e",
+          "expected_size_bytes": 138516,
+          "actual_size_bytes": 138516,
+          "matches": true
+        },
+        {
+          "path": "plots/phase11/fleet_size_increment.svg",
+          "expected_sha256": "03b9c854505af9c9ff604b4e26c7a1ed9cb42dd7fd70e9186495d1ce723e19a8",
+          "actual_sha256": "03b9c854505af9c9ff604b4e26c7a1ed9cb42dd7fd70e9186495d1ce723e19a8",
+          "expected_size_bytes": 101677,
+          "actual_size_bytes": 101677,
+          "matches": true
+        }
+      ]
+    },
+    "stored_phase_audits": {
+      "phase5": {
+        "path": "results/phase5_integrity_audit.json",
+        "status": "PASS",
+        "sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927"
+      },
+      "phase8_sensitivity": {
+        "path": "results/phase8_sensitivity_validation_audit.json",
+        "status": "PASS",
+        "sha256": "1851de5f88f17bc7193196a7b08671ebc8fc39a46fde3185a8e377858e49db4e"
+      },
+      "phase8_replication": {
+        "path": "results/phase8_replication_postprocess_audit.json",
+        "status": "PASS",
+        "sha256": "b8275fe81096ace6101320e5e91c9326b36145f34498ac293c84f80ab903f0ce"
+      },
+      "phase12": {
+        "path": "results/phase12_integrity_audit.json",
+        "status": "PASS",
+        "sha256": "a13fd324781dbc1125a6137f6be98bf79a19f246c0e14b1db4758f42e32ddaf5"
+      },
+      "phase13": {
+        "path": "results/phase13_visualization_audit.json",
+        "status": "PASS",
+        "sha256": "b4b97ded117a778c46f91e8f726a9ebae9741ed6458ad28e65e76521b29a4dfb"
+      },
+      "phase14": {
+        "path": "results/phase14_integrity_audit.json",
+        "status": "PASS",
+        "sha256": "5b745bcb06a6e7895a657c291be3e73de1f3ea7e2656c008b1b03c9aa237c3ad"
+      },
+      "phase15": {
+        "path": "results/phase15_integrity_audit.json",
+        "status": "PASS",
+        "sha256": "573bebf9304c966acbd6f3d2b3e5d939d7074ae5eebfb9f90b6e26fc5a54db3e"
+      },
+      "phase16": {
+        "path": "results/phase16_integrity_audit.json",
+        "status": "PASS",
+        "sha256": "322c6f8aa95c6514abb798e399ab96767594998ecc09afcd2328e1059347ee50"
+      },
+      "phase17": {
+        "path": "results/phase17_integrity_audit.json",
+        "status": "PASS",
+        "sha256": "59678fa6a03662a2de51e6d91df86f29f97481575bf434d6818c54ec634b1b2b"
+      }
+    }
+  },
+  "experiment_evidence": {
+    "phase1": {
+      "path": "results/phase1_benchmark.json",
+      "sha256": "8db2e36c5c2d10728946ebc6498e77dc014380dbb0139669cebfe15dbf011306",
+      "phase": null,
+      "status": null,
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": null,
+      "model_scope": "abstract_6g_research_simulation_not_real_network_test"
+    },
+    "phase2": {
+      "path": "results/phase2_20_seed_results.json",
+      "sha256": "22b82563a9e2d760ef4140f9bfdb98a23174a4a1572b14d567d6fc6639d9e891",
+      "phase": null,
+      "status": null,
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": null,
+      "model_scope": "abstract_dynamic_6g_research_simulation_not_real_network_test"
+    },
+    "phase3": {
+      "path": "results/phase3_replay_seed_2026.json",
+      "sha256": "692afc0e523c2ef9a3186533657cea706acf246d015429cb806872bf677d4cf1",
+      "phase": null,
+      "status": null,
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": null,
+      "model_scope": "abstract_6g_research_simulation_not_real_network_test"
+    },
+    "phase4": {
+      "path": "results/phase4_validation_4000_4019.json",
+      "sha256": "e6feaf23b6449c74a6bfc652a7e1313ebb5d1a54083de6f9875f63df9f6b786a",
+      "phase": null,
+      "status": null,
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": "held_out_validation_frozen_algorithm",
+      "model_scope": "abstract_dynamic_6g_research_simulation_not_real_network_test"
+    },
+    "phase5": {
+      "path": "results/phase5_validation_summary.json",
+      "sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+      "phase": "validation",
+      "status": null,
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": null,
+      "model_scope": "abstract_6g_research_simulation_not_real_network_test"
+    },
+    "phase8_ablation": {
+      "path": "results/phase8_validation_summary.json",
+      "sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+      "phase": "validation",
+      "status": "complete",
+      "seed_count_total": 40,
+      "policy_run_count": 680,
+      "scene_count": null,
+      "experiment_role": "confirmatory_held_out_not_used_for_tuning",
+      "model_scope": null
+    },
+    "phase8_sensitivity": {
+      "path": "results/phase8_sensitivity_validation_summary.json",
+      "sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+      "phase": "validation",
+      "status": "complete",
+      "seed_count_total": 80,
+      "policy_run_count": 2000,
+      "scene_count": null,
+      "experiment_role": "independent_confirmatory_parameter_sensitivity",
+      "model_scope": null
+    },
+    "phase9": {
+      "path": "results/phase9_corrected_confirmation_summary.json",
+      "sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+      "phase": "confirmation",
+      "status": "complete",
+      "seed_count_total": 80,
+      "policy_run_count": 480,
+      "scene_count": 4,
+      "experiment_role": "confirmatory_held_out_not_used_for_tuning",
+      "model_scope": null
+    },
+    "phase10": {
+      "path": "results/phase10_confirmation_summary.json",
+      "sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+      "phase": "phase10_multi_uav_coordination",
+      "status": "complete",
+      "seed_count_total": 80,
+      "policy_run_count": 400,
+      "scene_count": 4,
+      "experiment_role": "confirmatory_held_out",
+      "model_scope": null
+    },
+    "phase11": {
+      "path": "results/phase11_confirmation_summary.json",
+      "sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+      "phase": "phase11_baseline_benchmark",
+      "status": "complete",
+      "seed_count_total": 80,
+      "policy_run_count": 880,
+      "scene_count": null,
+      "experiment_role": "confirmatory_held_out",
+      "model_scope": "abstract_6g_research_simulation_not_real_network_test"
+    },
+    "phase14": {
+      "path": "results/phase14_confirmation_summary.json",
+      "sha256": "20a8ac1791c9f2c1f701bcba5ef4f73bc4dec501bfec0af581034786075da9a0",
+      "phase": "phase14_radio_link_model",
+      "status": null,
+      "seed_count_total": null,
+      "policy_run_count": 480,
+      "scene_count": 4,
+      "experiment_role": null,
+      "model_scope": null
+    },
+    "phase15": {
+      "path": "results/phase15_holdout_validation.json",
+      "sha256": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+      "phase": "phase15_public_a2g_holdout_validation",
+      "status": "EVALUATED",
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": null,
+      "model_scope": null
+    },
+    "phase16": {
+      "path": "results/phase16_measurement_readiness.json",
+      "sha256": "135f25469dc0cada14b0e5932ebcc6ca57deb729f98b1816f7c8958a95f70fbf",
+      "phase": "phase16_field_measurement_readiness",
+      "status": "NOT_READY_FOR_FIELD_MEASUREMENT",
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": null,
+      "model_scope": null
+    },
+    "phase17": {
+      "path": "results/phase17_validation_summary.json",
+      "sha256": "39f1ddf0954d973531afbf634a5b8bcb4bb31fc4992aaa9a8e88a6896640b7aa",
+      "phase": "phase17_hil_validation_framework",
+      "status": "PASS",
+      "seed_count_total": null,
+      "policy_run_count": null,
+      "scene_count": null,
+      "experiment_role": "software_closed_loop_and_offline_replay_validation_not_real_hil",
+      "model_scope": "abstract_6g_research_simulation_not_real_network_test"
+    }
+  },
+  "raw_experiment_count_audit": {
+    "status": "PASS",
+    "checks": [
+      {
+        "experiment": "phase1 single-seed benchmark",
+        "path": "results/phase1_benchmark.json",
+        "observed": 1,
+        "expected": 1,
+        "matches": true,
+        "note": "one configured seed; not a statistical sample"
+      },
+      {
+        "experiment": "phase2 seed runs",
+        "path": "results/phase2_20_seed_results.json",
+        "observed": 20,
+        "expected": 20,
+        "matches": true,
+        "note": "20 seeds, 3 strategies"
+      },
+      {
+        "experiment": "phase3 replay frames",
+        "path": "results/phase3_replay_seed_2026.json",
+        "observed": 61,
+        "expected": 61,
+        "matches": true,
+        "note": "single seed replay; not independent trials"
+      },
+      {
+        "experiment": "phase4 held-out seeds",
+        "path": "results/phase4_validation_4000_4019.json",
+        "observed": 20,
+        "expected": 20,
+        "matches": true,
+        "note": "20 validation seeds; shared traces across four strategies"
+      },
+      {
+        "experiment": "phase5 held-out strategy runs",
+        "path": "results/phase5_validation_*.json",
+        "observed": 400,
+        "expected": 400,
+        "matches": true,
+        "note": "4 scenarios x 20 seeds x 5 strategies"
+      },
+      {
+        "experiment": "phase5 per-scene seeds",
+        "path": "results/phase5_validation_*.json",
+        "observed": {
+          "severe_persistent_faults": {
+            "seeds": 20,
+            "strategy_counts": [
+              5
+            ]
+          },
+          "dynamic_failures": {
+            "seeds": 20,
+            "strategy_counts": [
+              5
+            ]
+          },
+          "high_mobility_rescue": {
+            "seeds": 20,
+            "strategy_counts": [
+              5
+            ]
+          },
+          "high_load_backhaul_limit": {
+            "seeds": 20,
+            "strategy_counts": [
+              5
+            ]
+          }
+        },
+        "expected": "20 seeds and 5 strategies per scenario",
+        "matches": true,
+        "note": "raw files retain per-seed results"
+      },
+      {
+        "experiment": "phase8 ablation raw records",
+        "path": "results/phase8_validation_raw.json",
+        "observed": 40,
+        "expected": 40,
+        "matches": true,
+        "note": "record = one scenario/seed world trace"
+      },
+      {
+        "experiment": "phase8 ablation raw strategy/variant runs",
+        "path": "results/phase8_validation_raw.json",
+        "observed": 680,
+        "expected": 680,
+        "matches": true,
+        "note": "counted from baseline_strategy_runs + variant_runs in each raw record"
+      },
+      {
+        "experiment": "phase8 ablation scenario seed allocation",
+        "path": "results/phase8_validation_raw.json",
+        "observed": {
+          "severe_persistent_faults": 10,
+          "dynamic_failures": 10,
+          "high_mobility_rescue": 10,
+          "high_load_backhaul_limit": 10
+        },
+        "expected": "balanced across 4 scenarios",
+        "matches": true,
+        "note": "all policies within each record share its world_trace_sha256"
+      },
+      {
+        "experiment": "phase8 sensitivity raw records",
+        "path": "results/phase8_sensitivity_validation_raw.json",
+        "observed": 80,
+        "expected": 80,
+        "matches": true,
+        "note": "record = one scenario/seed world trace"
+      },
+      {
+        "experiment": "phase8 sensitivity raw strategy/variant runs",
+        "path": "results/phase8_sensitivity_validation_raw.json",
+        "observed": 2000,
+        "expected": 2000,
+        "matches": true,
+        "note": "counted from baseline_strategy_runs + variant_runs in each raw record"
+      },
+      {
+        "experiment": "phase8 sensitivity scenario seed allocation",
+        "path": "results/phase8_sensitivity_validation_raw.json",
+        "observed": {
+          "severe_persistent_faults": 20,
+          "dynamic_failures": 20,
+          "high_mobility_rescue": 20,
+          "high_load_backhaul_limit": 20
+        },
+        "expected": "balanced across 4 scenarios",
+        "matches": true,
+        "note": "all policies within each record share its world_trace_sha256"
+      },
+      {
+        "experiment": "phase9 corrected confirmation seed traces",
+        "path": "results/phase9_corrected_confirmation_raw.json",
+        "observed": 80,
+        "expected": 80,
+        "matches": true,
+        "note": "4 scenarios x 20 held-out seeds"
+      },
+      {
+        "experiment": "phase9 corrected confirmation strategy runs",
+        "path": "results/phase9_corrected_confirmation_raw.json",
+        "observed": 480,
+        "expected": 480,
+        "matches": true,
+        "note": "6 strategies per matched seed"
+      },
+      {
+        "experiment": "phase9 corrected confirmation trace pairing",
+        "path": "results/phase9_corrected_confirmation_raw.json",
+        "observed": 80,
+        "expected": 80,
+        "matches": true,
+        "note": "one shared trace hash per scenario/seed record"
+      },
+      {
+        "experiment": "phase10 confirmation seed traces",
+        "path": "results/phase10_confirmation_raw.json",
+        "observed": 80,
+        "expected": 80,
+        "matches": true,
+        "note": "4 scenarios x 20 held-out seeds"
+      },
+      {
+        "experiment": "phase10 confirmation strategy runs",
+        "path": "results/phase10_confirmation_raw.json",
+        "observed": 400,
+        "expected": 400,
+        "matches": true,
+        "note": "5 strategies per matched seed"
+      },
+      {
+        "experiment": "phase10 confirmation trace pairing",
+        "path": "results/phase10_confirmation_raw.json",
+        "observed": 80,
+        "expected": 80,
+        "matches": true,
+        "note": "one shared trace hash per scenario/seed record"
+      },
+      {
+        "experiment": "phase11 policy rows",
+        "path": "results/phase11_confirmation_raw.json",
+        "observed": 880,
+        "expected": 880,
+        "matches": true,
+        "note": "80 matched scenario/seed pairs x 11 policy configurations"
+      },
+      {
+        "experiment": "phase11 matched seed groups",
+        "path": "results/phase11_confirmation_raw.json",
+        "observed": {
+          "groups": 80,
+          "policy_counts": [
+            11
+          ]
+        },
+        "expected": {
+          "groups": 80,
+          "policy_count": 11
+        },
+        "matches": true,
+        "note": "world trace equality is also recorded in Phase 11 delivery audit"
+      },
+      {
+        "experiment": "phase14 model-policy runs",
+        "path": "results/phase14_confirmation_raw.json",
+        "observed": 480,
+        "expected": 480,
+        "matches": true,
+        "note": "80 matched scenario/seed traces x 6 policy/model combinations"
+      },
+      {
+        "experiment": "phase14 paired model traces",
+        "path": "results/phase14_confirmation_raw.json",
+        "observed": 80,
+        "expected": 80,
+        "matches": true,
+        "note": "within each scenario/seed, strategies and both link models share one trace"
+      },
+      {
+        "experiment": "phase15 public-data holdout rows",
+        "path": "results/phase15_holdout_validation.json",
+        "observed": 570,
+        "expected": 570,
+        "matches": true,
+        "note": "public 3.6 GHz A2G holdout data; not project-device calibration"
+      },
+      {
+        "experiment": "phase16 project device measurements",
+        "path": "results/phase16_measurement_readiness.json",
+        "observed": 0,
+        "expected": 0,
+        "matches": true,
+        "note": "status must remain NOT_READY_FOR_FIELD_MEASUREMENT"
+      },
+      {
+        "experiment": "phase17 discrete replay frames",
+        "path": "results/phase17_validation_summary.json",
+        "observed": 61,
+        "expected": 61,
+        "matches": true,
+        "note": "saved Phase 6 replay; no interpolation"
+      },
+      {
+        "experiment": "phase17 software fault cases",
+        "path": "results/phase17_validation_summary.json",
+        "observed": 21,
+        "expected": 21,
+        "matches": true,
+        "note": "software-only safety and contract cases"
+      }
+    ],
+    "check_count": 26,
+    "failed_checks": []
+  },
+  "warnings": [
+    "2 Phase 5 source snapshots differ from current evolving source files; frozen data hashes are checked separately"
+  ],
+  "errors": []
+}

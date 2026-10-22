@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "frozen_manifest_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+  "protocol_revision": "phase5-v2-corrected-dynamic-initial-service",
+  "scenario_count": 4,
+  "held_out_seed_count": 80,
+  "strategy_run_count": 400,
+  "failure_or_not_sustained_case_count": 147,
+  "issues": [],
+  "scenarios": {
+    "severe_persistent_faults": {
+      "validation_runs": 20,
+      "seed_range": [
+        7000,
+        7019
+      ],
+      "validation_seeds": [
+        7000,
+        7001,
+        7002,
+        7003,
+        7004,
+        7005,
+        7006,
+        7007,
+        7008,
+        7009,
+        7010,
+        7011,
+        7012,
+        7013,
+        7014,
+        7015,
+        7016,
+        7017,
+        7018,
+        7019
+      ],
+      "development_seed_count": 5,
+      "development_validation_overlap": [],
+      "environment_event_counts": {
+        "user_mobility_update": 1200
+      },
+      "minimum_observed_battery_wh": 404.666667,
+      "reserve_wh": 50.0,
+      "maximum_movement_to_speed_limit_ratio": 1.0,
+      "planned_sortie_decision_count": 390,
+      "minimum_planned_reserve_margin_wh": 250.187832,
+      "maximum_event_energy_reconciliation_error_wh": 7.6e-07,
+      "B_and_Bprime_outcome_metrics_identical": true,
+      "failure_or_not_sustained_runs": 20
+    },
+    "dynamic_failures": {
+      "validation_runs": 20,
+      "seed_range": [
+        7020,
+        7039
+      ],
+      "validation_seeds": [
+        7020,
+        7021,
+        7022,
+        7023,
+        7024,
+        7025,
+        7026,
+        7027,
+        7028,
+        7029,
+        7030,
+        7031,
+        7032,
+        7033,
+        7034,
+        7035,
+        7036,
+        7037,
+        7038,
+        7039
+      ],
+      "development_seed_count": 5,
+      "development_validation_overlap": [],
+      "environment_event_counts": {
+        "user_mobility_update": 1200,
+        "station_failure": 40,
+        "backhaul_failure": 20,
+        "backhaul_recovery": 20,
+        "station_recovery": 40
+      },
+      "minimum_observed_battery_wh": 436.333333,
+      "reserve_wh": 50.0,
+      "maximum_movement_to_speed_limit_ratio": 1.0,
+      "planned_sortie_decision_count": 354,
+      "minimum_planned_reserve_margin_wh": 261.054272,
+      "maximum_event_energy_reconciliation_error_wh": 5e-07,
+      "B_and_Bprime_outcome_metrics_identical": true,
+      "failure_or_not_sustained_runs": 85
+    },
+    "high_mobility_rescue": {
+      "validation_runs": 20,
+      "seed_range": [
+        7040,
+        7059
+      ],
+      "validation_seeds": [
+        7040,
+        7041,
+        7042,
+        7043,
+        7044,
+        7045,
+        7046,
+        7047,
+        7048,
+        7049,
+        7050,
+        7051,
+        7052,
+        7053,
+        7054,
+        7055,
+        7056,
+        7057,
+        7058,
+        7059
+      ],
+      "development_seed_count": 5,
+      "development_validation_overlap": [],
+      "environment_event_counts": {
+        "user_mobility_update": 1200,
+        "user_mobility_change": 40
+      },
+      "minimum_observed_battery_wh": 404.666667,
+      "reserve_wh": 50.0,
+      "maximum_movement_to_speed_limit_ratio": 1.0,
+      "planned_sortie_decision_count": 427,
+      "minimum_planned_reserve_margin_wh": 241.617137,
+      "maximum_event_energy_reconciliation_error_wh": 7.6e-07,
+      "B_and_Bprime_outcome_metrics_identical": true,
+      "failure_or_not_sustained_runs": 22
+    },
+    "high_load_backhaul_limit": {
+      "validation_runs": 20,
+      "seed_range": [
+        7060,
+        7079
+      ],
+      "validation_seeds": [
+        7060,
+        7061,
+        7062,
+        7063,
+        7064,
+        7065,
+        7066,
+        7067,
+        7068,
+        7069,
+        7070,
+        7071,
+        7072,
+        7073,
+        7074,
+        7075,
+        7076,
+        7077,
+        7078,
+        7079
+      ],
+      "development_seed_count": 5,
+      "development_validation_overlap": [],
+      "environment_event_counts": {
+        "user_mobility_update": 1200,
+        "traffic_change": 80,
+        "backhaul_capacity_change": 40
+      },
+      "minimum_observed_battery_wh": 404.666667,
+      "reserve_wh": 50.0,
+      "maximum_movement_to_speed_limit_ratio": 1.0,
+      "planned_sortie_decision_count": 383,
+      "minimum_planned_reserve_margin_wh": 255.138593,
+      "maximum_event_energy_reconciliation_error_wh": 7.5e-07,
+      "B_and_Bprime_outcome_metrics_identical": true,
+      "failure_or_not_sustained_runs": 20
+    }
+  }
+}

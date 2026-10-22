@@ -1,0 +1,921 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase17_preimplementation_protected_baseline",
+  "created_before_phase17_changes": true,
+  "branch": "phase17-hil-validation-framework",
+  "head": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+  "dirty_entry_count_at_capture": 232,
+  "protected_file_count": 182,
+  "files": [
+    {
+      "path": "configs/phase10/multi_uav_plan.json",
+      "sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+      "size_bytes": 4565
+    },
+    {
+      "path": "configs/phase10/validation_protocol.json",
+      "sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+      "size_bytes": 20611
+    },
+    {
+      "path": "configs/phase11/benchmark_plan.json",
+      "sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+      "size_bytes": 6882
+    },
+    {
+      "path": "configs/phase11/confirmation_protocol.json",
+      "sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+      "size_bytes": 14708
+    },
+    {
+      "path": "configs/phase14/confirmation_protocol.json",
+      "sha256": "1f4a7330ec24b333a1e0cced82520eca4d39dca8b6651ac336176e124861ae53",
+      "size_bytes": 3326
+    },
+    {
+      "path": "configs/phase14/experiment_plan.json",
+      "sha256": "9b3afc796405e5b4378110c4e4e8f9e358ecc946fd4ce5090f5a7cbd1a17feae",
+      "size_bytes": 2715
+    },
+    {
+      "path": "configs/phase14/link_budget_v1.toml",
+      "sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+      "size_bytes": 1097
+    },
+    {
+      "path": "configs/phase15/calibration_protocol.json",
+      "sha256": "6cc291ee4ffce92498205d166f840b165ba90821ce737c56a56b05bab0ef9a26",
+      "size_bytes": 2119
+    },
+    {
+      "path": "configs/phase15/calibration_protocol_v2.json",
+      "sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62",
+      "size_bytes": 3158
+    },
+    {
+      "path": "configs/phase15/confirmation_freeze.json",
+      "sha256": "1b21715f741eb13c0edb49efac0d5d010dada63614759e25a547a83adc40bad1",
+      "size_bytes": 3423
+    },
+    {
+      "path": "configs/phase15/confirmation_freeze_v2.json",
+      "sha256": "aa16c5071207067bc93d78ac7a30b4074e709fba18f83656a3b6fee7d239a257",
+      "size_bytes": 3784
+    },
+    {
+      "path": "configs/phase15/protected_artifacts_baseline.json",
+      "sha256": "0f8001b9e8d6311cd7a2a7b50501b52b187e3078c6bdc01dba4ccc2a6ed0d00b",
+      "size_bytes": 16820
+    },
+    {
+      "path": "configs/phase15/public_dataset_manifest.json",
+      "sha256": "0826941fa206a6678b809799458442576549357d53d6b66c57cbc181e6521e68",
+      "size_bytes": 4720
+    },
+    {
+      "path": "configs/phase16/acceptance_criteria_template.json",
+      "sha256": "ea507c0ec5279e2abe54372485fbe2d9db9db96e0e5ad65c73a57a9bf122802a",
+      "size_bytes": 506
+    },
+    {
+      "path": "configs/phase16/measurement_session_template.json",
+      "sha256": "93612b9e481f7e0be3a632e35dab04d1660387eccb344ab954c343cb3c5c15e6",
+      "size_bytes": 1304
+    },
+    {
+      "path": "configs/phase16/public_dataset_metadata.json",
+      "sha256": "67e926d76c061d016cb0d871834db39a00e5b5c22bbaf189fe628738587dbdd3",
+      "size_bytes": 542
+    },
+    {
+      "path": "configs/phase16/urban_measurement_plan.json",
+      "sha256": "872d6482269817f525a728cf2fa1cbf8a2ea1193df0dbe9a9bddf3e5ddcb7fde",
+      "size_bytes": 4349
+    },
+    {
+      "path": "configs/phase5/dynamic_failure_base.toml",
+      "sha256": "889bc71a89fbe90e9ab84164050df1d4ef93588b257f6afcf9f35d31af3d7244",
+      "size_bytes": 1031
+    },
+    {
+      "path": "configs/phase5/dynamic_failures.toml",
+      "sha256": "4b21a21525d9ef5557a40ef36a07451c0a56cdeb029230859dace620a4b548a4",
+      "size_bytes": 1433
+    },
+    {
+      "path": "configs/phase5/high_load_backhaul_limit.toml",
+      "sha256": "1bad9cfcb1d0b63904e256fa1f92c7a5e85eee3f191e0d387b2059beec0bf9ab",
+      "size_bytes": 1549
+    },
+    {
+      "path": "configs/phase5/high_mobility_rescue.toml",
+      "sha256": "a7b0aad9fd503b6f6e7171ece4ab787c9f28b12ba69b04f03e3511d163a48fa8",
+      "size_bytes": 1214
+    },
+    {
+      "path": "configs/phase5/severe_persistent_faults.toml",
+      "sha256": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c",
+      "size_bytes": 979
+    },
+    {
+      "path": "configs/phase8/ablation_plan.json",
+      "sha256": "f2c469eaded74a73880fbad7fec1e15bba4397bd622e9d8034023195ed80d0fe",
+      "size_bytes": 3816
+    },
+    {
+      "path": "configs/phase8/algorithm_mechanism_audit.json",
+      "sha256": "2c0dcc8f16cebcfb04a8d812e8c4653959e6c34d3e1bcbd7bdb2ca134aa39976",
+      "size_bytes": 4366
+    },
+    {
+      "path": "configs/phase8/experiment_plan.json",
+      "sha256": "5c8e95a0c8d66ac230afcdee7d5208ce9ec9d748f2f2610cdea90d1b63202ae4",
+      "size_bytes": 9554
+    },
+    {
+      "path": "configs/phase8/replication_protocol.json",
+      "sha256": "c8d2fd5067d6cf0959b5d43fa512f4e3ca74c4f0b6b5439d2b2b494bc983b07f",
+      "size_bytes": 5973
+    },
+    {
+      "path": "configs/phase8/sensitivity_plan.json",
+      "sha256": "ef0b589ab09a5e29ebc42e12ec2fdaf6c7f2495381b42f15275a16b7bda61e16",
+      "size_bytes": 3688
+    },
+    {
+      "path": "configs/phase8/sensitivity_validation_protocol.json",
+      "sha256": "7ba6453a05365c99b6faa64bf2752f0aca4dffcaa757694ba620011b6502534e",
+      "size_bytes": 6866
+    },
+    {
+      "path": "configs/phase8/validation_protocol.json",
+      "sha256": "f56aa866aaea42b544d0d80ac78acc925c2c3a3e6473abfe331f9085e71fb02e",
+      "size_bytes": 4563
+    },
+    {
+      "path": "configs/phase9/dynamic_failures_development.toml",
+      "sha256": "b0f49834eedbe3b2eda7140be0d24ccf99debccc39d5606f308c2e878ec3d30b",
+      "size_bytes": 1659
+    },
+    {
+      "path": "configs/phase9/dynamic_failures_validation.toml",
+      "sha256": "1b4bd7a4c421086830fd879f705202659a731cf04a81f20bcb03467540e3889c",
+      "size_bytes": 1660
+    },
+    {
+      "path": "configs/phase9/energy_sensitivity_plan.json",
+      "sha256": "f28b1ebcaf5a38625c5310b3392f27665ed689cebef327947d8c84dc9b28c243",
+      "size_bytes": 2381
+    },
+    {
+      "path": "configs/phase9/energy_sensitivity_plan_corrected.json",
+      "sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+      "size_bytes": 2785
+    },
+    {
+      "path": "configs/phase9/experiment_plan.json",
+      "sha256": "34cf16f8d5bb8b99c12c2ba18e6ed1b81b73dac95ecb0e79944c1e73a938e51d",
+      "size_bytes": 3901
+    },
+    {
+      "path": "configs/phase9/experiment_plan_corrected.json",
+      "sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+      "size_bytes": 5328
+    },
+    {
+      "path": "configs/phase9/high_load_backhaul_limit_validation.toml",
+      "sha256": "8efe6f214b2a321e02b534c238cd455650baa85cd705bc22c7d895611de73b0f",
+      "size_bytes": 1636
+    },
+    {
+      "path": "configs/phase9/high_mobility_rescue_validation.toml",
+      "sha256": "b6b0a61cdcb44a600bb075ca18a2c6ea262ccea994321b080f1b68b7b180fa3a",
+      "size_bytes": 1297
+    },
+    {
+      "path": "configs/phase9/severe_persistent_faults_validation.toml",
+      "sha256": "5d7c461e830d16aab9b2d03d1d770e57c863918f14555938869c61fb6ca7af76",
+      "size_bytes": 1066
+    },
+    {
+      "path": "configs/phase9/validation_protocol.json",
+      "sha256": "643c632a1db6aa3347710d6db06e834d8348b85d1d7073b13178ba3033d3dd3e",
+      "size_bytes": 8322
+    },
+    {
+      "path": "configs/phase9/validation_protocol_corrected.json",
+      "sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+      "size_bytes": 8740
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_10.xlsx",
+      "sha256": "07eb1f0ac6ad7be8b6588855fe525c96fbe13911c3c2fb7529f0d18915a5ad0a",
+      "size_bytes": 302061
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_15.xlsx",
+      "sha256": "bd4cbfb4d90c86692125eb3534bacd36daa7a5fb53f1b1515b590284c03d08d8",
+      "size_bytes": 443749
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_PL10.mat",
+      "sha256": "36b986462229ba1c90474fc6effd852011dc22e951e15af09ff115da1217ebfd",
+      "size_bytes": 3614
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/Farmland_PL15.mat",
+      "sha256": "a6418b0c429c525c95cff2ace624eb4defe3da83d0c1c3b9ebbcd57f48b6fda4",
+      "size_bytes": 5698
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/guidemanual.pdf",
+      "sha256": "36f6b57622ce84abc4516e12feda37500fbb4b7e3131bb74126286deffec4cd3",
+      "size_bytes": 680251
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_10.xlsx",
+      "sha256": "32997372cb9a24c57629ef2f9937115e974795af28ed041e3652b531000ad23c",
+      "size_bytes": 233836
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_15.xlsx",
+      "sha256": "1f28cd7cf6bbabc55e3b64f1d3fc985462cdf1ec67e8867b73ca878057c68cad",
+      "size_bytes": 394136
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_PL10.mat",
+      "sha256": "c03cf9ec7ad540762dbd264c590778180841ec22492b4e792a69630de214a04a",
+      "size_bytes": 3516
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/OverWater_PL15.mat",
+      "sha256": "778e9f5cb700bfc5dcb1c47d1e852af897f6668e8374510d6679ced59b979b20",
+      "size_bytes": 5441
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/README!.txt",
+      "sha256": "062d98085b52f8b5d962289415ef7e211b4bf4e4ef78f158ee480f342eaff4b2",
+      "size_bytes": 1898
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_10.xlsx",
+      "sha256": "df32ae84531abd909271ccb9c640546fadb66813058823a7dad3075d993e47f4",
+      "size_bytes": 135129
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_15.xlsx",
+      "sha256": "3921def971d69c684160b4a117d0e4ac76626e03d3f1d0a55db2c9cc563706fd",
+      "size_bytes": 110564
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_PL10.mat",
+      "sha256": "4d2f213e392059e574ba7a05066d986e8c528a0f347dfa5205b34a92649023d9",
+      "size_bytes": 1890
+    },
+    {
+      "path": "data/phase15/raw/mendeley_8p6r8ft4fz_v2/SportsField_PL15.mat",
+      "sha256": "b4c876170dd54fe68cd8fe1714de7baa52408a8d7690fce94a1b9b724c99cc89",
+      "size_bytes": 1594
+    },
+    {
+      "path": "DEVELOPMENT_LOG_PHASE10.md",
+      "sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+      "size_bytes": 2761
+    },
+    {
+      "path": "DEVELOPMENT_LOG_PHASE15.md",
+      "sha256": "59c13725fba18c60666c35be8c0ef8bb9be5aad05170f425a8784780c6a1eb10",
+      "size_bytes": 2381
+    },
+    {
+      "path": "DEVELOPMENT_LOG_PHASE16.md",
+      "sha256": "4ef90d70c8de71eccb0fee455c9f0635c16d5db984cc8d3f6b94c99a92817a43",
+      "size_bytes": 4020
+    },
+    {
+      "path": "DEVELOPMENT_LOG_PHASE8.md",
+      "sha256": "0e951f69053441957972a7c2058261e9ac5b15d7695bfb550223a1f0e41699e2",
+      "size_bytes": 6607
+    },
+    {
+      "path": "PHASE10_MODEL_DESIGN.md",
+      "sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+      "size_bytes": 5463
+    },
+    {
+      "path": "PHASE10_REPORT.md",
+      "sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+      "size_bytes": 19849
+    },
+    {
+      "path": "PHASE11_ALGORITHM_DESIGN.md",
+      "sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+      "size_bytes": 7937
+    },
+    {
+      "path": "PHASE11_REPORT.md",
+      "sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+      "size_bytes": 30227
+    },
+    {
+      "path": "PHASE14_BASELINE_AUDIT.md",
+      "sha256": "588083e767f31b766178ccbcad16ef556170fb81aa0855690c188e33185cc602",
+      "size_bytes": 5842
+    },
+    {
+      "path": "PHASE14_DATA_LINEAGE.md",
+      "sha256": "685831989650ce441ed05a20cf09139b769315ce92c8771e80b42befeb615fb3",
+      "size_bytes": 5013
+    },
+    {
+      "path": "PHASE14_EXPERIMENT_PROTOCOL.md",
+      "sha256": "1292e3e1b739e91e92c62dc8e2493125bd3fd7c8373b2c0d192aed9c50e789b8",
+      "size_bytes": 5713
+    },
+    {
+      "path": "PHASE14_LINK_MODEL_DESIGN.md",
+      "sha256": "d023847834dc5d651ef31ad0ea2f23ec9e6a22b4bd629369b61246f024588ee7",
+      "size_bytes": 4266
+    },
+    {
+      "path": "PHASE14_PARAMETER_PROVENANCE.md",
+      "sha256": "6ae3653ba87598b9efd528ff5670127e34508c794dee77525422c66c7910e3b3",
+      "size_bytes": 4115
+    },
+    {
+      "path": "PHASE14_REPORT.md",
+      "sha256": "17d25adba19c4b8a0bde7620350c67c9e225e3c971eeb78727b8afdce55fe339",
+      "size_bytes": 15816
+    },
+    {
+      "path": "PHASE15_BASELINE_AUDIT.md",
+      "sha256": "b8aaeb40550cfe9bfb9a362d708be24b4a8d4117c7d9870a5a6f9b60e3dacc05",
+      "size_bytes": 6473
+    },
+    {
+      "path": "PHASE15_CALIBRATION_METHOD.md",
+      "sha256": "d4caf17359b6816b7507ba6a7c1549a2682a4fdb064ec5bca59942a080ec4ffd",
+      "size_bytes": 5587
+    },
+    {
+      "path": "PHASE15_DATA_DICTIONARY.md",
+      "sha256": "bfc3ad79df6a8daf938599dbec215238971b4dff2212220233d740caa1744c81",
+      "size_bytes": 4151
+    },
+    {
+      "path": "PHASE15_DATA_LINEAGE.md",
+      "sha256": "ca2e47f1bd60eae27ed03525c84615ca1aed2fb0cd9f23a1ff18ffe2be54a8ad",
+      "size_bytes": 4233
+    },
+    {
+      "path": "PHASE15_MEASUREMENT_PROTOCOL.md",
+      "sha256": "55a04fbe47f14aeb58764e8338ca2445f20aec526ce1050c36a559e3161eb977",
+      "size_bytes": 4868
+    },
+    {
+      "path": "PHASE15_REPORT.md",
+      "sha256": "4ff3ee13fbc2e435572e11b9d00f5dd993b28a5457358ecfd10b496b6cd6bbec",
+      "size_bytes": 15784
+    },
+    {
+      "path": "PHASE16_BASELINE_AUDIT.md",
+      "sha256": "990e0dd17f667d7ac1394e52748f3db1bcdcf399759d02fbe7510d9d80d74ec5",
+      "size_bytes": 3629
+    },
+    {
+      "path": "PHASE16_DATA_LINEAGE.md",
+      "sha256": "cf83b48c4bf93d27a9409df3fb0c80b72f9901eab317d4909b2fa5bb9c9ffb8d",
+      "size_bytes": 3085
+    },
+    {
+      "path": "PHASE16_EQUIPMENT_REQUIREMENTS.md",
+      "sha256": "d829b1d4949723590a37319967eeefbdde7da232078e0a4a5854ad2b62adc84e",
+      "size_bytes": 2500
+    },
+    {
+      "path": "PHASE16_REPORT.md",
+      "sha256": "92f5263232bab1ab4fa220a29c5c66cd17104b7d24f0b95d4b2b4717dc4e14fe",
+      "size_bytes": 14102
+    },
+    {
+      "path": "PHASE16_UNCERTAINTY_BUDGET.md",
+      "sha256": "2bbd64ef0744fd4c3ad38dd732f77d9cc74a2b4523d05d12594b656e0a155680",
+      "size_bytes": 3769
+    },
+    {
+      "path": "PHASE16_URBAN_MEASUREMENT_PLAN.md",
+      "sha256": "3c5acc145829d65cbafdbe806f40c3baf2ff5f7c696a9cc42ebe5b8cb73827cb",
+      "size_bytes": 4063
+    },
+    {
+      "path": "PHASE5_REPORT.md",
+      "sha256": "b1c3ea3b4356722bc1cbaffe416a21fc210404f0893ce90650c0173c948d6666",
+      "size_bytes": 19947
+    },
+    {
+      "path": "PHASE8_REPORT.md",
+      "sha256": "af7c22ff949a2340a632b6c96da3ecd39f252a15032b34008bf3e97f656e6418",
+      "size_bytes": 42108
+    },
+    {
+      "path": "PHASE9_ENERGY_SENSITIVITY_REPORT.md",
+      "sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+      "size_bytes": 5288
+    },
+    {
+      "path": "PHASE9_REPORT.md",
+      "sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+      "size_bytes": 16851
+    },
+    {
+      "path": "results/phase10_artifact_manifest.json",
+      "sha256": "4942c97e97d4de538c12029854386bb50142c8c800c66f53b8772e033769940a",
+      "size_bytes": 2144
+    },
+    {
+      "path": "results/phase10_confirmation_event_timeline.json",
+      "sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+      "size_bytes": 43176040
+    },
+    {
+      "path": "results/phase10_confirmation_progress.jsonl",
+      "sha256": "1c13a0c0ac9f96f46bf41b9f78ea00480f17b6e70a447a53e9bb8971e9755f94",
+      "size_bytes": 70913639
+    },
+    {
+      "path": "results/phase10_confirmation_raw.json",
+      "sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+      "size_bytes": 152084576
+    },
+    {
+      "path": "results/phase10_confirmation_summary.json",
+      "sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+      "size_bytes": 699696
+    },
+    {
+      "path": "results/phase10_development_progress.jsonl",
+      "sha256": "215c1cfa0d9109b959b0341efd12ba205d7474bece13d739ac4ed074ecb3fb27",
+      "size_bytes": 10650683
+    },
+    {
+      "path": "results/phase10_development_raw.json",
+      "sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+      "size_bytes": 22811864
+    },
+    {
+      "path": "results/phase10_development_summary.json",
+      "sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+      "size_bytes": 692260
+    },
+    {
+      "path": "results/phase10_uav_energy_summary.json",
+      "sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+      "size_bytes": 14584
+    },
+    {
+      "path": "results/phase11_artifact_manifest.json",
+      "sha256": "987495e83d3c965165a8b284f74e7410a344738212e6ff61638b00c7fd7cca51",
+      "size_bytes": 5925
+    },
+    {
+      "path": "results/phase11_confirmation_progress.jsonl",
+      "sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+      "size_bytes": 174355200
+    },
+    {
+      "path": "results/phase11_confirmation_raw.json",
+      "sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+      "size_bytes": 350308579
+    },
+    {
+      "path": "results/phase11_confirmation_summary.json",
+      "sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+      "size_bytes": 951044
+    },
+    {
+      "path": "results/phase11_delivery_audit.json",
+      "sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+      "size_bytes": 2434
+    },
+    {
+      "path": "results/phase11_development_progress.jsonl",
+      "sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+      "size_bytes": 26305647
+    },
+    {
+      "path": "results/phase11_development_raw.json",
+      "sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+      "size_bytes": 52794746
+    },
+    {
+      "path": "results/phase11_development_summary.json",
+      "sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+      "size_bytes": 905594
+    },
+    {
+      "path": "results/phase11_fleet_size_exploratory.json",
+      "sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+      "size_bytes": 45557
+    },
+    {
+      "path": "results/phase11_validation_evidence.txt",
+      "sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+      "size_bytes": 1476
+    },
+    {
+      "path": "results/phase14_confirmation_raw.json",
+      "sha256": "954c903d595e1acab4a351fefd63393be37f81ba2df7ab7cbc6ad2767904d211",
+      "size_bytes": 84454812
+    },
+    {
+      "path": "results/phase14_confirmation_summary.json",
+      "sha256": "20a8ac1791c9f2c1f701bcba5ef4f73bc4dec501bfec0af581034786075da9a0",
+      "size_bytes": 200064
+    },
+    {
+      "path": "results/phase14_development_raw.json",
+      "sha256": "4275cf00d723de0d0fffcae67d6171bae6b5c9b94e12143137df7265f65ad8a4",
+      "size_bytes": 12636025
+    },
+    {
+      "path": "results/phase14_development_summary.json",
+      "sha256": "91a624a2fb94f6ca9590e5ed5e8d4347c9b370fd39dc971ec87e42da33660800",
+      "size_bytes": 189719
+    },
+    {
+      "path": "results/phase14_integrity_audit.json",
+      "sha256": "5b745bcb06a6e7895a657c291be3e73de1f3ea7e2656c008b1b03c9aa237c3ad",
+      "size_bytes": 24765
+    },
+    {
+      "path": "results/phase14_legacy_reproduction.json",
+      "sha256": "958c6a06fb5df3013b9dbc31e42cd30372bc675f1e5fbd217ade35836514cda7",
+      "size_bytes": 2335
+    },
+    {
+      "path": "results/phase14_model_sensitivity_raw.json",
+      "sha256": "0b6306bc6091fccc71431beecd06a7836df7e3b8b548d0bae25cc83b66949c83",
+      "size_bytes": 6878505
+    },
+    {
+      "path": "results/phase14_model_sensitivity_summary.json",
+      "sha256": "0cc900f859062962baf9bd135e0057654b033d7401669fe41df637fa2a879f27",
+      "size_bytes": 165579
+    },
+    {
+      "path": "results/phase14_validation_summary.json",
+      "sha256": "e28feebfff02b84d2af1f4626decfee72aab126e81d573363d0725dacd0ff080",
+      "size_bytes": 3543
+    },
+    {
+      "path": "results/phase15_calibration_summary.json",
+      "sha256": "1b221d37a0be0cfddf98e7ec56f95e8012501f2d7888d5ae30c6f19a383698ff",
+      "size_bytes": 7287
+    },
+    {
+      "path": "results/phase15_dataset_audit.json",
+      "sha256": "d15818d27bd8801073c936b5d23ceeb16d2b5dc89916a0bc35aa3e8be82be1b5",
+      "size_bytes": 16659
+    },
+    {
+      "path": "results/phase15_dataset_download_audit.json",
+      "sha256": "472b4f4b5e047b83585fbe4f9a27fe7a1a7afacde2155c5d403b62bb064328c7",
+      "size_bytes": 6663
+    },
+    {
+      "path": "results/phase15_holdout_validation.json",
+      "sha256": "4c800c87a7558f34bee1f47a0427bc40a67ec81418903200bd5ed9e3e30b82db",
+      "size_bytes": 10577
+    },
+    {
+      "path": "results/phase15_integrity_audit.json",
+      "sha256": "573bebf9304c966acbd6f3d2b3e5d939d7074ae5eebfb9f90b6e26fc5a54db3e",
+      "size_bytes": 38982
+    },
+    {
+      "path": "results/phase15_measurements_public_clean.csv",
+      "sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+      "size_bytes": 685486
+    },
+    {
+      "path": "results/phase15_preholdout_run_attempts.json",
+      "sha256": "75dbdf9b9589f917c3f22b462f5cf6e4731297777a5b828dc3c6084b8046fa2f",
+      "size_bytes": 816
+    },
+    {
+      "path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+      "sha256": "8c2382c8dcb347f66d7353233a11c63e5efdd02ef45437c53d076680495bb45d",
+      "size_bytes": 1953
+    },
+    {
+      "path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+      "sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+      "size_bytes": 685486
+    },
+    {
+      "path": "results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+      "sha256": "6ec328ae9a0032acfe7c566840a0080a5d2805d6f4baf5f954d56b55f49ea5a3",
+      "size_bytes": 1841
+    },
+    {
+      "path": "results/phase16/imports/phase15_measurements_public_clean-9d1f4489623e.clean.csv",
+      "sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+      "size_bytes": 685486
+    },
+    {
+      "path": "results/phase16/pytest_junit.xml",
+      "sha256": "b87691ace8a61cff1df58c6527182b22a35ee6b9128913b9b4105cecc4fcac38",
+      "size_bytes": 22495
+    },
+    {
+      "path": "results/phase16/pytest_junit_final.xml",
+      "sha256": "6436290643ed93ccc7a292edd5085451522aa4b2dfe90b67ba37d6ab160c7992",
+      "size_bytes": 19684
+    },
+    {
+      "path": "results/phase16/pytest_junit_final_v2.xml",
+      "sha256": "af287e62f8a827464241e477ff4132da267b1e1a48a2a1021fd9852f96083bb4",
+      "size_bytes": 19966
+    },
+    {
+      "path": "results/phase16/pytest_targeted_junit.xml",
+      "sha256": "5513f721da866f23b55523ecaab3c1292764393ae92bf5987319ffb4cafe2a5b",
+      "size_bytes": 6840
+    },
+    {
+      "path": "results/phase16/pytest_targeted_junit_final.xml",
+      "sha256": "b7c2adbcb056146b8dcd4ebd637d8e5007acc2210a4505bc30ae0cbf66dfbe13",
+      "size_bytes": 4029
+    },
+    {
+      "path": "results/phase16/pytest_targeted_junit_final_v2.xml",
+      "sha256": "73f6ae9e56c58bfde55d42d59cd47d6b087d7dce658e9fd2e4af28498f5449b0",
+      "size_bytes": 4311
+    },
+    {
+      "path": "results/phase16/session_template_validation.json",
+      "sha256": "4173eb88fe73641c25ffe7b1243bacff062c7d88af2570adb988df9bc7ba8ada",
+      "size_bytes": 1182
+    },
+    {
+      "path": "results/phase16/session_template_validation_final.json",
+      "sha256": "58df33e56cd674a088777a740444b584e19d031dd76b345c808c7401d4e36b29",
+      "size_bytes": 1430
+    },
+    {
+      "path": "results/phase16/session_template_validation_final_v2.json",
+      "sha256": "f45b36c0215862d5e4195aba9ec44a37c2bbe867d49395ee11b990ff3ebd136f",
+      "size_bytes": 1633
+    },
+    {
+      "path": "results/phase16_calibration_state.json",
+      "sha256": "8e36ec8836e44ed4fecfe9b9ba333d2bd245701c057fbf9007a4dd0c9b6fc618",
+      "size_bytes": 1547
+    },
+    {
+      "path": "results/phase16_environment_inventory.json",
+      "sha256": "b02d92a9bfc169eee49669cb3527818de073b9a6b8fc809a580629d76ba22648",
+      "size_bytes": 4535
+    },
+    {
+      "path": "results/phase16_exploratory_model_sensitivity_context.json",
+      "sha256": "90bfeaac0665496430732a0515a5d9d048bbaaf25299e09423ff13ff007df871",
+      "size_bytes": 44988
+    },
+    {
+      "path": "results/phase16_integrity_audit.json",
+      "sha256": "322c6f8aa95c6514abb798e399ab96767594998ecc09afcd2328e1059347ee50",
+      "size_bytes": 38407
+    },
+    {
+      "path": "results/phase16_measurement_readiness.json",
+      "sha256": "135f25469dc0cada14b0e5932ebcc6ca57deb729f98b1816f7c8958a95f70fbf",
+      "size_bytes": 5772
+    },
+    {
+      "path": "results/phase16_uncertainty_budget.json",
+      "sha256": "9aaf01004e392f7a2dd1ee45396112b9ee79573e8e864e097ba09b60d2f62414",
+      "size_bytes": 6635
+    },
+    {
+      "path": "results/phase5_development_dynamic_failures.json",
+      "sha256": "34bbf277e1bd8f4ab5198a51573eb5de969a200a14d33e6c0445761ac6154dc0",
+      "size_bytes": 2560517
+    },
+    {
+      "path": "results/phase5_development_high_load_backhaul_limit.json",
+      "sha256": "83c82aa313edc565a924596c290bd55c889835ec1f749d0a1e92381abb9745ac",
+      "size_bytes": 2560058
+    },
+    {
+      "path": "results/phase5_development_high_mobility_rescue.json",
+      "sha256": "afee9193f7d8062cc4fddbbfa4ba530cbf3573113962310e6603ae0248f4c89f",
+      "size_bytes": 2631962
+    },
+    {
+      "path": "results/phase5_development_pilot_dynamic_failures.json",
+      "sha256": "a290a0999f235767d146c140d39827900f027c70e2a8076a88f1ca007790f884",
+      "size_bytes": 2574602
+    },
+    {
+      "path": "results/phase5_development_pilot_high_load_backhaul_limit.json",
+      "sha256": "2112b6103d075f71aa5e7483f6e933890f1a84cfe230c9a955a96b61b49466c2",
+      "size_bytes": 2572996
+    },
+    {
+      "path": "results/phase5_development_pilot_high_mobility_rescue.json",
+      "sha256": "7f0ed8e682d434a4bffe8fcc01cb358edc175aaa9c4d3812f039e3b517f41493",
+      "size_bytes": 2606308
+    },
+    {
+      "path": "results/phase5_development_pilot_severe_persistent_faults.json",
+      "sha256": "ce9463c2d53d748999ebddddcc586cc9cc4ca4808a64823648df2228d9dea10b",
+      "size_bytes": 2615358
+    },
+    {
+      "path": "results/phase5_development_severe_persistent_faults.json",
+      "sha256": "6912fed9cae9648b8f5fe62428d1a00de13981171875e591059969fc0501e6a6",
+      "size_bytes": 2616862
+    },
+    {
+      "path": "results/phase5_failure_cases.json",
+      "sha256": "3558fdc13893edafd8754109f896e83d5ecfdbfbef6ed56d0bb83f9b0a5dba80",
+      "size_bytes": 431097
+    },
+    {
+      "path": "results/phase5_frozen_manifest.json",
+      "sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+      "size_bytes": 5752
+    },
+    {
+      "path": "results/phase5_integrity_audit.json",
+      "sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+      "size_bytes": 4748
+    },
+    {
+      "path": "results/phase5_validation_dynamic_failures.json",
+      "sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+      "size_bytes": 10099142
+    },
+    {
+      "path": "results/phase5_validation_high_load_backhaul_limit.json",
+      "sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+      "size_bytes": 9992718
+    },
+    {
+      "path": "results/phase5_validation_high_mobility_rescue.json",
+      "sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+      "size_bytes": 10252245
+    },
+    {
+      "path": "results/phase5_validation_severe_persistent_faults.json",
+      "sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+      "size_bytes": 10094626
+    },
+    {
+      "path": "results/phase5_validation_summary.json",
+      "sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+      "size_bytes": 410463
+    },
+    {
+      "path": "results/phase8_development_raw.json",
+      "sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+      "size_bytes": 70138040
+    },
+    {
+      "path": "results/phase8_development_summary.json",
+      "sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+      "size_bytes": 4800439
+    },
+    {
+      "path": "results/phase8_pytest_results.txt",
+      "sha256": "6d5b2691cba84cfea378e4e4ca6f4e24dade79923c39eee31d7042985bba5819",
+      "size_bytes": 102
+    },
+    {
+      "path": "results/phase8_replication_postprocess_audit.json",
+      "sha256": "b8275fe81096ace6101320e5e91c9326b36145f34498ac293c84f80ab903f0ce",
+      "size_bytes": 1393
+    },
+    {
+      "path": "results/phase8_replication_raw.json",
+      "sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+      "size_bytes": 182754761
+    },
+    {
+      "path": "results/phase8_replication_summary.json",
+      "sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+      "size_bytes": 2088660
+    },
+    {
+      "path": "results/phase8_sensitivity_validation_audit.json",
+      "sha256": "1851de5f88f17bc7193196a7b08671ebc8fc39a46fde3185a8e377858e49db4e",
+      "size_bytes": 555
+    },
+    {
+      "path": "results/phase8_sensitivity_validation_raw.json",
+      "sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+      "size_bytes": 317779704
+    },
+    {
+      "path": "results/phase8_sensitivity_validation_summary.json",
+      "sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+      "size_bytes": 3227498
+    },
+    {
+      "path": "results/phase8_validation_raw.json",
+      "sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+      "size_bytes": 90927045
+    },
+    {
+      "path": "results/phase8_validation_summary.json",
+      "sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+      "size_bytes": 2074287
+    },
+    {
+      "path": "results/phase9_artifact_manifest.json",
+      "sha256": "3f1cb4da6fc6ec62ed7d0cc473869f6041777886d5c1ae0db71500747001abe0",
+      "size_bytes": 6789
+    },
+    {
+      "path": "results/phase9_confirmation_raw.json",
+      "sha256": "7f30ae206eb016fb0ec0ae50f152df07b39745b9a026a3170218ba7e786e89fd",
+      "size_bytes": 44847901
+    },
+    {
+      "path": "results/phase9_confirmation_summary.json",
+      "sha256": "377995a6904e792168f7614033301ac5346ed18ca0e97363848d16a7dacc3e5f",
+      "size_bytes": 475056
+    },
+    {
+      "path": "results/phase9_corrected_confirmation_raw.json",
+      "sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+      "size_bytes": 53485358
+    },
+    {
+      "path": "results/phase9_corrected_confirmation_summary.json",
+      "sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+      "size_bytes": 471461
+    },
+    {
+      "path": "results/phase9_corrected_energy_sensitivity_raw.json",
+      "sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+      "size_bytes": 50685599
+    },
+    {
+      "path": "results/phase9_corrected_energy_sensitivity_summary.json",
+      "sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+      "size_bytes": 237677
+    },
+    {
+      "path": "results/phase9_corrected_event_timeline.json",
+      "sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+      "size_bytes": 6984204
+    },
+    {
+      "path": "results/phase9_development_iteration1_raw.json",
+      "sha256": "a757ab9e5a79c23853f3969df9222271c7ec37f279c36dc9467356a822f86f87",
+      "size_bytes": 15924519
+    },
+    {
+      "path": "results/phase9_development_iteration1_summary.json",
+      "sha256": "18efc90081e269ea38395ef78ebff7547aff523917e3ff697edb9b6fb272dd68",
+      "size_bytes": 10111
+    },
+    {
+      "path": "results/phase9_development_pre_route_fix_raw.json",
+      "sha256": "617f6d23ed721e329cc33cf210bfdea1976bd551a3aa08a2c1defe626d2f04d5",
+      "size_bytes": 15766298
+    },
+    {
+      "path": "results/phase9_development_pre_route_fix_summary.json",
+      "sha256": "b50cfef6c924ed3d8f9f7dafa202abf22f2c3681f41b0cb03c95006af067101c",
+      "size_bytes": 10208
+    },
+    {
+      "path": "results/phase9_development_raw.json",
+      "sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+      "size_bytes": 23760282
+    },
+    {
+      "path": "results/phase9_development_summary.json",
+      "sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+      "size_bytes": 10261
+    },
+    {
+      "path": "results/phase9_event_timeline.json",
+      "sha256": "0c7934aa71cd31170cb7ed7238332f9a112d9c3b13dd4f0da54c9bcb5422f42d",
+      "size_bytes": 1229155
+    },
+    {
+      "path": "results/phase9_initial_confirmation_status.json",
+      "sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+      "size_bytes": 849
+    },
+    {
+      "path": "results/phase9_verification_summary.json",
+      "sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+      "size_bytes": 6307
+    }
+  ]
+}

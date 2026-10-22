@@ -1,0 +1,531 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase14_radio_link_model",
+  "created_at_utc": "2026-10-20T17:38:11.824576+00:00",
+  "status": "PASS",
+  "historical_frozen_json": {
+    "expected_count": 73,
+    "verified_count": 73,
+    "items": [
+      {
+        "path": "DEVELOPMENT_LOG_PHASE10.md",
+        "expected_sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+        "actual_sha256": "631caade8c5a5730b5041dbf34ce883bdf4692f8ce0560497d708bd7363c26dd",
+        "matches": true
+      },
+      {
+        "path": "PHASE10_MODEL_DESIGN.md",
+        "expected_sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+        "actual_sha256": "ecc0b84421af550dfa09ea75c6e8127ba4cf8966e01e087321f614fd7adf3739",
+        "matches": true
+      },
+      {
+        "path": "PHASE10_REPORT.md",
+        "expected_sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+        "actual_sha256": "73a1948e984369a4d792780e0c4d9ca532941b4aabd3a732c0c969551cf4c3a5",
+        "matches": true
+      },
+      {
+        "path": "PHASE11_ALGORITHM_DESIGN.md",
+        "expected_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+        "actual_sha256": "28fa715bdebfbbad36b4ce65e5c5efe32312bb6a326aaf865c80361f10c8cfd1",
+        "matches": true
+      },
+      {
+        "path": "PHASE11_REPORT.md",
+        "expected_sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+        "actual_sha256": "42a9e50e2c6e1a4c16fe4aca73e2381d644f0d83e2a2380da466c8661021614f",
+        "matches": true
+      },
+      {
+        "path": "PHASE9_ENERGY_SENSITIVITY_REPORT.md",
+        "expected_sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+        "actual_sha256": "f639c59089e449fadf833e6f59895339cec6f8de780f65e31633bb5b442aacd4",
+        "matches": true
+      },
+      {
+        "path": "PHASE9_REPORT.md",
+        "expected_sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+        "actual_sha256": "61034ec58b7deacea1fe7c02bc4b66748afeaf7316d43bcf9e1a292b3afe275f",
+        "matches": true
+      },
+      {
+        "path": "configs/phase10/multi_uav_plan.json",
+        "expected_sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+        "actual_sha256": "f5057e6485f0203c380f252d2743cf8b9c61fedc6aad0b127d9f05bb86131e33",
+        "matches": true
+      },
+      {
+        "path": "configs/phase10/validation_protocol.json",
+        "expected_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+        "actual_sha256": "2d1f089cfac3c3b18984e3c8349ac97272154e6305b8b09678243aa2fbde0a66",
+        "matches": true
+      },
+      {
+        "path": "configs/phase11/benchmark_plan.json",
+        "expected_sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+        "actual_sha256": "2a46fe7af524c973bdfb92669e10b2aea88e860ef482b784bf7faf5f7e9fb619",
+        "matches": true
+      },
+      {
+        "path": "configs/phase11/confirmation_protocol.json",
+        "expected_sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+        "actual_sha256": "7483cecd70a31642317f21f29e807649667a3c6d3935bdfa03b6d6c6c9805b11",
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/energy_sensitivity_plan_corrected.json",
+        "expected_sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+        "actual_sha256": "dfbaeefb2543edd7b81bf5ec083469fc011bda6a3bdb2a688ad207130405ee03",
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/experiment_plan_corrected.json",
+        "expected_sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+        "actual_sha256": "bf7bac61b38c5d6c040f76d1a50add4d917b05360b56570218d281b7b486461b",
+        "matches": true
+      },
+      {
+        "path": "configs/phase9/validation_protocol_corrected.json",
+        "expected_sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+        "actual_sha256": "1318a422e5e501fff9e083dc6deb46234e119a749464af6a22b5c867e09d0915",
+        "matches": true
+      },
+      {
+        "path": "plots/phase10/confirmation_policy_comparison.png",
+        "expected_sha256": "3edb449a191729b01fc8e4fc485659bf97910022ef890872674a55dc35d89ebd",
+        "actual_sha256": "3edb449a191729b01fc8e4fc485659bf97910022ef890872674a55dc35d89ebd",
+        "matches": true
+      },
+      {
+        "path": "plots/phase10/confirmation_policy_comparison.svg",
+        "expected_sha256": "c315ddc8065157e1c892da408c2c8aa2c749fbe25fca25082ac86a7829e3629d",
+        "actual_sha256": "c315ddc8065157e1c892da408c2c8aa2c749fbe25fca25082ac86a7829e3629d",
+        "matches": true
+      },
+      {
+        "path": "plots/phase10/confirmation_recovery_heatmap.png",
+        "expected_sha256": "84b404f771bf82633fc77fc4174b85544ec95a8c46522550c104a40b10b9ca8d",
+        "actual_sha256": "84b404f771bf82633fc77fc4174b85544ec95a8c46522550c104a40b10b9ca8d",
+        "matches": true
+      },
+      {
+        "path": "plots/phase11/confirmation_compute_vs_service.png",
+        "expected_sha256": "7a73ada2759a4fe57db01ff7824478eb9ed84cf1f4e6a1fc3bb1f9cb14dd1561",
+        "actual_sha256": "7a73ada2759a4fe57db01ff7824478eb9ed84cf1f4e6a1fc3bb1f9cb14dd1561",
+        "matches": true
+      },
+      {
+        "path": "plots/phase11/confirmation_compute_vs_service.svg",
+        "expected_sha256": "a913bcdcd07517f77ee34698236f7523a073175d989925725298e398f47f0218",
+        "actual_sha256": "a913bcdcd07517f77ee34698236f7523a073175d989925725298e398f47f0218",
+        "matches": true
+      },
+      {
+        "path": "plots/phase11/confirmation_rescue_service.png",
+        "expected_sha256": "32b32e89e632c7b7ad2ab2c498b7c1f9d844dddece949478f98465aada470833",
+        "actual_sha256": "32b32e89e632c7b7ad2ab2c498b7c1f9d844dddece949478f98465aada470833",
+        "matches": true
+      },
+      {
+        "path": "plots/phase11/confirmation_rescue_service.svg",
+        "expected_sha256": "b717930ce2d75e3fa970884de9b1e3dfa2c8b35bbcdc02beeb4e545919063eab",
+        "actual_sha256": "b717930ce2d75e3fa970884de9b1e3dfa2c8b35bbcdc02beeb4e545919063eab",
+        "matches": true
+      },
+      {
+        "path": "plots/phase11/fleet_size_increment.png",
+        "expected_sha256": "a508f21eff52f90abe5d9c93dd5bce2048c03536202213710b2584610cf0643e",
+        "actual_sha256": "a508f21eff52f90abe5d9c93dd5bce2048c03536202213710b2584610cf0643e",
+        "matches": true
+      },
+      {
+        "path": "plots/phase11/fleet_size_increment.svg",
+        "expected_sha256": "03b9c854505af9c9ff604b4e26c7a1ed9cb42dd7fd70e9186495d1ce723e19a8",
+        "actual_sha256": "03b9c854505af9c9ff604b4e26c7a1ed9cb42dd7fd70e9186495d1ce723e19a8",
+        "matches": true
+      },
+      {
+        "path": "plots/phase9_corrected/phase9_compute_by_scene.png",
+        "expected_sha256": "021c1d45ba598818ca786d8bf264b979108e6f19aaa5b9ee937b666c8b8d3025",
+        "actual_sha256": "021c1d45ba598818ca786d8bf264b979108e6f19aaa5b9ee937b666c8b8d3025",
+        "matches": true
+      },
+      {
+        "path": "plots/phase9_corrected/phase9_energy_sensitivity.png",
+        "expected_sha256": "22f6c24cc544172740760ac5ea32850b9e36727bb52e9c3f05ee7915f42ec00a",
+        "actual_sha256": "22f6c24cc544172740760ac5ea32850b9e36727bb52e9c3f05ee7915f42ec00a",
+        "matches": true
+      },
+      {
+        "path": "plots/phase9_corrected/phase9_rescue_service_by_scene.png",
+        "expected_sha256": "56dcef5a446d87028afa09738d432dfdc93cc2a71465ebc08cf26a039bbe6fa5",
+        "actual_sha256": "56dcef5a446d87028afa09738d432dfdc93cc2a71465ebc08cf26a039bbe6fa5",
+        "matches": true
+      },
+      {
+        "path": "results/phase10_confirmation_event_timeline.json",
+        "expected_sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+        "actual_sha256": "84cda0b43af637c83c4caa15d20be23047d185cf0e39ec6f86f4a9c55634751a",
+        "matches": true
+      },
+      {
+        "path": "results/phase10_confirmation_raw.json",
+        "expected_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+        "actual_sha256": "6c90e943b4e702652337da110837ca7942d598998a91c77464431fdd061f6e2d",
+        "matches": true
+      },
+      {
+        "path": "results/phase10_confirmation_summary.json",
+        "expected_sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+        "actual_sha256": "cacc98e165e5ff17bc1818de046183a71708c661c8e2acf239938dfe2e0a2cfb",
+        "matches": true
+      },
+      {
+        "path": "results/phase10_development_raw.json",
+        "expected_sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+        "actual_sha256": "40c5aff69ce75ddbb65432db7742f44b75ce52ff116dea7803caa1d58fdd1612",
+        "matches": true
+      },
+      {
+        "path": "results/phase10_development_summary.json",
+        "expected_sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+        "actual_sha256": "6c005faaeb5a2f72c045ac8b8daaef19c97675ccf73f3af6b61f09193ccce6cd",
+        "matches": true
+      },
+      {
+        "path": "results/phase10_uav_energy_summary.json",
+        "expected_sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+        "actual_sha256": "524aafcbfd596ee7c2c1c5bf984d03d5149df6fe445d87c8f7f038f268f73e3b",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_confirmation_progress.jsonl",
+        "expected_sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+        "actual_sha256": "f71e74b9de1f30ba7c22f24396366af3f2adf299d01f4967a961daf0190c8847",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_confirmation_raw.json",
+        "expected_sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+        "actual_sha256": "1d59d67be873e5a2f63bbf7ff2ff459f88e370237dc41752d0055ef8a4a11b4c",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_confirmation_summary.json",
+        "expected_sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+        "actual_sha256": "6889b9700f0895467a4eead8e2a06251914ae18c516b735ab9d0d85560a1d662",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_delivery_audit.json",
+        "expected_sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+        "actual_sha256": "527bec69b7587dc2eb400016868b379208e87db08886ab0a2141eda35519bfb0",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_development_progress.jsonl",
+        "expected_sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+        "actual_sha256": "72a84304c7d6ff61948bbec3825a0990e68815d65b8cd09fd6b25a2d4dc88eae",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_development_raw.json",
+        "expected_sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+        "actual_sha256": "32c5c19119807bb794e8450bceeba4873dc74f4d2e4c72e23bf280b7900f3fe1",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_development_summary.json",
+        "expected_sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+        "actual_sha256": "297846cc51bb150fbb096e4b9f0ff5ec45fac8b4ae13fe4ff9bc274945086a91",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_fleet_size_exploratory.json",
+        "expected_sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+        "actual_sha256": "231230ed619f0d59835e19f61364a77803aafb66daa5594c439223758383b154",
+        "matches": true
+      },
+      {
+        "path": "results/phase11_validation_evidence.txt",
+        "expected_sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+        "actual_sha256": "92b3c0239f97bc93b985ed3aee4562b1771ddc7d7773822521cd7f2d79b06710",
+        "matches": true
+      },
+      {
+        "path": "results/phase5_frozen_manifest.json",
+        "expected_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+        "actual_sha256": "386be3c58f822e326d7283451bcc00c1d2c710c60240c65f5231968c8aa5b6d5",
+        "matches": true
+      },
+      {
+        "path": "results/phase5_integrity_audit.json",
+        "expected_sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+        "actual_sha256": "5e39621d0f9813dc5e911b5a944b56cd388595942d95539722504e0ccbd2d927",
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_dynamic_failures.json",
+        "expected_sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+        "actual_sha256": "0722de729b547f3aa8df586316d2c38d64436452c4c7b2642eb720e4beedec77",
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_high_load_backhaul_limit.json",
+        "expected_sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+        "actual_sha256": "ec0ef41c1fa357f15d3f4be52155b0e8c29efd9d9e72cae50b64c21066d29644",
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_high_mobility_rescue.json",
+        "expected_sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+        "actual_sha256": "d737733e1146ac9ad651227eeb15993b0718f0d500a3ff461f42b4a55ce34176",
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_severe_persistent_faults.json",
+        "expected_sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+        "actual_sha256": "297ccbf6537ab93afd4032aa4cff2c2d3a5e28f1a93bb1da39e195f0fd097c2e",
+        "matches": true
+      },
+      {
+        "path": "results/phase5_validation_summary.json",
+        "expected_sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+        "actual_sha256": "6b66577e45c00e85f7bd89b81e6e988e95c3e0a5f06851e4b64dc5f3d3401c5b",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_development_raw.json",
+        "expected_sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+        "actual_sha256": "84dbf85df3280f8a5dcf19eacc19cc625fd97e8a997ff5796d2960e2967f2cba",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_development_summary.json",
+        "expected_sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+        "actual_sha256": "ead555d23adf4d3efa3917e19be5458d92db349d8587bd2b1ff6d9386ac1f72f",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_replication_raw.json",
+        "expected_sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+        "actual_sha256": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_replication_summary.json",
+        "expected_sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+        "actual_sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_sensitivity_validation_raw.json",
+        "expected_sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+        "actual_sha256": "0ec158db99b78d00843a5d11685349470535fd9bbbc93e4eed70b725b1549888",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_sensitivity_validation_summary.json",
+        "expected_sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+        "actual_sha256": "02f89c101e221133c0898c4b606df2042cbc665e44297f9a4fb914de1b795e6a",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_validation_raw.json",
+        "expected_sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+        "actual_sha256": "dad10ed7d68fa6a70199c1e740701de8e42c2d2d39ad804cea59e7fa5588adfc",
+        "matches": true
+      },
+      {
+        "path": "results/phase8_validation_summary.json",
+        "expected_sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+        "actual_sha256": "c3f1e96c2a81674e0f95d7a6b698055ef232e2defd0462729c16728ca77337c5",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_confirmation_raw.json",
+        "expected_sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+        "actual_sha256": "3ba7bd11dc8303f3efb20a1a220220b6c988f5d8aa9b0437aae651bcd946b4c6",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_confirmation_summary.json",
+        "expected_sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+        "actual_sha256": "1f39a024007f7ef2f381ec393bfd38605ee1fbd12c7783446e6b2abc39fe0fe5",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_energy_sensitivity_raw.json",
+        "expected_sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+        "actual_sha256": "a0517c92cfb719ffc8f2790a4266b66b320408188511e40436f28e8b9fbbb02a",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_energy_sensitivity_summary.json",
+        "expected_sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+        "actual_sha256": "e989584fae40a45836c0f9d4769f4995fec15b025e4137c0794f46799b11159d",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_corrected_event_timeline.json",
+        "expected_sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+        "actual_sha256": "74fb67bc8816786948f185951dcce6382168f16021a1188e0814af1f009fb524",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_raw.json",
+        "expected_sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+        "actual_sha256": "f9abac0c99080062878ae053cf95033dba5df01e4dc3eac8979293b0ea6c5fba",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_development_summary.json",
+        "expected_sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+        "actual_sha256": "fc8f8503535c5ef9b074f5517009ab8939221209fc6ed0e51acad92a9846dc35",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_initial_confirmation_status.json",
+        "expected_sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+        "actual_sha256": "a04199b123a617976ca654e0a80497ae62aeb386ef24f71e8451eeed44b4306f",
+        "matches": true
+      },
+      {
+        "path": "results/phase9_verification_summary.json",
+        "expected_sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+        "actual_sha256": "bdf029883ec731f0de8ab4a3d73f6350b41df06d805fc17c4808111a5d308c77",
+        "matches": true
+      },
+      {
+        "path": "scripts/plot_phase10_results.py",
+        "expected_sha256": "4ec37c9e201a4cac2d82481860309bde3219f2c6da1d8be723d0203c55afc21f",
+        "actual_sha256": "4ec37c9e201a4cac2d82481860309bde3219f2c6da1d8be723d0203c55afc21f",
+        "matches": true
+      },
+      {
+        "path": "scripts/plot_phase11_fleet_size.py",
+        "expected_sha256": "ee4ae80d863d05cad99bb243187dcdccea267ff5a05f3a9ed663ac2082a3c764",
+        "actual_sha256": "ee4ae80d863d05cad99bb243187dcdccea267ff5a05f3a9ed663ac2082a3c764",
+        "matches": true
+      },
+      {
+        "path": "scripts/run_phase11_experiments.py",
+        "expected_sha256": "c111ef24c6352af78dbda5cd7ba528595727e0e9d7f5e61e4ef5bc3d7d2b0868",
+        "actual_sha256": "c111ef24c6352af78dbda5cd7ba528595727e0e9d7f5e61e4ef5bc3d7d2b0868",
+        "matches": true
+      },
+      {
+        "path": "scripts/summarize_phase11_fleet_size.py",
+        "expected_sha256": "5c012e61dad72c8593c85224957ea406bcc8d6738dde60ce18fd9c68379199c0",
+        "actual_sha256": "5c012e61dad72c8593c85224957ea406bcc8d6738dde60ce18fd9c68379199c0",
+        "matches": true
+      },
+      {
+        "path": "src/lowalt6g/phase11_algorithms.py",
+        "expected_sha256": "b65835896cb580a0b6f82e2f93da5e55764e91c628cb992122841480b2ae14da",
+        "actual_sha256": "b65835896cb580a0b6f82e2f93da5e55764e91c628cb992122841480b2ae14da",
+        "matches": true
+      },
+      {
+        "path": "src/lowalt6g/phase11_experiments.py",
+        "expected_sha256": "e99fae9b4ef18094c5506ef2f3750a275cb3a8034a6714af15eddef4bb8f7c36",
+        "actual_sha256": "e99fae9b4ef18094c5506ef2f3750a275cb3a8034a6714af15eddef4bb8f7c36",
+        "matches": true
+      },
+      {
+        "path": "src/lowalt6g/phase11_simulation.py",
+        "expected_sha256": "ba81a4f6c5b89811a89f3b8cb03ac1e2158198d24d38d61e3deba490d31411f7",
+        "actual_sha256": "ba81a4f6c5b89811a89f3b8cb03ac1e2158198d24d38d61e3deba490d31411f7",
+        "matches": true
+      },
+      {
+        "path": "tests/test_phase11.py",
+        "expected_sha256": "152bc829451693a632ccc8f701f85a5bc97a8f482b7ec4a3e1cd424cfdb9b9d9",
+        "actual_sha256": "152bc829451693a632ccc8f701f85a5bc97a8f482b7ec4a3e1cd424cfdb9b9d9",
+        "matches": true
+      }
+    ]
+  },
+  "phase6_replay_hashes": {
+    "verified_count": 5,
+    "items": [
+      {
+        "path": "results/phase6_demo_manifest.json",
+        "matches": true
+      },
+      {
+        "scenario_id": "severe_persistent_faults",
+        "path": "results/phase6_demo_severe_persistent_faults.json",
+        "matches": true
+      },
+      {
+        "scenario_id": "dynamic_failures",
+        "path": "results/phase6_demo_dynamic_failures.json",
+        "matches": true
+      },
+      {
+        "scenario_id": "high_mobility_rescue",
+        "path": "results/phase6_demo_high_mobility_rescue.json",
+        "matches": true
+      },
+      {
+        "scenario_id": "high_load_backhaul_limit",
+        "path": "results/phase6_demo_high_load_backhaul_limit.json",
+        "matches": true
+      }
+    ]
+  },
+  "phase12_audit_status": "PASS",
+  "phase13_frozen_result_status": "PASS",
+  "phase14_confirmation": {
+    "record_count": 480,
+    "expected_record_count": 480,
+    "paired_seed_rows": 80,
+    "expected_seed_rows": 80,
+    "per_seed_strategy_model_completeness": true,
+    "protocol_source_hash_matches": true,
+    "historical_seed_config_count": 17,
+    "historical_seed_maximum": 95419,
+    "phase14_seed_minimum": 96100,
+    "seed_partitions_disjoint_from_historical_configs": true,
+    "overlapping_seeds": [],
+    "historical_seed_plan_files": [
+      "configs/phase10/multi_uav_plan.json",
+      "configs/phase10/validation_protocol.json",
+      "configs/phase11/benchmark_plan.json",
+      "configs/phase11/confirmation_protocol.json",
+      "configs/phase8/ablation_plan.json",
+      "configs/phase8/algorithm_mechanism_audit.json",
+      "configs/phase8/experiment_plan.json",
+      "configs/phase8/replication_protocol.json",
+      "configs/phase8/sensitivity_plan.json",
+      "configs/phase8/sensitivity_validation_protocol.json",
+      "configs/phase8/validation_protocol.json",
+      "configs/phase9/energy_sensitivity_plan.json",
+      "configs/phase9/energy_sensitivity_plan_corrected.json",
+      "configs/phase9/experiment_plan.json",
+      "configs/phase9/experiment_plan_corrected.json",
+      "configs/phase9/validation_protocol.json",
+      "configs/phase9/validation_protocol_corrected.json"
+    ],
+    "result_sha256": "954c903d595e1acab4a351fefd63393be37f81ba2df7ab7cbc6ad2767904d211"
+  },
+  "phase14_sensitivity": {
+    "record_count": 312,
+    "expected_record_count": 312,
+    "status_complete": true,
+    "raw_sha256": "0b6306bc6091fccc71431beecd06a7836df7e3b8b548d0bae25cc83b66949c83"
+  },
+  "phase14_legacy_reproduction": {
+    "status": "PASS",
+    "scenario_id": "severe_persistent_faults",
+    "seed": 94100,
+    "trace_matches": true,
+    "metric_match_count": 12,
+    "metric_comparison_count": 12,
+    "historical_source_matches": true,
+    "artifact_sha256": "958c6a06fb5df3013b9dbc31e42cd30372bc675f1e5fbd217ade35836514cda7"
+  },
+  "errors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_measurement_session_validation",
+  "created_at_utc": "2026-10-21T06:32:50.560392+00:00",
+  "source_path": "configs/phase16/measurement_session_template.json",
+  "source_sha256": "93612b9e481f7e0be3a632e35dab04d1660387eccb344ab954c343cb3c5c15e6",
+  "ready_for_measurement": false,
+  "acquisition_mode": null,
+  "missing_fields": [
+    "experiment_id",
+    "measurement_batch_id",
+    "operator_id",
+    "acquisition_mode",
+    "measurement_points",
+    "data_storage_path",
+    "frequency.value",
+    "bandwidth.value",
+    "transmitter.equipment_id",
+    "transmitter.model",
+    "transmitter.tx_power_dbm",
+    "receiver.equipment_id",
+    "receiver.model",
+    "receiver.measurement_metric",
+    "antennas.transmit_model",
+    "antennas.receive_model",
+    "antennas.tx_gain_dbi",
+    "antennas.rx_gain_dbi",
+    "antennas.feedline_loss_db",
+    "route_or_site_id",
+    "environment.scenario",
+    "environment.weather",
+    "calibration.status",
+    "calibration.certificate_reference",
+    "time_sync.source",
+    "time_sync.estimated_uncertainty_ms",
+    "authorization.status"
+  ],
+  "errors": [
+    "frequency requires a positive value and a supported unit",
+    "bandwidth requires a positive value and a supported unit",
+    "measurement_points must contain at least one planned point"
+  ],
+  "warnings": [
+    "required fields are incomplete; do not start a measurement session"
+  ],
+  "acquisition_started": false,
+  "hardware_accessed": false,
+  "report_path": "results/phase16/session_template_validation_final_v2.json"
+}

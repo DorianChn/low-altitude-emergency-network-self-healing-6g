@@ -1,0 +1,1069 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_exploratory_parameter_stress_context",
+  "created_at_utc": "2026-10-21T06:32:49.373519+00:00",
+  "status": "REANALYSIS_ONLY_NO_NEW_SIMULATIONS",
+  "source_path": "results/phase14_model_sensitivity_summary.json",
+  "source_sha256": "0cc900f859062962baf9bd135e0057654b033d7401669fe41df637fa2a879f27",
+  "source_experiment_role": "Phase 14 exploratory development sensitivity; 3 seeds per scenario; not independent confirmation",
+  "phase16_project_device_uncertainty_propagation": "NOT_EXECUTED_NO_TARGET_DEVICE_UNCERTAINTY_DISTRIBUTIONS",
+  "interpretation_boundary": "These are deterministic model stress levels inherited from Phase 14 (including ±2 dB fade margin, ±0.2 path-loss exponent, ±3 dB transmit power or sensitivity, and zero/12 dB obstruction). They are not empirically estimated device uncertainty bounds, probability distributions, measurement confidence intervals, or calibration evidence.",
+  "scenarios": {
+    "dynamic_failures": {
+      "Bprime_static_grid_shared_safety": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.06830633333333333,
+        "baseline_first_full_recovery_success_count": 0,
+        "baseline_sustained_30s_recovery_success_count": 0,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.06830633333333333,
+        "stress_delta_max": 0.13114733333333334,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.06830633333333333,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.09836066666666667,
+            "paired_delta_from_variant_baseline": 0.030054333333333336,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.06830633333333333,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.06830633333333333,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.06830633333333333,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.19945366666666667,
+            "paired_delta_from_variant_baseline": 0.13114733333333334,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.06830633333333333,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.10655766666666666,
+            "paired_delta_from_variant_baseline": 0.03825133333333333,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.058743333333333335,
+            "paired_delta_from_variant_baseline": -0.009562999999999995,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.066257,
+            "paired_delta_from_variant_baseline": -0.0020493333333333336,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.10655766666666666,
+            "paired_delta_from_variant_baseline": 0.03825133333333333,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.06830633333333333,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          }
+        ]
+      },
+      "G_centralized_coordination": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.11885245901639345,
+        "baseline_first_full_recovery_success_count": 1,
+        "baseline_sustained_30s_recovery_success_count": 1,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.11885245901639345,
+        "stress_delta_max": 0.10724043715846994,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.053961748633879786,
+            "paired_delta_from_variant_baseline": -0.06489071038251366,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.14959016393442623,
+            "paired_delta_from_variant_baseline": 0.03073770491803278,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.11885245901639345,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.11885245901639345,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.00819672131147541,
+            "paired_delta_from_variant_baseline": -0.11065573770491804,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.2260928961748634,
+            "paired_delta_from_variant_baseline": 0.10724043715846994,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.049863387978142076,
+            "paired_delta_from_variant_baseline": -0.06898907103825137,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.1557377049180328,
+            "paired_delta_from_variant_baseline": 0.036885245901639344,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.11270491803278689,
+            "paired_delta_from_variant_baseline": -0.006147540983606564,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.12158469945355192,
+            "paired_delta_from_variant_baseline": 0.002732240437158473,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.1557377049180328,
+            "paired_delta_from_variant_baseline": 0.036885245901639344,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.049863387978142076,
+            "paired_delta_from_variant_baseline": -0.06898907103825137,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          }
+        ]
+      }
+    },
+    "high_load_backhaul_limit": {
+      "Bprime_static_grid_shared_safety": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.28073766666666666,
+        "baseline_first_full_recovery_success_count": 1,
+        "baseline_sustained_30s_recovery_success_count": 1,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.28073766666666666,
+        "stress_delta_max": 0.09972700000000001,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.25409866666666664,
+            "paired_delta_from_variant_baseline": -0.026639000000000024,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.3756833333333333,
+            "paired_delta_from_variant_baseline": 0.09494566666666665,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.28073766666666666,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.28073766666666666,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.014344333333333334,
+            "paired_delta_from_variant_baseline": -0.2663933333333333,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.3804646666666667,
+            "paired_delta_from_variant_baseline": 0.09972700000000001,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.2438526666666667,
+            "paired_delta_from_variant_baseline": -0.03688499999999997,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.37704933333333335,
+            "paired_delta_from_variant_baseline": 0.09631166666666668,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.2520493333333333,
+            "paired_delta_from_variant_baseline": -0.02868833333333337,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.3804646666666667,
+            "paired_delta_from_variant_baseline": 0.09972700000000001,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.37704933333333335,
+            "paired_delta_from_variant_baseline": 0.09631166666666668,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.2438526666666667,
+            "paired_delta_from_variant_baseline": -0.03688499999999997,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          }
+        ]
+      },
+      "G_centralized_coordination": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.44603825136612024,
+        "baseline_first_full_recovery_success_count": 3,
+        "baseline_sustained_30s_recovery_success_count": 3,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.42144808743169404,
+        "stress_delta_max": 0.047131147540983576,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.4583333333333333,
+            "paired_delta_from_variant_baseline": 0.012295081967213073,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.45081967213114754,
+            "paired_delta_from_variant_baseline": 0.0047814207650273,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.02459016393442623,
+            "paired_delta_from_variant_baseline": -0.42144808743169404,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.44603825136612024,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.36680327868852464,
+            "paired_delta_from_variant_baseline": -0.0792349726775956,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.4788251366120219,
+            "paired_delta_from_variant_baseline": 0.032786885245901676,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.45286885245901637,
+            "paired_delta_from_variant_baseline": 0.006830601092896127,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.44808743169398907,
+            "paired_delta_from_variant_baseline": 0.002049180327868827,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.4685792349726776,
+            "paired_delta_from_variant_baseline": 0.022540983606557374,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.4931693989071038,
+            "paired_delta_from_variant_baseline": 0.047131147540983576,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.44808743169398907,
+            "paired_delta_from_variant_baseline": 0.002049180327868827,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.45286885245901637,
+            "paired_delta_from_variant_baseline": 0.006830601092896127,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          }
+        ]
+      }
+    },
+    "high_mobility_rescue": {
+      "Bprime_static_grid_shared_safety": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.375683,
+        "baseline_first_full_recovery_success_count": 1,
+        "baseline_sustained_30s_recovery_success_count": 1,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.375683,
+        "stress_delta_max": 0.2015030000000001,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.321038,
+            "paired_delta_from_variant_baseline": -0.054645,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5457653333333333,
+            "paired_delta_from_variant_baseline": 0.17008233333333334,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.375683,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.375683,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.17213133333333333,
+            "paired_delta_from_variant_baseline": -0.20355166666666666,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5765030000000001,
+            "paired_delta_from_variant_baseline": 0.2008200000000001,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.29781399999999997,
+            "paired_delta_from_variant_baseline": -0.07786900000000002,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5676233333333334,
+            "paired_delta_from_variant_baseline": 0.19194033333333338,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.321038,
+            "paired_delta_from_variant_baseline": -0.054645,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5771860000000001,
+            "paired_delta_from_variant_baseline": 0.2015030000000001,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5676233333333334,
+            "paired_delta_from_variant_baseline": 0.19194033333333338,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.29781399999999997,
+            "paired_delta_from_variant_baseline": -0.07786900000000002,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          }
+        ]
+      },
+      "G_centralized_coordination": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.6495901639344263,
+        "baseline_first_full_recovery_success_count": 3,
+        "baseline_sustained_30s_recovery_success_count": 3,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.6311475409836066,
+        "stress_delta_max": 0.017759562841529908,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6284153005464481,
+            "paired_delta_from_variant_baseline": -0.021174863387978138,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6577868852459017,
+            "paired_delta_from_variant_baseline": 0.008196721311475419,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.018442622950819672,
+            "paired_delta_from_variant_baseline": -0.6311475409836066,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6495901639344263,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.4077868852459016,
+            "paired_delta_from_variant_baseline": -0.24180327868852464,
+            "first_full_recovery_success_count": 2,
+            "sustained_30s_recovery_success_count": 2
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6605191256830601,
+            "paired_delta_from_variant_baseline": 0.010928961748633892,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6038251366120219,
+            "paired_delta_from_variant_baseline": -0.045765027322404395,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6673497267759562,
+            "paired_delta_from_variant_baseline": 0.017759562841529908,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6181693989071038,
+            "paired_delta_from_variant_baseline": -0.031420765027322495,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6605191256830601,
+            "paired_delta_from_variant_baseline": 0.010928961748633892,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6673497267759562,
+            "paired_delta_from_variant_baseline": 0.017759562841529908,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6038251366120219,
+            "paired_delta_from_variant_baseline": -0.045765027322404395,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          }
+        ]
+      }
+    },
+    "severe_persistent_faults": {
+      "Bprime_static_grid_shared_safety": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.181694,
+        "baseline_first_full_recovery_success_count": 1,
+        "baseline_sustained_30s_recovery_success_count": 1,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.181694,
+        "stress_delta_max": 0.3907103333333334,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.1680326666666667,
+            "paired_delta_from_variant_baseline": -0.013661333333333303,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.352459,
+            "paired_delta_from_variant_baseline": 0.17076500000000003,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.0,
+            "paired_delta_from_variant_baseline": -0.181694,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.181694,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.147541,
+            "paired_delta_from_variant_baseline": -0.03415299999999999,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5724043333333334,
+            "paired_delta_from_variant_baseline": 0.3907103333333334,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.16256833333333334,
+            "paired_delta_from_variant_baseline": -0.019125666666666652,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.35792333333333337,
+            "paired_delta_from_variant_baseline": 0.17622933333333338,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.16256833333333334,
+            "paired_delta_from_variant_baseline": -0.019125666666666652,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5724043333333334,
+            "paired_delta_from_variant_baseline": 0.3907103333333334,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.35792333333333337,
+            "paired_delta_from_variant_baseline": 0.17622933333333338,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.16256833333333334,
+            "paired_delta_from_variant_baseline": -0.019125666666666652,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          }
+        ]
+      },
+      "G_centralized_coordination": {
+        "seed_count": 3,
+        "baseline_rescue_service_mean": 0.630464480874317,
+        "baseline_first_full_recovery_success_count": 3,
+        "baseline_sustained_30s_recovery_success_count": 3,
+        "stress_variant_count": 12,
+        "stress_delta_min": -0.6161202185792349,
+        "stress_delta_max": 0.03346994535519132,
+        "variants": [
+          {
+            "variant_id": "fade_margin_high",
+            "parameter": "fade_margin_db",
+            "level": "base + 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5997267759562841,
+            "paired_delta_from_variant_baseline": -0.03073770491803285,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "fade_margin_low",
+            "parameter": "fade_margin_db",
+            "level": "base - 2 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6584699453551912,
+            "paired_delta_from_variant_baseline": 0.028005464480874265,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "obstruction_high",
+            "parameter": "obstruction_loss_db",
+            "level": "12 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.014344262295081968,
+            "paired_delta_from_variant_baseline": -0.6161202185792349,
+            "first_full_recovery_success_count": 0,
+            "sustained_30s_recovery_success_count": 0
+          },
+          {
+            "variant_id": "obstruction_low",
+            "parameter": "obstruction_loss_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.630464480874317,
+            "paired_delta_from_variant_baseline": 0.0,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "pathloss_exponent_high",
+            "parameter": "path_loss_exponent",
+            "level": "base + 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.14617486338797814,
+            "paired_delta_from_variant_baseline": -0.4842896174863388,
+            "first_full_recovery_success_count": 1,
+            "sustained_30s_recovery_success_count": 1
+          },
+          {
+            "variant_id": "pathloss_exponent_low",
+            "parameter": "path_loss_exponent",
+            "level": "base - 0.2",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6639344262295083,
+            "paired_delta_from_variant_baseline": 0.03346994535519132,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_high",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base + 3 dB (more sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5744535519125683,
+            "paired_delta_from_variant_baseline": -0.05601092896174864,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "rx_sensitivity_low",
+            "parameter": "rx_sensitivity_dbm",
+            "level": "base - 3 dB (less sensitive)",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6584699453551913,
+            "paired_delta_from_variant_baseline": 0.028005464480874376,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_high",
+            "parameter": "shadowing_sigma_db",
+            "level": "8 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6092896174863388,
+            "paired_delta_from_variant_baseline": -0.021174863387978138,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "shadowing_low",
+            "parameter": "shadowing_sigma_db",
+            "level": "0 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.662568306010929,
+            "paired_delta_from_variant_baseline": 0.03210382513661203,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_high",
+            "parameter": "tx_power_dbm",
+            "level": "base + 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.6584699453551913,
+            "paired_delta_from_variant_baseline": 0.028005464480874376,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          },
+          {
+            "variant_id": "tx_power_low",
+            "parameter": "tx_power_dbm",
+            "level": "base - 3 dB",
+            "seed_count": 3,
+            "rescue_service_mean": 0.5744535519125683,
+            "paired_delta_from_variant_baseline": -0.05601092896174864,
+            "first_full_recovery_success_count": 3,
+            "sustained_30s_recovery_success_count": 3
+          }
+        ]
+      }
+    }
+  }
+}

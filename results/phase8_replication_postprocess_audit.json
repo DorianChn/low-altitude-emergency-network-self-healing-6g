@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "reason": "the simulation completed; only a summary-required top-level hash alias was absent",
+  "field_added": "plan_sha256",
+  "value_source": "experiment_plan_sha256 already present in the complete raw file",
+  "per_seed_records_modified": false,
+  "per_seed_records_canonical_sha256_before": "e24df1f1ae8d512092c184e15452ac210777407285f054a6b2d4037af07d07b7",
+  "per_seed_records_canonical_sha256_after": "e24df1f1ae8d512092c184e15452ac210777407285f054a6b2d4037af07d07b7",
+  "raw_file_sha256_before_metadata_alias": "6f880e69409f5c28e8994d0bf0969374804ce7a3920e5dc62815f7a23cac99ea",
+  "raw_file_sha256_after_metadata_alias": "1c8311e81bca28fcc7662037df489bf448d031103f9a25d3f0c4ed7de58ebf62",
+  "summary_file_sha256": "fc8019e8780cd5e381ecec347d69b5053a1130e7b76ae3f2001af1d081faa6da",
+  "replication_protocol_sha256": "c8d2fd5067d6cf0959b5d43fa512f4e3ca74c4f0b6b5439d2b2b494bc983b07f",
+  "finalizer_code_sha256": "ca4721e2763e76c12ecb85c4d8d01371f83151b9f5b8a8a7480c6020e7c40c6a",
+  "policy_runs": 1360,
+  "seed_rows": 80,
+  "charts": [
+    "plots\\phase8_replication\\phase8_validation_ablation_effects.png",
+    "plots\\phase8_replication\\phase8_validation_ablation_effects.svg",
+    "plots\\phase8_replication\\phase8_validation_policy_comparison.png",
+    "plots\\phase8_replication\\phase8_validation_policy_comparison.svg"
+  ]
+}

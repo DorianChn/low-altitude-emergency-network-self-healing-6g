@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase17_hil_validation_framework",
+  "created_at_utc": "2026-10-21T10:05:57.520388+00:00",
+  "experiment_role": "software_closed_loop_and_offline_replay_validation_not_real_hil",
+  "model_scope": "abstract_6g_research_simulation_not_real_network_test",
+  "current_mode": "SOFTWARE_CLOSED_LOOP",
+  "current_mode_source": "saved validation artifact; not live telemetry",
+  "software_closed_loop_status": "PASS",
+  "offline_replay_status": "PASS",
+  "real_hardware_in_loop_status": "NOT_RUN_NO_VERIFIED_HARDWARE_OR_DRIVER",
+  "live_device_status": "UNAVAILABLE_AND_BLOCKED",
+  "hardware_output_enabled": false,
+  "live_device": false,
+  "seed": 1717,
+  "source_revision": {
+    "git_branch": "phase17-hil-validation-framework",
+    "git_commit": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+    "working_tree_dirty": true
+  },
+  "implementation_file_sha256": {
+    "src/lowalt6g/phase17_hil.py": "4c9999cedec34d08560e015a44c4df047ea95d1ea2397bf59f55fe2b676fb0fa",
+    "scripts/run_phase17_hil_validation.py": "32ed5dc35a432839e4d74ea30db5b174eebce2452b25a3f4a8a081f2d7a8300e",
+    "src/lowalt6g/api.py": "0dffea0874e541f797a83430d3249b543041662ad91cfd343bf363ee5f3dbd0c"
+  },
+  "effective_config_sha256": "972720c2b45bef7396b1df8bb012c0133123efa9d745f40fe6f3dfa8302e4546",
+  "software_closed_loop": {
+    "source_classification": "SYNTHETIC_TEST_ONLY",
+    "configuration": {
+      "schema_version": "1.0",
+      "test_mode": "SOFTWARE_CLOSED_LOOP",
+      "source_classification": "SYNTHETIC_TEST_ONLY",
+      "seed": 1717,
+      "time_step_s": 1.0,
+      "steps": 6,
+      "initial_battery_wh": 120.0,
+      "return_reserve_wh": 30.0,
+      "relay_activation_energy_wh": 8.0,
+      "rescue_users": 2,
+      "telemetry_max_age_s": 1.0,
+      "backhaul_available": true,
+      "backhaul_schedule": {},
+      "telemetry_missing_steps": [],
+      "manual_stop": false,
+      "real_hardware_output_enabled": false
+    },
+    "configuration_sha256": "972720c2b45bef7396b1df8bb012c0133123efa9d745f40fe6f3dfa8302e4546",
+    "output_sha256": "6688d1383a5beb3300c145bf17052d873f002975cd191b405423d70b8fc7cd3f",
+    "repeat_output_sha256": "6688d1383a5beb3300c145bf17052d873f002975cd191b405423d70b8fc7cd3f",
+    "same_seed_deterministic_match": true,
+    "summary": {
+      "steps": 6,
+      "commands_requested": 1,
+      "commands_allowed": 1,
+      "feedback_matches": 1,
+      "first_rescue_recovery_step": 1,
+      "final_rescue_connected": 2,
+      "final_rescue_total": 2,
+      "final_battery_wh": 112.0,
+      "automatic_lockout": false
+    },
+    "decision_compute_time_claimed": false
+  },
+  "offline_replay": {
+    "source_path": "results/phase6_demo_dynamic_failures.json",
+    "source_sha256": "a0173ae46add5797d0efa119c72a7ffa63ac903b9674ddda9c6d512d91d972d2",
+    "scenario_id": "dynamic_failures",
+    "source_seed": 7020,
+    "strategy_id": "D_lexicographic_rescue_priority",
+    "frame_count": 61,
+    "mapped_frame_count": 61,
+    "frame_mapping_hashes_sha256": "1a5a7f69c2c36c0a1f591e1aa8361983789063d7546cd3379d0c967ebe7f7649",
+    "walked_discrete_frames": 61,
+    "interpolation_count": 0,
+    "pause_resume_single_step_verified": true,
+    "commands_allowed": false,
+    "latency_statistics": "UNDETERMINED_ACROSS_REPLAY_AND_WALL_CLOCK_DOMAINS_WITHOUT_SYNC"
+  },
+  "fault_injection": {
+    "seed": 1717,
+    "injection_count": 21,
+    "passed_count": 21,
+    "failed_count": 0,
+    "status": "PASS"
+  },
+  "state_mapping": {
+    "mapped_station_link_user_drone_fields": true,
+    "source_is_saved_simulation_frame": true,
+    "measurement_claim": false,
+    "all_frames_mapped_without_interpolation": true
+  },
+  "command_feedback_audit": {
+    "command_count": 1,
+    "command_and_reported_state_separate": true,
+    "command_success_requires_feedback_match": true,
+    "timeout_success_allowed": false
+  },
+  "adapter_status_path": "results/phase17_adapter_status.json",
+  "equipment_inventory_path": "results/phase17_environment_inventory.json",
+  "limitations": [
+    "No real hardware adapter, device protocol, HIL bench, radio transmission, flight, or base-station control was executed.",
+    "Software closed-loop values are synthetic acceptance fixtures, not network performance or measured radio results.",
+    "OFFLINE_REPLAY uses only saved Phase 6 frames and does not interpolate simulator states.",
+    "Clock-domain differences make cross-domain response delay indeterminate without verified synchronization."
+  ],
+  "errors": [],
+  "implementation_bundle_sha256": "e3075c3100fc4b4229a0d45f25fc7cf981fa78a3efae2ccb78c64bdb0a2f4e53",
+  "integrity_audit_status": "PASS",
+  "protected_file_count": 182,
+  "status": "PASS"
+}

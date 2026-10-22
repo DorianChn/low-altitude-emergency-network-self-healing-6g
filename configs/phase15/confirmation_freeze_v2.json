@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase15_link_calibration_pipeline",
+  "status": "frozen_before_holdout_scoring",
+  "frozen_at_utc": "2026-10-21T04:17:48.101160+00:00",
+  "branch": "phase15-link-calibration-pipeline",
+  "base_commit": "7d3eb100ac567aedd7edb462aab7ad1125a3fbb5",
+  "source_bundle_sha256": "4345935a3643d75e15f884ff9bd36965c7112d80198b1ffc07707d3b747a6dad",
+  "source_files": [
+    {
+      "path": "src/lowalt6g/phase15_data.py",
+      "sha256": "d6e8691f11af3919d97565ea96ec3e839314e432b8990ceea3e48b88aa8b0dd0"
+    },
+    {
+      "path": "src/lowalt6g/phase15_calibration.py",
+      "sha256": "eb9e3155fa7fd1a7a257f3f12eabceca65b1b00f44f6386cea55ae633dabde2f"
+    },
+    {
+      "path": "src/lowalt6g/phase15_integrity.py",
+      "sha256": "814bd56a73b52e1563ab417c65916ee21e404602bb0dee9c6ae8fa4bdf8c3aa6"
+    },
+    {
+      "path": "scripts/fetch_phase15_public_dataset.py",
+      "sha256": "4db749b5c31f7cb3e97484b3a6556b45784f697c2fcfb447975c43aaa04fbb87"
+    },
+    {
+      "path": "scripts/prepare_phase15_dataset.py",
+      "sha256": "129fe8102129460f37f45243a60f1376a7d5dba30dd2251bafb2a066f32e4113"
+    },
+    {
+      "path": "scripts/freeze_phase15_confirmation.py",
+      "sha256": "f1af995fbc645ee50c51df3c3200bb9335feebe10e75af74092652184f1e2de0"
+    },
+    {
+      "path": "scripts/run_phase15_calibration.py",
+      "sha256": "5840891a2a8137c6c1ee6c28cf4682513356e8f614861b79a23c851ea094eba1"
+    },
+    {
+      "path": "configs/phase15/public_dataset_manifest.json",
+      "sha256": "0826941fa206a6678b809799458442576549357d53d6b66c57cbc181e6521e68"
+    },
+    {
+      "path": "configs/phase15/calibration_protocol.json",
+      "sha256": "6cc291ee4ffce92498205d166f840b165ba90821ce737c56a56b05bab0ef9a26"
+    },
+    {
+      "path": "configs/phase15/calibration_protocol_v2.json",
+      "sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62"
+    },
+    {
+      "path": "configs/phase14/link_budget_v1.toml",
+      "sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9"
+    },
+    {
+      "path": "src/lowalt6g/radio_link.py",
+      "sha256": "57b5aeb783e976900fb068053e620f07635f02b9b958b167189040026e102197"
+    }
+  ],
+  "protocol_id": "public_a2g_offset_calibration_v2",
+  "protocol_path": "configs/phase15/calibration_protocol_v2.json",
+  "protocol_sha256": "1d5ff988acc61d66a2e91fcf987d0ee446b73ccdb0f3f44b9cb2b855f19c0e62",
+  "dataset_manifest_path": "configs/phase15/public_dataset_manifest.json",
+  "dataset_manifest_sha256": "0826941fa206a6678b809799458442576549357d53d6b66c57cbc181e6521e68",
+  "phase14_baseline_config_path": "configs/phase14/link_budget_v1.toml",
+  "phase14_baseline_config_sha256": "5c5e679b07fef175bc18bcffbffa0ec00e76900375844970fe9f47fd7bdb98c9",
+  "dataset_audit_path": "results/phase15_dataset_audit.json",
+  "dataset_audit_sha256": "d15818d27bd8801073c936b5d23ceeb16d2b5dc89916a0bc35aa3e8be82be1b5",
+  "cleaned_dataset_path": "results/phase15_measurements_public_clean.csv",
+  "cleaned_dataset_sha256": "9d1f4489623e26ae6dd71b9eb12bcd5352ffe70109f9abbb5f8f56339d41d4af",
+  "cleaned_dataset_row_count": 1370,
+  "fit_groups": [
+    "Sports field_10m",
+    "Sports field_15m",
+    "Farmland_10m",
+    "Farmland_15m"
+  ],
+  "holdout_groups": [
+    "Over-water_10m",
+    "Over-water_15m"
+  ],
+  "holdout_groups_viewed_for_fit_or_parameter_selection": false,
+  "holdout_use": "one final descriptive environment holdout; no retuning after scoring",
+  "prior_pre_holdout_attempt_log": "results/phase15_preholdout_run_attempts.json",
+  "prior_failed_attempt_changed_parameterization": true,
+  "seed": {
+    "fit_cluster_bootstrap": 150042,
+    "holdout_cluster_bootstrap": 150043
+  }
+}

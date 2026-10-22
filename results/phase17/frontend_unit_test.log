@@ -1,0 +1,13 @@
+
+> frontend@0.0.0 test
+> vitest run --config vitest.config.ts
+
+
+ RUN  v5.0.5 <LOCAL_PATH_REDACTED>/Desktop/工作/low-altitude-emergency-network-self-healing-6g/frontend
+
+
+ Test Files  4 passed (4)
+      Tests  14 passed (14)
+   Start at  18:00:31
+   Duration  2.91s (environment 64%, tests 16%, setup 10%, import 6%, transform 3%)
+

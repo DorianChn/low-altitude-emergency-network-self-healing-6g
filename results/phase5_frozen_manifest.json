@@ -1,0 +1,187 @@
+{
+  "freeze_point": "after development runs and before held-out validation",
+  "protocol": {
+    "decision_timing": "perf_counter wall-clock around controller.observe; simulation recovery time is a separate metric",
+    "development_minimum_per_scenario": 5,
+    "energy_unit": "Wh; hover/relay W multiplied by seconds / 3600; movement Wh/km multiplied by km",
+    "matched_world_traces": true,
+    "recovery_success": "all configured rescue users connected at one observation; sustained recovery separately requires 30 continuous seconds",
+    "uav_service_attribution": "same-tick no-drone counterfactual plus actual selected drone_relay user-seconds",
+    "unrecovered_time_reporting": "retain null success-only time, report failures/counts, and report recovery-or-censoring time at the simulation horizon",
+    "validation_minimum_per_scenario": 20
+  },
+  "protocol_revision": "phase5-v2-corrected-dynamic-initial-service",
+  "scenario_file_hashes": {
+    "dynamic_failures": {
+      "base_scenario": "889bc71a89fbe90e9ab84164050df1d4ef93588b257f6afcf9f35d31af3d7244",
+      "dynamic_config": "4b21a21525d9ef5557a40ef36a07451c0a56cdeb029230859dace620a4b548a4"
+    },
+    "high_load_backhaul_limit": {
+      "base_scenario": "77dd7ba49d057726333af48fd23edbd099ae6d11fea59e23a59eb27334d086b1",
+      "dynamic_config": "1bad9cfcb1d0b63904e256fa1f92c7a5e85eee3f191e0d387b2059beec0bf9ab"
+    },
+    "high_mobility_rescue": {
+      "base_scenario": "77dd7ba49d057726333af48fd23edbd099ae6d11fea59e23a59eb27334d086b1",
+      "dynamic_config": "a7b0aad9fd503b6f6e7171ece4ab787c9f28b12ba69b04f03e3511d163a48fa8"
+    },
+    "severe_persistent_faults": {
+      "base_scenario": "77dd7ba49d057726333af48fd23edbd099ae6d11fea59e23a59eb27334d086b1",
+      "dynamic_config": "a3bffc58662589be1db6ac15370c4d95efe7e3efa3d06e1f8682334dcb13472c"
+    }
+  },
+  "schema_version": "1.0",
+  "seeds": {
+    "dynamic_failures": {
+      "development": [
+        6510,
+        6511,
+        6512,
+        6513,
+        6514
+      ],
+      "validation": [
+        7020,
+        7021,
+        7022,
+        7023,
+        7024,
+        7025,
+        7026,
+        7027,
+        7028,
+        7029,
+        7030,
+        7031,
+        7032,
+        7033,
+        7034,
+        7035,
+        7036,
+        7037,
+        7038,
+        7039
+      ]
+    },
+    "high_load_backhaul_limit": {
+      "development": [
+        6530,
+        6531,
+        6532,
+        6533,
+        6534
+      ],
+      "validation": [
+        7060,
+        7061,
+        7062,
+        7063,
+        7064,
+        7065,
+        7066,
+        7067,
+        7068,
+        7069,
+        7070,
+        7071,
+        7072,
+        7073,
+        7074,
+        7075,
+        7076,
+        7077,
+        7078,
+        7079
+      ]
+    },
+    "high_mobility_rescue": {
+      "development": [
+        6520,
+        6521,
+        6522,
+        6523,
+        6524
+      ],
+      "validation": [
+        7040,
+        7041,
+        7042,
+        7043,
+        7044,
+        7045,
+        7046,
+        7047,
+        7048,
+        7049,
+        7050,
+        7051,
+        7052,
+        7053,
+        7054,
+        7055,
+        7056,
+        7057,
+        7058,
+        7059
+      ]
+    },
+    "severe_persistent_faults": {
+      "development": [
+        6500,
+        6501,
+        6502,
+        6503,
+        6504
+      ],
+      "validation": [
+        7000,
+        7001,
+        7002,
+        7003,
+        7004,
+        7005,
+        7006,
+        7007,
+        7008,
+        7009,
+        7010,
+        7011,
+        7012,
+        7013,
+        7014,
+        7015,
+        7016,
+        7017,
+        7018,
+        7019
+      ]
+    }
+  },
+  "source_file_sha256": {
+    "api.py": "1e81b1c05c249f0f8719470a1feb549288d999e7c636f67856c8ac8030afc186",
+    "charts.py": "548136becaaf5ee44a1af051e2544b73a501fa26f41d5bc9f18fb542e6633514",
+    "cli.py": "d4bd5b3f8dc3ada69c702e47b1a99f47cc5b5bfe5f1c9bb7808889ec37fd8d82",
+    "config.py": "231f8e5c49d4cc0f3d383057074fef97bfbd96cc456e2e78363b7dbc1129f61b",
+    "dynamic_config.py": "404cbb0b2b1e76bb776a9431095ae2df7cc21648b099dbcad8e691eb9c709163",
+    "dynamic_simulation.py": "2aa1b62f8bbef7758aaaeba3c8f8a9771320e3ed7796c42d92f790959a2faf54",
+    "dynamic_world.py": "e93cb954dfa43c9c52118a3178a8904eb0737e568a6fd9213588ee8ca48104f2",
+    "energy_budget.py": "5f0ef6edd0cd55cfcf499a03fd1b343ee85b78338e13c17525366c8da406decf",
+    "engine.py": "b9d295e3ec1a1a7708f88b8b311995f07317029da1c5a732f1107dbaafbd4601",
+    "experiment.py": "b7a88ddf1bc51436ca153fb1e9bf2b93dec4238e3da5492f742875a34012cd03",
+    "optimizer.py": "11162120c657a529db4a81649998cb00250be206935ba216458a96f988486525",
+    "phase5.py": "73555809197d2b53073ecebb49f2cf5d77c54dbeb24b0beda4053520a9ba0e6f"
+  },
+  "strategies": {
+    "A_no_recovery": "No UAV deployment; ground-station recovery only when explicitly scheduled.",
+    "B_phase1_static_grid": "Historical one-time static grid planner retained unchanged.",
+    "Bprime_static_grid_shared_safety": "Same static grid target as B with shared sortie-energy feasibility and reserve envelope.",
+    "C_rolling_horizon_mpc": "Existing deterministic finite-horizon beam search with shared conservative return-energy check.",
+    "D_lexicographic_rescue_priority": "Existing deterministic lexicographic rescue-priority candidate search with shared sortie-energy envelope."
+  },
+  "strategy_order": [
+    "A_no_recovery",
+    "B_phase1_static_grid",
+    "Bprime_static_grid_shared_safety",
+    "C_rolling_horizon_mpc",
+    "D_lexicographic_rescue_priority"
+  ]
+}

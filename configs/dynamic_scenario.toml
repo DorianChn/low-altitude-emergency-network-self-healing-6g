@@ -1,0 +1,90 @@
+base_scenario = "disaster_scenario.toml"
+
+[experiment]
+seeds = [2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045]
+mobility_axis_max_km_per_tick = 0.025
+
+[energy]
+battery_capacity_wh = 600.0
+initial_battery_wh = 600.0
+reserve_wh = 50.0
+movement_wh_per_km = 18.0
+hover_power_w = 80.0
+relay_power_w = 120.0
+
+[optimizer]
+decision_interval_s = 20
+prediction_horizon_steps = 3
+beam_width = 6
+position_signature_quantum_km = 0.05
+congestion_threshold = 0.85
+rescue_service_weight = 10.0
+connection_weight = 3.0
+recovery_bonus = 2.0
+latency_penalty_weight = 1.5
+energy_penalty_weight = 2.0
+rescue_progress_weight = 4.0
+
+[[events]]
+time_s = 60
+type = "station_failure"
+target_id = "bs-west"
+
+[[events]]
+time_s = 180
+type = "station_recovery"
+target_id = "bs-west"
+
+[[events]]
+time_s = 230
+type = "traffic_change"
+target_id = "city"
+value = 1.30
+
+[[events]]
+time_s = 300
+type = "traffic_change"
+target_id = "city"
+value = 1.0
+
+[[events]]
+time_s = 330
+type = "backhaul_failure"
+target_id = "uav-relay-1"
+
+[[events]]
+time_s = 370
+type = "backhaul_recovery"
+target_id = "uav-relay-1"
+
+[[events]]
+time_s = 400
+type = "station_failure"
+target_id = "bs-west"
+
+[[events]]
+time_s = 450
+type = "station_recovery"
+target_id = "bs-west"
+
+[[events]]
+time_s = 460
+type = "traffic_change"
+target_id = "city"
+value = 1.35
+
+[[events]]
+time_s = 500
+type = "traffic_change"
+target_id = "city"
+value = 1.0
+
+[[events]]
+time_s = 520
+type = "station_recovery"
+target_id = "bs-central"
+
+[[events]]
+time_s = 570
+type = "station_recovery"
+target_id = "bs-east"

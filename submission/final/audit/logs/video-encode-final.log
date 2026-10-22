@@ -1,0 +1,83 @@
+Input #0, matroska,webm, from '<LOCAL_PATH_REDACTED>\AppData\Local\Temp\lowalt6g-phase18-video-raw-retry1\page@bdd226117a0eb7f8dda66ce53b779a28.webm':
+  Metadata:
+    creation_time   : 2026-10-21T13:09:09.894000Z
+    ENCODER         : Lavf62.12.102
+  Duration: 00:04:24.00, start: 0.000000, bitrate: 1589 kb/s
+  Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(pc, bt470bg/unknown/unknown, progressive), 1920x1080, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn (default)
+    Metadata:
+      ENCODER         : Lavc62.28.102 libvpx-vp9
+      DURATION        : 00:04:24.000000000
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from '<LOCAL_PATH_REDACTED>\AppData\Local\Temp\lowalt6g-phase18-video-audio\voiceover-with-tail.m4a':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: M4A isomiso2
+    encoder         : Lavf62.12.102
+  Duration: 00:04:26.01, start: 0.000000, bitrate: 61 kb/s
+  Stream #1:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, mono, fltp, 61 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp9 (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0000019b81ebcdc0] using SAR=1/1
+[libx264 @ 0000019b81ebcdc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000019b81ebcdc0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000019b81ebcdc0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=34 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=25.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'submission/final/作品演示视频.mp4':
+  Metadata:
+    encoder         : Lavf62.12.102
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(pc, bt470bg/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.102 libx264
+      DURATION        : 00:04:24.000000000
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 22050 Hz, mono, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.102 aac
+      handler_name    : SoundHandler
+frame=  188 fps=0.0 q=30.0 size=     256KiB time=00:00:07.44 bitrate= 281.9kbits/s speed=14.5x elapsed=0:00:00.51    
+frame=  370 fps=357 q=30.0 size=     512KiB time=00:00:14.72 bitrate= 285.0kbits/s speed=14.2x elapsed=0:00:01.03    
+frame=  675 fps=437 q=30.0 size=     768KiB time=00:00:26.92 bitrate= 233.7kbits/s speed=17.4x elapsed=0:00:01.54    
+frame= 1005 fps=489 q=30.0 size=    1280KiB time=00:00:40.12 bitrate= 261.4kbits/s speed=19.5x elapsed=0:00:02.05    
+frame= 1322 fps=513 q=30.0 size=    2048KiB time=00:00:52.80 bitrate= 317.8kbits/s speed=20.5x elapsed=0:00:02.57    
+frame= 1695 fps=549 q=30.0 size=    2304KiB time=00:01:07.72 bitrate= 278.7kbits/s speed=21.9x elapsed=0:00:03.08    
+frame= 2038 fps=565 q=30.0 size=    2560KiB time=00:01:21.44 bitrate= 257.5kbits/s speed=22.6x elapsed=0:00:03.60    
+frame= 2392 fps=580 q=30.0 size=    3072KiB time=00:01:35.60 bitrate= 263.2kbits/s speed=23.2x elapsed=0:00:04.12    
+frame= 2731 fps=588 q=30.0 size=    3584KiB time=00:01:49.16 bitrate= 269.0kbits/s speed=23.5x elapsed=0:00:04.64    
+frame= 3064 fps=594 q=30.0 size=    3840KiB time=00:02:02.41 bitrate= 257.0kbits/s speed=23.7x elapsed=0:00:05.16    
+frame= 3420 fps=602 q=30.0 size=    4096KiB time=00:02:16.72 bitrate= 245.4kbits/s speed=24.1x elapsed=0:00:05.67    
+frame= 3719 fps=602 q=30.0 size=    4864KiB time=00:02:28.68 bitrate= 268.0kbits/s speed=  24x elapsed=0:00:06.18    
+frame= 4037 fps=602 q=30.0 size=    5376KiB time=00:02:41.36 bitrate= 272.9kbits/s speed=24.1x elapsed=0:00:06.70    
+frame= 4391 fps=609 q=30.0 size=    5632KiB time=00:02:55.56 bitrate= 262.8kbits/s speed=24.3x elapsed=0:00:07.21    
+frame= 4705 fps=609 q=30.0 size=    6144KiB time=00:03:08.12 bitrate= 267.6kbits/s speed=24.3x elapsed=0:00:07.72    
+frame= 5032 fps=610 q=30.0 size=    6656KiB time=00:03:21.17 bitrate= 271.0kbits/s speed=24.4x elapsed=0:00:08.24    
+frame= 5390 fps=615 q=30.0 size=    6912KiB time=00:03:35.52 bitrate= 262.7kbits/s speed=24.6x elapsed=0:00:08.76    
+frame= 5713 fps=616 q=30.0 size=    7424KiB time=00:03:48.44 bitrate= 266.2kbits/s speed=24.6x elapsed=0:00:09.27    
+frame= 6044 fps=617 q=30.0 size=    7680KiB time=00:04:01.68 bitrate= 260.3kbits/s speed=24.7x elapsed=0:00:09.79    
+frame= 6399 fps=620 q=30.0 size=    8192KiB time=00:04:18.71 bitrate= 259.4kbits/s speed=25.1x elapsed=0:00:10.31    
+[mp4 @ 0000019b81eae100] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000019b81e2f6c0] video:6429KiB audio:1982KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.975518%
+frame= 6600 fps=626 q=-1.0 Lsize=    8577KiB time=00:04:23.92 bitrate= 266.2kbits/s speed=  25x elapsed=0:00:10.54    
+[libx264 @ 0000019b81ebcdc0] frame I:37    Avg QP:15.26  size: 77352
+[libx264 @ 0000019b81ebcdc0] frame P:1729  Avg QP:17.72  size:  1817
+[libx264 @ 0000019b81ebcdc0] frame B:4834  Avg QP:19.22  size:   120
+[libx264 @ 0000019b81ebcdc0] consecutive B-frames:  2.0%  0.8%  0.8% 96.4%
+[libx264 @ 0000019b81ebcdc0] mb I  I16..4: 29.3% 59.4% 11.3%
+[libx264 @ 0000019b81ebcdc0] mb P  I16..4:  1.4%  1.2%  0.2%  P16..4:  1.7%  0.1%  0.1%  0.0%  0.0%    skip:95.2%
+[libx264 @ 0000019b81ebcdc0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.2%  0.0%  0.0%  direct: 0.1%  skip:99.6%  L0:46.3% L1:52.6% BI: 1.0%
+[libx264 @ 0000019b81ebcdc0] 8x8 transform intra:49.5% inter:72.3%
+[libx264 @ 0000019b81ebcdc0] coded y,uvDC,uvAC intra: 9.7% 11.9% 6.5% inter: 0.1% 0.3% 0.0%
+[libx264 @ 0000019b81ebcdc0] i16 v,h,dc,p: 49% 48%  2%  1%
+[libx264 @ 0000019b81ebcdc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 52% 15% 31%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0000019b81ebcdc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 32% 18%  3%  3%  3%  4%  3%  4%
+[libx264 @ 0000019b81ebcdc0] i8c dc,h,v,p: 79% 15%  6%  0%
+[libx264 @ 0000019b81ebcdc0] Weighted P-Frames: Y:2.5% UV:1.8%
+[libx264 @ 0000019b81ebcdc0] ref P L0: 70.0% 30.0%
+[libx264 @ 0000019b81ebcdc0] ref B L0: 81.9% 18.1%
+[libx264 @ 0000019b81ebcdc0] ref B L1: 95.6%  4.4%
+[libx264 @ 0000019b81ebcdc0] kb/s:199.48
+[aac @ 0000019b83ea0580] Qavg: 65522.129
+EXIT_CODE=0

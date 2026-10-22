@@ -1,0 +1,14 @@
+
+> frontend@0.0.0 test
+> vitest run --config vitest.config.ts
+
+
+ RUN  v5.0.5 <LOCAL_PATH_REDACTED>/AppData/Local/Temp/lowalt6g-phase18-stage-b45cf3d4b49344ce9e6fba68a3b0a233/frontend
+
+
+ Test Files  5 passed (5)
+      Tests  17 passed (17)
+   Start at  20:57:35
+   Duration  3.04s (environment 61%, tests 15%, setup 11%, transform 7%, import 5%)
+
+EXIT_CODE=0

@@ -1,0 +1,187 @@
+
+> frontend@0.0.0 test:e2e
+> playwright test --config playwright.config.ts --reporter=list
+
+[WebServer] INFO:     Started server process [30928]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8137 (Press CTRL+C to quit)
+[WebServer] INFO:     127.0.0.1:14999 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] (node:58912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 
+[WebServer]   VITE v8.3.4  ready in 217 ms
+[WebServer] 
+[WebServer]   ➜  Local:   http://127.0.0.1:5197/
+
+Running 40 tests using 4 workers
+
+(node:69700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:75884) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:71032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] INFO:     127.0.0.1:2301 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2303 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2305 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2307 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2308 - "GET /api/research/phase14 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2309 - "GET /api/research/phase15 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2310 - "GET /api/research/phase15 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2311 - "GET /api/research/phase16 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2312 - "GET /api/research/phase15/plots/phase15_fit_and_holdout.png HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2313 - "GET /api/research/phase15/plots/phase15_parameter_uncertainty.png HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2314 - "GET /api/research/phase15/plots/phase15_holdout_residuals.png HTTP/1.1" 200 OK
+  ok  1 e2e\phase15-calibration.spec.ts:34:1 › Phase 15 fits a narrow mobile viewport without hiding the evidence state (2.3s)
+  ok  3 e2e\phase14-research.spec.ts:5:1 › Phase 14 model evidence loads saved values and stays usable at three widths (2.7s)
+  ok  2 e2e\phase15-calibration.spec.ts:5:1 › Phase 15 shows saved measurement results at desktop and laptop widths (3.0s)
+  ok  4 e2e\phase16-readiness.spec.ts:5:1 › Phase 16 displays saved measurement readiness evidence at supported viewports (3.0s)
+[WebServer] INFO:     127.0.0.1:4152 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13510 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13511 - "GET /api/research/phase17 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13515 - "GET /api/research/phase17 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13513 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13517 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13518 - "GET /api/research/phase17 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13519 - "GET /api/research/phase17 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13520 - "GET /api/research/phase17 HTTP/1.1" 200 OK
+  ok  6 e2e\phase17-hil.spec.ts:43:3 › Phase 17 research view fits 1920x1080 (1.8s)
+  ok  8 e2e\phase17-hil.spec.ts:43:3 › Phase 17 research view fits 390x844 (1.7s)
+  ok  7 e2e\phase17-hil.spec.ts:43:3 › Phase 17 research view fits 1366x768 (1.8s)
+  ok  5 e2e\phase17-hil.spec.ts:11:1 › Phase 17 API and saved replay agree with the research view (2.7s)
+[WebServer] INFO:     127.0.0.1:3392 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:3393 - "GET /api/research/phase18 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:12188 - "GET /api/research/phase18 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:4712 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:9514 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6913 - "GET /api/research/phase9 HTTP/1.1" 200 OK
+  ok  9 e2e\phase18-final-audit.spec.ts:11:1 › Phase 18 displays saved audit values and links to source-stage evidence (1.5s)
+[WebServer] INFO:     127.0.0.1:5942 - "GET /api/research/phase18 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:9839 - "GET /api/research/phase18 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:5984 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13552 - "GET /api/research/phase18 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13553 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13554 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13555 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+  ok 11 e2e\phase18-final-audit.spec.ts:47:3 › Phase 18 final audit fits 1366x768 (2.0s)
+  ok 10 e2e\phase18-final-audit.spec.ts:47:3 › Phase 18 final audit fits 1920x1080 (2.0s)
+  ok 12 e2e\phase18-final-audit.spec.ts:47:3 › Phase 18 final audit fits 390x844 (1.8s)
+[WebServer] INFO:     127.0.0.1:1156 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2308 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2309 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+  ok 13 e2e\phase6-demo.spec.ts:18:3 › loads the recorded 严重持续故障 validation replay (1.3s)
+[WebServer] INFO:     127.0.0.1:2314 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2310 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:12240 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2315 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:9563 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8279 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8280 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8281 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8282 - "GET /api/demo/phase6/high_load_backhaul_limit HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8284 - "GET /api/demo/phase6/high_load_backhaul_limit HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8285 - "GET /api/demo/phase6/dynamic_failures HTTP/1.1" 200 OK
+  ok 16 e2e\phase6-demo.spec.ts:18:3 › loads the recorded 高负载 / 回传受限 validation replay (1.7s)
+[WebServer] INFO:     127.0.0.1:8287 - "GET /api/demo/phase6/dynamic_failures HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8290 - "GET /api/demo/phase6/high_mobility_rescue HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8288 - "GET /api/demo/phase6/high_mobility_rescue HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8292 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+  ok 14 e2e\phase6-demo.spec.ts:18:3 › loads the recorded 动态故障 validation replay (2.1s)
+  ok 15 e2e\phase6-demo.spec.ts:18:3 › loads the recorded 高移动救援 validation replay (2.3s)
+[WebServer] INFO:     127.0.0.1:6050 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6051 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2355 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13523 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2271 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2272 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2273 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2274 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+  ok 18 e2e\phase6-demo.spec.ts:77:3 › renders without page overflow at 1920x1080 (1.7s)
+  ok 19 e2e\phase6-demo.spec.ts:77:3 › renders without page overflow at 1366x768 (1.6s)
+  ok 20 e2e\phase6-demo.spec.ts:77:3 › renders without page overflow at 390x844 (1.5s)
+[WebServer] INFO:     127.0.0.1:5224 - "GET /api/health HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:11087 - "GET /api/health HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:11088 - "GET /api/experiments/phase5 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:11092 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:11090 - "GET /api/replay/2026 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:11089 - "GET /api/experiments/phase2 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:11094 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+  ok 17 e2e\phase6-demo.spec.ts:38:1 › keeps A/B/B′/C/D controls, timeline, and displayed experiment values consistent (4.2s)
+[WebServer] INFO:     127.0.0.1:2491 - "GET /api/health HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1706 - "GET /api/health HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1703 - "GET /api/experiments/phase5 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:3555 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1704 - "GET /api/replay/2026 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1705 - "GET /api/experiments/phase2 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:10370 - "GET /api/research/phase8 HTTP/1.1" 200 OK
+  ok 23 e2e\phase6-demo.spec.ts:151:3 › research workbench fits 1920x1080 and exposes readable evidence (1.6s)
+[WebServer] INFO:     127.0.0.1:7200 - "GET /api/research/phase8 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13786 - "GET /api/health HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13782 - "GET /api/experiments/phase5 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:11015 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13787 - "GET /api/research/phase9 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13784 - "GET /api/replay/2026 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:13785 - "GET /api/experiments/phase2 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:4455 - "GET /api/health HTTP/1.1" 200 OK
+  ok 21 e2e\phase6-demo.spec.ts:96:1 › research workbench keeps stage, scene, strategy, and source selection in one dataset (2.8s)
+[WebServer] INFO:     127.0.0.1:4456 - "GET /api/experiments/phase5 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8211 - "GET /api/replay/2026 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8214 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:8212 - "GET /api/experiments/phase2 HTTP/1.1" 200 OK
+  ok 24 e2e\phase6-demo.spec.ts:151:3 › research workbench fits 1366x768 and exposes readable evidence (1.8s)
+[WebServer] INFO:     127.0.0.1:9376 - "GET /api/health HTTP/1.1" 200 OK
+  ok 26 e2e\phase6-demo.spec.ts:165:3 › primary navigation labels remain single-line at 320px (638ms)
+[WebServer] INFO:     127.0.0.1:10440 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:2079 - "GET /api/health HTTP/1.1" 200 OK
+  ok 25 e2e\phase6-demo.spec.ts:151:3 › research workbench fits 390x844 and exposes readable evidence (1.8s)
+[WebServer] INFO:     127.0.0.1:2080 - "GET /api/experiments/phase5 HTTP/1.1" 200 OK
+  ok 22 e2e\phase6-demo.spec.ts:124:1 › preserves the five existing routes and the new research route (3.8s)
+  ok 27 e2e\phase6-demo.spec.ts:165:3 › primary navigation labels remain single-line at 375px (797ms)
+  ok 28 e2e\phase6-demo.spec.ts:165:3 › primary navigation labels remain single-line at 414px (749ms)
+[WebServer] INFO:     127.0.0.1:6341 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6344 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6342 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6346 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6347 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6345 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+  ok 29 e2e\phase6-demo.spec.ts:196:1 › research workbench reports missing summaries without fallback values (1.2s)
+[WebServer] INFO:     127.0.0.1:6348 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+  ok 31 e2e\phase6-demo.spec.ts:219:1 › emits no browser runtime errors on the phase-six demo page (1.5s)
+[WebServer] INFO:     127.0.0.1:3445 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+  ok 32 e2e\phase6-demo.spec.ts:230:1 › keeps Phase 6 page context and data independent from historical replay requests (1.4s)
+  ok 30 e2e\phase6-demo.spec.ts:207:1 › reports a missing replay instead of substituting animated placeholder data (1.8s)
+[WebServer] INFO:     127.0.0.1:7345 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6634 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:6635 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:9365 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:9363 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:9366 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:9368 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+  ok 36 e2e\phase6-demo.spec.ts:299:1 › shows the research page's multi-seed source without loading historical replay data (1.3s)
+  ok 34 e2e\phase6-demo.spec.ts:270:1 › shows a truthful empty state when a replay has no events (1.8s)
+  ok 33 e2e\phase6-demo.spec.ts:243:1 › preserves unknown events at the same timestamp and stops event navigation at boundaries (2.2s)
+[WebServer] INFO:     127.0.0.1:8760 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:12982 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:4833 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1765 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1767 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1768 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1769 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1770 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1771 - "GET /api/demo/phase6/dynamic_failures HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:1402 - "GET /api/research/phase11 HTTP/1.1" 200 OK
+  ok 38 e2e\phase6-demo.spec.ts:324:1 › exposes a first-use guide, all-event filter, and metric definitions (1.3s)
+[WebServer] INFO:     127.0.0.1:14994 - "GET /api/demo/phase6/high_mobility_rescue HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:3372 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:3373 - "GET /api/demo/phase6 HTTP/1.1" 200 OK
+  ok 37 e2e\phase6-demo.spec.ts:312:1 › space and arrow shortcuts control only the page-owned replay (2.1s)
+[WebServer] INFO:     127.0.0.1:3374 - "GET /api/demo/phase6/severe_persistent_faults HTTP/1.1" 200 OK
+[WebServer] INFO:     127.0.0.1:12719 - "GET /api/demo/phase6/dynamic_failures HTTP/1.1" 200 OK
+  ok 40 e2e\phase6-demo.spec.ts:345:1 › reduced-motion preference and keyboard focus remain usable (957ms)
+  ok 39 e2e\phase6-demo.spec.ts:334:1 › playback rate advances stored frames and switching scene resets the clock (2.4s)
+  ok 35 e2e\phase6-demo.spec.ts:283:1 › a late scenario response cannot replace the latest selected replay (5.2s)
+
+  40 passed (23.9s)

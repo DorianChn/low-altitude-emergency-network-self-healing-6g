@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase16_field_measurement_readiness",
+  "created_at_utc": "2026-10-21T06:36:23.231006+00:00",
+  "status": "NOT_READY_FOR_FIELD_MEASUREMENT",
+  "calibration_status": "NOT_CALIBRATED",
+  "public_data_only": true,
+  "target_device_calibration_complete": false,
+  "field_measurement_executed": false,
+  "transmission_or_uav_operation_performed": false,
+  "project_measurement_records": 0,
+  "blocking_gates": [
+    "No verified project transmitter/receiver, antenna, feedline, or instrument calibration certificates are recorded.",
+    "No project-specific radio authorization for 3.5 GHz or actual emission configuration is recorded.",
+    "No actual UAV, registration/airspace assessment, or flight authorization is recorded.",
+    "No target-device measurement uncertainty values or preregistered numerical acceptance thresholds exist."
+  ],
+  "completed_software_capabilities": [
+    "Read-only CSV/JSON measurement import and raw-file SHA-256 audit.",
+    "Unit/value checks, duplicate detection, metadata completeness reporting, and session-level leakage checks.",
+    "Uncertainty propagation with correlation handling, explicit missing-input behavior, and reproducible Monte Carlo.",
+    "Evidence-driven calibration acceptance state machine and offline import adapter."
+  ],
+  "measurement_adapters": [
+    {
+      "id": "offline_file_import",
+      "status": "IMPLEMENTED_AND_TESTED",
+      "live_device": false
+    },
+    {
+      "id": "radio_instrument_driver",
+      "status": "UNAVAILABLE",
+      "live_device": false
+    },
+    {
+      "id": "future_instrument_adapter_contract",
+      "status": "INTERFACE_ONLY",
+      "live_device": false
+    }
+  ],
+  "required_notice": "真实设备校准尚未完成；当前工具用于测量准备、数据审计和校准验收。",
+  "measurement_import_audit_path": "results/phase16/imports/metadata-schema-v1/phase15_measurements_public_clean-9d1f4489623e.audit.json",
+  "measurement_plan": {
+    "status": "PLANNED_NOT_EXECUTED",
+    "target_frequency_hz": 3500000000,
+    "transmission_authorized": false,
+    "uav_flight_authorized": false,
+    "scenarios": [
+      {
+        "id": "open_line_of_sight",
+        "purpose": "reference propagation and repeatability",
+        "conditions": [
+          "clear LOS",
+          "documented antenna attitude",
+          "approved site"
+        ],
+        "primary_sources": [
+          "position error",
+          "antenna alignment",
+          "temperature drift",
+          "multipath"
+        ]
+      },
+      {
+        "id": "urban_street",
+        "purpose": "street canyon and route variability",
+        "conditions": [
+          "record street geometry",
+          "record traffic and moving obstructions",
+          "fixed route segments"
+        ],
+        "primary_sources": [
+          "multipath",
+          "time variation",
+          "route repeatability",
+          "position sync"
+        ]
+      },
+      {
+        "id": "building_obstructed",
+        "purpose": "obstruction loss and link margin changes",
+        "conditions": [
+          "record obstruction class",
+          "same Tx/Rx sites across batches",
+          "no private premises without permission"
+        ],
+        "primary_sources": [
+          "building geometry",
+          "orientation",
+          "position error",
+          "environmental variation"
+        ]
+      }
+    ],
+    "design": {
+      "independent_unit": "complete route/session/batch",
+      "pilot": "one route per cell for variance and workflow review; pilot data excluded from final holdout",
+      "provisional_cells": {
+        "propagation_conditions": [
+          "open_line_of_sight",
+          "urban_street",
+          "building_obstructed"
+        ],
+        "distance_levels": [
+          "near",
+          "middle",
+          "far",
+          "edge_of_reliable_measurement"
+        ],
+        "receiver_heights": [
+          "low_approved_height",
+          "middle_approved_height",
+          "high_approved_height"
+        ],
+        "independent_routes_per_cell": 5,
+        "repeat_passes_per_route": 3
+      },
+      "sample_size_rule": "Recalculate after the pilot using observed between-route variance and a predeclared precision/power target; five routes are a planning floor, not a statistical guarantee.",
+      "split_rule": "Keep entire routes and measurement batches in exactly one of development, validation, or final holdout. Never split adjacent samples across partitions."
+    }
+  },
+  "equipment_readiness_checklist": [
+    {
+      "item": "Authorized, type-appropriate transmitter or shielded-lab source",
+      "status": "MISSING"
+    },
+    {
+      "item": "Calibrated receiver/test instrument with certificate",
+      "status": "MISSING"
+    },
+    {
+      "item": "Antenna patterns and calibrated feedline-loss records",
+      "status": "MISSING"
+    },
+    {
+      "item": "Positioning and time synchronization evidence",
+      "status": "MISSING"
+    },
+    {
+      "item": "Site/frequency authorization for any emission",
+      "status": "NOT_VERIFIED"
+    },
+    {
+      "item": "UAV and actual site flight/airspace approval if airborne",
+      "status": "NOT_VERIFIED"
+    },
+    {
+      "item": "Privacy-reviewed, session-grouped storage location",
+      "status": "TEMPLATE_READY"
+    }
+  ],
+  "integrity_audit_path": "results/phase16_integrity_audit.json",
+  "uncertainty_budget_path": "results/phase16_uncertainty_budget.json",
+  "environment_inventory_path": "results/phase16_environment_inventory.json",
+  "state_history_path": "results/phase16_calibration_state.json"
+}

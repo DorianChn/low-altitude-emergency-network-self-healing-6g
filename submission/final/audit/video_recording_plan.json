@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "title": "6G / RESCUE 本机功能演示",
+  "capture_scope": "real browser rendering of the local project using saved simulation replay APIs",
+  "voice": "Windows SAPI Microsoft Kangkang zh-CN synthetic narration",
+  "segments": [
+    {
+      "id": "01",
+      "route": "/",
+      "caption": "6G / RESCUE  ·  灾后低空应急通信研究原型",
+      "narration": "大家好，这是面向灾后低空应急网络的研究仿真原型。视频展示项目保存的预计算验证回放，不连接真实基站、无人机或无线电设备。",
+      "target_seconds": 16
+    },
+    {
+      "id": "02",
+      "route": "/demo",
+      "scenario": "severe_persistent_faults",
+      "caption": "01  严重持续故障  ·  验证回放种子 7000",
+      "narration": "先看严重持续故障场景，展示留出验证种子七千的逐帧仿真。地面基站故障后，救援通信是否恢复，取决于接入、回传、共享容量、飞行与电池约束同时可行。",
+      "target_seconds": 25
+    },
+    {
+      "id": "03",
+      "route": "/demo",
+      "scenario": "severe_persistent_faults",
+      "strategy": "D_lexicographic_rescue_priority",
+      "seek_seconds": 270,
+      "caption": "02  切换救援优先策略  ·  拖动时间轴查看事件",
+      "narration": "左侧地图来自一条已记录轨迹。这里切换救援优先策略并移动时间轴，可查看网络状态、故障事件和调度结果。下方对照表统计这个场景全部二十个留出种子，不是当前地图这一条轨迹的统计。",
+      "target_seconds": 27
+    },
+    {
+      "id": "04",
+      "route": "/demo",
+      "scenario": "dynamic_failures",
+      "caption": "03  动态故障  ·  事件变化可能改变可行路径",
+      "narration": "接下来切换动态故障。运行中新增的基站或回传故障会改变端到端路径。项目保留规则基线、优化策略与失败样本，不能把更复杂的算法直接说成更优。",
+      "target_seconds": 24
+    },
+    {
+      "id": "05",
+      "route": "/demo",
+      "scenario": "high_mobility_rescue",
+      "caption": "04  高移动救援  ·  用户位置随仿真事件变化",
+      "narration": "高移动救援场景中，救援用户位置随仿真事件变化。地图呈现离散模型输出，不包含真实建筑遮挡、无线干扰和完整通信协议栈。",
+      "target_seconds": 19
+    },
+    {
+      "id": "06",
+      "route": "/demo",
+      "scenario": "high_load_backhaul_limit",
+      "caption": "05  高负载 / 回传受限  ·  共享容量约束",
+      "narration": "高负载并回传受限场景展示共享容量竞争。健康回传容量不足时，系统会报告服务受限，不会把无人机位置变化当作通信恢复。",
+      "target_seconds": 19
+    },
+    {
+      "id": "07",
+      "route": "/command",
+      "caption": "06  数字孪生指挥中心  ·  预计算仿真回放",
+      "narration": "指挥中心把基站、用户、链路、无人机和事件时间线放在同一界面。数据来自保存的仿真接口；页面标示为预计算回放，不是实时遥测。",
+      "target_seconds": 20
+    },
+    {
+      "id": "08",
+      "route": "/decision",
+      "caption": "07  自愈决策中心  ·  约束和不可行原因可见",
+      "narration": "决策中心展示策略选择、可行性约束和失败原因。多无人机有配对统计实验，但缺少逐帧机队数据的场景不会生成替代轨迹。",
+      "target_seconds": 20
+    },
+    {
+      "id": "09",
+      "route": "/lab",
+      "caption": "08  算法实验室  ·  分场景比较策略表现",
+      "narration": "实验室按策略和场景比较救援服务、恢复成功、时延和能耗。时延只在成功连接样本上统计，不同策略的样本集合可能不同。",
+      "target_seconds": 20
+    },
+    {
+      "id": "10",
+      "route": "/research",
+      "caption": "09  研究证据  ·  数据来源与指标定义",
+      "narration": "研究证据页把报告、原始 JSON 和指标定义关联起来。固定种子支持模型内复现，不代表真实网络总体性能或现场救援效果。",
+      "target_seconds": 19
+    },
+    {
+      "id": "11",
+      "route": "/research",
+      "scroll_y": 900,
+      "caption": "研究边界  ·  仿真、公开测量与实物验证分别标注",
+      "narration": "项目策略是规则或确定性优化，不是训练过的机器学习。Phase 十五使用公开测量数据评估模型误差，但未校准项目设备；Phase 十七只完成软件闭环，没有实物硬件在环测试。",
+      "target_seconds": 23
+    },
+    {
+      "id": "12",
+      "route": "/research",
+      "scroll_y": 0,
+      "caption": "6G / RESCUE  ·  研究原型，不是实际 6G 网络测试",
+      "narration": "这就是低空应急网络智能自愈平台的演示流程。真实部署仍需目标设备校准、授权的硬件在环和外场验证。感谢观看。",
+      "target_seconds": 18
+    }
+  ]
+}
