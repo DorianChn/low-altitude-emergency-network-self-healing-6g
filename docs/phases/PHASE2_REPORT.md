@@ -70,7 +70,7 @@ beam width 为 6。每个搜索节点展开保持、八个罗盘方向和朝可�
 
 ## 5. 实际对照结果
 
-下表是 [`results/phase2_20_seed_results.json`](results/phase2_20_seed_results.json) 的实际汇总。比例显示为均值 ± 跨种子样本标准差；时延为 pooled 成功连接样本统计；恢复时间为恢复运行均值。
+下表是 [`results/phase2_20_seed_results.json`](../../results/phase2_20_seed_results.json) 的实际汇总。比例显示为均值 ± 跨种子样本标准差；时延为 pooled 成功连接样本统计；恢复时间为恢复运行均值。
 
 | 指标 | A 无无人机恢复 | B 静态网格 | C 滚动优化 |
 |---|---:|---:|---:|

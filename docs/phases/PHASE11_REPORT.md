@@ -84,7 +84,7 @@ F/G/H/J共用相同的通信状态评估器：用户每个采样时刻只分配�
 
 此表按4个场景等量汇总为描述性均值，场景性质不同；判断算法差异应优先看前述分层结果和配对检验。
 
-完整逐策略统计（均值、样本标准差、中位数、区间、样本量、配对效应、恢复时间、能耗、基站/UAV利用率、容量阻塞、移动、候选数、节点数、不可行与超时）见[`phase11_confirmation_summary.json`](results/phase11_confirmation_summary.json)；逐次运行含事件日志、轨迹、逐UAV能量和时延样本，见[`phase11_confirmation_raw.json`](results/phase11_confirmation_raw.json)。
+完整逐策略统计（均值、样本标准差、中位数、区间、样本量、配对效应、恢复时间、能耗、基站/UAV利用率、容量阻塞、移动、候选数、节点数、不可行与超时）见[`phase11_confirmation_summary.json`](../../results/phase11_confirmation_summary.json)；逐次运行含事件日志、轨迹、逐UAV能量和时延样本，见[`phase11_confirmation_raw.json`](../../results/phase11_confirmation_raw.json)。
 
 ### 严重持续故障
 
@@ -209,9 +209,9 @@ F/G/H/J共用相同的通信状态评估器：用户每个采样时刻只分配�
 |高负载与回传受限|I|+0.00 [+0.00, +0.00]|1.000|0/20 → 0/20|0/20 → 0/20|
 |高负载与回传受限|J|+3.15 [+2.15, +4.14]|<0.001|20/20 → 20/20|20/20 → 20/20|
 
-增机结果不等于调度算法效果：F的3机救援服务比2机在严重、移动、高负载场景的增益通过校正；G只在严重与动态场景通过校正；J只在动态与高负载通过校正。动态持续恢复中，G由6/20升至12/20，而F由8/20降至7/20，J由6/20升至7/20；其他场景本身接近恢复率上限，出现天花板效应。详细统计见[`phase11_fleet_size_exploratory.json`](results/phase11_fleet_size_exploratory.json)。
+增机结果不等于调度算法效果：F的3机救援服务比2机在严重、移动、高负载场景的增益通过校正；G只在严重与动态场景通过校正；J只在动态与高负载通过校正。动态持续恢复中，G由6/20升至12/20，而F由8/20降至7/20，J由6/20升至7/20；其他场景本身接近恢复率上限，出现天花板效应。详细统计见[`phase11_fleet_size_exploratory.json`](../../results/phase11_fleet_size_exploratory.json)。
 
-![四场景3机减2机配对救援服务差异](plots/phase11/fleet_size_increment.png)
+![四场景3机减2机配对救援服务差异](../../plots/phase11/fleet_size_increment.png)
 
 ## 四、恢复、时延、资源和计算成本
 
@@ -254,14 +254,14 @@ F/G/H/J共用相同的通信状态评估器：用户每个采样时刻只分配�
 ### 主要交付文件
 
 - [`PHASE11_ALGORITHM_DESIGN.md`](PHASE11_ALGORITHM_DESIGN.md)：基线审计、H/I/J机制和比较边界。
-- [`configs/phase11/benchmark_plan.json`](configs/phase11/benchmark_plan.json)：场景、策略、资源和探索种子。
-- [`configs/phase11/confirmation_protocol.json`](configs/phase11/confirmation_protocol.json)：冻结的确认配置、种子、源码与说明哈希。
-- [`results/phase11_development_raw.json`](results/phase11_development_raw.json)：132次开发运行；[`phase11_development_summary.json`](results/phase11_development_summary.json)：开发汇总。
-- [`results/phase11_confirmation_raw.json`](results/phase11_confirmation_raw.json)：880次确认运行的完整记录；[`phase11_confirmation_summary.json`](results/phase11_confirmation_summary.json)：逐场景统计、配对效应和Holm校正。
-- [`results/phase11_fleet_size_exploratory.json`](results/phase11_fleet_size_exploratory.json)：同策略3机−2机补充分析。
-- [`results/phase11_delivery_audit.json`](results/phase11_delivery_audit.json) 与 [`results/phase11_validation_evidence.txt`](results/phase11_validation_evidence.txt)：冻结数据、轨迹配对、约束计数及测试验证记录。
-- [`plots/phase11/confirmation_rescue_service.png`](plots/phase11/confirmation_rescue_service.png) 与SVG：救援服务率场景图；[`plots/phase11/confirmation_compute_vs_service.png`](plots/phase11/confirmation_compute_vs_service.png) 与SVG：计算开销—服务关系图；[`plots/phase11/fleet_size_increment.png`](plots/phase11/fleet_size_increment.png) 与SVG：机队规模探索性配对差异。
-- [`results/phase11_artifact_manifest.json`](results/phase11_artifact_manifest.json)：本阶段产物及冻结历史核验清单。
+- [`configs/phase11/benchmark_plan.json`](../../configs/phase11/benchmark_plan.json)：场景、策略、资源和探索种子。
+- [`configs/phase11/confirmation_protocol.json`](../../configs/phase11/confirmation_protocol.json)：冻结的确认配置、种子、源码与说明哈希。
+- [`results/phase11_development_raw.json`](../../results/phase11_development_raw.json)：132次开发运行；[`phase11_development_summary.json`](../../results/phase11_development_summary.json)：开发汇总。
+- [`results/phase11_confirmation_raw.json`](../../results/phase11_confirmation_raw.json)：880次确认运行的完整记录；[`phase11_confirmation_summary.json`](../../results/phase11_confirmation_summary.json)：逐场景统计、配对效应和Holm校正。
+- [`results/phase11_fleet_size_exploratory.json`](../../results/phase11_fleet_size_exploratory.json)：同策略3机−2机补充分析。
+- [`results/phase11_delivery_audit.json`](../../results/phase11_delivery_audit.json) 与 [`results/phase11_validation_evidence.txt`](../../results/phase11_validation_evidence.txt)：冻结数据、轨迹配对、约束计数及测试验证记录。
+- [`plots/phase11/confirmation_rescue_service.png`](../../plots/phase11/confirmation_rescue_service.png) 与SVG：救援服务率场景图；[`plots/phase11/confirmation_compute_vs_service.png`](../../plots/phase11/confirmation_compute_vs_service.png) 与SVG：计算开销—服务关系图；[`plots/phase11/fleet_size_increment.png`](../../plots/phase11/fleet_size_increment.png) 与SVG：机队规模探索性配对差异。
+- [`results/phase11_artifact_manifest.json`](../../results/phase11_artifact_manifest.json)：本阶段产物及冻结历史核验清单。
 
 ### 可复现命令
 

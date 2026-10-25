@@ -48,7 +48,7 @@ uv run pytest -q
 | B | 第一阶段静态网格规则策略 | 初始时搜索网格位置一次，之后沿既定目标飞行，不重新选址 |
 | C | 第二阶段滚动时域优化 | 按网络状态搜索有限时域动作序列，执行首个动作，并在状态变化时重新规划 |
 
-第二阶段调度器诊断故障基站、失联用户、未覆盖用户、容量阻塞、救援用户失联、拥塞资源和无人机回传状态。候选动作须满足城市边界、飞行速度、接入/回传距离、容量、电池保留量和返航能量约束。算法是带约束的有限时域 beam search，不是经过训练的 AI 模型；算法细节、权重、统计口径和限制见 [`PHASE2_REPORT.md`](PHASE2_REPORT.md)。
+第二阶段调度器诊断故障基站、失联用户、未覆盖用户、容量阻塞、救援用户失联、拥塞资源和无人机回传状态。候选动作须满足城市边界、飞行速度、接入/回传距离、容量、电池保留量和返航能量约束。算法是带约束的有限时域 beam search，不是经过训练的 AI 模型；算法细节、权重、统计口径和限制见 [`PHASE2_REPORT.md`](docs/phases/PHASE2_REPORT.md)。
 
 ## 第二阶段固定种子实验
 
@@ -98,15 +98,15 @@ tests/                           第一、二阶段自动化测试
 results/phase1_benchmark.json    保留的第一阶段基准结果
 results/phase2_20_seed_results.json  第二阶段 20 种子实际结果
 plots/                           第二阶段 PNG/SVG 图表
-PHASE1_REPORT.md                 第一阶段报告
-PHASE2_REPORT.md                 第二阶段算法、实验和限制报告
-DEVELOPMENT_LOG_PHASE2.md        第二阶段审计式开发记录
+docs/phases/PHASE1_REPORT.md      第一阶段报告
+docs/phases/PHASE2_REPORT.md      第二阶段算法、实验和限制报告
+docs/phases/DEVELOPMENT_LOG_PHASE2.md  第二阶段审计式开发记录
 frontend/                         第三阶段 React + TypeScript 应用
 src/lowalt6g/api.py              第三阶段只读 FastAPI 数据接口
 results/phase3_replay_seed_2026.json  仿真引擎生成的 61 帧三策略离线回放
-PHASE3_REPORT.md                 第三阶段页面、集成、验证和限制报告
-PHASE4_REPORT.md                 第四阶段算法、科研验证和结果限制
-DEVELOPMENT_LOG_PHASE4.md        第四阶段审计及开发种子迭代记录
+docs/phases/PHASE3_REPORT.md      第三阶段页面、集成、验证和限制报告
+docs/phases/PHASE4_REPORT.md      第四阶段算法、科研验证和结果限制
+docs/phases/DEVELOPMENT_LOG_PHASE4.md  第四阶段审计及开发种子迭代记录
 results/phase4_development_3000_3004.json  五个开发种子的逐次结果
 results/phase4_validation_4000_4019.json   二十个留出种子的原始结果和统计
 plots/phase4_validation_*         第四阶段 PNG/SVG 指标及条件时延图
@@ -139,11 +139,11 @@ uv run lowalt6g run-phase4 --config configs/dynamic_scenario.toml
 
 默认开发种子为 3000–3004，验证种子为 4000–4019；输出到 `results/phase4_development_3000_3004.json`、`results/phase4_validation_4000_4019.json` 和 `plots/phase4_validation_*`。Phase 4 JSON schema 为 2.1，保留逐种子事件、原始成功连接时延样本、配置哈希、统计区间和配对差。Phase 2 `run-dynamic` 仍输出 schema 2.0，第三阶段 API 和 A/B/C 回放格式保持不变。
 
-留出实验没有证明 D 或 C 在救援服务和首次恢复时间上超过 B：D 救援服务率 24.91%，B 为 28.71%；首次恢复均值分别为 501 秒和 446.5 秒。D 的能耗较低，但计算耗时明显增加。完整审计、算法约束、区间、失败分析和局限见 [`PHASE4_REPORT.md`](PHASE4_REPORT.md)，开发过程见 [`DEVELOPMENT_LOG_PHASE4.md`](DEVELOPMENT_LOG_PHASE4.md)。项目依旧是抽象的 6G 研究仿真，不是实网测试。
+留出实验没有证明 D 或 C 在救援服务和首次恢复时间上超过 B：D 救援服务率 24.91%，B 为 28.71%；首次恢复均值分别为 501 秒和 446.5 秒。D 的能耗较低，但计算耗时明显增加。完整审计、算法约束、区间、失败分析和局限见 [`PHASE4_REPORT.md`](docs/phases/PHASE4_REPORT.md)，开发过程见 [`DEVELOPMENT_LOG_PHASE4.md`](docs/phases/DEVELOPMENT_LOG_PHASE4.md)。项目依旧是抽象的 6G 研究仿真，不是实网测试。
 
 ## 第五阶段：多灾害自主自愈验证
 
-第五阶段新增四类场景、统一的无人机执行安全约束、静态网格约束对照 B′、滚动时域策略 C 和词典序救援优先策略 D。完整方法、数据和适用边界见 [PHASE5_REPORT.md](PHASE5_REPORT.md)。
+第五阶段新增四类场景、统一的无人机执行安全约束、静态网格约束对照 B′、滚动时域策略 C 和词典序救援优先策略 D。完整方法、数据和适用边界见 [PHASE5_REPORT.md](docs/phases/PHASE5_REPORT.md)。
 
 运行冻结方案的验证集前，先运行开发集；验证阶段会检查算法和场景配置是否与冻结清单哈希一致：
 
@@ -158,4 +158,4 @@ API 新增 GET /api/experiments/phase5 和 GET /api/experiments/phase5/{scenario
 
 ## GitHub review package
 
-The complete package, including all raw experimental records, is attached to the [GitHub Releases](https://github.com/DorianChn/low-altitude-emergency-network-self-healing-6g/releases). See [GITHUB_PUBLICATION.md](GITHUB_PUBLICATION.md) and [AUTHORS.md](AUTHORS.md).
+The complete package, including all raw experimental records, is attached to the [GitHub Releases](https://github.com/DorianChn/low-altitude-emergency-network-self-healing-6g/releases). See [GITHUB_PUBLICATION.md](docs/phases/GITHUB_PUBLICATION.md) and [AUTHORS.md](AUTHORS.md).

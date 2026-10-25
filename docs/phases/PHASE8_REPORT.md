@@ -30,7 +30,7 @@
 
 工作区在本阶段开始前已有Phase 3–6相关未提交改动。它们被保留；本阶段在独立分支 `phase8-ablation-sensitivity` 上工作。仓库没有配置远程地址。为避免把前序脏改动混入提交，本阶段不提交混合工作区，也不推送代码。
 
-结构化算法机制清单另存于[`configs/phase8/algorithm_mechanism_audit.json`](configs/phase8/algorithm_mechanism_audit.json)，包括当前源码入口、候选位置、预测时域、重规划频率、规划能耗约束和共用执行层安全约束。
+结构化算法机制清单另存于[`configs/phase8/algorithm_mechanism_audit.json`](../../configs/phase8/algorithm_mechanism_audit.json)，包括当前源码入口、候选位置、预测时域、重规划频率、规划能耗约束和共用执行层安全约束。
 
 ## 2. 实际算法机制清单
 
@@ -248,7 +248,7 @@ C能耗项是软目标权重，不能保证能耗单调下降；D能耗项仅作
 
 ### 8.2 开发集趋势（探索性）
 
-以各变体相对本算法默认值的救援服务率差、每场景等权宏平均显示，图中给出每个场景的3种子趋势：[`plots/phase8/phase8_parameter_sensitivity_development.png`](plots/phase8/phase8_parameter_sensitivity_development.png)。
+以各变体相对本算法默认值的救援服务率差、每场景等权宏平均显示，图中给出每个场景的3种子趋势：[`plots/phase8/phase8_parameter_sensitivity_development.png`](../../plots/phase8/phase8_parameter_sensitivity_development.png)。
 
 开发集观察包括：
 
@@ -262,11 +262,11 @@ C能耗项是软目标权重，不能保证能耗单调下降；D能耗项仅作
 
 独立参数验证原始结果、统计汇总和完整性审计分别为：
 
-- [`results/phase8_sensitivity_validation_raw.json`](results/phase8_sensitivity_validation_raw.json)
-- [`results/phase8_sensitivity_validation_summary.json`](results/phase8_sensitivity_validation_summary.json)
-- [`results/phase8_sensitivity_validation_audit.json`](results/phase8_sensitivity_validation_audit.json)
-- [`plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png`](plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png)
-- [`plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png`](plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png)
+- [`results/phase8_sensitivity_validation_raw.json`](../../results/phase8_sensitivity_validation_raw.json)
+- [`results/phase8_sensitivity_validation_summary.json`](../../results/phase8_sensitivity_validation_summary.json)
+- [`results/phase8_sensitivity_validation_audit.json`](../../results/phase8_sensitivity_validation_audit.json)
+- [`plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png`](../../plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png)
+- [`plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png`](../../plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png)
 
 #### 执行与数据审计
 
@@ -329,13 +329,13 @@ C能耗项是软目标权重，不能保证能耗单调下降；D能耗项仅作
 
 核心对照图以逐种子原始记录重绘：
 
-- [`plots/phase8_replication/phase8_validation_policy_comparison.png`](plots/phase8_replication/phase8_validation_policy_comparison.png)：B/C/D救援服务、能耗和累计计算耗时。
-- [`plots/phase8_replication/phase8_validation_ablation_effects.png`](plots/phase8_replication/phase8_validation_ablation_effects.png)：四场景下各机制相对其正式父策略的配对救援服务率差及95% t区间。
-- [`plots/phase8/phase8_parameter_sensitivity_development.png`](plots/phase8/phase8_parameter_sensitivity_development.png)：所有低/中/高工程参数探针，标注开发集n=3。
-- [`plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png`](plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png)：新留出参数确认集各单因素变体的配对服务率差。
-- [`plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png`](plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png)：参数确认种子中基准策略的服务/资源比较。
+- [`plots/phase8_replication/phase8_validation_policy_comparison.png`](../../plots/phase8_replication/phase8_validation_policy_comparison.png)：B/C/D救援服务、能耗和累计计算耗时。
+- [`plots/phase8_replication/phase8_validation_ablation_effects.png`](../../plots/phase8_replication/phase8_validation_ablation_effects.png)：四场景下各机制相对其正式父策略的配对救援服务率差及95% t区间。
+- [`plots/phase8/phase8_parameter_sensitivity_development.png`](../../plots/phase8/phase8_parameter_sensitivity_development.png)：所有低/中/高工程参数探针，标注开发集n=3。
+- [`plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png`](../../plots/phase8_sensitivity_validation/phase8_validation_ablation_effects.png)：新留出参数确认集各单因素变体的配对服务率差。
+- [`plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png`](../../plots/phase8_sensitivity_validation/phase8_validation_policy_comparison.png)：参数确认种子中基准策略的服务/资源比较。
 
-最终回归测试：`uv run --frozen --offline pytest -q`，**42 passed in 35.72s**。实际终端输出保存在[`results/phase8_pytest_results.txt`](results/phase8_pytest_results.txt)。其中包含Phase 5冻结校验、Phase 6接口与回放兼容性以及Phase 8变体/种子配置测试。
+最终回归测试：`uv run --frozen --offline pytest -q`，**42 passed in 35.72s**。实际终端输出保存在[`results/phase8_pytest_results.txt`](../../results/phase8_pytest_results.txt)。其中包含Phase 5冻结校验、Phase 6接口与回放兼容性以及Phase 8变体/种子配置测试。
 
 从项目根目录复现：
 

@@ -132,7 +132,7 @@ uv run pytest -q
 - Phase 4 全部 20 个种子的四策略结果逐条检查：电池高于 50 Wh 储备、速度不超过 0.15 km/10 秒；D 的计划 sortie 能耗留足返航/电量储备。检查结果 0 项越界。测试另覆盖 60 秒截断时无恢复应保留 `null`。
 - 前端未修改。`frontend/npm run build` 通过 TypeScript 与 Vite 构建；ECharts 分块 533.66 kB，仍有既有的 500 kB 体积提示。
 - FastAPI HTTP 冒烟检查通过：`/api/health`、`/api/experiments/phase2`、`/api/replay/2026` 均返回 200；旧接口仍给出 schema 2.0 的 20 种子 A/B/C 结果及三策略离线回放。
-- 真实留出结果：[`results/phase4_validation_4000_4019.json`](results/phase4_validation_4000_4019.json)。开发结果：[`results/phase4_development_3000_3004.json`](results/phase4_development_3000_3004.json)。图表：[`plots/phase4_validation_metrics.png`](plots/phase4_validation_metrics.png)、[`plots/phase4_validation_latency.png`](plots/phase4_validation_latency.png)，并同时输出 SVG。
+- 真实留出结果：[`results/phase4_validation_4000_4019.json`](../../results/phase4_validation_4000_4019.json)。开发结果：[`results/phase4_development_3000_3004.json`](../../results/phase4_development_3000_3004.json)。图表：[`plots/phase4_validation_metrics.png`](../../plots/phase4_validation_metrics.png)、[`plots/phase4_validation_latency.png`](../../plots/phase4_validation_latency.png)，并同时输出 SVG。
 - 仍为二维欧氏距离和简化容量/时延/能耗模型，不含 3GPP 信道、建筑遮挡、多径/干扰、真实协议栈、无人机风场或硬件；未来故障与用户轨迹不作概率预测。20 个种子只反映此配置内的种子差异，不代表真实网络不确定性。
 - 试验迭代 JSON 和当前配置哈希已保留，但开发迭代期间没有逐个冻结源代码快照；本报告提供当前冻结算法源文件组合哈希。留出 JSON 本身保留原始轨迹与逐策略日志，统计区间调整只增加 Wilson 字段和图表，不修改仿真原始值。
 

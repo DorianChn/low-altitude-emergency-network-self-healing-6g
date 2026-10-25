@@ -1,6 +1,6 @@
 # Phase 12：研究需求与证据追踪矩阵
 
-日期：2026-10-20。官方研究方向编号引用 [`PHASE12_OFFICIAL_REFERENCES.md`](PHASE12_OFFICIAL_REFERENCES.md)，项目实现以 [`docs/phase12/module_inventory.json`](docs/phase12/module_inventory.json) 的实际代码路径为准。
+日期：2026-10-20。官方研究方向编号引用 [`PHASE12_OFFICIAL_REFERENCES.md`](PHASE12_OFFICIAL_REFERENCES.md)，项目实现以 [`docs/phase12/module_inventory.json`](../phase12/module_inventory.json) 的实际代码路径为准。
 
 ## 追踪矩阵
 
