@@ -1,14 +1,14 @@
 # Phase 12：系统架构与模块审计
 
-审计日期：2026-10-20。本文以当前可见源码、配置、API、前端和实验文件为准；模块机器清单见 [`docs/phase12/module_inventory.json`](docs/phase12/module_inventory.json)。
+审计日期：2026-10-20。本文以当前可见源码、配置、API、前端和实验文件为准；模块机器清单见 [`docs/phase12/module_inventory.json`](../phase12/module_inventory.json)。
 
 ## 总体架构
 
-![系统总体架构](docs/phase12/system_architecture.png)
+![系统总体架构](../phase12/system_architecture.png)
 
-![关键数据流与证据隔离](docs/phase12/research_dataflow.png)
+![关键数据流与证据隔离](../phase12/research_dataflow.png)
 
-可编辑源文件：[`system_architecture.mmd`](docs/phase12/system_architecture.mmd)、[`research_dataflow.mmd`](docs/phase12/research_dataflow.mmd)。图像可由 `python scripts/render_phase12_architecture.py` 重新生成。
+可编辑源文件：[`system_architecture.mmd`](../phase12/system_architecture.mmd)、[`research_dataflow.mmd`](../phase12/research_dataflow.mmd)。图像可由 `python scripts/render_phase12_architecture.py` 重新生成。
 
 ## 分层与代码追踪
 
@@ -22,7 +22,7 @@
 | API 与数据服务 | `src/lowalt6g/api.py`、`phase6_api.py`、`phase6_demo.py` | HTTP GET 和场景/种子 ID | 健康状态、Phase 2/5 指标、Phase 3/6 已生成回放 JSON | 只读、离线；不接收控制命令、不运行策略、不接收基站遥测。 |
 | 展示与交互 | `frontend/src/App.tsx`、`data.tsx`、`pages.tsx`、`Phase6DemoPage.tsx`、`types.ts` | 现有 API JSON 与保存帧 | 首页、指挥/决策/实验/演示路由和离散回放 | 当前 UI 消费 Phase 2/5/6 数据；Phase 8–11 原始确认集尚未进入交互页面。 |
 
-完整模块的输入、输出、依赖、状态和证据路径逐项记录在 [`module_inventory.json`](docs/phase12/module_inventory.json)，并由 Phase 12 审计脚本检查路径是否存在。
+完整模块的输入、输出、依赖、状态和证据路径逐项记录在 [`module_inventory.json`](../phase12/module_inventory.json)，并由 Phase 12 审计脚本检查路径是否存在。
 
 ## 策略清单
 
@@ -51,7 +51,7 @@
 
 ## 历史结果核验摘要
 
-- Phase 5：实际审计覆盖 4 场景、80 个留出种子、400 次策略运行；冻结清单审计结果及各场景文件哈希见 [`results/phase12_integrity_audit.json`](results/phase12_integrity_audit.json)。
+- Phase 5：实际审计覆盖 4 场景、80 个留出种子、400 次策略运行；冻结清单审计结果及各场景文件哈希见 [`results/phase12_integrity_audit.json`](../../results/phase12_integrity_audit.json)。
 - Phase 8：敏感性确认记录 80 个种子、2,000 次策略运行；审计文件报告零电量储备违规、零时延样本计数差异、零缺少 trace hash、零无时间戳环境事件。
 - Phase 9：确认集覆盖 80 个种子、480 次策略运行。动态故障中，E 的救援服务率均值 13.15%，B′ 为 20.19%；E 的持续 30 秒恢复为 0/20，B′ 为 12/20。E 决策总耗时均值约 802.5 ms，B′ 约 249.5 ms。上述结果不支持“事件触发必然提升恢复”的主张。
 - Phase 10：4 场景、80 个种子、400 次策略运行；Phase 11 冻结校验检查 15 个 Phase 10 工件，0 个哈希差异、0 个轨迹不匹配。

@@ -40,6 +40,6 @@ ZIP CRC、清单/校验和、完整解压和抽取后运行检查状态由 `audi
 
 2026-10-21 又从临时审阅 ZIP 新建解压副本，并从该副本运行：离线 `uv sync`、pytest 193 passed、`npm ci`、Vitest 17 passed、Oxlint、TypeScript/Vite build、Playwright 30 passed、Windows 启动/健康检查/关闭。所有命令输出见 `logs/package-extracted-*.log`。依赖来自本机缓存；未测试新装、无缓存或物理断网环境。
 
-第一次独立 ZIP 验证器运行正确检测出它自己把阶段报告写成 `submission/final/PHASE18_REPORT.md`，而项目阶段报告实际位于根目录 `PHASE18_REPORT.md`。已修正验证器的 key-file 路径并重新运行：CRC PASS、成员清单与 SHA-256 一致、路径安全、完整解压及关键文件检查 PASS。该问题属于审计脚本路径假设，不是项目包缺文件。最终重建后的正式本地审阅 ZIP 以相邻 `audit/package_validation.json` 中的最终哈希和状态为准。
+第一次独立 ZIP 验证器运行正确检测出它自己把阶段报告写成 `submission/final/PHASE18_REPORT.md`，而项目阶段报告实际位于根目录 `PHASE18_REPORT.md`。已修正验证器的 key-file 路径并重新运行：CRC PASS、成员清单与 SHA-256 一致、路径安全、完整解压及关键文件检查 PASS。该问题属于审计脚本路径假设，不是项目包缺文件。最终重建后的正式本地审阅 ZIP 以相邻 `audit/package_validation.json` 中的最终哈希和状态为准。上述句子记录 2026-10-21 验证时的路径；当前仓库里的阶段报告在 `docs/phases/`。
 
 最终交付目录 ZIP 已完成同一套复核，零差异，状态 PASS。最终包中 `submission/final/` 以外的469个载荷文件与已进行全套独立解压测试的临时 ZIP 大小及 SHA-256 全部相同；交付说明和审计资料在最终包中更新。精确压缩包哈希、大小、成员数和抽取路径以旁置 `audit/package_validation.json` 为准。

@@ -122,9 +122,9 @@ F3/G3 在新模型中需要更高决策计算时间。G3 每次运行平均墙�
 
 Playwright 检查覆盖 1920×1080、1366×768、390×844，无文档横向溢出，浏览器没有捕获到页面错误。截图：
 
-- [1920×1080](artifacts/phase14/browser/research-1920x1080.png)
-- [1366×768](artifacts/phase14/browser/research-1366x768.png)
-- [390×844](artifacts/phase14/browser/research-390x844.png)
+- [1920×1080](../../artifacts/phase14/browser/research-1920x1080.png)
+- [1366×768](../../artifacts/phase14/browser/research-1366x768.png)
+- [390×844](../../artifacts/phase14/browser/research-390x844.png)
 
 ## 6. 验证结果
 

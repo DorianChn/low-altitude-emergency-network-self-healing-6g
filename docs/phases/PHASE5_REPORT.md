@@ -177,9 +177,9 @@ uv run python scripts/phase5_summary.py --phase validation
 - `plots/phase5_reliability.png` / `.svg`
 - `plots/phase5_service_and_cost.png` / `.svg`
 
-![多灾害留出验证的恢复与服务率对照](plots/phase5_reliability.png)
+![多灾害留出验证的恢复与服务率对照](../../plots/phase5_reliability.png)
 
-![多灾害留出验证的服务与资源成本对照](plots/phase5_service_and_cost.png)
+![多灾害留出验证的服务与资源成本对照](../../plots/phase5_service_and_cost.png)
 
 ## 8. 工程交付情况
 

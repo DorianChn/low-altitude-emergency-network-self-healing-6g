@@ -133,8 +133,8 @@ Windows 启动命令：
 
 浏览器截图证据：
 
-- [1920×1080 截图](artifacts/phase6/browser/demo-1920x1080.png)
-- [1366×768 截图](artifacts/phase6/browser/demo-1366x768.png)
+- [1920×1080 截图](../../artifacts/phase6/browser/demo-1920x1080.png)
+- [1366×768 截图](../../artifacts/phase6/browser/demo-1366x768.png)
 
 生产构建仍有一个已知体积提示：ECharts 分块约 533.66 kB（gzip 180.42 kB），超过 Vite 默认 500 kB 提示线；其余主 JS 约 412.56 kB。此提示未阻断构建或现场演示。
 

@@ -17,8 +17,8 @@
 - 核验 A–J 策略实际逻辑，区分一次性 B、使用共享安全预算的 B′、滚动优化 C/D、事件驱动 E、以及多 UAV 的 F/G/H/I/J。确认这些策略是确定性规则或优化方法，不是训练完成的机器学习模型。
 - 核验 ITU-R M.2160-0、ITU-R IMT-2030 状态页、3GPP Release 21/TS 22.270/WI 1110085/TR 38.821，以及 ETSI GR ZSM 015、GS ZSM 018、GS ENI 005；记录状态、版本、章节和访问日期，见 [`PHASE12_OFFICIAL_REFERENCES.md`](PHASE12_OFFICIAL_REFERENCES.md)。
 - 建立标准方向映射和端到端研究需求追踪，保留 Phase 8/9 的负面结果及 Phase 11 的场景差异。
-- 制作分层总体架构图和实验数据流/冻结边界图，提供 Mermaid、SVG 和 PNG；图源与导出脚本位于 [`docs/phase12/`](docs/phase12/)。
-- 增加只读 Phase 12 审计脚本，写入新的 [`results/phase12_integrity_audit.json`](results/phase12_integrity_audit.json)。没有修改历史实验 JSON、冻结清单、API 或前端源码。
+- 制作分层总体架构图和实验数据流/冻结边界图，提供 Mermaid、SVG 和 PNG；图源与导出脚本位于 [`docs/phase12/`](../phase12/)。
+- 增加只读 Phase 12 审计脚本，写入新的 [`results/phase12_integrity_audit.json`](../../results/phase12_integrity_audit.json)。没有修改历史实验 JSON、冻结清单、API 或前端源码。
 
 ## 关键审计发现
 
@@ -53,8 +53,8 @@ Phase 11 新留出集显示三 UAV G 相对同规模 F：
 - [`PHASE12_STANDARDS_MAPPING.md`](PHASE12_STANDARDS_MAPPING.md)：逐方向的官方技术依据、研究目标、源码、状态、证据、差距和后续验证方法。
 - [`PHASE12_REQUIREMENT_TRACEABILITY.md`](PHASE12_REQUIREMENT_TRACEABILITY.md)：官方方向 → 研究问题 → 实现 → 配置/种子 → 指标 → 结果 → 限制。
 - [`PHASE12_OFFICIAL_REFERENCES.md`](PHASE12_OFFICIAL_REFERENCES.md)：官方资料状态与直接链接。
-- [`docs/phase12/module_inventory.json`](docs/phase12/module_inventory.json)：机器可读模块及 A–J 策略机制清单。
-- [`docs/phase12/system_architecture.mmd`](docs/phase12/system_architecture.mmd)、[`docs/phase12/research_dataflow.mmd`](docs/phase12/research_dataflow.mmd)：可编辑图源；配套 SVG/PNG 位于同目录。
+- [`docs/phase12/module_inventory.json`](../phase12/module_inventory.json)：机器可读模块及 A–J 策略机制清单。
+- [`docs/phase12/system_architecture.mmd`](../phase12/system_architecture.mmd)、[`docs/phase12/research_dataflow.mmd`](../phase12/research_dataflow.mmd)：可编辑图源；配套 SVG/PNG 位于同目录。
 
 ## 验证结果
 
@@ -67,7 +67,7 @@ Phase 11 新留出集显示三 UAV G 相对同规模 F：
 - Phase 5/8/9/10/11 冻结数据核验：**无哈希差异**；Phase 10/11 配对轨迹未发现不一致。
 - Playwright E2E：本阶段未重跑；前端源代码未变更。本阶段已执行 API 路由与现有 API 契约回归测试。
 
-完整结果见 [`results/phase12_integrity_audit.json`](results/phase12_integrity_audit.json)。
+完整结果见 [`results/phase12_integrity_audit.json`](../../results/phase12_integrity_audit.json)。
 
 ## 材料缺口与技术限制
 

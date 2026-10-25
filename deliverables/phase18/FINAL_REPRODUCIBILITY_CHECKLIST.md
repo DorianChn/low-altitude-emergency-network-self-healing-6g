@@ -12,4 +12,4 @@
 - [ ] 在任何设备/无线测量前确认授权、仪器校准和测量不确定度门槛。
 - [ ] 物理 HIL 只有在设备、驱动与安全闭环通过独立审查后才可标记完成。
 
-可复制命令见根 `PHASE18_REPRODUCIBILITY_REPORT.md`。本清单不能替代未执行的设备/现场验证。
+可复制命令见 `docs/phases/PHASE18_REPRODUCIBILITY_REPORT.md`。本清单不能替代未执行的设备/现场验证。
